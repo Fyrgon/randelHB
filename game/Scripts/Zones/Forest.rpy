@@ -1,5 +1,5 @@
 label forest:
-    if time >= 4:
+    if time > 4 or (time == 4 and magic_lamp < 1):
         scene forrestn
         mc "It's too late to be in the forest."
         jump maplimbo

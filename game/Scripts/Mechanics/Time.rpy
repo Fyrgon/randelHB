@@ -9,3 +9,5 @@ screen times():
         text "Evening"
     if time == 4:
         text "Night"
+    if time > 4:
+        text "Midnight"

@@ -5,7 +5,6 @@ default timeDay = "day"
 default time = 0
 default easyMode = False
 default skippedIntro = False
-default lastFMGscore = 0
 default roll10 = 1
 default randomX = 0.5
 default randomY = 0.5
@@ -65,6 +64,7 @@ default icamping = 0
 default diamond = 0
 default net = 0
 default ibugnet = 0
+default magic_lamp = 0
 
 ##Special (single checks or special actions)
 default lvl5notif = False

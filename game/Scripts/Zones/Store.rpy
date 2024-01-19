@@ -203,7 +203,23 @@ label store:
                 jump store
             mc "I dont have enough silver."
             jump store
-
+        "Buy magical lamp(200 silver)" if magic_lamp == 0:
+            if money >= 200:
+                mc "I would like to buy that lamp."
+                me "Oh, are you going to sneak around during the night?"
+                me "Not my bussines... here you are."
+                scene mervins2 with dissolve
+                show magic_lamp with dissolve
+                pause
+                hide magic_lamp with dissolve
+                $ magic_lamp = 1
+                scene mervins1 with dissolve
+                mc "{i}Well that was expensive but I can move around more now."
+                $ money -= 200
+                me "Enjoy the light just don't stare to it for too long, no complaints!"
+                jump store
+            mc "I dont have enough silver."
+            jump store
         "Sell diamond" if diamond == 1:
             mc "Here, I've got something for you."
             "You show the diamond to Mervin."

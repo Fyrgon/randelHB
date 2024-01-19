@@ -5,7 +5,6 @@ elif zenS >= 1:
     jump zenSlaveHouse
 
 
-
 label zenSlaveHouse:
 if zenS == 1:
     jump foodShenanigans
@@ -21,10 +20,6 @@ if zenS == 7:
     jump zenMenu
 if zenS >= 2:
     jump slaveMenu
-
-
-
-
 
 
 label slaveMenu:
@@ -69,22 +64,20 @@ if time == 0 and zenQ == 6:
     hide screen hud
     jump zenelith7
 elif zenQ == 6:
-    if time > 2:
-        $ time = 4
     mc "{i}It's too late, we wouldn't be able to come back before it's dark... Let's go back home."
-    jump home
-
-$ time += 1
+    jump forest
 
 if zenQ == 4:
     hide screen hud
     jump zenelith5
 
-if time < 4:
+if time < 3:
     scene zenelithshack with fade
 else:
-    $ time = 4
-    scene zenelithshackn with fade
+    if time > 4 or (time == 4 and magic_lamp < 1):
+        jump home
+    else:
+        scene zenelithshackn with fade
 
 if zenLeft == True:
     mc "{i}There's no point in coming back here again."
@@ -104,7 +97,7 @@ if zenQ == 1 and toolz == 0:
         mc "Agh, I'm an idiot!"
         $ zenLeft = True
         mc "...Let's head back home."
-        $ time += 1
+        $ time += 2
     jump home
 if zenQ == 1 and toolz == 1:
     hide screen hud
@@ -118,7 +111,7 @@ if zenQ == 1 and toolz == 1:
         mc "Agh, I'm an idiot!"
         $ zenLeft = True
         mc "...Let's head back home."
-        $ time += 1
+        $ time += 2
         jump home
     jump zenelith2
 
@@ -140,14 +133,17 @@ if zenQ == 2 and furnitureZ == False and Zdress == True:
 if zenQ == 2 and furnitureZ == True and Zdress == True:
     hide screen hud
     mc "{i}Alright, let's go inside."
+    $ time += 1
     jump zenelith3
 
 if zenQ == 3:
     hide screen hud
+    $ time += 1
     jump zenelith4
 
 if zenQ == 5:
     hide screen hud
+    $ time += 1
     jump zenelith6
 
 "You carefully walk through the outer valley until you find the path to the shack. It takes you sometime but you finally arrive after a few hours."
@@ -156,12 +152,16 @@ play music lake
 menu:
     "Spend some time with Zenelith":
         hide screen hud
+        $ time += 1
         jump zenTalk
     "Fuck her" if zenPlay == True and zenSexDone == False:
+        $ time += 1
         jump zenSexing
     "Have sex" if zenFuck == True and zenSexDone == False:
+        $ time += 1
         jump zenSexing
     "Make love" if zenLove == True and zenSexDone == False:
+        $ time += 1
         jump zenSexing
     "Go back":
         jump forest

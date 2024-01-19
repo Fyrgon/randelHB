@@ -9,6 +9,8 @@ screen hud():
         add "images/UI/timeevening.webp" xalign 0.01
     elif time == 4:
         add "images/UI/timenight.webp" xalign 0.01
+    else:
+        add "images/UI/timemidnight.webp" xalign 0.01
 
     add "images/UI/balance.webp"
     vbox xalign 0.008 yalign 0.975:

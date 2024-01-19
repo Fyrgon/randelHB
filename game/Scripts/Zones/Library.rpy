@@ -12,9 +12,6 @@ label library:
         "Lori":
             jump loriTalk
         "Book of Monsters":
-            if time >= 3:
-                "The Library is closing soon. I don't have time to read anything."
-                jump library
             jump monsterindex
         "Study Astyllian with Lori":
             hide screen hud

@@ -423,7 +423,7 @@ mc "{i}Tomorrow I'll clean the whole place up... Maybe I could ask Uncle Pete to
 $ zenQ = 1
 $ persistent.zenIntro = True
 $ day += 1
-$ time = 2
+$ time += 2
 jump home
 
 
@@ -795,8 +795,12 @@ mc @sadt "Zenelith, are you ok?"
 znd "..."
 znd @sadct "...No."
 play music reflection_l fadein 2
-scene shackinteriorbase
-show shacktable
+if time < 3:
+    scene shackinteriorbase
+    show shacktable
+else:
+    scene shackinteriorbasen
+    show shacktablen
 show zndress sadc
 "She walks back inside the cabin. She sits with her back against the wall and looks down. She looks really sad."
 show prot sad with dissolve
@@ -877,13 +881,19 @@ if trissheal > 0:
     mc @smilet "Yeah... I didn't want to kill a bandit and tried to defend him. In exchange he gave me a hole through my chest."
     znd @smilet "Well, I'm glad this time went better then."
     mc @smilet"Me too."
-scene shackinteriorbase
+if time < 3:
+    scene shackinteriorbase
+else:
+    scene shackinteriorbasen
 show shacktable with vpunch
 "Out of nowhere she hugs you."
 zn "Thank you so, so much."
 mc "You're welcome."
 "The two of you stay like that for some time, enough time for her to peacefully fall asleep between your arms.{p}You decide to take her to her bed and you leave for the day."
-scene zenelithshack
+if time < 3:
+    scene zenelithshack
+else:
+    scene zenelithshackn
 mc "{i}That went really well."
 "You sigh and only then you notice your clothes now have her sweet aroma."
 $ zenQ = 4
@@ -1162,9 +1172,7 @@ zns @smilet "I will!"
 mc @smilet "Bye."
 zns @smilet "Bye bye."
 $ zenQ = 6
-$ time += 2
-if time > 3:
-    $ time = 4
+$ time += 1
 jump home
 
 
@@ -1582,4 +1590,5 @@ menu:
         mc "{i}...To be with."
         mc "{i}She really is a good person. I can't believe everybody casted her aside... If I'm going to be her first, I'll do my best to be great."
 $ zenrel += 100
+$time += 1
 jump home

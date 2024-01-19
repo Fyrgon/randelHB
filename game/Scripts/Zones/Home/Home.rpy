@@ -1,6 +1,11 @@
 default atHome = False
 
 label home:
+    if time > 4:
+            scene homenight
+            "You are too tired to do anything but fall to your bed."
+            call sleepvars from _call_sleepvars_home_too_late
+            scene black with fade
     jump versionCheck
     label home2:
     $ atHome = True
@@ -10,7 +15,6 @@ label home:
     if time == 3:
         scene homeevening
     if time > 3:
-        $ time = 4
         play music night
         scene homenight
     hide screen hud
@@ -95,9 +99,6 @@ screen interactivehome():
             frame:
                 xalign 0.5
                 text tooltip
-
-
-
 
 
 label skippingTime:

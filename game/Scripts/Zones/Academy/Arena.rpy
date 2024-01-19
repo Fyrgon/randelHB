@@ -4,6 +4,9 @@ label arenar:
     show screen hud
     play music trainig
     scene arena with fade
+    if time >= 4:
+        "It's too late and the school closes."
+        jump home
     if TaliyaQ == 3 and time == 0 and penepisellosessoomosessuale == False:
         jump TaliyaQ3
     if TaliyaQ == 6 and Taliya6Talk == False and time < 2 and TimerT6 <= day:
@@ -115,9 +118,11 @@ label arenar:
 
         "Archery Training":
             hide screen hud
-            if time > 2:
+            if time > 2 and magic_lamp < 1:
                 mc "I can't train right now, it's too late."
                 jump arenar
+            elif magic_lamp > 0:
+                mc "{i}Thanks to the lamp I can see the target even this late and train."
             if bowlvl < 2:
                 if TaliyaQ < 7:
                     show animationbow

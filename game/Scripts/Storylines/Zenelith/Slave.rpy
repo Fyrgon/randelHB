@@ -166,15 +166,14 @@ scene ambush1 with fade
 $ zenS = 1
 $ persistent.zenIntro = True
 $ day += 1
-$ time = 2
+$ time += 1
 jump home
-
 
 
 label foodShenanigans:
 scene ambush1 with fade
 hide screen hud with dissolve
-"You leave Randel with a basket full of fruit. You don't exactly know what people from the elf village usually eat, but you figured that if they live in trees they likely enjoy fruit."
+"You leave Randel with a basket full of fruit. You don't exactly know what people from the elf village usually eat but you figured that if they live in trees they likely enjoy fruit."
 "You walk for a while until you reach the tree you had left a mark on. From there you walk inside the forest until arriving at the cabin you left Zenelith in."
 scene zenss with fade
 if chargedRune < 1 and scarletCharge == False:
@@ -215,9 +214,10 @@ zn "Not for long."
 mc "Sure thing.{p}Well, Zen, I guess I'll go again. I hope next time you'll have changed idea."
 "And thus you leave."
 $ zd1 = True
-$ time = 2
+$ time += 1
 jump home
-###############
+
+
 label day2:
 if zd1 == True:
     play sound doorknock
@@ -240,7 +240,7 @@ if zd1 == True:
     zn "You-!"
     "And then you leave."
     $ zd2 = True
-    $ time = 2
+    $ time += 1
     jump home
 else:
     play sound doorknock
@@ -268,7 +268,7 @@ else:
     zn "You-!"
     "And then you leave."
     $ zd2 = True
-    $ time = 2
+    $ time += 1
     jump home
 
 
@@ -313,7 +313,7 @@ else:
     mc "Anyways, I hope next time you'll be calmer. Have a nice day."
     "And then you turn around and leave. You hear Zenelith protesting but you ignore her."
     $ zd3 = True
-    $ time = 2
+    $ time += 1
     jump home
 
 
@@ -332,7 +332,7 @@ zn "Ngh..."
 mc "Heh. Bye, Zen."
 "You leave her there and return home. She's definitely lost most of her spirit... Maybe tomorrow she'll finally give in."
 $ zd4 = True
-$ time = 2
+$ time += 1
 jump home
 
 
@@ -420,7 +420,7 @@ $ chargedRune -= 1
 $ persistent.zenGrope1 = True
 $ zenS = 2
 $ lastAte = 0
-$ time = 2
+$ time += 1
 jump home
 
 label day5:
@@ -540,7 +540,7 @@ $ chargedRune -= 1
 $ persistent.zenGrope = True
 $ zenS = 2
 $ lastAte = 0
-$ time = 2
+$ time += 1
 jump home
 
 
@@ -592,6 +592,7 @@ if zg1 == False:
     znr @angryt "I-I won't let you humiliate me further."
     mc @talk "Too bad then. We'll see if you still think like this next time I come."
     $ zg1 = True
+    $ time += 1
     jump home
 else:
     mc @smirkt "So, have you made up your mind?"
@@ -601,6 +602,7 @@ else:
     mc @talk "Oh, c'mon. That's just counter-productive."
     znr @angryt "I-I don't care!"
     mc @talk "Sigh. Well, see you then."
+    $ time += 1
     jump home
 
 
@@ -663,6 +665,7 @@ menu:
 $ zenS = 3
 $ lastAte = 0
 $ submission = 1
+$ time += 1
 jump home
 
 label zenGrope02:
@@ -700,6 +703,7 @@ show prot normal
 znr @angryt "Y-You..."
 mc @talk "I'd recommend you to not try your luck further."
 zn "..."
+$ time += 1
 jump home
 
 label zenGrope2:
@@ -756,6 +760,7 @@ show znboobeyeside
 "You let her breast go and hand her the food, she immediately starts eating. You decide to leave for the day."
 $ lastAte = 0
 $ zenS = 4
+$ time += 1
 jump home
 
 label zenGropeEnd:
@@ -824,6 +829,7 @@ zn "G-Goodbye, master."
 mc "{i}Oh, I like the sound of that. She's definitely improved..."
 $ lastAte = 0
 $ zenS = 5
+$ time += 1
 jump home
 
 
@@ -907,6 +913,7 @@ menu:
         mc "Goodbye, toy."
         zn "G-Goodbye, master."
         $ lastAte = 0
+        $ time += 1
         jump home
 
 
@@ -1159,6 +1166,7 @@ menu:
         "You decide to leave her there and go home. There's no reason to stay or come back."
 $ zenRouteEnd == True
 $ chargedRune -= 1
+$ time += 1
 jump home
 
 label zenReturn:
@@ -1275,6 +1283,7 @@ mc "{i}Heh, I really am the luckiest. I get to fuck her whenever I feel like so.
 $ zenS = 7
 $ chargedRune -= 1
 $ persistent.zenReturn = True
+$ time += 1
 jump home
 
 

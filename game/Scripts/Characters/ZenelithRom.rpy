@@ -225,6 +225,7 @@ zn "..."
 mc "{i}Can't even take a good fuck, tsk."
 "You follow her example and dress up as well, ogling at her body until she's done. She makes a grimace and leaves the house."
 $ zenSexDone = True
+$ time += 1
 jump zenShack
 
 
@@ -276,6 +277,7 @@ zn "Come back whenever you want."
 mc "That's what I already do."
 "She kisses you one more time and then you two dress up again."
 $ zenSexDone = True
+$ time += 1
 jump zenShack
 
 label zenSex2L:
@@ -328,4 +330,5 @@ zn "Come back whenever you want."
 mc "That's what I already do~"
 "You kiss each other for a while and then dress up again."
 $ zenSexDone = True
+$ time += 1
 jump zenShack
