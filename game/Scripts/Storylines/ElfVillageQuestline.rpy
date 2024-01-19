@@ -23,7 +23,7 @@ label evequeststart:
     hide suprised
     mc "Wait, what!? ...Why?"
     e "I'm sorry, it's complicated."
-    mc "What do you mean? Tell me! We're partners, and I'd like to think we're friends too. I think an explanation is fair!"
+    mc "What do you mean? Tell me! We're partners and I'd like to think we're friends too. I think an explanation is fair!"
     e "You don't need to worry about it, take care of yourself, Little one."
     scene homedayblur
     show worriedmc
@@ -39,7 +39,7 @@ label evequeststart:
     sa "Kid, I've got some bad news."
     mc "Eve's leaving town."
     sa "Yeah! Wait, how did you know?"
-    mc "She dropped by, and told me just a few minutes ago."
+    mc "She dropped by and told me just a few minutes ago."
     sa "Really? Well, that's good, that means she isn't far off."
     mc "What do you mean?"
     sa "Come on, Kid, we're going to follow her."
@@ -51,13 +51,13 @@ label evequeststart:
     sa "Yeah, I see her."
     "You both follow her."
     "{i}It feels like we've been following Eve for a long time, even if the sun hasn't gone down much. Honestly... it feels like we're just hunting a woodland creature."
-    "{i}It's a pretty nice day out. The sun is warm, but not overbearing. A few clouds patterned in the sky. The trees and grass are clear, vibrant shades of green from the radiance of the sunlight."
+    "{i}It's a pretty nice day out. The sun is warm but not overbearing. A few clouds patterned in the sky. The trees and grass are clear, vibrant shades of green from the radiance of the sunlight."
     "{i}This would feel like a great day to go for a hike through the forest... if we weren't stalking another Guild member and all."
     mc "So, can you please tell me what exactly is going on?"
     sa "I don't know, she said she had urgent business in her village."
     mc "Something urgent? It has to be pretty serious if it would make her leave Randel forever. I wonder why she didn't tell us."
     sa "I'm not completely making sense of this either, man."
-    sa "Eve normally visits her village almost every day, but this seems different."
+    sa "Eve normally visits her village almost every day but this seems different."
     mc "Why does she visit her village every day? I thought she hated that place."
     sa "As far as I'm aware, she does. But she has family; a sister there."
     mc "WHAT?!"
@@ -69,7 +69,7 @@ label evequeststart:
     mc "We're still in the outer forest, right?"
     sa "I-I don't know, I've never been down this path before."
     mc "Hmm... that's a comforting thought."
-    "{i}I've been in the forest a lot, and I've never come across this path. I know that the deeper we go, the more dangerous it'll get. And if a fight breaks out, our cover is blown."
+    "{i}I've been in the forest a lot and I've never come across this path. I know that the deeper we go, the more dangerous it'll get. And if a fight breaks out, our cover is blown."
     "{i}I'm having my fingers crossed that things don't go south."
     "She finally stops."
     scene evestalk
@@ -194,7 +194,7 @@ label elfvillageintro:
     play sound punch
     stop music
     scene black with vpunch
-    "You feel a hit on the back of your head, and everything goes black."
+    "You feel a hit on the back of your head and everything goes black."
     scene black
     pause
     scene elfjail with fade
@@ -212,7 +212,7 @@ label elfvillageintro:
     mc "Huh...?"
     "{color=#8DE549}Elf Girl" "I-I'm interrogating you, idiot!"
     mc "Ah... I'm [mc]."
-    n "Ok [mc], My name is Nessa. I'm the commander of the village guard, and I'm very curious as to how you managed to find us."
+    n "Ok [mc], My name is Nessa. I'm the commander of the village guard and I'm very curious as to how you managed to find us."
     mc "I told you, we were following our friend."
     n "Hah! Okay, stalker, following a fr-"
     n "Wait, was it Evelyn?"
@@ -356,7 +356,7 @@ label elfvillageintro:
     mc "Oh, has he now?"
     scene elfvillage
     "You head to Eve's house. The whole village is surrounded by big trees. All the houses and shops are built into the trees."
-    "{i}I'm not an architectural buff, but even I can see the ingenuity in these structures. Seeing buildings constructed around the trees is nothing short of awe-inspiring."
+    "{i}I'm not an architectural buff but even I can see the ingenuity in these structures. Seeing buildings constructed around the trees is nothing short of awe-inspiring."
     "{i}I feel like a child going to a festival for the first time."
     mc "What are these trees?"
     e "These are Mara trees."
@@ -370,7 +370,7 @@ label elfvillageintro:
     e "I don't know, little one. I'm not that much of a historian myself. But you should ask my sister. She knows all about these things."
     mc "Ah, about that, why didn't you tell me you have a sister?"
     e "Oh, sorry. You never asked, little one."
-    mc "Sigh... I guess you're right, but it's still..."
+    mc "Sigh... I guess you're right but it's still..."
     e "Don't worry, little one. You'll get to meet her soon."
     "You finally arrive at Eve's house. It doesn't really seem any different to the other houses."
     mc "{i}These houses all look the same. I wonder if they get mixed up sometimes?"
@@ -431,7 +431,7 @@ label elfvillageintro:
     sa "{size=-5}Small boobs and no ass."
     e "It's nice to see you too, Milly! Heheh."
     e "I'm sorry I couldn't visit the last few days. We were on a quest."
-    mi "I was waiting for you, but it's ok! Please tell me about your adventure. What did you see? Did you fight monsters? ...Tell meeeeee!"
+    mi "I was waiting for you but it's ok! Please tell me about your adventure. What did you see? Did you fight monsters? ...Tell meeeeee!"
     e "Hahaha, I'll get to it soon."
     mi "Who are these gu- wait..."
     scene evehouse
@@ -497,7 +497,7 @@ label elfvillageintro:
     show normale with easeinright
     show talkwasop
     hide talkangrysop
-    sa "{i}whistle{/i} {size=-5}She's not a baby, but you can call her a babe. You know what I mean? Hehehe."
+    sa "{i}whistle{/i} {size=-5}She's not a baby but you can call her a babe. You know what I mean? Hehehe."
     show talkmc
     mc "{size=-5}Shut up, Sander!"
     show talkwaa
@@ -526,7 +526,7 @@ label elfvillageintro:
     e "Its Aerin."
     mc "Oh..."
     sa "So you just have to beat her, right? You've got this Eve, you're one of the best fighters I know."
-    e "Thanks Sander, but the same can be said for Aerin. She's been training for this day since she was little."
+    e "Thanks Sander but the same can be said for Aerin. She's been training for this day since she was little."
     mc "Who was the previous elder?"
     e "It was my mother."
     mc "So did she pass away?"
@@ -534,7 +534,7 @@ label elfvillageintro:
     mc "...These elf years are really confusing my brain."
     e "Don't worry, little one. You'll get used to it."
     sa "So the village didn't have an elder for 60 years?"
-    e "It may sound long to you, but yeah. I didn't want to compete."
+    e "It may sound long to you but yeah. I didn't want to compete."
     sa "Why?"
     e "Because I would lose both ways."
     mc "What do you mean?"
@@ -555,7 +555,7 @@ label elfvillageintro:
     e "After her mother got banished, she... changed. Maybe she thought it was all our fault."
     mc "Oh, I understand."
     mc "So, is she living alone?"
-    e "Yes, she had a brother, but he disappeared."
+    e "Yes, she had a brother but he disappeared."
     mc "Disappeared?"
     e "It happened when we were little. Most of them say he just left."
     mc "I thought there were no males here."
@@ -673,7 +673,7 @@ label elfvillageintro:
     e "Yes, little one. I will be taking my leave. Feel free to explore the village. If you have any problems, speak to my sister. She'll be at the temple. I'll be able to get home in the evening after training."
     mc "Sounds good. Thank you for getting the priestess to let me stay."
     show talkwae
-    e "You're welcome, little one. Oh, and [mc], don't get into any trouble."
+    e "You're welcome, little one. Oh and [mc], don't get into any trouble."
     show talksadhappymc
     mc "Don't worry, I'll be at my best behavior."
     e "Ok. See you, little one."
@@ -840,7 +840,7 @@ label elfduel:
         scene elfduel with fade
         play music battlemusic1
         "You see Eve standing on her side of the arena, she looks like she can barely hold her balance, yet she still stands proud and ready."
-        "The duel commences, the two girls go back and forth at each other, but swing after swing, Eve gets more and more tired. Aerin sees this and decides to take advantage of her opponent's weakness. She steps back."
+        "The duel commences, the two girls go back and forth at each other but swing after swing, Eve gets more and more tired. Aerin sees this and decides to take advantage of her opponent's weakness. She steps back."
         "And with one final swing of her sword, she manages to strike Eve directly, knocking her to the ground."
         stop music
         mc "{i}Aerin won!"
@@ -869,7 +869,7 @@ label elfduel:
     scene elfduel with fade
     play music battlemusic1
     "Both Eve and Aerin are standing at their sides of the arena, waiting for the duel to start. The gong hits and both opponents start furiously running at each other, strike after strike."
-    "Eve as expected has the upper hand, but Aerin does not fall much behind, she still has hope, hope that she can win. However, Eve is not going to let that happen. With one last menacing look at her opponent, she strikes."
+    "Eve as expected has the upper hand but Aerin does not fall much behind, she still has hope, hope that she can win. However, Eve is not going to let that happen. With one last menacing look at her opponent, she strikes."
     "The only thing you can hear is the thud of Aerin's unconscious body hitting the ground."
     scene black
     "Aerin is taken to the temple."
@@ -886,7 +886,7 @@ label elfduel:
     e "Sh-She... will have to leave."
     show sadtalke
     hide normale
-    e "I'm sorry, [mc], but I've got to go. I'm very tired."
+    e "I'm sorry, [mc] but I've got to go. I'm very tired."
     hide sadtalke with easeoutright
     mc "Oh, yeah, sorry."
     mc "{i}She looks really sad. I think the fact that Aerin is getting banished still hurts her. They were friends after all."
@@ -900,8 +900,8 @@ label elfduel:
         mc "Aerin, I-I..."
         show shytalkha
         a "It's ok, [mc]. I'm ok."
-        mc "I tried my best, Aerin. I tried to find a way to help you, but... I just needed more time."
-        a "[mc], I never really understood why you were so kind to me, but thank you. You were a friend to me, one of very few I have."
+        mc "I tried my best, Aerin. I tried to find a way to help you but... I just needed more time."
+        a "[mc], I never really understood why you were so kind to me but thank you. You were a friend to me, one of very few I have."
         mc "Where are you going to go?"
         a "There's a whole world out there. There must be a place where I'll be accepted."
         mc "Come, live with me."
@@ -1038,7 +1038,7 @@ label ElfGoodEnding:
         menu:
             "Ask him what happened":
                 mc "Can you tell me what happened?"
-                morg "My memory is... a bit lacking. I only remember bits and pieces. I remember going out hunting, and then suddenly Elder Zenelith came out of nowhere and used some sort of spell on me."
+                morg "My memory is... a bit lacking. I only remember bits and pieces. I remember going out hunting and then suddenly Elder Zenelith came out of nowhere and used some sort of spell on me."
                 morg "When I woke up, I was in her prison, chained."
                 mc "What did Zenelith do to you?"
                 morg "She... used me... for her pleasure."
@@ -1054,7 +1054,7 @@ label ElfGoodEnding:
         mc "Yeah, she was... lonely."
         morg "Yes... but Aerin told me that you talked to her and helped her to become a better person."
         mc "I didn't do that much, she did it on her own."
-        morg "No, it's because of you. I know that I have no right to ask more of you, but please continue helping my sister. I'm still weak, I won't be able to give the support she needs."
+        morg "No, it's because of you. I know that I have no right to ask more of you but please continue helping my sister. I'm still weak, I won't be able to give the support she needs."
         mc "I'll help her."
         morg "Thank you."
         mc "You get some rest now. Don't think you're useless. You've been through a lot and endured for this long. You did it for her. You being here is all the support she needs."

@@ -99,7 +99,7 @@ label wotv1:
     hide talksecs
     mc "......"
     show talkwanmc
-    mc "You know... I thought you were a cool guy, but you've turned out to be one creepy dude."
+    mc "You know... I thought you were a cool guy but you've turned out to be one creepy dude."
     hide talkwanmc
     show talkwas
     sa "Are you going to do it or not?"
@@ -238,7 +238,7 @@ label wotv3:
         menu:
             "Wow, Gabe...":
                 mc "{i}It's really been 6 years... Her body's really grown a lot..."
-                mc "{i}I hate to admit it, but Sander was right."
+                mc "{i}I hate to admit it but Sander was right."
                 scene bathescene6 with dissolve
                 pause
                 mc "{i}Oh, yes... Gabe..."
@@ -342,7 +342,7 @@ label wotv4:
                     sa "See you later, kid."
                 "No thanks":
                     show talkwamc
-                    mc "Thanks, but I don't need it."
+                    mc "Thanks but I don't need it."
                     sa "What the hell is wrong with you, kid? I'm giving you free money."
                     mc "It's fine."
                     show screen notice

@@ -10,7 +10,7 @@ label zenelithHouse:
     if bothpath == 2:
         mc "It's locked. How do I get in?"
         mc "There has to be a key... But how do I find it? And there's no way Zenelith is giving it to me."
-        mc "If only there was away I could get in without that key. I could break down the door, but that would cause a whole lot of other problems."
+        mc "If only there was away I could get in without that key. I could break down the door but that would cause a whole lot of other problems."
         mc "This is related to the village security. I should talk to Nessa, she has to know a way."
         jump elfvillage
     if bothpath == 3:
@@ -96,7 +96,7 @@ label zenelithHouse:
                     "Talk to her":
                         mc "{i}I should talk to her. We can settle this face to face, once and for all!"
                         scene priestjail with fade
-                        "Zenelith opens the basement door and steps down. She sees you, but her usual facial expression doesn't change. She doesn't seem to be shocked or scared, she looks disappointed if anything."
+                        "Zenelith opens the basement door and steps down. She sees you but her usual facial expression doesn't change. She doesn't seem to be shocked or scared, she looks disappointed if anything."
                         show znpriesttalkangry
                         zn "W-What?"
                         show angry
@@ -160,7 +160,7 @@ label zenelithHouse:
                         mc "{i}I mean... it has to be him. I think he distracted her on purpose, so I could get out."
                         mc "{i}What do I do now? Should I tell everyone about this? I still don't have any proof!"
                         mc "{i}Damn it! If I don't have proof, no one will believe me. And judging by that seal, Zenelith must be a powerful mage. She could easily make the basement disappear if I somehow convinced the village people to inspect the house."
-                        mc "{i}I don't think I'll be able to take Aerin's brother out of there, he is chained to the wall, and those chains don't look weak... If only I could show them what happened down there... without Zenelith finding out."
+                        mc "{i}I don't think I'll be able to take Aerin's brother out of there, he is chained to the wall and those chains don't look weak... If only I could show them what happened down there... without Zenelith finding out."
                         mc "{i}......"
                         mc "{i}YES! I got it!"
                         mc "{i}The Eye Orb! I can use the Eye Orb to show the village people what's going on down there."
@@ -198,11 +198,11 @@ label zenelithHouse:
                 scene slave1 with fade
                 mc "Hey."
                 "Unknown" "H-Hey... it's you. You're back!"
-                mc "Yes, and I'm getting you out of here."
+                mc "Yes and I'm getting you out of here."
                 "Unknown" "What? H-How? These chains are unbreakable..."
                 mc "You'll have to wait a little bit more, I'm going to get the others for help. See this? It's an Eye Orb. I can use it to show the others what's happening down here."
                 "Unknown" "Th-That will work... B-But the mistress is strong!"
-                mc "She is, but together, we'll be able to take her down."
+                mc "She is but together, we'll be able to take her down."
                 "Unknown" "Aerin! Is she... is she still alive?"
                 mc "Yes, she's doing fine."
                 "Unknown" "Oh, thank the Four Mothers!"
@@ -244,7 +244,7 @@ label zenelithHouse:
                     mc "Whew, fuck! You really are a fucking heavy, fat cow."
                     zn "Let go of me ape...! You're... I-It hurts!"
                     mc "Oh, like the way you hurt Morgan? Serves you right!"
-                    "You find some chains hanging from the ceiling. You hoist her up and grab her weak hands. You chain the hands up together, restraining her wrists together, and created a link up to the ceiling. You hang her almost lifeless body hanging from the ceiling."
+                    "You find some chains hanging from the ceiling. You hoist her up and grab her weak hands. You chain the hands up together, restraining her wrists together and created a link up to the ceiling. You hang her almost lifeless body hanging from the ceiling."
                     scene elfpreistback with fade
                     mc "Now, tell me why! Why did you do it?"
                     zn "I-It was to protect the village."
@@ -255,7 +255,7 @@ label zenelithHouse:
                     mc "Tell me, or I'll rip that pretty face right off!"
                     zn "...He was the last male survivor! He had to live, in order for the village to survive..."
                     mc "So you locked him in a dungeon?"
-                    zn "H-He told me that he was going to Hern, to defend the wall. I couldn't let that happen! He would face the same fate as the other men. I begged him to stay, but he wouldn't listen to me. He said he was doing it for his sister, to keep her safe."
+                    zn "H-He told me that he was going to Hern, to defend the wall. I couldn't let that happen! He would face the same fate as the other men. I begged him to stay but he wouldn't listen to me. He said he was doing it for his sister, to keep her safe."
                     zn "I begged and begged but he wouldn't listen. So I had no other choice but to lock him up. It was for his own good..."
                     mc "Hah. You're lying, you slut!"
                     zn "Wh-What?!"
@@ -264,10 +264,8 @@ label zenelithHouse:
                         mc "You think all of us humans are inepts don't you?"
                     else:
                         mc "You can't fool me. I am not a stupid ape."
-                    if nessaInfo == True:
-                        mc "I'm sorry your brothers died because their comrades were cowards, but if you keep underestimating me, you'll end up badly!"
-                    elif millyInfo == True:
-                        mc "I'm sorry your brothers died because their comrades were cowards, but if you keep underestimating me, you'll end up badly!"
+                    if nessaInfo == True or millyInfo == True:
+                        mc "I'm sorry your brothers died because their comrades were cowards but if you keep underestimating me, you'll end up badly!"
                     zn "Y-You're just screaming out nonsense."
                     mc "No! You know what I think? I think that YOU wanted him all for yourself!"
                     zn "What?!"
@@ -333,7 +331,7 @@ label zenelithHouse:
                             mc "Now I'll go give everyone the news. \"Morgan's alive and Zenelith is evil!\""
                     "As you leave, you find a key on the floor."
                     mc "{i}This must have fallen when she got hit by that orb."
-                    "You take it and unlock Morgan's chains. He's unconscious. You lift him unto your shoulders and carry him out of the basement. As soon as you step outside, you're met by two familiar faces, Eve, and Nessa!"
+                    "You take it and unlock Morgan's chains. He's unconscious. You lift him unto your shoulders and carry him out of the basement. As soon as you step outside, you're met by two familiar faces, Eve and Nessa!"
                     scene priesthouse
                     mc "Eve, Nessa, what are you doing here?!"
                     e "I should ask you the same thing, little one."
@@ -379,7 +377,7 @@ label zenelithHouse:
                     mc "{i}But I managed to save Morgan, that's more important."
                     mc "{i}I'm so tired, I better head home and come back tomorrow."
                     mc "{i} Huh, I guess I didn't have to use this Eye Orb after all."
-                    "You head back to Randel, you feel happy, but maybe too happy. You contemplate on if what you did to Zenelith was right or not, but you feel that what she did cannot go unpunished... at least that's what you hoped."
+                    "You head back to Randel, you feel happy but maybe too happy. You contemplate on if what you did to Zenelith was right or not but you feel that what she did cannot go unpunished... at least that's what you hoped."
                     $ persistent.zenelithDefeated = True
                     scene homenight
                     $ bothpath += 3

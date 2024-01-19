@@ -62,7 +62,7 @@ label talku:
                 u "Hah, I hope I did. I only learned to take things slowly when I took you in. It'd have been useful to know earlier, though..."
                 u "...you know, to deal with a little pest like you."
                 mc "Hey!"
-                u "Hahah! I'm just kidding around. From what I heard about other kids, you were an angel, and you definitely still are. I'm really happy that turned out to be the case."
+                u "Hahah! I'm just kidding around. From what I heard about other kids, you were an angel and you definitely still are. I'm really happy that turned out to be the case."
                 mc "Well, I'm really glad I have had you all this time."
                 u "Alright it's getting late, it's better if you go."
                 mc "Alright, Uncle. See ya!"
@@ -81,14 +81,14 @@ label talku:
                         mc "I do."
                         u "What are they like?"
                         menu:
-                            "Strong, brave, a bit bad mouthed, but good in her heart." if savecynth > 0:
-                                mc "Strong, brave, a bit bad mouthed, but good in her heart."
+                            "Strong, brave, a bit bad mouthed but good in her heart." if savecynth > 0:
+                                mc "Strong, brave, a bit bad mouthed but good in her heart."
                                 u "She sounds fun."
                                 mc "She definitely is."
                                 u "Now, I asked because I want you to know something."
                                 mc "What?"
-                            "Direct, lovely, determined, and a hard-working leader who makes great muffins." if bothpath >= 4:
-                                mc "Direct, lovely, determined, and a great leader- Oh and she makes great muffins."
+                            "Direct, lovely, determined and a hard-working leader who makes great muffins." if bothpath >= 4:
+                                mc "Direct, lovely, determined and a great leader- Oh and she makes great muffins."
                                 u "She sounds like someone who gets more stuff done than you."
                                 mc "Uncle!"
                                 u "Hahah! I still get you this easy, [mc]. When are you going to learn?"
@@ -97,20 +97,20 @@ label talku:
                                 mc "Sigh..."
                                 u "I'm getting side-tracked, I actually asked because I want you to know something."
                                 mc "What is it?"
-                            "Independent, but lonely, knowledgeable and a formidable mage." if zenQ > 4:
-                                mc "Independent, but lonely, knowledgeable and a formidable mage."
+                            "Independent but lonely, knowledgeable and a formidable mage." if zenQ > 4:
+                                mc "Independent but lonely, knowledgeable and a formidable mage."
                                 u "I hope you can make her less lonely."
                                 mc "I do my best."
                                 u "I'm glad."
                                 mc "Why'd you ask?"
-                            "Pure, cute, strong-willed, and definitely a magnificent cook" if theagotjob > 0:
-                                mc "Pure, cute, strong-willed, and definitely a magnificent cook."
+                            "Pure, cute, strong-willed and definitely a magnificent cook" if theagotjob > 0:
+                                mc "Pure, cute, strong-willed and definitely a magnificent cook."
                                 u "She sounds like the sweetest person."
                                 mc "Oh, she really is."
                                 u "I'm glad."
                                 mc "Why you asking?"
-                            "A bit shy, smart, hard-working, and a great friend.":
-                                mc "A bit shy, smart, hard-working, and a great friend."
+                            "A bit shy, smart, hard-working and a great friend.":
+                                mc "A bit shy, smart, hard-working and agreat friend."
                                 u "...Heh."
                                 mc "What?"
                                 u "Heheheh."
@@ -127,8 +127,8 @@ label talku:
                                 mc "..."
                                 u "Oh... I see, I see. Definitely sounds like a great choice."
                                 mc "Y-Yeah... Why did you ask?"
-                            "A formidable archer, motherly, and way taller than me." if ledricquest > 0:
-                                mc "A formidable archer, motherly, and way taller than me."
+                            "A formidable archer, motherly and way taller than me." if ledricquest > 0:
+                                mc "A formidable archer, motherly and way taller than me."
                                 u "Oh? I see, I've raised you well."
                                 mc "...What?"
                                 u "Oh, nothing."
@@ -142,7 +142,7 @@ label talku:
                                 mc "Then why?"
                         u "I want you to know that... there's still much I'd like to teach you, there's still many experiences that I can share with you. You're the closest I've ever had to a son and I want you to be the best person you can be. You've made me proud all these years and I want you to make me proud till the end."
                         mc "O-Oh, th-thanks Uncle."
-                        u "And I want to tell you one thing about love. This person you like... treasure her. Spend as much time as you can with her and use your time well. I told you to take things slowly and that's true for love too. Things do take time, but use that time the right way. Don't let it slip."
+                        u "And I want to tell you one thing about love. This person you like... treasure her. Spend as much time as you can with her and use your time well. I told you to take things slowly and that's true for love too. Things do take time but use that time the right way. Don't let it slip."
                         mc "I won't."
                         u "Good."
                         u "I fell in love once and I didn't use the time we had together for ourselves, we spent time doing other things and in the end she... she left me."
@@ -152,9 +152,9 @@ label talku:
                         mc "I don't have anyone I like"
                         u "I see."
                         mc "Why?"
-                        u "It's just that... I've thought about it a lot. I lived a lot already. I'm not old, sure, but I've had my fair share of experiences."
-                        u "I fell in love only once in my life. Sure, I did have other experiences before that, but... Only once was it really special."
-                        u "I thought I could take my time, [mc], I thought she'd live much longer than I would, but in the end she didn't... and we could never have the life we wanted to."
+                        u "It's just that... I've thought about it a lot. I lived a lot already. I'm not old, sure but I've had my fair share of experiences."
+                        u "I fell in love only once in my life. Sure, I did have other experiences before that but... Only once was it really special."
+                        u "I thought I could take my time, [mc], I thought she'd live much longer than I would but in the end she didn't... and we could never have the life we wanted to."
                         u "It's true, kid, things do take time. But use that time the right way. Don't let it slip."
                         mc "Wow, uhm... I won't. Thanks Uncle."
                         u "Sorry if this came out of nowhere but you're an adult now and... There's things I haven't told you that I want you to know, because I want you to be the best person you can be, because you've made me proud all these years and I want you to make me proud till the end."
@@ -189,7 +189,7 @@ label talku:
             u "If you need any help, I can give you a hand. Just because I'm old doesn't mean I can't, you know?"
             hide uncletalk
             show unclenormal
-            mc @smilet "Yeah, I know, but if I don't do it myself, I'll never learn how to do it."
+            mc @smilet "Yeah, I know but if I don't do it myself, I'll never learn how to do it."
             hide unclenormal
             show uncletalk
             u "Hah! Seems like leaving you the house was a good idea, eh? You almost sound like an adult."
@@ -204,7 +204,7 @@ label talku:
             mc @hopet "I do."
             hide unclenormal
             show uncletalk
-            u "Good. Now don't let me hold you any further. Get what you need, but please bring them back soon."
+            u "Good. Now don't let me hold you any further. Get what you need but please bring them back soon."
             hide uncletalk
             show unclenormal
             mc @smilet "I will! Thank you, Uncle."
@@ -370,7 +370,7 @@ label petebadge:
         mc "Thanks, Uncle Pete."
         u "I'm glad that I settled down here with you, [mc]. My life before this, as a merchant, it was always about... selling this, selling that."
         u "I really didn't know why I didn't stop before, maybe because people told I was good at it. Still, I felt like my life had no meaning, like it had no real destination."
-        u "But after I took you in, taking care of you, seeing you grow up... That was, and still is, everything to me. I realized I had finally found a meaning in my life."
+        u "But after I took you in, taking care of you, seeing you grow up... That was and still is, everything to me. I realized I had finally found a meaning in my life."
         u "I just want to keep watching you and see you go on many journeys. That's all I want."
         u "Be sure not to disappoint, you hear me?"
         mc "Heheh, I'll try my best."
@@ -378,7 +378,7 @@ label petebadge:
         mc "Thank you for everything, Uncle Pete."
         u "......"
         "Uncle Pete rubs his eyes."
-        "You see tears falling from his face, but you pretend not to notice."
+        "You see tears falling from his face but you pretend not to notice."
         "The two of you stare at the beautiful sky."
         scene black with fade
         stop music fadeout 3.0

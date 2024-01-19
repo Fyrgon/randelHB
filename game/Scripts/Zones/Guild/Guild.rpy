@@ -126,7 +126,7 @@ label guild:
         mc "It all worked out then?"
         j "Yes."
         scene adgc5
-        j "Oh, and [mc], I'm keeping my eye on the Guild members. I'll steer away all of your competition away from her."
+        j "Oh and [mc], I'm keeping my eye on the Guild members. I'll steer away all of your competition away from her."
         mc "July!"
         scene adgc1
         j "Hehehe. I just can't help it. I love making you blush. Hihi."

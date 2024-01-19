@@ -110,20 +110,6 @@ menu:
     #"Toilet" if watersports == True:
     #    ""
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 label zGrope:
 mc @smirkt "Good. Take off your top."
 "Zenelith stays still for a second, then she takes off her top."
@@ -189,7 +175,7 @@ show znfinger1
 mc "Would you look at that? Already wet."
 zn "M-Master..."
 mc "Yes, slut?"
-"You don't give her time to reply that you start moving your fingers again."
+"You don't give her time to reply, you start moving your fingers inside her."
 show zenfingering1
 zn "Mnh~ K-Keep going!"
 mc "I shall."
@@ -229,7 +215,7 @@ scene zenbj with dissolve
 pause 1
 mc "{i}Ahh... This feels amazing... So wet and hot..."
 mc "You're doing a great job taking it, toy. Keep going just like this..."
-mc "{i}Sure, she still looks like she wouldn't mind killing me, but... Right now, she's taking my dick and she's not complaining, so it's all good."
+mc "{i}Sure, she still looks like she wouldn't mind killing me but... Right now, she's taking my dick and she's not complaining, so it's all good."
 scene zenbj with dissolve
 pause 5
 mc "{i}God, this is so good..."
@@ -451,14 +437,14 @@ jump zenMenuC
 
 label zBathing:
 scene zenelithshack with fade
-"The two of you get out of the house and you take Zenelith to the lake. Her eyes sparkle when she sees the water, but as soon as she remembers she needs to undress in front of you she sulks."
+"The two of you get out of the house and you take Zenelith to the lake. Her eyes sparkle when she sees the water but as soon as she remembers she needs to undress in front of you she sulks."
 mc "Have a nice bath."
 zn "..."
 "Zenelith strips and gets into the water."
 scene znbath1
 menu:
     "Say nothing":
-        "Zenelith washes herself thoroughly and, when she's done, she gets out of the water. You order her to wait until she's dry before putting back her clothes. At first, she wants to protest, but seems to decide not to."
+        "Zenelith washes herself thoroughly and, when she's done, she gets out of the water. You order her to wait until she's dry before putting back her clothes. At first, she wants to protest but seems to decide not to."
         "Then when she's finally dry and dressed again you decide to go back."
         $ addiction += 1
     "Degrade her":

@@ -50,7 +50,7 @@ label minequest:
     "{color=#fff}Dwarf" "Good luck down there!"
     "{color=#fff}Dwarf" "And please don't die!"
     mc "{i}...Aww, he's actually kinda nice."
-    "{color=#fff}Dwarf" "We won't be able to take your body out, and you'll make the whole mine stink!"
+    "{color=#fff}Dwarf" "We won't be able to take your body out and you'll make the whole mine stink!"
     mc "{i}I spoke too soon..."
     "You take the torch and go deeper into the cave."
     scene cave with fade
@@ -76,7 +76,7 @@ label minequest:
             play sound arrow1
             "The arrow flies and hits the Wallcrawler's heart."
             "It lets out a final shriek and falls to the ground dead."
-            mc "It's a shame I couldn't get the heart, but still... playing it safe was a good idea. These things look nasty. Ok, one down and who knows how many more to go."
+            mc "It's a shame I couldn't get the heart but still... playing it safe was a good idea. These things look nasty. Ok, one down and who knows how many more to go."
             jump endhunt
         "Aim for the head":
             mc "I need the heart. I'll have to bring it to the floor."
@@ -98,9 +98,9 @@ label minequest:
                 mc "{i}Huff...{/i} I did it...{p}I DID IT!"
                 mc "I got the heart!"
                 mc "That was intense. I don't think I have the energy left to do that again."
-                mc "I know it's valuable, but I just can't do it again. I'll just kill of the next ones outright."
+                mc "I know it's valuable but I just can't do it again. I'll just kill of the next ones outright."
                 jump endhunt
-            "You try to deflect it, but you're too late!"
+            "You try to deflect it but you're too late!"
             mc "Fuck...!"
             "Its claws tear right through your face. Your head is completely ripped off."
             scene black with fade
@@ -201,7 +201,7 @@ label endhunt:
                 mc "Oh, sorry, I didn't know. My knowledge of Astyllian races isn't that good."
                 mc "{i}So that means all dwarven females are taller than the males. Man, guess these guys have a hard time having sex..."
                 "{color=#fff}Dwarf" "Hmph..."
-            "{color=#fff}Dwarf" "Ok, now do whatever you want, but no joining giblets!"
+            "{color=#fff}Dwarf" "Ok, now do whatever you want but no joining giblets!"
             mc "What?"
             Nadia "He means no sex, honey."
             mc "Oh... ok."
@@ -345,7 +345,7 @@ label endhunt:
             scene cave with fade
             show dwarf
             show smilemc
-            "{color=#fff}Dwarf" "I won't ask for details, but I hope you got what you wanted."
+            "{color=#fff}Dwarf" "I won't ask for details but I hope you got what you wanted."
             show talksadhappymc
             mc "Yeah... Uhh, it was great..."
             mc "{i}This is so awkward."

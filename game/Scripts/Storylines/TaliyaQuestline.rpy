@@ -31,9 +31,9 @@ play music forest
 "You're glad, though, as it would've been a pain in the ass having to battle for such a simple quest."
 scene corban with fade
 play music home
-"You finally arrive to the city. Despite it being smaller than Randel, the houses and streets aren't that different, but that makes sense."
+"You finally arrive to the city. Despite it being smaller than Randel, the houses and streets aren't that different but that makes sense."
 "Apparently about 200 years ago there was an epidemic in Randel and a few hundred citizens left the town and established a few hours away from the town to avoid being hit as well."
-"You walk around the town for a while looking for Hern Street, and when you finally find it, you immediately see the forge. A big building that easily stands out from the rest in that street."
+"You walk around the town for a while looking for Hern Street and when you finally find it, you immediately see the forge. A big building that easily stands out from the rest in that street."
 scene forge with fade
 "You get in and find Philmon forging an axe. You tell him why you're there and hand him the letter."
 "After he's read it, he goes in the back and returns a few minutes later with a silver sword in his hands. He hands it to you and waves you off."
@@ -74,7 +74,7 @@ t "Clear out the hideout and put an end to their operations."
 mc "...Clear out as in \"kill\"?"
 t "If they give me another choice, I'll take it... But I'll probably have to kill them."
 mc "Could you remind me why you need me?"
-t "I don't {b}need{/b} you, but you could make this job a lot easier."
+t "I don't {b}need{/b} you but you could make this job a lot easier."
 menu:
     "What if I don't want to help?":
         mc "What if I don't want to help? I didn't come here to risk my life."
@@ -109,7 +109,7 @@ t "But remember: Be careful. Don't be reckless, I'll come in 5 minutes from when
 mc "A-Alright..."
 t "If you really want to go I'll let you go."
 if mcBold == True:
-    mc "Thanks for the offer, but I think I'm going to do this."
+    mc "Thanks for the offer but I think I'm going to do this."
 elif mcNormal == True:
     mc "No, I'll do this."
 elif mcTimid == True:
@@ -268,16 +268,16 @@ mc "The hell?"
 "Boss" "Don't do it in here... And for Astylla's sake keep it down."
 scene black with fade
 "Airi grabs you by your hand and leads you outside the room with her"
-mc "{i}Wait, wait, wait, is she serious? I don't want to turn her down honestly, but I've got a job to do. Taliya should break-in any moment now..."
+mc "{i}Wait, wait, wait, is she serious? I don't want to turn her down honestly but I've got a job to do. Taliya should break-in any moment now..."
 "The two of you go downstairs. She hastily strips you of your clothes, Only leaving your underwear on. Then she gets on top of you and starts running her tongue along your body."
 scene mcl with hpunch
 mc "W-What are you doing?"
 "Airi" "I'm gonna taste all of you~"
-mc "{i}Oh, she's nuts, but I'm definitely not stopping her now."
+mc "{i}Oh, she's nuts but I'm definitely not stopping her now."
 "Airi" "Oh look what we got down here~ Your friends seems really eager to meet me~"
 "Airi slowly pulls your underwear down and bites her lip as your shaft is slowly revealed."
 "Airi" "It looks so tasty~ This is why I like small boys so much..."
-mc "{i}Th-That's kind of a weird sentence, but I'm already butt-naked, I-I don't think I'll be able to finish the mission Taliya gave me... No, [mc], this isn't the time, you've got a mission!"
+mc "{i}Th-That's kind of a weird sentence but I'm already butt-naked, I-I don't think I'll be able to finish the mission Taliya gave me... No, [mc], this isn't the time, you've got a mission!"
 scene mclsuckbase
 "Airi smiles at you and slides down, her face right in front of your cock. She takes a deep breath and then, with a single movement, she fills her mouth with your cock."
 show mclsuck3 with vpunch
@@ -306,7 +306,7 @@ show mclsuck4 with vpunch
 pause 1
 show mclsuck1
 mc "Ha... Hah..."
-mc "{i}Hah! I've got an idea! ...A dumb idea, but an idea."
+mc "{i}Hah! I've got an idea! ...A dumb idea but an idea."
 mc "{i}I guess this is what they call post-nut clarity."
 "You clear your throat."
 scene mclsuckscreambase with vpunch
@@ -342,7 +342,7 @@ scene black with fade
 mc "{i}I-I..."
 scene taliyagangkill with fade
 play music creepymusic
-"The floor is littered with corpses, the rugs are soaked with blood, and the floor is just as red. The stench is almost unbearable. Only then you realize that in the middle of the room, covered with blood, is Taliya. Between her and you stands Airi."
+"The floor is littered with corpses, the rugs are soaked with blood and the floor is just as red. The stench is almost unbearable. Only then you realize that in the middle of the room, covered with blood, is Taliya. Between her and you stands Airi."
 mc "Wh-What the-"
 "Airi" "What the... What the fuck?! D-Did you do this?! Who-"
 "Taliya pulls down her hood."
@@ -363,7 +363,7 @@ t "Please."
 "Airi looks down, she seems to be looking for someone."
 "Airi" "I am one of them. If they deserved to die then I do as well, isn't that right?"
 "Airi" "You will have to kill me just like you killed them."
-"Airi gets down and grabs something, but before you can even see what it is, she's behind you with a knife on your throat."
+"Airi gets down and grabs something but before you can even see what it is, she's behind you with a knife on your throat."
 scene mcknifepoint with flash
 t "Airi please calm down, put the knife down, we can do this another way."
 "Airi" "I'm helping you, don't you see? This way you'll feel less guilty of killing your best friend."
@@ -397,7 +397,7 @@ pause 1
 scene emptyredroom
 stop music fadeout 1
 mc "{i}W-What...?"
-"You don't see Taliya. She's behind you, probably behind Airi's body, and you can hear her breath, unsteady, as she shakingly sheathes her sword. She doesn't say a word and quickly walks out."
+"You don't see Taliya. She's behind you, probably behind Airi's body and you can hear her breath, unsteady, as she shakingly sheathes her sword. She doesn't say a word and quickly walks out."
 "Slowly the shock fades away and is replaced with horror as the stench of iron makes its presence clear again. You can almost taste it."
 "You quickly rush out of the building and see Taliya."
 scene corbanstreet
@@ -439,7 +439,7 @@ t "No, I wasn't just there for the drugs... I hoped to save an old friend."
 mc "And old friend?"
 t "Yeah. That... That used to be my gang."
 mc "...Your gang?"
-t "They took me when I was a kid. You see, I'm an orphan, and in these poorer areas orphans in the streets are often taken in by gangs to use..."
+t "They took me when I was a kid. You see, I'm an orphan and in these poorer areas orphans in the streets are often taken in by gangs to use..."
 mc "{i}She's an orphan...?"
 t "Kids are an easy way to smuggle drugs, so they kept us."
 mc "{i}Huh... Well I guess I do look less suspicious than her."
@@ -466,14 +466,14 @@ t "You're pretty good with the sword, have you trained before?"
 mc "Oh, no. I've never trained with the sword before."
 t "Huh..."
 mc "But I'm an adventurer, so I probably got some practice doing that."
-t "I see. The guild in Randel honestly has a lot of high-rank adventurers, I'd bet any of them could be a great mentor, and they'd definitely be of great help at Hern."
+t "I see. The guild in Randel honestly has a lot of high-rank adventurers, I'd bet any of them could be a great mentor and they'd definitely be of great help at Hern."
 mc "They're all really carefree, I don't think they'd be of much help at Hern."
 t "The stronger an adventurer is, the more easygoing they are. They don't have to worry about etiquette like us in the army have to."
 mc "Yeah... You're probably right."
 t "Do you think you'll stay in the army after finishing the Academy?"
 mc "I'm... I'm not sure."
 t "It's fine, you still have time to decide. Just remember that whatever peace we have now is fragile."
-t "You probably don't remember when the Demon King was still alive, but as soon as the Demon army will have organized itself again, we'll need people capable of defending out country at Hern, and you're going to be more than capable by then."
+t "You probably don't remember when the Demon King was still alive but as soon as the Demon army will have organized itself again, we'll need people capable of defending out country at Hern and you're going to be more than capable by then."
 mc "...Thanks, ma'am."
 "Taliya puts down her drink and looks around for the waitress and when she's found her she makes a gesture."
 t "Alright, I'm done here, so I think I'll go. Are you done with your drink?"
@@ -541,7 +541,7 @@ show prot smile
 mc "{i}I... definitely didn't expect this to go like this. Sleeping in the same room as General Taliya..."
 "You put down your backpack next to the bed and open it. You take out a change of clothes, so glad to have one always packed."
 mc "{i}Time for a bath."
-"You head to the bathroom's door and as you get in you realize there's no lock. You look around to see if there's any other way to close the door shut, but it seems useless."
+"You head to the bathroom's door and as you get in you realize there's no lock. You look around to see if there's any other way to close the door shut but it seems useless."
 scene innbathroom
 show prot normal
 mc "{i}...Whatever it's not like she's the one who'd enjoy peeping on the other's naked body... Ahem."
@@ -597,7 +597,7 @@ mc "Wuh- What the-"
 t "Get up and get ready, we're leaving!"
 scene karnakinnroom with fade
 mc "What... It's morning already?"
-t "Of course it is, and it's been for a while already as well."
+t "Of course it is and it's been for a while already as well."
 mc "Nhhh..."
 t "Come on, recruit, let's go."
 "As you get up you look outside the window and see how there's barely any light outside yet and groan with contempt."
@@ -634,9 +634,9 @@ menu:
         t "But even then if drugs managed to get in Randel... it'd be a disaster."
         t "If only it wasn't for that damned Demon Army..."
         mc "What's got the Demon Army got to do with gangs?"
-        t "Codayn is the official name, but it's more commonly called Breath... Demon's Breath is a drug manufactured by the Demon Army which has been smuggled in our country for the past two decades to destabilize Astylla. It was one of the last creations of the Demon King before his death."
+        t "Codayn is the official name but it's more commonly called Breath... Demon's Breath is a drug manufactured by the Demon Army which has been smuggled in our country for the past two decades to destabilize Astylla. It was one of the last creations of the Demon King before his death."
         mc "Oh..."
-        t "It's not like everything was fine and dandy before, I lived in the streets as a child before any of this and I was taken in by a gang before as well, but... Ever since the drugs arrived, everything has become so much worse that... I couldn't stand by anymore."
+        t "It's not like everything was fine and dandy before, I lived in the streets as a child before any of this and I was taken in by a gang before as well but... Ever since the drugs arrived, everything has become so much worse that... I couldn't stand by anymore."
         t "It's why I ran from here and went to the Capital to join the army. I knew I couldn't stop any of this if I just stayed there, I needed real power to bring justice... But justice can't change people once they're so far off..."
         mc "..."
         jump taliyaQuestioning1
@@ -644,9 +644,9 @@ menu:
         $ askedTaliya1 += 1
         $ aydtaT = True
         mc "Is there nobody else helping you doing this?"
-        t "...Yes, I'm always alone on missions, but I have a few trusted officers whom I trust with gathering intel for me. I know I won't get hurt in any of these missions, so I'd rather not take anyone else with me... I wouldn't stand to lose someone because of my incompetence like it almost happened today."
+        t "...Yes, I'm always alone on missions but I have a few trusted officers whom I trust with gathering intel for me. I know I won't get hurt in any of these missions, so I'd rather not take anyone else with me... I wouldn't stand to lose someone because of my incompetence like it almost happened today."
         mc "But you said it yourself, didn't you? If you were alone they could've escaped."
-        t "Yeah, you're right, but I'd rather chase them for months than see more blood than necessary be shed."
+        t "Yeah, you're right but I'd rather chase them for months than see more blood than necessary be shed."
         menu:
             "You can count on me.":
                 $ countonmcT = True
@@ -669,7 +669,7 @@ menu:
         t "I begged her to come with me but she wouldn't, so I left her and the town, promising I'd come back for her..."
         t "...And I did come back for her."
         mc "..."
-        t "But it didn't go as I've always hoped it would, and now I know I'll only see her face again in my dreams... and my nightmares."
+        t "But it didn't go as I've always hoped it would and now I know I'll only see her face again in my dreams... and my nightmares."
         t "I was weirdly calm after I killed her.{p}I could feel my body trembling a little afterwards but... I was numb. Killing my best friend felt like killing any other criminal... And that makes me feel much worse than having killed her."
         mc "...She wasn't the girl you knew anymore, years have passed and she was threatening to kill one of your recruits. She wasn't your best friend anymore Taliya."
         mc "You killed a stranger."
@@ -681,7 +681,7 @@ menu:
         $ yamiTaliya = True
         mc "Who's... Yami?"
         t "That's... my name."
-        mc "...Probably a stupid question, but isn't your name Taliya?"
+        mc "...Probably a stupid question but isn't your name Taliya?"
         t "...Taliya is the name I gave myself after leaving Corban. I didn't want anyone to be able to find out about my past, they might've stopped me from becoming what I am now if they knew."
         mc "Yami..."
         t "Gosh, it's so weird hearing that now..."
@@ -728,7 +728,6 @@ $ persistent.Taliya1 = True
 jump guild
 
 
-
 label TaliyaQ1:
 hide screen screenmap
 hide screen hud
@@ -755,8 +754,8 @@ if TQ1p1 == False:
     jump start_fightMiniGame
     label postTaliyaTrain1:
     if randel_fails < 3 and swordlvl > 12:
-        "Taliya starts attacking you. It's clear she's not being serious, but you're still parrying all her hits. You're doing pretty good."
-        "After a few parries you decide it's your turn to try and hit her so you step in and try a thrust. You can see a look of surprise on her face before she steps aside, parries you, and then taps you on the head with the tip of her training sword."
+        "Taliya starts attacking you. It's clear she's not being serious but you're still parrying all her hits. You're doing pretty good."
+        "After a few parries you decide it's your turn to try and hit her so you step in and try a thrust. You can see a look of surprise on her face before she steps aside, parries you and then taps you on the head with the tip of her training sword."
         t "Hit."
         mc "Not really that surprising."
         t "I'd say it was surprising, though. It's not often a novice can catch me off guard like that."
@@ -764,14 +763,14 @@ if TQ1p1 == False:
         t "It wouldn't take much to make you into a formidable swordsman. Just..."
         "She thinks for a second before continuing her sentence."
     elif randel_fails < 3:
-        "You start parrying a few of her hits, and you think you're doing good, but Taliya soon decides she can be serious with you and with just two hits she knocks you down on the ground."
+        "You start parrying a few of her hits and you think you're doing good but Taliya soon decides she can be serious with you and with just two hits she knocks you down on the ground."
         scene taliyaq1b with hpunch
         t "Not bad recruit. I'm impressed."
         mc "And you still beat me with two hits..."
     else:
-        "You parry a hit or two, but even though you think you're doing good, soon enough you stumble while retreating and end up on the ground."
+        "You parry a hit or two but even though you think you're doing good, soon enough you stumble while retreating and end up on the ground."
         scene taliyaq1b with hpunch
-        t "Not horrible, but there's a lot of room for improvement."
+        t "Not horrible but there's a lot of room for improvement."
         mc "Thanks, I guess."
     $ randel_fails = 0
     t "Practice the basics more. You swing around your sword more than necessary, if you controlled it more you'd be able to hit and parry much faster."
@@ -804,7 +803,7 @@ elif TaliyaTrain == False:
     jump start_fightMiniGame
     label postTaliyaTrain2:
     if randel_fails < 3:
-        "You immediately begin assault Taliya, trying to bypass her defenses, but it doesn't work. It's not like you didn't try or didn't put up a fight, but Taliya is just {b}that{/b} good."
+        "You immediately begin assault Taliya, trying to bypass her defenses but it doesn't work. It's not like you didn't try or didn't put up a fight but Taliya is just {b}that{/b} good."
         "So, Taliya simply pushes your sword to the side and then thrusts towards your chest."
         mc "Owch..."
         t "You're actually pretty promising, you know?"
@@ -815,10 +814,9 @@ elif TaliyaTrain == False:
         "Once again, you manage to parry a few hits before Taliya thrusts and hits you in the chest, making you fall again."
         t "I can see you've improved."
         mc "Your sarcasm isn't funny, you just kicked my ass again."
-        t "I did kick your ass again, but that's because I'm me, not because you didn't improve a bit. Your stance improved, you didn't trip on yourself."
+        t "I did kick your ass again but that's because I'm me, not because you didn't improve a bit. Your stance improved, you didn't trip on yourself."
         mc "Oh wow, I guess now I can lose standing."
-    $ randel_fails = 0
-    t "You're too negative, [mc], but I understand it can be frustrating. I {b}am{/b} way stronger than you and there's no way you'll beat me in a fair fight even if you train every day for a few yers."
+    t "You're too negative, [mc] but I understand it can be frustrating. I {b}am{/b} way stronger than you and there's no way you'll beat me in a fair fight even if you train every day for a few yers."
     play music motivational
     t "Let's do it like this, to make it more feasible, I'll fight blindfolded."
     mc "...Blindfolded?"
@@ -838,7 +836,7 @@ elif TaliyaTrain == False:
     mc "...A reward?"
     t "Yes."
     mc "...What kind of reward?"
-    t "I think I know exactly what you'd like, but you gotta beat me to find out."
+    t "I think I know exactly what you'd like but you gotta beat me to find out."
     mc "{i}Huh? D-Does she really know? Is it what I'm thinking it is?"
     mc "Interesting... Alright, I'm in."
     t "That's it. There's the motivation I wanted to see."
@@ -891,10 +889,10 @@ label heckYeahTaliya:
     if chartrait == 2:
         $ sword += 1
         $ renpy.notify ("{color=#00C413}Your Sword stat has increased twice!")
-    "You try your best, and this might be the time where you actually manage to hit her."
+    "You try your best and this might be the time where you actually manage to hit her."
     "You reach in with your sword but this breaks your stance and Taliya sends you to the ground with one strike."
 scene taliyaq1b
-t "Nice try, but it didn't work."
+t "Nice try but it didn't work."
 "As you get up, you look at her with frustration. Then, you see it: a cut in her clothes. You did it."
 scene tt3
 mc "Oh, I think it did."
@@ -942,7 +940,7 @@ menu:
         t "...Y-You can't expect to say something like that and get away with it, recruit! Get to your push-ups or they'll turn into 100!"
         mc "But-"
         hide tarm angryt with easeoutright
-        "Taliya turns around, all red in the face, and begins walks away."
+        "Taliya turns around, all red in the face and begins walks away."
         mc "...Grr."
         hide prot sad with easeoutbottom
         "You get on the ground and start doing push-ups. When you reach the 31st your arms give in and you fall on the ground."
@@ -1025,12 +1023,12 @@ t "Apologies accepted. I'm sorry I wasn't clear enough, I should've expected som
 mc "Why, don't men flirt with you?"
 t "No, I usually scare them away."
 mc "Huh? Why?"
-t "Why are you even asking? I'm the fearsome General Taliya, the Black Fire, the Demons' Demon, and many other dumb epithets..."
+t "Why are you even asking? I'm the fearsome General Taliya, the Black Fire, the Demons' Demon and many other dumb epithets..."
 mc "Sexy."
 t "Recruit!"
 mc "I'm sorry, I'm sorry."
 t "You're hopeless."
-mc "No, but really, I'm sorry I shouldn't have said that, it was inappropriate and I didn't even thank you for your gift. Thanks."
+mc "No but really, I'm sorry I shouldn't have said that, it was inappropriate and I didn't even thank you for your gift. Thanks."
 t "You're welcome."
 mc "I hope that we can... still be friends?"
 t "..."
@@ -1052,7 +1050,7 @@ mc "Hello."
 "Carlo" "Oh? Do my eyes decieve me? [mc]!"
 mc "Yeah, it'is me."
 "Carlo gets up and walks up to you."
-"Carlo" "It's been a long time you last came for a visit, and who's your friend?"
+"Carlo" "It's been a long time you last came for a visit and who's your friend?"
 mc "Oh, she's Taliya, she-"
 "Carlo" "General Taliya?"
 t "Yes, that's me."
@@ -1067,7 +1065,7 @@ mc "Alright I'll-"
 mc "Huh? I-"
 "Carlo" "Come on, come, it's been a while since you've last visited, tell me what you've been doing these past months."
 "You see Taliya leave as Carlo keeps talking with you. He seems to have no intention of stopping and after ten minutes you decide it's enough."
-mc "Yeah, yeah, but now I really gotta go, there's a guy who's waiting for me."
+mc "Yeah, yeah but now I really gotta go, there's a guy who's waiting for me."
 "Carlo" "Oh? You're right, you're right, sorry kid, you know that when I start talking I don't stop. See ya!"
 mc "See ya, it was nice talking with you."
 mc "{i}Even though right now I wanted to talk with Taliya..."
@@ -1086,9 +1084,9 @@ show taliyarapist1
 "Man 1" "Wow, what a piece of woman you've got us today, Griehan."
 t "Hand over my bag."
 "Griehan" "Oh, I'm really sorry missy, here, you can have it back."
-"You see Griehan extend his arm, bag in his hand, but as soon as Taliya goes to grab it, the man grabs her arm and pulls her closer towards him."
+"You see Griehan extend his arm, bag in his hand but as soon as Taliya goes to grab it, the man grabs her arm and pulls her closer towards him."
 mc "{i}...These guys are so dead."
-"Or so you thought, but Taliya doesn't move an inch as the man slides his hand on her ass."
+"Or so you thought but Taliya doesn't move an inch as the man slides his hand on her ass."
 "Man 1" "Be careful, she's got a sword."
 "Griehan" "As if she can even use it. Missy here isn't gonna scare any of us."
 t "I'll ask you again. Give me my bag."
@@ -1096,7 +1094,7 @@ t "I'll ask you again. Give me my bag."
 "Taliya stays still, her expression is like steel."
 "Griehan" "You're right, let's have fun. Haze, undress her."
 "Haze" "Immediately."
-"Haze slowly takes off her belts, but Taliya still isn't moving."
+"Haze slowly takes off her belts but Taliya still isn't moving."
 mc "{i}Of for fuck's sake Taliya, the hell are you doing?"
 "The man puts his hands on her shirt and starts unbuttoning it."
 mc "{i}Enough's enough."
@@ -1312,7 +1310,7 @@ t "No but's, c'mon get in the wagon."
 mc "Alright."
 "You hop on the wagon and then Taliya follows you. She knocks on the wall next to her and the wagon begins moving."
 "It's been a long time since you last traveled in one of these. How much was it? 15 years? You couldn't tell for sure."
-"But this time your destination is Karnak, a town beyond the safe walls of Astylla. For a moment a chill runs through your spine, but then you see Taliya sitting in front of you and you're reassured."
+"But this time your destination is Karnak, a town beyond the safe walls of Astylla. For a moment a chill runs through your spine but then you see Taliya sitting in front of you and you're reassured."
 mc "{i}Nothing can happen if she's around."
 mc "{i}Well, nothing to me."
 #WIP - Have Taliya and the MC chit-chat about the world for some easy exposition.
@@ -1348,27 +1346,27 @@ t "Yeah, it always feels like that, even after having seen it countless times."
 mc "I bet it does."
 t "Do you know the reason there's a desert here?"
 mc "Because it's hot?"
-t "Well, that too, but it's actually because the land here is toxic, filled to the brim with oil that so easily sprouts."
+t "Well, that too but it's actually because the land here is toxic, filled to the brim with oil that so easily sprouts."
 mc "Why would've anyone even have come here then?"
-t "Well, it wasn't always like that. There was enough dirt on top to live without problem once, but the Demon King's army burnt this entire region... It's actually how they found out about their oil reserves. But before it still used to be a very rich province of the Old Astylla."
+t "Well, it wasn't always like that. There was enough dirt on top to live without problem once but the Demon King's army burnt this entire region... It's actually how they found out about their oil reserves. But before it still used to be a very rich province of the Old Astylla."
 mc "Wow... And that huge tower is all of Karnak, isn't it?"
 t "Now you know why they call it the Spiral City."
 mc "Yeah, I can definitely see why. How further does it go?"
-t "I'm not sure exactly, but I know the entire city has almost one million citizens."
+t "I'm not sure exactly but I know the entire city has almost one million citizens."
 mc "One million?! That's like... twenty times Randel."
 t "And they all live just there without anyone bothering them... not even the Demon Army."
 mc "Oil really is that valuable, huh? Though you'd figure the demons would attack this place."
-t "Yeah, you'd figure, but in the past 15 years they haven't been attacked once by demons."
+t "Yeah, you'd figure but in the past 15 years they haven't been attacked once by demons."
 mc "Wow."
-t "But yeah, oil is really valuable, and slaves make it much easier to get."
+t "But yeah, oil is really valuable and slaves make it much easier to get."
 mc "Right, slavery is legal here."
 t "Yes. And they don't even try to hide it. See that golden dome? That's where the rich live, right on top of everyone else... And the slaves, well, they're forced to live at the bottom of the city, where they work on the extractions."
 mc "I wish we could do something about it."
-t "Me too, but this isn't Astylla, I have no power here."
+t "Me too but this isn't Astylla, I have no power here."
 mc "And I guess another war on top of the one against demons isn't really a good idea, is it?"
 t "Indeed."
 mc "Ugh."
-t "I hate this place too, but at least we won't have to worry about our treatment. Astyllians are treated very well, though it's mainly because they don't want a war either."
+t "I hate this place too but at least we won't have to worry about our treatment. Astyllians are treated very well, though it's mainly because they don't want a war either."
 mc "Hm. And who is this distributor we're going to see? ...I hope we won't have to go at the bottom of the city."
 t "Oh, no, he's a noble."
 mc "Oh, thank Astylla."
@@ -1417,7 +1415,7 @@ show tal smile
 t "Yeah, go ahead."
 mc "Uhh"
 "The choice is hard, especially because you don't know the price of each. Many are themed around something, some are even themed around being \"Adventurer Inns\"."
-"The choice is hard but in the end you choose a little inn called \"Foxie's Inn\". It's in the corner between the main road and a smaller secondary street. It's not as tall or as impressive as any of the inns around it, but it's the only one that feels like an inn you'd see in a small Astyllian town, it really does just feel a lot more familiar than everything around it."
+"The choice is hard but in the end you choose a little inn called \"Foxie's Inn\". It's in the corner between the main road and a smaller secondary street. It's not as tall or as impressive as any of the inns around it but it's the only one that feels like an inn you'd see in a small Astyllian town, it really does just feel a lot more familiar than everything around it."
 mc "Let's go there."
 t "Alright."
 scene innlowerfloor
@@ -1458,7 +1456,7 @@ t "...But it is also incredibly cheap, great choice."
 mc "Oh wow, even a place as small as this has oil lamps to light the room."
 t "Oh right, you probably haven't seen many used to light a room, have you?"
 mc "Nope, we don't really have any."
-t "Yeah, even in the Capital most houses are still lit by candles. Oil might be a lot more convenient, but it's too expensive."
+t "Yeah, even in the Capital most houses are still lit by candles. Oil might be a lot more convenient but it's too expensive."
 t "Anyways, enough talk. Put your stuff there and get changed if you want to. we'll be heading out in two hours."
 show prot smirkt
 mc "To catch the distributor?"
@@ -1470,12 +1468,12 @@ mc "I know, I know.{p}Speaking of which, can you finally tell me who this guy is
 t "Leon Varg, a very wealthy merchant... Excedingly so."
 mc "So you think it's him?"
 t "I don't think it's him, I'm sure of it. I've been investigating for years and everything always leads to Karnak... If he's not my guy, I don't know who could be."
-mc "Alright, but how are we going to get this guy? Are we just going to walk into his house like last time?"
+mc "Alright but how are we going to get this guy? Are we just going to walk into his house like last time?"
 t "No, we can't do something like that here. I've found out where he'll be tonight."
 mc "Where?"
 t "A slave auction one floor below."
 mc "And then what? We just talk to him? I don't think that'll be easy for us."
-t "It won't, but I have a plan. We'll just use the auction to find him, we won't get him there."
+t "It won't but I have a plan. We'll just use the auction to find him, we won't get him there."
 mc "Couldn't we get him mixed up with someone else?"
 t "It's a private auction... Well — it's more of a show than an auction — but no, he'll be the only one there, we won't get him mixed up."
 mc "Okay, then. Sounds reasonable."
@@ -1511,7 +1509,7 @@ mc "{i}Oh... I guess slaves only count as property."
 "Man" "Ugh, you're worthless. Wasted silver on you for nothing. Leave."
 "The girl looks down and then sheepishly leaves."
 mc "{i}What an arse."
-"You get in the bath and enjoy some relaxation. It's nice and all, but after a while you get bored and decide to leave. As you do that you see the other man sleeping inside the bath, probably having fallen asleep."
+"You get in the bath and enjoy some relaxation. It's nice and all but after a while you get bored and decide to leave. As you do that you see the other man sleeping inside the bath, probably having fallen asleep."
 mc "{i}..."
 show prot normal with fade
 mc "{i}I wonder if Taliya is still bathing... wait, I could spy on the women's bathroom using the invisibility spell-"
@@ -1533,7 +1531,7 @@ tw "T-Twig?"
 mc "Do you have no other name?"
 tw "Uhm, n-no, sir."
 mc "Do your parents call you Twig as well?"
-tw "My mother died when giving birth to me, and I've never met my father, sir."
+tw "My mother died when giving birth to me and I've never met my father, sir."
 mc "...I-I see."
 mc "{i}Let's change subject."
 mc "How old are you, exactly?"
@@ -1545,7 +1543,7 @@ mc "I just wanted to know more aout you."
 tw "Know more about me?"
 tw "...But, sir, I'm not for sale. I already have a master."
 mc "{i}...So this is how slaves are brought up, huh?"
-mc "I know you have a master, and he's an asshole."
+mc "I know you have a master and he's an asshole."
 show twigblush
 tw "S-Sir, please don't say that."
 mc "He is."
@@ -1678,11 +1676,11 @@ mc "Is it far?"
 t "Not much."
 mc "Alright."
 scene karnakinterior with fade
-"You walk, and walk, and walk. At some point you arrive at a grand staircase, one half heading upwards to the floor above, the other half heading down to the floor below. As you walk down you see how the decorations on the staircase slowly reduce in number and quality, so gradually that you only notice once you've reached the floor below."
+"You walk and walk and walk. At some point you arrive at a grand staircase, one half heading upwards to the floor above, the other half heading down to the floor below. As you walk down you see how the decorations on the staircase slowly reduce in number and quality, so gradually that you only notice once you've reached the floor below."
 mc "Wow, the difference is already palpable."
 t "Yeah, it gets bad really quickly. Let's go, the place where the auction will take place isn't too far away."
 mc "Alright."
-"The two of you walk some more until you arrive at what was probably a warehouse once, but is now pretty rundown. You see a man leaning on the door."
+"The two of you walk some more until you arrive at what was probably a warehouse once but is now pretty rundown. You see a man leaning on the door."
 t "{size=-4}Alright, merchant, it's time to begin our act."
 mc "{size=-4}I'll do my best, ma'am."
 "You walk up to the man and he stares at the two of you without saying a word."
@@ -1691,7 +1689,7 @@ mc "I'm here for-"
 mc "I see."
 scene doorman1
 "You knock."
-"A grate in the door slides open, and you see a dimly lit face on the other side. Whoever it is he doesn't say a word, so you're forced to speak up first."
+"A grate in the door slides open and you see a dimly lit face on the other side. Whoever it is he doesn't say a word, so you're forced to speak up first."
 scene doorman2
 mc "I've brought her."
 "The man's eyes turn to Taliya who's standing behind you."
@@ -1709,12 +1707,12 @@ scene doorman1
 "Man 2" "Alright stand still, I have to check for weapons."
 "Man 2" "You, slave, take off your coat."
 t "Yes, sir."
-"Taliya removes her coat, and your mouth drops."
+"Taliya removes her coat and your mouth drops."
 scene taliyaflash with fade
 pause 1.3
 mc "{i}Holy shit."
 mc "{i}I guess she came well prepared."
-"The man checks you pretty quickly, but then he moves to Taliya and he's much, much more thorough... You're doing your best to not snap at him for molesting her like that."
+"The man checks you pretty quickly but then he moves to Taliya and he's much, much more thorough... You're doing your best to not snap at him for molesting her like that."
 mc "Sir?"
 "Man 2" "Yes, yes, I'm done. No weapons on her either."
 "He goes back to the door and knocks three times, then he turns back at you."
@@ -1740,7 +1738,7 @@ t "{size=-3}...I don't know."
 mc "{size=-3}Great."
 "You look around and you see everyone at their own table, then, the man from before gets on the stage and clears his throat."
 "Man" "The auction is now going to commence. I'd like to thank all the merchants for presenting us with their goods which we hope our acquirer will enjoy."
-"The man gestures towards a person seated on a balcony high above. The shadow hides his face, but you can figure who it is."
+"The man gestures towards a person seated on a balcony high above. The shadow hides his face but you can figure who it is."
 "Man" "To show the value of these goods, the male performers will only use the tools provided to them to show the acquirer how durable they are, no oral, anal or vaginal sex is allowed, so please use them to your heart's content if you wish to impress our guest. Good luck, may the show the begin."
 "And then the man leaves the stage."
 mc "{size=-3}What the fuck..."
@@ -1799,7 +1797,7 @@ show taliyabondageclamp
 show taliyabondageplug
 pause 1
 mc "{i}And now, the only thing left is..."
-"You look at the table and see a dildo, a gag, and a whip."
+"You look at the table and see a dildo, a gag and a whip."
 menu:
     "Dildo":
         t "{size=-3}[mc]... That motherfucker wants to see when we break, use the whip."
@@ -1816,14 +1814,14 @@ play sound whip
 show taliyabondageclamp
 show taliyabondageplug with hpunch
 pause 1
-"You whip her once, she barely moves. Twice, and her expression doesn't change."
+"You whip her once, she barely moves. Twice and her expression doesn't change."
 t "{size=-3}Harder..."
 scene taliyabondage3
 show taliyabondageclamp
 play sound whip
 show taliyabondageplug with hpunch
 pause 1
-"You whip her harder a few times, but she is still barely affected by it."
+"You whip her harder a few times but she is still barely affected by it."
 mc "{i}She really is made of stone, isn't she?"
 t "{size=-3}Don't hold back."
 mc "{size=-3}That's what I'm doing..."
@@ -1838,7 +1836,7 @@ t "Mh~"
 mc "{i}Wait, did she..."
 mc "Oh, you like this? What a slut."
 t "C'mon! Harder!"
-"You can hardly see him, but it seems the man up there turned his gaze to you two."
+"You can hardly see him but it seems the man up there turned his gaze to you two."
 mc "{i}We got his attention! Let's not waste this opportunity."
 mc "Oh, talking back, I see. Fine."
 "You grab the gag from the table and put it on her."
@@ -1852,7 +1850,7 @@ show taliyabondageclamp
 play sound whip
 show taliyabondageplug with vpunch
 pause 1
-"You whip her again, and then again, and again."
+"You whip her again and then again and again."
 mc "How do you like that? Hard enough for you?"
 t "Mnh~!"
 scene taliyabondage6
@@ -1908,7 +1906,7 @@ show taliyabondagesquirt with flash
 pause 0.2
 scene taliyabondageend
 pause 5
-mc "{i}This is definitely not an act anymore... We really just did this, and in front of all these people..."
+mc "{i}This is definitely not an act anymore... We really just did this and in front of all these people..."
 mc "{i}I need to resist, I can't let us fail the mission... Only Astylla knows what I'd do to her right now if it weren't for that."
 "Man" "Times up!"
 mc "{i}Oh, thank Astylla."
@@ -2009,7 +2007,7 @@ t "...For free?"
 "Leon" "Y-Yes! I give them slaves every once in a while, b-but they're nothing compared to the wealth I receive from it!"
 "Taliya looks at you."
 t "...This doesn't sound right. Something sinister is going on. How do I reach these caves?"
-"Leon" "Th-They're at the very bottom, I-I've never been there, but I know they're the only ones there! W-With the heat and the smell only slaves can be forced to go so far underground!"
+"Leon" "Th-They're at the very bottom, I-I've never been there but I know they're the only ones there! W-With the heat and the smell only slaves can be forced to go so far underground!"
 "Leon" "P-Please let me go I don't know anything else."
 t "You know we can't let you live."
 "Leon" "No! I promise I won't tell anyone I've met you! P-Please!"
@@ -2024,7 +2022,7 @@ menu:
         t "..."
         mc "We can let him go, he's not a threat to anyone not in chains."
         t "..."
-        mc "I know he's a monster, but killing him won't change anything."
+        mc "I know he's a monster but killing him won't change anything."
         t "Sigh."
         "Taliya starts cranking the wheel the other way."
         scene pervtorture1 with dissolve
@@ -2036,13 +2034,13 @@ menu:
         mc "Yes, let's go."
         "The two of you begin making your way towards the door."
         mc "{i}Oh, I really hope he won't say anything."
-        "You hear steps rapidly approaching you, but before you can do anything Taliya dashes past you."
-        "You hear something falling to the ground, and when you turn around you see the man you just freed on the ground, a knife clutched in his hand as he bleeds to death. Taliya standing in front of him with her back facing you."
+        "You hear steps rapidly approaching you but before you can do anything Taliya dashes past you."
+        "You hear something falling to the ground and when you turn around you see the man you just freed on the ground, a knife clutched in his hand as he bleeds to death. Taliya standing in front of him with her back facing you."
         t "You were right, he won't say anything to anyone."
         mc "..."
         t "Let's go."
         "And as the two of you leave the room, Taliya speaks once again."
-        t "Don't take it personally, [mc]. He was a disgusting man, and he chose to be one up till the very end."
+        t "Don't take it personally, [mc]. He was a disgusting man and he chose to be one up till the very end."
         mc "...I guess you're right. He did deserve that."
     "Do what you have to do":
         $ evil += 1
@@ -2083,7 +2081,7 @@ menu:
         t "Let's go."
         "The two of you walk out of the room."
 scene pervtorturecorridor with fade
-"As you walk out of the building the two guards look at you surprised, but before they can do anything Taliya knocks one out with a kick and the other one by slamming him against the wall."
+"As you walk out of the building the two guards look at you surprised but before they can do anything Taliya knocks one out with a kick and the other one by slamming him against the wall."
 "She looks at you and then the two of you silently decide to go back to the inn."
 scene karnakinnroom with fade
 "Once there, the two of you sit on your beds."
@@ -2113,8 +2111,8 @@ if torturerMC == True:
 mc "...A-And back there, I'm sorry if I was too... rough."
 t "What...? Oh! You mean that. Hahah..."
 t "..."
-t "Ahem. It's nothing I couldn't handle, and after all we didn't have a choice, did we?"
-mc "Yeah, but I mean..."
+t "Ahem. It's nothing I couldn't handle and after all we didn't have a choice, did we?"
+mc "Yeah but I mean..."
 t "It's thanks to your \"performance\" if that creep picked us."
 mc "...I still feel bad about it."
 t "Don't, forget it ever happened. It'll be better for both of us."
@@ -2131,7 +2129,7 @@ mc "What? No! I can keep going."
 t "I was stupid enough to bring you along, I won't take you further."
 mc "What do you mean? I'm here of my own voliton."
 t "I'm serious, [mc], this is dangerous."
-mc "So what? I know you're the all-mighty Taliya, but I can handle myself too."
+mc "So what? I know you're the all-mighty Taliya but I can handle myself too."
 t "I understand but-"
 mc "No, you're not doing this alone. You would've had to kill every single person there today if I wasn't with you."
 t "......"
@@ -2140,11 +2138,11 @@ t "But we are still going back to Randel."
 mc "Why?"
 t "If the drugs are produced here... There could be anyone down there, we need to be much better prepared."
 mc "...Why? Aren't you, like, super strong?"
-t "I am, but I didn't bring my armor."
+t "I am but I didn't bring my armor."
 mc "Why?"
 t "To be less noticeable."
 mc "Alright... But what about Leon? Don't you think they'll just leave when they find out we killed him?"
-t "They will if they find out, but when a member of his social status dies in such a place the authorities usually make a cover-up story up to explain his death."
+t "They will if they find out but when a member of his social status dies in such a place the authorities usually make a cover-up story up to explain his death."
 mc "...But at some point they might find out anyways."
 t "Yes, which is why we'll come back fast."
 mc "Alright, I trust you. You're my general after all."
@@ -2172,12 +2170,12 @@ menu:
         show tal smile
         show prot smile
         mc "They really are that rare aren't they?"
-        t "Yeah, and for some reason every Diamond-rank adventurer I meet always has at least one."
+        t "Yeah and for some reason every Diamond-rank adventurer I meet always has at least one."
         mc "Really?"
         t "Yeah, sometimes I'm really envious of you adventurers."
         mc "You shouldn't, you're stronger than any adventurer I know."
         t "Maybe with this, yeah. But without it... I'm not much better than many of my subordinates."
-        t "I'm still just a human, and a woman at that... No matter how much I train there will always be someone stronger than me, either human or not."
+        t "I'm still just a human and a woman at that... No matter how much I train there will always be someone stronger than me, either human or not."
         t "This crystal allows me to be on par with monsters much stronger than me... But even so, often that's not enough."
         mc "...Often enough is enough."
         t "...But hey! It {b}does{/b} take a lot of training and endurance to use a crystal. Most people would get knocked out if they tried to use it."
@@ -2231,14 +2229,14 @@ t "Yeah sure, come on let's go."
 scene karnakinterior with fade
 "She forces you up and then you two leave the inn and get on the wagon. As soon as you sit down you fall asleep again."
 scene black with fade
-"The way back isn't that much different from the way there, but with everything that happened at Karnak, it really feels like a different journey."
+"The way back isn't that much different from the way there but with everything that happened at Karnak, it really feels like a different journey."
 scene villageback
 "And so once again you end up in Randel. The wagon stops in the town's square and Taliya and you hop down with your bags."
 t "Alright recruit, go gome and get some rest. You deserve it."
 mc "When are we going back?"
 t "Rest first. I'll let you know when we're going back."
 mc "Alright."
-"You turn around to leave, but Taliya calls after you."
+"You turn around to leave but Taliya calls after you."
 t "[mc]... Thank you for helping, I mean it."
 mc "You're welcome."
 t "See you later, kid."
@@ -2280,7 +2278,7 @@ scene black with fade
 "..."
 scene karnak with fade
 play music karnak
-"...And just like last time, after three entire days, on the morning of the fourth, you arrive at Karnak. This time around there's less people than last time, but Taliya tells you that it's simply because today isn't a busy day."
+"...And just like last time, after three entire days, on the morning of the fourth, you arrive at Karnak. This time around there's less people than last time but Taliya tells you that it's simply because today isn't a busy day."
 scene karnakinterior with fade
 show prot question with easeinright
 show tal normal with easeinright
@@ -2291,7 +2289,7 @@ hide prot question with easeoutleft
 hide tal normal with easeoutleft
 "And so, the two of you start your descent into the depths of the Spiral city."
 scene movingdownslums with fade
-"Soon enough the wide staircases of the ground floor become narrow pathways running along the walls in a giant spiral towards the bottom of the city. Every floor you go down the more houses seem to be rundown, at some point even a few tents start appearing, and people start to look more ragged. The only buildings that never look any worse are big industrial complexes, shining in the middle of each floor."
+"Soon enough the wide staircases of the ground floor become narrow pathways running along the walls in a giant spiral towards the bottom of the city. Every floor you go down the more houses seem to be rundown, at some point even a few tents start appearing and people start to look more ragged. The only buildings that never look any worse are big industrial complexes, shining in the middle of each floor."
 "Finally after almost an hour of descending, you see a dozen guards blocking the staircase further down. They all turn to look at you two."
 t "We need to pass."
 "The guards stay silent for a moment as they look at each other, then one looks back at Taliya."
@@ -2308,7 +2306,7 @@ t "Why not?"
 t "We are not, we were supposed to depart today but I can't without the item I lost."
 "Guard Captain" "Hah! Alright let me explain this to you, Astyllian. The place we guard the entrance of is the Slave District."
 t "Yes, I know as much."
-"Guard Captain" "Everyone who passes through here is searched by us, and we found nothing."
+"Guard Captain" "Everyone who passes through here is searched by us and we found nothing."
 t "Could you not have missed it?"
 "Guard Captain" "No, we couldn't have. We {b}love{/b} being thorough in our searches."
 mc "..."
@@ -2322,10 +2320,10 @@ t "Well, I don't know the name of the master. If you let us pass we can identify
 t "..."
 t "Can we go through?"
 "Guard Captain" "Sure! But how about first you... lend us a hand?"
-"The guards all laugh again. But you aren't finding it funny at all, and neither seems Taliya."
-"She begins walking closer to the captain, and for a moment you fear she might do something rash, but then she hands him a pouch."
+"The guards all laugh again. But you aren't finding it funny at all and neither seems Taliya."
+"She begins walking closer to the captain and for a moment you fear she might do something rash but then she hands him a pouch."
 t "There's a hundred Astyllian gold coins in there. Enjoy."
-"The guards remain all speechless and she starts walking past them. She gestures you to come as well, and you quickly make your way as well before they change idea."
+"The guards remain all speechless and she starts walking past them. She gestures you to come as well and you quickly make your way as well before they change idea."
 "You start descending even further down. Once your far away from the guards you look at Taliya."
 mc "...Was that all your money?"
 t "Yes."
@@ -2350,7 +2348,7 @@ elif money >= 5:
 scene slums1 with fade
 "Finally you arrive at the new floor and what welcomes you is, to be flattering, a shanty town. There's almost nothing that could be categorized as a building anymore, only tents made out of sheets and clothes."
 "The only thing that can be considered a building is in the middle of the floor. A gigantic refinery, taking up almost half of the floor with all its adjacent structures."
-"Hundreds of slaves are roaming around, most of them working while having barely anything to dress with, and a few are fighting over whatever little food they managed to find..."
+"Hundreds of slaves are roaming around, most of them working while having barely anything to dress with and a few are fighting over whatever little food they managed to find..."
 "...As you're taking the view in, your nostrils suddenly fill with an abhorrent stench."
 mc "Cough-"
 "You see Taliya starting to walk quickly."
@@ -2370,7 +2368,7 @@ scene darkcave with fade
 "The smell gets as bad as it can once you reach the bottom. The ground is soggy, the whole place is extremely humid and hot... There's probably a reason not even the slaves are sent this deep."
 mc "I think I'm going to throw up..."
 t "Resist, [mc]. Whatever we're looking for can't be that further away."
-"As you walk your eyes slowly get used to the darkness. You still can't see much, but you can tell some of the shapes apart."
+"As you walk your eyes slowly get used to the darkness. You still can't see much but you can tell some of the shapes apart."
 t "Follow me, I'll lead you."
 mc "Thank you-"
 "You try to reach for Taliya but your foot catches something and you trip."
@@ -2392,7 +2390,7 @@ mc "Th-this place sucks, fuck! I'm not so sure I want to do this anymore."
 t "[mc]. Calm down."
 mc "I-"
 t "Breathing fast will only make the stench worse, relax."
-"You feel Taliya's grip tightening, not enough to hurt you, but enough to make you feel more safe."
+"You feel Taliya's grip tightening, not enough to hurt you but enough to make you feel more safe."
 mc "..."
 t "..."
 "Your breath goes back to normal and you put your hand on hers."
@@ -2400,7 +2398,7 @@ mc "...Alright, I think I'm fine now."
 t "Good."
 "She lets you go."
 t "Let's continue, the sooner we get this done the better."
-"The two of you start to move again, but after just a minute, Taliya stops in her tracks."
+"The two of you start to move again but after just a minute, Taliya stops in her tracks."
 t "You hear that?"
 mc "What?"
 t "Flowing water."
@@ -2457,9 +2455,9 @@ mc "Th-That's... a minotaur?"
 mal "This is Lawsen, he is the first of us who has achieved ascension and become a demon!"
 t "I guess you weren't totally lying..."
 t "Let's see if it's like the real deal."
-"Taliya charges at the minotaur. She is incredibly fast and when he tries to attack her, she easily evades him. She grabs her sword and stabs the demon's hand, and even though the minotaur strikes back, she avoids it again."
+"Taliya charges at the minotaur. She is incredibly fast and when he tries to attack her, she easily evades him. She grabs her sword and stabs the demon's hand and even though the minotaur strikes back, she avoids it again."
 mc "Wow... She's so-"
-"You'd like to cheer for her, but unfortunately, the cultists attack you."
+"You'd like to cheer for her but unfortunately, the cultists attack you."
 mc "{i}Alright, let's find out if training with Taliya wasn't for nothing."
 scene cultistattack1 with vpunch
 if swordlvl >= 10:
@@ -2477,7 +2475,7 @@ $ randel_fails = 0
 label finishfightt1:
     "They're good, just... not as good as you."
 mc "Is that it?"
-"You easily parry the few first hits, but you're losing ground. It's clear that their superiority in number is giving them an advantage."
+"You easily parry the few first hits but you're losing ground. It's clear that their superiority in number is giving them an advantage."
 "Cultists" "You won't get away with this!"
 scene cultistattack1 with hpunch
 if swordlvl >= 10:
@@ -2493,7 +2491,7 @@ jump start_fightMiniGame
 label abgiaegu247odaghu:
 $ randel_fails = 0
 label finishfightt2:
-"Incredibly, you are managing to hold back all the cultists. It's probably not much considering they have probably never trained in their life and you hardly hit anyone, but you're still proud of yourself."
+"Incredibly, you are managing to hold back all the cultists. It's probably not much considering they have probably never trained in their life and you hardly hit anyone but you're still proud of yourself."
 "...Or at least you were until you realize that Taliya has already defeated the minotaur. When the other cultists notice, they all get out of the way."
 scene cavechamber with fade
 t "Was that it?"
@@ -2502,7 +2500,7 @@ mal "You truly are the strongest Astyllian general."
 mc "Cough..."
 mal "...Now imagine how strong of a demon you'd make."
 t "Wh-What..."
-"You see Taliya fall to her knees in front of you, and soon after you're on the ground as well."
+"You see Taliya fall to her knees in front of you and soon after you're on the ground as well."
 mal "I never meant to kill you, Taliya, we want you alive. We want you as our strongest asset."
 "The smoke is now so thick that you can hardly see Taliya anymore... Your vision is getting blurry."
 mal "Don't worry this will only make you sleep."
@@ -2523,11 +2521,11 @@ menu:
     "Don't leave":
         mc "I'm not leaving you behind."
         "You stop and turn around. You unsheath your sword and prepare to fight. Taliya does the same."
-        "The cultists catch up to the two of you and the fight begins... But you can hardly call it that. After just a few swings your arms already feel heavy, and then you hear Taliya falling to the ground."
+        "The cultists catch up to the two of you and the fight begins... But you can hardly call it that. After just a few swings your arms already feel heavy and then you hear Taliya falling to the ground."
         mc "T-Taliya!"
-        "You keep fighting, but you can hardly hit anything with your sluggish swings."
+        "You keep fighting but you can hardly hit anything with your sluggish swings."
         mal "I have to say, for a human you sure have a lot of resistance."
-        "Someone pushes you down and you try to get up again, but your body works agains you."
+        "Someone pushes you down and you try to get up again but your body works agains you."
         mal "...Too bad you're still weak."
         mal "Kair, kill him."
         mc "{i}No! Wait!"
@@ -2579,7 +2577,7 @@ mc "Why bother? She's my friend!"
 tw "..."
 tw "Friends... You would risk your life for them?"
 show prot hopet
-mc "Yes, and I'd do the same for you."
+mc "Yes and I'd do the same for you."
 show twigsmile
 tw "I see."
 "She sighs."
@@ -2613,7 +2611,7 @@ mc "You didn't have to."
 show twignormal2
 "She glares at you."
 mc "Alright, alright. Thank you very much."
-"You grab the cloth and tie it around your face. It doesn't help much, but it's definitely better."
+"You grab the cloth and tie it around your face. It doesn't help much but it's definitely better."
 mc "Now I have to go, Twig."
 tw "Be safe."
 mc "I'll try."
@@ -2634,13 +2632,13 @@ mc "{i}Alright [mc], we find Taliya and we get out as quickly as possible."
 "After a minute you've already found the cave and are traversing it. You put a hand on the grip of your sword and get ready. That's when you hear a few voices in the distance."
 "Cultist 1" "I wish Lawsen didn't have to die for that."
 "Cultist 2" "We needed to be sure she was as strong as the stories tell."
-"Cultist 1" "I know, but as the first to ascend he deserved better."
+"Cultist 1" "I know but as the first to ascend he deserved better."
 play music battlemusic1
-"You unsheath your sword and charge forward. They see you, but they don't have enough time to react that you've cut through both of their bodies. They fall to the ground with pipes in their hands, a red mist comes from them. You cough."
+"You unsheath your sword and charge forward. They see you but they don't have enough time to react that you've cut through both of their bodies. They fall to the ground with pipes in their hands, a red mist comes from them. You cough."
 "And then you notice they weren't alone."
 "Cultist 3" "HE'S BACK!"
 mc "{i}Fuck."
-"The one you couldn't kill starts running away, but you quickly catch up to him and stab him in the back."
+"The one you couldn't kill starts running away but you quickly catch up to him and stab him in the back."
 scene cavechamber with dissolve
 "And there you are, in the chamber again. You see all the cultists with weapons in their hand, red mist in the air... they were probably taking codayn. This time you won't let them poison you."
 scene mcrage with vpunch
@@ -2653,20 +2651,20 @@ scene cavechamber with dissolve
 mc "{i}This is..."
 "You stab a third one and they fall to the ground."
 mc "{i}...Much easier than before."
-"One of them manages to knock your sword out of your hand. It's too far to get it back, but it's only now that you notice a weird red aura around your body."
+"One of them manages to knock your sword out of your hand. It's too far to get it back but it's only now that you notice a weird red aura around your body."
 mc "{i}What..."
-"The cultists attack you once again, but even without your sword you somehow hold your ground. Then an opening presents, and you reach in for one of the cultists' weapon. You grab their arm and twist it. You hear a loud crack but they don't let go of their weapon as they fall to the ground."
+"The cultists attack you once again but even without your sword you somehow hold your ground. Then an opening presents and you reach in for one of the cultists' weapon. You grab their arm and twist it. You hear a loud crack but they don't let go of their weapon as they fall to the ground."
 mc "{i}Perfect."
-"Only six cultists are still standing, and they seem nervous, but they still come at you."
+"Only six cultists are still standing and they seem nervous but they still come at you."
 mc "C'mon guys, show me more of your demonic strength."
 "You punch one in the face, knocking them unconscious... No, you heard a crack."
 "Another one attacks you but you easily avoid it and punch then back in the face. They cough blood and fall to the ground."
 mc "What..."
-"Another one lounges at you, but you simply grab their weapon with one hand and toss it to the side. Their eyes widen as you headbutt them in the face, sending them flying straight to the ground."
+"Another one lounges at you but you simply grab their weapon with one hand and toss it to the side. Their eyes widen as you headbutt them in the face, sending them flying straight to the ground."
 "The three remaining cultists are staring at you as if they were looking at a monster."
 "Cultist" "H-His eyes! Th-That aura!"
 "Cultist 2" "H-He's ascending! Run!"
-"They all drop their weapons and immediately start running away. You feel like following them, but you can't: Taliya is why you're here for."
+"They all drop their weapons and immediately start running away. You feel like following them but you can't: Taliya is why you're here for."
 "Cultist" "...Don't you see what's happening?"
 scene demoncultist1 with fade
 mc "{i}Maleik...? No, it's not him."
@@ -2677,7 +2675,7 @@ scene cavechamber with hpunch
 "You grab him by the neck and lift him off the ground."
 mc "Where. Is. She."
 "Cultist" "D-Doesn't it feel great t-to be a Demon?"
-"It does, you think to yourself. You're feeling so powerful right now, but you won't let him know that. You're here for Taliya."
+"It does, you think to yourself. You're feeling so powerful right now but you won't let him know that. You're here for Taliya."
 "You tighten your grip, his face is starting to get red. He tries to say something but he can't manage, so he simply points with his finger in a direction."
 mc "Thanks."
 "You quickly tighten your grip until you snap his neck and only then you let him go. He falls to the ground lifeless."
@@ -2690,7 +2688,7 @@ mc "Taliya, it's me."
 "You remove her mask and then offer her your least-bloody hand to get up."
 scene taliyadruged
 mc "We need to get out, can you walk?"
-"She tries to stand, but you notice she's still to weak. She's probably inhaled much more gas than you."
+"She tries to stand but you notice she's still to weak. She's probably inhaled much more gas than you."
 mc "Alright, it's fine, I'll carry you."
 t "N-No, just help me walk."
 mc "..."
@@ -2699,7 +2697,7 @@ mc "Wait, let me get your stuff first at least."
 "You let her sit down again and then look for her clothes and, most importantly, her crystal. Fortunately they're all still there, on a table."
 mc "{i}There was no need to take off her clothes, was there?"
 scene cavechamber with fade
-"You go back to her and help her dress up again, then the two of you slowly walk out of there. Taliya is still in a state of confusion, but she's slowly regaining her senses. As you walk past the first two cultists you killed she looks at you."
+"You go back to her and help her dress up again, then the two of you slowly walk out of there. Taliya is still in a state of confusion but she's slowly regaining her senses. As you walk past the first two cultists you killed she looks at you."
 t "[mc]...? D-Did you..."
 mc "Yes."
 "You aren't sure if she's astonished or disgusted."
@@ -2707,12 +2705,12 @@ scene darkcave with fade
 stop music fadeout 4
 "When you arrive at the ladder you tell her to cling on to you and even though at the beginning she refuses, after trying to climb for herself and failing, she accepts."
 scene slums1 with fade
-"You climb out of the Dump, like Twig called it, and start making your way back up. You'll come get Twig as soon as Taliya has regained her strength."
+"You climb out of the Dump, like Twig called it and start making your way back up. You'll come get Twig as soon as Taliya has regained her strength."
 "The guards you met on your way down snicker seeing you going back up."
 "Guard 1" "Found what you were looking for? Hahah! We're still up if she wants to lend us a hand!"
 "You stare at them dead in the eyes."
 "Guard 1" "...Sheesh man, I was just joking."
-"You walk for a while with Taliya still leaning into you, but after an hour of slowly walking your way up, she's finally able to at least walk on her own. Every once and then she trips on her own foot, but she manages to catch herself."
+"You walk for a while with Taliya still leaning into you but after an hour of slowly walking your way up, she's finally able to at least walk on her own. Every once and then she trips on her own foot but she manages to catch herself."
 "Finally you reach an inn. You buy a room and get in with her. She sits on the bed."
 $ money -= 10
 scene karnakinnroom with fade
@@ -2739,7 +2737,7 @@ mc "It's nothing. After all we're friends, aren't we?"
 t "Hah, you're right... Though usually I'm the one who saves people."
 mc "Sometimes a change of pace is good."
 t "Yeah... Being saved feels nice..."
-"She leans onto you, but you're not sure if it's on purpose or because she's still weak."
+"She leans onto you but you're not sure if it's on purpose or because she's still weak."
 t "I think... I need to lay down a bit."
 mc "Alright."
 "You get up and she lays down on her bed. She seems to quickly fall asleep."
@@ -2755,7 +2753,7 @@ mc "{i}Her eyes..."
 t "Mnh... Shhh...."
 "She kisses you."
 mc "Wh-"
-"She forces her tongue inside your mouth and makes out with you, but you're still too in shock to move. No, it's not just that. Her eyes aren't of her usual color... They're red."
+"She forces her tongue inside your mouth and makes out with you but you're still too in shock to move. No, it's not just that. Her eyes aren't of her usual color... They're red."
 mc "{i}These must be the effect of the codayin..."
 "She quickly stops the kiss and sits back up while giggling."
 scene taliyagrindanim
@@ -2813,7 +2811,7 @@ mc "{i}Did she just fall asleep?"
 mc "Sigh."
 "You grab her and take her back to her bed, putting a sheet on her. As you walk back to your bed though, you realize the line of clothes thrown on the ground between the two beds: First her shirt next to her bed, then her belt, her pants, her boots... then her panties next to your bed."
 mc "{i}Taliya would never act like this... It's definitely because of what they did to her. She wasn't feeling good at all."
-"You realize you should probably hide the incriminating evidence and put everything next to her bed, folded tightly on a chair, and then you go back to sleep."
+"You realize you should probably hide the incriminating evidence and put everything next to her bed, folded tightly on a chair and then you go back to sleep."
 scene black with fade
 "The next morning she wakes up as if nothing had happened."
 scene karnakinnroom with fade
@@ -2841,7 +2839,7 @@ if twigRescue == True:
     mc "Remember the girl you saw last time?"
     t "[mc]. No. You aren't going to heroically save a slave. We'll get in trouble."
     mc "She's the one who saved me yesterday! We'd both be dead if it weren't for her. I owe her."
-    t "Well you might owe her, but somebody {b}owns{/b} her. We can't just skip the law of this place like that."
+    t "Well you might owe her but somebody {b}owns{/b} her. We can't just skip the law of this place like that."
     mc "We did just yesterday."
     t "With money. Do you have the money to buy her?"
     window hide
@@ -2920,7 +2918,7 @@ if twigRescue == True:
 "The two of you walk up to the wagon in the front. As you get up you realize there's a few more soldiers in there. Taliya introduces you to them. They seem friendly but they're still very formal and you don't feel that comfortable."
 stop music fadeout 2
 scene black with fade
-"The wagons depart, and once again you go through the same journey you've already been two times before. You can almost recite all the town from Randel to Karnak by memory: Ashterbur, Gilles, Barew, Scetyrm-"
+"The wagons depart and once again you go through the same journey you've already been two times before. You can almost recite all the town from Randel to Karnak by memory: Ashterbur, Gilles, Barew, Scetyrm-"
 t "[mc]?"
 scene taliyacart1 with dissolve
 "You suddenly awake. It's daytime and you can see that you're already in front of the door to Karnak."
@@ -2937,14 +2935,14 @@ scene karnakspire with fade
 mc "{size=-2}They're all looking at us..."
 t "They're not really that fond of Astylla."
 mc "...Yeah but-"
-t "There's fifty of our men guarding the entry of the city, and another 50 inside. It's normal, don't worry. It's actually already really nice that they let us in with no problem."
+t "There's fifty of our men guarding the entry of the city and another 50 inside. It's normal, don't worry. It's actually already really nice that they let us in with no problem."
 mc "I guess you're right."
 scene karnakinterior with fade
 "You keep descending through the city with the men behind you until you finally reach the entrance of the last floor. There's even more guards than last time."
 "Guard Captain" "You! I remember you!"
 t "Of course you do. Now move. We've been authorized to enter this floor."
-"The guards stand there for a second, but then they move out of the way, a few spit on the floor."
-"Guard Captain" "Filthy Astyllians... First you sneak past us, and now you bring your whole army along? Arrogance and Astylla can't seem to not go together."
+"The guards stand there for a second but then they move out of the way, a few spit on the floor."
+"Guard Captain" "Filthy Astyllians... First you sneak past us and now you bring your whole army along? Arrogance and Astylla can't seem to not go together."
 t "There's no need to comment."
 "Guard Captain" "This is Karnak, feel lucky you're being let pass after the mess you did last time. When slaves start disappearing it's us who get in trouble."
 t "Slaves? Disappear?"
@@ -2953,7 +2951,7 @@ mc "{i}...Twig."
 t "Damn it, I should've known this would happen."
 scene karnakinterior with vpunch
 t "Everybody! Hurry up! We need to get down there as quickly as possible!"
-"Everybody quickly starts marching again, faster than before, and so you quickly reach the ledge. Some soldiers take out lamps and light them, then you all climb down."
+"Everybody quickly starts marching again, faster than before and so you quickly reach the ledge. Some soldiers take out lamps and light them, then you all climb down."
 play music creepymusic
 scene darkcave with fade
 "With the lamps, it's suddenly much, much easier to move through the Dump. You make your way through the cave and when you arrive to the chamber, nobody is there to be seen... At least not anyone alive."
@@ -2972,14 +2970,14 @@ mc "God... What is this smell..."
 t "..."
 t "Unfortunately, I think I know. Scottie, Basche, make some light."
 "Two men move in front of you, their lanterns raised."
-"Slowly a mount of dead bodies piled on top of each other is revealed. Most of them aren't fully human anymore, but it's clear the transformation process killed them... and it must've been very painful too."
+"Slowly a mount of dead bodies piled on top of each other is revealed. Most of them aren't fully human anymore but it's clear the transformation process killed them... and it must've been very painful too."
 mc "I'm going to puke-"
-"You vomit on the floor, Taliya puts a hand on your back to comfort you, but you can feel from her touch she's upset too."
+"You vomit on the floor, Taliya puts a hand on your back to comfort you but you can feel from her touch she's upset too."
 "Soldier" "Fucking monsters..."
 t "They must've tried to turn as many people as possible into demons before leaving... There's at least a hundred dead people in here."
 "Soldier" "They're all..."
 t "Mid transformation. They failed each and every attempt... And they still kept going."
-"You move away from that horrible view, but as soon as you turn around, in a corner, you see something else."
+"You move away from that horrible view but as soon as you turn around, in a corner, you see something else."
 stop music
 "No, not something, it's someone. It's..."
 scene twigdeath with fade
@@ -3016,7 +3014,7 @@ mc "Huh?"
 mc "Fine."
 t "Good."
 scene cavechamber with fade
-"The two of you get up, and as you walk away from the cave, you hear Taliya shouting orders."
+"The two of you get up and as you walk away from the cave, you hear Taliya shouting orders."
 t "{size=+1}Search everything. And I mean EVERYTHING. Boxes, barrells, sacks, bodies, even rocks!"
 scene darkcave with fade
 pause 1
@@ -3036,7 +3034,7 @@ t "...Sigh."
 scene innlowerfloor with fade
 "You then head to an inn with enough room for the whole company and rent it for the night. All soldiers sleep in rooms together except for you and Taliya, who both have your own room."
 "Soon enough the soldiers begin drinking, the whole company gets drunk, yet you don't really feel like drinking... It's not the time to party. Not after that."
-"You look around and see Taliya. She's talking with a few of her troops, so you decide to leave her alone and just leave. You walk up to your room and sit on your bed. You can still hear them singing and dancing from below, but at least now it's much more muffled."
+"You look around and see Taliya. She's talking with a few of her troops, so you decide to leave her alone and just leave. You walk up to your room and sit on your bed. You can still hear them singing and dancing from below but at least now it's much more muffled."
 scene karnakinnroom with fade
 show prot surprised
 "You sigh. You really hoped you could get Maleik and the few others that escaped you last time."
@@ -3100,10 +3098,10 @@ mc "G-Good night!"
 mc "...I guess in the end I got my reward."
 "You go to sleep."
 scene black with fade
-"The next morning you all leave and head back to Randel. The way back is really boring, and neither you or Taliya mention the kiss."
+"The next morning you all leave and head back to Randel. The way back is really boring and neither you or Taliya mention the kiss."
 mc "{i}Not that it was anything that incredible... It was just a kiss on the cheek."
 mc "{i}But..."
-"You hadn't seen Taliya around her comrades before these last few days. She is friendly with them, but it's clear she's just being a good boss. She treats you much differently, even before you saved her."
+"You hadn't seen Taliya around her comrades before these last few days. She is friendly with them but it's clear she's just being a good boss. She treats you much differently, even before you saved her."
 mc "{i}Maybe she..."
 mc "{i}No, just because we're friends doesn't mean she likes me. She's like twice my age..."
 scene karnak with fade
@@ -3112,7 +3110,7 @@ scene forrest with fade
 pause 1
 scene villageback with fade
 show prot normal
-"And so, after the usual three days of travel, you arrive at Randel again. Taliya gives a short speech to her troops and then they go off. You expected her to leave as well, but she stays there."
+"And so, after the usual three days of travel, you arrive at Randel again. Taliya gives a short speech to her troops and then they go off. You expected her to leave as well but she stays there."
 show tal normal
 "She turns towards you."
 t "I expect to see you at the Academy, recruit."
@@ -3147,7 +3145,7 @@ t "No, there's something else too. We're holding a party at the barracks and I t
 mc "Really? Why?"
 t "What do you mean why?"
 mc "I'm not really a soldier or anything."
-t "First of all, you're a recruit and that counts. Second of all, and most importantly, we're partners aren't we?"
+t "First of all, you're a recruit and that counts. Second of all and most importantly, we're partners aren't we?"
 mc "Yeah, I guess you're right... I just hope I won't stick out like a sore thumb."
 t "Hah, don't worry about it."
 mc "What's the occasion, by the way?"
@@ -3180,7 +3178,7 @@ if fmgd < 1:
 jump start_fightMiniGame
 label a23456789087654:
 if randel_fails < 4 and swordlvl > 18:
-    "It's only been about a month since you started, but you've improved a lot. You've seen Taliya fight for real during your time with her and you can sense her fighting you more seriously now than she did the first time."
+    "It's only been about a month since you started but you've improved a lot. You've seen Taliya fight for real during your time with her and you can sense her fighting you more seriously now than she did the first time."
     t "You know, [mc]."
     menu:
         "Stay focused":
@@ -3196,7 +3194,7 @@ if randel_fails < 4 and swordlvl > 18:
                 t "I'm twice your age, [mc], that's still pretty good."
                 mc "I guess you're right."
             label taliyaQTE1:
-                "You manage to duck in time and you try to attack her back now that she's exposed. Her eyes widen as she sees your sword coming towards her, but then she smiles and manages to really quickly take a few steps back before you can reach her."
+                "You manage to duck in time and you try to attack her back now that she's exposed. Her eyes widen as she sees your sword coming towards her but then she smiles and manages to really quickly take a few steps back before you can reach her."
                 t "...an understatement, indeed. It seems you've learned how to avoid that."
                 mc "I did."
                 "The two of you now stand a few feet apart, out of reach from each other."
@@ -3205,10 +3203,10 @@ if randel_fails < 4 and swordlvl > 18:
                 "Taliya giggles."
                 t "I might not if I don't get serious."
                 mc "Then what are you wa-"
-                # For the future. I want a CG here.
+                # TODO: I want a CG here.
                 "You can't even finish the sentence that Taliya dashes towards you at a speed you didn't know she was capable of and she lightly taps your chin with the hilt of her sword. She's now standing only a few inches away from you."
                 t "I was waiting for you to get distracted."
-                "You can see she's sweating a bit, and her breath is heavier than usual. Ignoring how hot she looks like that, it's clear that {b}that{/b} was her getting serious."
+                "You can see she's sweating a bit and her breath is heavier than usual. Ignoring how hot she looks like that, it's clear that {b}that{/b} was her getting serious."
                 mc "Well, you got me."
                 "Taliya finally moves away from you."
                 t "If I didn't, I'd have resigned this evening."
@@ -3221,7 +3219,7 @@ if randel_fails < 4 and swordlvl > 18:
             "You don't get time to finish your sentence that she has dashed towards you and hit you with the tip of her sword right on your stomach."
             t "...an understatement. Yet, you should probably focus more on fighting or those skills will go to waste."
             mc "You're the one who started talking."
-            t "I'm also your general, your teacher, and one of the strongest people you know."
+            t "I'm also your general, your teacher and one of the strongest people you know."
             mc "Sigh..."
             t "Don't be sad. You're good enough to become just as strong as I am in a few years."
             mc "Yeah, in a few years."
@@ -3229,7 +3227,7 @@ if randel_fails < 4 and swordlvl > 18:
             mc "Yeah, I guess you're right."
 elif randel_fails < 4:
     $ renpy.notify ("{color=#fff}Sword skill check: {color=#A50000}Fail. ([swordlvl] < 19)")
-    "You are doing much better than last time, but you still aren't hitting her... She's too strong."
+    "You are doing much better than last time but you still aren't hitting her... She's too strong."
     t "Not bad."
     "Taliya takes a step closer and hits you right in the chest."
     t "But it can still improve."
@@ -3239,11 +3237,10 @@ elif randel_fails < 4:
     mc "Not today, clearly."
     t "Eventually."
 else:
-    "You try as hard as you can, but... She takes a step closer and hits you right in the chest."
+    "You try as hard as you can but... She takes a step closer and hits you right in the chest."
     t "A bit sloppy today, aren't we?"
     mc "That is definitely not the only reason I lost."
     t "Hahah, you're right. I'm quite good myself."
-$ randel_fails = 0
 scene arena with fade
 show tal normal
 show prot normal
@@ -3266,7 +3263,7 @@ t "It's the symbol of the Maryas."
 mc "As in, {b}the{/b} Maryas?"
 t "Yeah. If this isn't a fake... It could be the very same blade that slayed the Demon King."
 mc "You mean it could've been Gladius Hans'?"
-t "Well, either his, or of one of the other Maryas. Y'know, Rina, Ulof, and Scar."
+t "Well, either his, or of one of the other Maryas. Y'know, Rina, Ulof and Scar."
 mc "I doubt it was Scar's."
 t "Hey! Mages have swords too... Sometimes."
 mc "Yeah, yeah."
@@ -3336,7 +3333,7 @@ tr "They liked me so much they decided to give me the job to instruct new recrui
 "She looks at Taliya and smirks."
 tr "...Guess who had just enrolled in the army?"
 t "Please don't remind me."
-tr "Oh I could tell you so many stories, lad, but the look in her eyes tells me she'd beat me up if I tried."
+tr "Oh I could tell you so many stories, lad but the look in her eyes tells me she'd beat me up if I tried."
 mc "Hahah... Hah..."
 "The three of you go silent."
 tr "Well, it was a pleasure having you here Taliya. I'll go back to drinking now. See ya after!"
@@ -3350,9 +3347,9 @@ t "What do you think?"
 mc "{i}Oh right... She was an orphan and a criminal before getting into the army. Heh, must've been a little pest then."
 mc "Right, right."
 scene taliyaq6party with dissolve
-"The two of you keep wandering around the party, drinking and eating in the mean time. At one point music starts and everyone starts dancing, but Taliya seems unwilling to join everyone else, so you also don't."
+"The two of you keep wandering around the party, drinking and eating in the mean time. At one point music starts and everyone starts dancing but Taliya seems unwilling to join everyone else, so you also don't."
 "After a while some people start getting tired and sit down. A few of them sit next to the two of you and ask you about how you met and what you did together on your missions."
-"You feel a bit awkward having all these questions aimed at you, but Taliya helps you out answering for you when you don't know how."
+"You feel a bit awkward having all these questions aimed at you but Taliya helps you out answering for you when you don't know how."
 "Somehow even when drunk they seem to respect Taliya a lot, not even one of them makes a weird remark towards her. She, on the other hand, remembers the name of each and every one of them."
 mc "{i}She really is a model general."
 "Then, when she seems to be finally sick of all the questions, she grabs a cup and slams it on the table."
@@ -3376,7 +3373,7 @@ t "Alright, then! Bring us as much beer as you can! These mugs will be empty soo
 "You and Taliya begin drinking. She had already drunk more than you before the match even started but she's handling it like a champ. Better than you at least."
 t "C'mon, [mc]! You're already all red! Hahaha!"
 mc "It's... my tenth drink..."
-"The two of you keep going another while, but she's already ahead of you. On the 14th mug you can feel yourself getting ready to puke."
+"The two of you keep going another while but she's already ahead of you. On the 14th mug you can feel yourself getting ready to puke."
 mc "I... give up..."
 t "I won! Hahah! Who's next?"
 "Everyone cheers and a few soldiers grab you and lift you up above the crowd."
@@ -3385,7 +3382,7 @@ tr "I want to go next!"
 t "What?!"
 "You hear Taliya's voice fading as you are thrown around farther from her."
 "The party goes on for a few more hours into the night, you find out that Triss apparently won the drinking contest while you're left sitting on a table."
-"You see Taliya going around and having fun, and in the end the alcohol gets the best of you and you pass out."
+"You see Taliya going around and having fun and in the end the alcohol gets the best of you and you pass out."
 scene black with dissolve
 stop music
 pause 1
@@ -3404,12 +3401,12 @@ pause 0.7
 "You feel a chill through your nether regions."
 "{color=#DD8E8B}???" "So big..."
 scene taliyaq6party with flash
-"You suddenly open your eyes and straighten up. You're sitting on one of the benches in front of the tables of the barracks' dining hall, but you're still feeling something weird... Something warm and wet..."
+"You suddenly open your eyes and straighten up. You're sitting on one of the benches in front of the tables of the barracks' dining hall but you're still feeling something weird... Something warm and wet..."
 scene taliyablowjob with vpunch
 pause 3
 mc "WH-WHAT!?"
 "When you look down, you see Taliya sucking you off. Her cheeks are flushing red, she is... definitely really drunk."
-"She looks up at you innocently, but you aren't liking how this is going, so quickly get up."
+"She looks up at you innocently but you aren't liking how this is going, so quickly get up."
 scene taliyaq6party with vpunch
 show tal normal
 show prot angry
@@ -3419,7 +3416,7 @@ show tal sad
 mc "..."
 show prot normal
 mc @talk "You're drunk, Taliya."
-t @smilet "Yeah, and?"
+t @smilet "Yeah and?"
 show tal smile
 mc @talk "You're not yourself, let's not do anything we might regret tomorrow mor-"
 "Taliya walks up to you and puts her fingers on your chests. She moves her head even closer and then she whispers into your ear."
@@ -3479,7 +3476,7 @@ menu:
         else:
             mc "W-Wait, Taliya, w-what if someone wakes up?"
             t "They won't, don't worry. If you're not relaxed you won't enjoy it~"
-        "Once you're fully naked, she starts removing her clothes in front of you. You've already seen her naked, but never {b}undressing{/b}, and now she's doing it in front of you. You can already feel your dick getting hard."
+        "Once you're fully naked, she starts removing her clothes in front of you. You've already seen her naked but never {b}undressing{/b} and now she's doing it in front of you. You can already feel your dick getting hard."
         "She turns around and smiles at you staring at her body."
         t "Like what you see, [mc]?"
         mc "I do."
@@ -3493,7 +3490,7 @@ menu:
         "Your dick twitches between her tight grasp and you hear her let out a satisfied giggle."
         t "I suppose you're already enjoying this?"
         if mcBold == True:
-            mc "I am, but please, keep going."
+            mc "I am but please, keep going."
         elif mcNormal == True:
             mc "It feels great."
         else:
@@ -3594,7 +3591,7 @@ menu:
         scene taliyasex
         show taliyaroom
         mc "Gladly."
-        "You get right behind her on the bed and then grab her by the hair. She gasps, and then, without hesitation, you slide your cock right in."
+        "You get right behind her on the bed and then grab her by the hair. She gasps and then, without hesitation, you slide your cock right in."
         hide taliyaroom with fade
         play music taliyathighjob2
         pause 3
@@ -3644,7 +3641,7 @@ menu:
         t "Yay~!"
         mc "But not here! Let's go to your room."
         t "You're not gonna do me on the table?"
-        mc "I would love to, but if anyone wakes up we're fucked. C'mon lead the way."
+        mc "I would love to but if anyone wakes up we're fucked. C'mon lead the way."
         t "Mh... I guess you're right..."
         "She begins walking away. You grab a candle and follow her."
         scene taliyaroom with fade
@@ -3676,7 +3673,7 @@ menu:
         show taliyawax1b
         t "W-Wait what are you-"
         mc "Let's try something~"
-        "The look she's giving you is a big scared, but you can feel her pussy getting wet."
+        "The look she's giving you is a big scared but you can feel her pussy getting wet."
         t "T-Try wh-"
         "You thrust again and, as you do so, wax drips on her."
         scene taliyawax2 with vpunch
@@ -3733,7 +3730,7 @@ menu:
         t "R-Round what?"
         scene taliyasex
         show taliyaroom
-        "You smirk and quickly turn her over. You put away the candle so quickly the flame goes out, but you can still see even in this dark."
+        "You smirk and quickly turn her over. You put away the candle so quickly the flame goes out but you can still see even in this dark."
         "You grab Taliya by the hair and before she can protest even once, you thrust inside of her."
         hide taliyaroom with fade
         play music taliyathighjob2
@@ -3807,9 +3804,9 @@ t "We're in the middle of a war, [mc]... We might never see each other again."
 mc "Don't say that."
 t "I've never had someone like you before, [mc]. Not in the past fifteen years."
 mc "..."
-t "I'm not sure if what I feel is love, but I know that I care about you a lot. You've done a lot for me too.{p}It had been a while since I last was just... Taliya. Not General Taliya, just... regular me."
+t "I'm not sure if what I feel is love but I know that I care about you a lot. You've done a lot for me too.{p}It had been a while since I last was just... Taliya. Not General Taliya, just... regular me."
 t "I always put others first and forget about myself... after all I hardly need anyone to look after me."
-t "I hadn't needed someone's help in over a decade and no one else has felt the need to protect me, but you... Even though you had no reason to, you still cared for me and made me feel... valued."
+t "I hadn't needed someone's help in over a decade and no one else has felt the need to protect me but you... Even though you had no reason to, you still cared for me and made me feel... valued."
 t "You made me realise that... I want this. I want someone like you in my life... But I can't have {b}you{/b}. Not while the Demon Army is still standing. Not while any one of us could be dead tomorrow."
 mc "..."
 t "I'll end this war and I'll come back for you. In the mean time, this was the only way I could thank you before leaving."

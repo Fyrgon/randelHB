@@ -7,10 +7,10 @@ if time == 4 and theagotjob == 1 and TheaMolest == True and theanight == False:
     mc "{i}......"
     mc "{i}A beautiful log."
     mc "{i}Hah..."
-    mc "{i}No, what the hell am I thinking? I shouldn't a perv."
+    mc "{i}No, what the hell am I thinking? I shouldn't perv on her."
     "..."
     "......"
-    "{i}Or should you?"
+    "{i}Or should I?"
     menu:
         "No.":
             mc "{i}No! [mc], you're better than this! You're not a sick pervert who molests innocent girls at night!"
@@ -61,7 +61,7 @@ menu:
                 mc "Nah, I'm fine. It might just heal itself."
                 th "Wait, I think I have some herbs for this. I plucked some earlier to make some soup. There might be some left."
                 th "I'll go check, wait here."
-                "Thea runs to the kitchen, and after a while, she comes back with some grinded leaves."
+                "Thea runs to the kitchen and after a while, she comes back with some grinded leaves."
                 th "We're in luck! There were some herbs left. Now, stay still."
                 show black with fade
                 "Thea carefully applies the medicine around your black eye."
@@ -227,8 +227,6 @@ menu:
             jump home
 
 
-
-
 label theaTalkHome:
 show smilemc
 show normalth
@@ -255,18 +253,6 @@ menu:
         mc "See you later then!"
         th "Bye, [mc]."
         jump home
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 label theanight:

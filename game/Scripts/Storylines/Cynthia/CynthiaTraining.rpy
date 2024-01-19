@@ -44,7 +44,7 @@ label CynthiaTraining:
         c "Two..."
         c "THREE!!!"
         scene trainingcynth1
-        "You start off running, but you're not sure you can get your legs to run as fast as you can carry. More like flopping your legs wildly."
+        "You start off running but you're not sure you can get your legs to run as fast as you can carry. More like flopping your legs wildly."
         show trainingcynth2 with easeinright
         "You can see Cynthia making a break for the tree. She runs like a real athlete compared to you, making use of her arms and legs."
         hide trainingcynth2 with easeoutright
@@ -106,7 +106,7 @@ label CynthiaTraining:
         mc "{i}She really doesn't mind about sharing her bottle with me, huh?"
         "You take the bottle. You start to take a sip of it."
 
-        "It tastes like water, but you feel a little sweetness in it as well. It also adds a refreshing feel to it being cold."
+        "It tastes like water but you feel a little sweetness in it as well. It also adds a refreshing feel to it being cold."
         mc "Mmmh... thanks!"
 
         c "Go on, take a few more sips."
@@ -191,7 +191,7 @@ label CynthiaTraining:
         mc "What day?"
         c "The glob, what did it show you?"
         mc "I thought I was supposed to erase it from my mind."
-        c "Yeah, but I'm curious. Did it look real?"
+        c "Yeah but I'm curious. Did it look real?"
         mc "Uhm... Y-Yeah."
         c "What did you see exactly? I know you saw my tits."
         c "But how were you fooled? Why did you follow it so easily?"
@@ -215,7 +215,7 @@ label CynthiaTraining:
         c "Alright, alright. It's just fascinating to me, that's all."
         c "Don't you think?"
         mc "Yeah, kind of."
-        c "You can wear the toughest armor or have the strongest blade, but if you can't protect your mind, you're fucked. You ought to have covered all the fields to be fully prepared, both mind and body. "
+        c "You can wear the toughest armor or have the strongest blade but if you can't protect your mind, you're fucked. You ought to have covered all the fields to be fully prepared, both mind and body. "
         mc "Mh..."
         if killledric >= 1:
             mc "I've fought a similar monster that uses the same technique. That almost appeared to me as human until I saw past its lies."
@@ -334,7 +334,7 @@ label CynthiaTraining:
         show trainingcynth2 with hpunch
         mc "Not today!"
         c "Hehehe. Yeah, that's the spirit!"
-        "You keep running as best as you can. Though you're unable to pass her, but you keep running at the same pace until you reach the finish line."
+        "You keep running as best as you can. Though you're unable to pass her but you keep running at the same pace until you reach the finish line."
         scene forrest with fade
         show talksadhappymc
         show talknc
@@ -433,7 +433,7 @@ label CynthiaTraining:
         mc "Alright."
         mc "......"
         mc "Thanks, Cynthia, for all of this."
-        mc "I didn't expect it, but you really helped me a lot."
+        mc "I didn't expect it but you really helped me a lot."
         show sadc
         pause 0.5
         show talknc
@@ -451,7 +451,7 @@ label CynthiaTraining:
         mc "{i}Granted, she was a cold bitch before and never liked me... Feels good now she's being nicer to me."
         mc "{i}But what is she really like though?"
         mc "{i}......"
-        mc "{i}I think we've grown a lot closer now, but I feel like there's still something more that she's holding back."
+        mc "{i}I think we've grown a lot closer now but I feel like there's still something more that she's holding back."
         mc "{i}sigh"
         mc "{i}We'll just have to wait and see where this goes."
         $ cynthtrain += 1

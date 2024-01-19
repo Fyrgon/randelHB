@@ -88,7 +88,7 @@ label preCynthia:
         g "Yeah. Thane is under high alert, since it's near Fort Hern."
         g "If the fort goes down, they'll be the first to get attacked."
         mc "But why now? Hern's still holding, right?"
-        g "Yeah, but for how long? They say the Demon King's army is getting stronger every day."
+        g "Yeah but for how long? They say the Demon King's army is getting stronger every day."
         mc "......"
         g "Anyway, I hear she's a really nice person. Friendly, caring and beautiful, of course."
         hide talkhappymc
@@ -160,7 +160,7 @@ label questcynth:
     hide talkwanmc
     c "Do you hesitate?"
     show talkwanmc
-    mc "N-No, but they're-"
+    mc "N-No but they're-"
     hide talkwanmc
     c "Monsters? "
     c "Well let me tell you something; these \"people\" steal, murder and rape innocent people. These \"people\" are worse than monsters."
@@ -185,7 +185,7 @@ label questcynth:
     mc "Sounds like a plan."
     scene ambush1 with fade
     "The two of you separate and start to scout the area, keeping mindful of traps that may have been placed around the camp."
-    "After a few minutes you spot the bandit camp, but realize that the camp has apparently been attacked already. There is blood everywhere but no sign of any dead bandits."
+    "After a few minutes you spot the bandit camp but realize that the camp has apparently been attacked already. There is blood everywhere but no sign of any dead bandits."
     mc "{i}What the hell happened here? Where are the bodies? Did Cynthia do this?"
     mc "{i}No, she went in the other direction, it can't be her... and I would've heard something if there was a big brawl here while I was scouting... I better leave and regroup with Cynthia."
     "You carefully head back to where Cynthia told you to meet her. As you near the area you hear a deep gravelly voice..."
@@ -233,7 +233,7 @@ label questcynth:
         "Save her":
             $ persistent.saveCynthia = True
             $ savecynth += 1
-            mc "{i}She might be a bitch, but I have to help her."
+            mc "{i}She might be a bitch but I have to help her."
             "You come out of the bushes screaming."
             mc "COME GET SOME, ASSHOLE!!"
             "Unknown" "What the fu-"
@@ -294,7 +294,7 @@ label liveqte1:
     c "......"
     mc "C'mon Cynthia, we can take him!"
     c "Run."
-    mc "What!? It's two on , and he's already injured-"
+    mc "What!? It's two on  and he's already injured-"
     c "I SAID FUCKING RUN!"
     mc "Your bag!"
     c "Leave it!"
@@ -355,7 +355,7 @@ label liveqte1:
     scene forrestn
     "You pitch in the tent."
     mc "Come in, m'lady!"
-    c "Try anything, and I will kill you."
+    c "Try anything and I will kill you."
     mc "Ok, ok, sheesh."
     scene sleepcynthia5
     pause
@@ -381,7 +381,7 @@ label liveqte1:
     c "The stupid bitches at the Academy are annoying though, always following me around asking this and that."
     c "\"Do you think Lenius likes me?\", \"Do you think my boobs look big in this dress?\" ...Urgh, I don't give a shit! Just fucking shut up!"
     mc "......"
-    mc "The way you killed that guy back there... I mean, he was already dead, but... you showed no hesitation."
+    mc "The way you killed that guy back there... I mean, he was already dead but... you showed no hesitation."
     c "......"
     c "I lived in Thane. That city has been in chaos since before I was even born. Maybe because it was the closest to the border."
     c "Since the army was so preoccupied with the border, bandits would always break into houses and steal, murder... Rape."
@@ -389,7 +389,7 @@ label liveqte1:
     mc "So... you've killed people before?"
     c "......"
     c "Yeah... but I don't like to call them people."
-    mc "I never knew it was that bad. I mean I've heard the town had some problems, but I didn't think it was that bad."
+    mc "I never knew it was that bad. I mean I've heard the town had some problems but I didn't think it was that bad."
     c "The town was beyond saving in the eyes of the kingdom, so they didn't really care. They were too busy holding the border."
 
     mc "It must have been very tough for you, I'm sorry."
@@ -549,7 +549,7 @@ label liveqte1:
     show talkwancb
     c "You cut off its arms, right?"
     mc "Yeah, I think it was controlling those bandits with the orbs in its hands."
-    c "I thought so too. If it can't possess bodies, then its prety much harmless... creepy, but still harmless."
+    c "I thought so too. If it can't possess bodies, then its prety much harmless... creepy but still harmless."
     mc "You're right."
     mc "So, it's over then?"
     hide talkwancb
@@ -568,7 +568,7 @@ label liveqte1:
     mc "Yeah, we're fine."
     j "I never would have thought that a Lelluk could be so close to Randel."
     c "Yeah, I was pretty suprised too."
-    j "It's a good thing you had Cynthia with you, [mc]. She might not look like it, but she's a tough nut to crack!"
+    j "It's a good thing you had Cynthia with you, [mc]. She might not look like it but she's a tough nut to crack!"
     mc "......"
     c "Well... it was [mc] who slayed it."
     j "Really?! ...Wow [mc], well done."
@@ -830,9 +830,9 @@ label cynthquest3:
     c "Trust me!"
     mc "...URGH!"
     hide glob5 with easeoutleft
-    "Without second thoughts, you jump to the side. The monster rushes pass you. It moves straight forward, and after some time it stops... by tripping over and skidding across the ground. It lies dead."
+    "Without second thoughts, you jump to the side. The monster rushes pass you. It moves straight forward and after some time it stops... by tripping over and skidding across the ground. It lies dead."
     stop music fadeout 0.9
-    "Cynthia jumps down from the dead monster and walks towards you, hardly with any major damage on her, but still roughed up."
+    "Cynthia jumps down from the dead monster and walks towards you, hardly with any major damage on her but still roughed up."
     scene forrest with fade
     show smilenc with easeinright
     play music forest
@@ -931,7 +931,7 @@ label cynthquest3:
     c "But you'll need to train a bit."
     mc "Why?"
     c "The way you ran earlier. If that wasn't a glob chasing you, you would've been eaten."
-    c "I don't know about your sword and bow skills, but your agility needs some work."
+    c "I don't know about your sword and bow skills but your agility needs some work."
     mc "So, you want me to be better at running away from monsters?"
     c "That's important too, you know."
     mc "For you, that would make me better bait."
@@ -960,7 +960,7 @@ label cynthquest3:
     hide smilenc with easeoutleft
     mc "B-Bye."
     show normalcg with easeinleft
-    c "Oh, and [mc], what the glob showed you back there. You better erase it from your mind."
+    c "Oh and [mc], what the glob showed you back there. You better erase it from your mind."
     show suprised
     hide normalcg with easeoutleft
     mc "{i}She heard me."
@@ -1120,7 +1120,7 @@ mc "What?"
 c "Yeah, if you give them to the barracks, you get paid."
 mc "Then why the hell are you keep them stored in your cupboard?"
 c "Well..."
-c "First, I thought of handing them over to the barracks, but..."
+c "First, I thought of handing them over to the barracks but..."
 c "I couldn't convince myself to give them away."
 show talknc
 c "I kinda like looking at them."
@@ -1290,7 +1290,7 @@ pause
 "You take a bite from the piece of cake."
 
 pause
-"It's sweet, soft, and like the best cake you've ever eaten."
+"It's sweet, soft and like the best cake you've ever eaten."
 mc "This is... Mmmh, this is good!"
 c "Oh,... I thought you wouldn't like it."
 mc "Are you kidding me? It's the best cake I've ever had."
@@ -1519,7 +1519,7 @@ label cynthquest4:
     mc "From where?"
     show sadhtalke
     e "From me."
-    sa "She's the best barber in town, but don't tell anyone. I like to keep her to myself."
+    sa "She's the best barber in town but don't tell anyone. I like to keep her to myself."
     mc "But your hair... looks fine."
     sa "Fine! Look here."
     hide talksr
@@ -1612,7 +1612,7 @@ label cynthquest4:
     c "It has soft edges, so it's not a hoof. It has to be a paw print."
     mc "All I see is a small dent. Aren't the paw prints supposed to be like this?"
     "You draw what you think looks like a paw on the ground."
-    c "Well, yeah. That's what you see in the books, but you don't find prints that perfect in the wild."
+    c "Well, yeah. That's what you see in the books but you don't find prints that perfect in the wild."
     mc "Oh... right."
     c "It's not a bad trail. It goes through those bushes."
     "She points to some bushes."
@@ -1703,7 +1703,7 @@ label cynthquest4:
             mc "{i}Alright, I'm doing it."
             mc "{i}Just a little m-"
             "SNAP"
-            "The branch you were holding snaps. You lose your footing and your body is pulled downwards. You try to get hold of anything, but you grab only air."
+            "The branch you were holding snaps. You lose your footing and your body is pulled downwards. You try to get hold of anything but you grab only air."
             "Just before you could scream, everything goes black."
             scene black with hpunch
             jump GameOver
@@ -1717,7 +1717,7 @@ label cynthquest4:
             mc "Why?"
             show talksc
             c "Because I'm the  who's going to kill it."
-            c "The EXP charm only gains EXP if the person who holds it kills a monster. You may get EXP killing  by yourself, but the charm gains extra for you and stores it."
+            c "The EXP charm only gains EXP if the person who holds it kills a monster. You may get EXP killing  by yourself but the charm gains extra for you and stores it."
             show talkwancb
             c "Unless you don't want any EXP, I suggest it would be better if you gave it to me."
             mc "Fine, take it."
@@ -1737,7 +1737,7 @@ label cynthquest4:
             scene direwolf
             mc "Hey there, doggie!"
             mc "COME AND GET IT!"
-            "The wolf growls, and without warning, it rushes towards you."
+            "The wolf growls and without warning, it rushes towards you."
             mc "FUUUUUCK!!!"
             scene forrest
             show glob5 with easeinright
@@ -1844,21 +1844,21 @@ label cynthquest4:
             c "Well, I don't know. I kinda liked it, spending time with you."
             c "I really can't think of an exact reason."
             c "I mean, thinking logically, there's nothing I could benefit from you."
-            c "You're not rich, you aren't that strong, and you aren't that good looking. You're no good to me at all."
+            c "You're not rich, you aren't that strong and you aren't that good looking. You're no good to me at all."
             mc "{i}An arrow to the heart."
             c "But there was still something about you. I felt comfortable around you, like I could say anything to you and be my self..."
             c "......"
             c "You felt like a real person. And when I was spending time with you I felt like I was {p} really living with someone else rather than by myself."
             c "I never expected you to show up for training but you came."
             c "You still wanted to hang out with me."
-            c "You knew who I really was, but you were still nice to me. You trusted me multiple times even though I was a bitch to you."
+            c "You knew who I really was but you were still nice to me. You trusted me multiple times even though I was a bitch to you."
             mc "Well, that's what friends do, I guess. They put up with each other's bullshit and stick together."
             scene cynthiatalk1
             c "You thought of me as a friend?"
             mc "Uhm... yeah."
             mc "Didn't you?"
             scene cynthiatalk4
-            c "I've had a lot of \"friends\", but as far as real friends go... If I had  the only person I could think of, it would be you."
+            c "I've had a lot of \"friends\" but as far as real friends go... If I had  the only person I could think of, it would be you."
             mc "{i}Guess I'm friendzoned now."
             if gabetrip >= 1:
                 mc "{i}...AGAIN!"
@@ -1868,7 +1868,7 @@ label cynthquest4:
             show cynthiatalk5
             c "Yeah, make sure you write it down somewhere."
             mc "I will."
-            mc "Oh, and thanks for all the compliments earlier. I'm not rich, strong or good looking, that'll really help to boost my confidence."
+            mc "Oh and thanks for all the compliments earlier. I'm not rich, strong or good looking, that'll really help to boost my confidence."
             c "What? I was just saying..."
             scene cynthiatalk4
             c "Ok, you're not bad looking either. Does that make you happy?"
@@ -1887,7 +1887,7 @@ label cynthquest4:
                 c "Hehe it's alright."
                 c "......"
             show cynthiatalk6
-            c "What you said earlier. That I had to trust someone, and they trust back..."
+            c "What you said earlier. That I had to trust someone and they trust back..."
             c "I think you're right."
             mc "Of course I am."
             c "And I thought if we're friends, now I have to trust you."
@@ -1937,7 +1937,7 @@ label cynthquest4:
             c "Why?"
             mc "Because I want to get to know you better."
             c "And talking about my past will help?"
-            mc "Yeah, and I'll tell you about mine!"
+            mc "Yeah and I'll tell you about mine!"
             c "But I don't want to know."
             mc "Uh."
             mc "Well, it's something friends do, ok?!"
@@ -1952,7 +1952,7 @@ label cynthquest4:
             mc "Well, we've got nothing else to do here on out until we go to sleep, don't we?"
             c "......"
             c "Well, ok."
-            c "I was born in Thane. I lived there with my mother for 8 years. Then I was sold to a slave trader, and th-"
+            c "I was born in Thane. I lived there with my mother for 8 years. Then I was sold to a slave trader and th-"
             mc "Wait, what? You were sold to slave trader?!"
             c "Yeah."
             mc "{i}How is she so casual about this?"
@@ -1974,7 +1974,7 @@ label cynthquest4:
             mc "......"
             scene cynthiatalk3
             "She stares deeply into the bonfire with cold dead eyes."
-            c "They raped her, and killed right before my very eyes."
+            c "They raped her and killed right before my very eyes."
             mc "......"
             c "Then they caught me and sold me to a slave trader."
             c "I was taken to Karnak. It's a place where slavery is still legal."
@@ -2002,7 +2002,7 @@ label cynthquest4:
             c "After that... I ran away."
             c "I spent some days in the streets, stealing and barely had enough food to survive."
             mc "Didn't the guards find you after you killed the general?"
-            c "No, Karnak is a big city, and the major part of it are slums. There's a  in a million chance that they can find you."
+            c "No, Karnak is a big city and the major part of it are slums. There's a  in a million chance that they can find you."
             mc "How long did you live there?"
             c "A couple of years."
             mc "You survived that long alone?"
@@ -2038,7 +2038,7 @@ label cynthquest4:
             c "No, I want to know."
             mc "Ok then."
             "You tell Cynthia about your past. There isn't much to talk about your memories, other than the part where you've lost your parents."
-            "You were more in detail as you talked about Uncle Pete, Gabe, and the simpler times, good and bad, of you spent growing up in Randel."
+            "You were more in detail as you talked about Uncle Pete, Gabe and the simpler times, good and bad, of you spent growing up in Randel."
             "You ended on how you got into the Adventurers' Guild and got to meet Sander, Eve and Cynthia."
             c "Neat... Well, you haven't had the smoothest life either."
             mc "Nothing compared to yours, though."
@@ -2057,7 +2057,7 @@ label cynthquest4:
             c "...I wish I could forget all this and start again... as a normal person."
             mc "......"
             c "......"
-            c "Ugh, what's wrong with me? I'm talking way too much, and I'm not even drunk."
+            c "Ugh, what's wrong with me? I'm talking way too much and I'm not even drunk."
             mc "Heh, it's ok. It's good to see that side of you."
             show cynthiatalk4
             c "......"
@@ -2066,7 +2066,7 @@ label cynthquest4:
             mc "Yeah, let's go to sleep."
             c "Thank you for listening, [mc]. "
             c "I've never told my story to anyone before."
-            c "I didn't expect it, but I feel better after I put that out."
+            c "I didn't expect it but I feel better after I put that out."
             mc "No problem."
             c "Goodnight."
             mc "Goodnight."
@@ -2136,7 +2136,7 @@ label cynthquest5:
     c "It's from the barracks. I'm going to kill some bandits."
     mc "Oh..."
     show talksc
-    c "I would've called you, but since you're not... comfortable with killing... I thought I'd do this alone."
+    c "I would've called you but since you're not... comfortable with killing... I thought I'd do this alone."
     mc "......"
     mc "I'm coming with you."
     show shockc
@@ -2252,7 +2252,7 @@ label cynthquest5:
     $ fightMiniGame = "finishfight"
     jump start_fightMiniGame
 label finishfight:
-    "The bandit's strikes were strong. You were quick to deflect his strikes with your blade, but even you can't keep up with his relentlessness."
+    "The bandit's strikes were strong. You were quick to deflect his strikes with your blade but even you can't keep up with his relentlessness."
     "Bandit" "Not bad."
     "Bandit" "Let's see if you can keep up."
     $ round1banditfight += 1
@@ -2563,7 +2563,7 @@ label fightover:
     mc "H-Hey."
     tr "You're all good."
     mc "Huh?"
-    "You look at the area of your wound, but you don't see anything. You look as if you've been as you always were before getting the wound."
+    "You look at the area of your wound but you don't see anything. You look as if you've been as you always were before getting the wound."
     mc "What?"
     mc "I'm completely healed?"
     $ trissheal += 1
@@ -2584,7 +2584,7 @@ label fightover:
     mc "Oh, I-I don't know what to say."
     tr "Hmmm. It did surprise me quite a bit; you would've been a goner if you bled out along the way."
     mc "Maybe Cynthia used some first aid."
-    tr "There was a bandage, but that's it. She didn't use any magic."
+    tr "There was a bandage but that's it. She didn't use any magic."
     mc "......"
     tr "Ok, enough about that."
     tr "I'll be leaving now. You're ok to go as well."
@@ -2749,7 +2749,7 @@ label PREcynthquest6:
         c "But I have been hearing alot of rumours about a vampire."
         show talkwanmc
         mc "Vampire?"
-        c "Yeah, and they say it's living very close by."
+        c "Yeah and they say it's living very close by."
         mc "{i}Shit. That's July she's talking about."
         hide talkwanmc
         mc "B-but...... I've heard vampires are...... Really powerfull."
@@ -2879,7 +2879,7 @@ label cynthquest6:
     c "Yes."
 
     mc "B-But how do you know it's a vampire? I mean aren't vampires famous for feeding on human?"
-    c "Yeah, but the woodcutter describes the boars being shriveled up and having bite marks."
+    c "Yeah but the woodcutter describes the boars being shriveled up and having bite marks."
     mc "{i}Shit, she's onto her."
     mc "But you can't be sure, right?"
     c "Vampires can survive with any type of blood, it doesn't have to be human. They prefer the taste of human blood, that's why they normally feed on humans."
@@ -2889,7 +2889,7 @@ label cynthquest6:
     c "Just think about it; A vampire that's grown very close to humans and sees them as their own kind. So, they don't feed on humans and have to survive on alternative means for blood."
     mc "That's q-quite a stretch."
     c "Yeah, the second theory is quite a bit..."
-    c "I know there's a probability that this isn't a vampire, but it's at least worth checking out."
+    c "I know there's a probability that this isn't a vampire but it's at least worth checking out."
     mc "Anyway, where are we going now?"
     c "To the place where the woodcutter saw the bodies. He marked a few places. I checked them all out except this one."
     c "I thought I'd have better luck with you around."
@@ -2910,7 +2910,7 @@ label cynthquest6:
     mc "{i}July, please don't be there..."
     c "Almost there."
     mc "We're pretty deep into the forest."
-    c "Yeah, and the fact that we're here at night makes it all the more dangerous."
+    c "Yeah and the fact that we're here at night makes it all the more dangerous."
     mc "You're actually excited about whether or not this vampire exists, aren't you?"
     c "No..."
     c "Ok, a bit."
@@ -2927,7 +2927,7 @@ label cynthquest6:
     "She takes a closer look."
     c "No."
     c "Oh wait, I know what you're trying to do."
-    c "Hehehe. Nice try, [mc], but you can't scare me like that."
+    c "Hehehe. Nice try, [mc] but you can't scare me like that."
     mc "{i}She can't see her!"
     scene forrestn
     show talkwancb
@@ -2985,7 +2985,7 @@ label cynthquest6:
     c "......!"
     c "Ugh..."
     c "Fine. I let you pass on that one."
-    c "I just can't believe I'm standing in front of a vampire, and it's July!"
+    c "I just can't believe I'm standing in front of a vampire and it's July!"
     j "......"
     c "I mean... you're still July, right? You're not evil or anything?"
     c "...Wait!"
@@ -3016,7 +3016,7 @@ label cynthquest6:
     mc "But I could see. It was July."
     c "What?"
     mc "Yeah, it's weird. Do you know anything about this, July?"
-    j "I don't know if you've heard, but vampires can turn invisible. Normally, when I go out at night, I turn invisible so no one from town might see me."
+    j "I don't know if you've heard but vampires can turn invisible. Normally, when I go out at night, I turn invisible so no one from town might see me."
     c "But [mc] saw you."
     j "Yes, he did. Today and the day he found me."
     mc "How's that possible?"
@@ -3043,7 +3043,7 @@ label cynthquest6:
     c "So are we the only ones who know?"
 
     j "No."
-    mc "Wait, but you told me-"
+    mc "Wait but you told me-"
     j "Sorry, [mc]. I lied."
     j "Everybody at the Guild knows."
     mc "What?! Even Sander and Eve?"
@@ -3104,7 +3104,7 @@ label cynthquest6:
         "No.":
             mc "But that wouldn't be you!"
             c "Huh?"
-            mc "You are the person you are now. It doesn't matter if you are fucked up or not, you are {b}you{/b}, and I wouldn't change that for anything."
+            mc "You are the person you are now. It doesn't matter if you are fucked up or not, you are {b}you{/b} and I wouldn't change that for anything."
             c "......"
             show worriedmc
             mc "If erasing your past erases the you who's standing in front of me right now, I don't want that!"
@@ -3219,7 +3219,7 @@ mc "Alright, when?"
 c "Anytime."
 c "And you are paying, by the way."
 if paycynth == 1:
-    c "I don't mind paying, but I would really appreciate it if you could bring some money this time."
+    c "I don't mind paying but I would really appreciate it if you could bring some money this time."
     mc "Yeah, yeah, don't worry."
 else:
     mc "Ok. Sure."

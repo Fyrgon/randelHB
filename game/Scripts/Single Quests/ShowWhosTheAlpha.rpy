@@ -129,7 +129,7 @@ label swta2:
             show talkwamc
             mc "I just have to brush it with green paint, right? I think I can handle that. Thank you anyway."
             show sadtalkuncle
-            u "Oh... Ok then, but be careful."
+            u "Oh... Ok then but be careful."
             mc "I'll be fine. Bye, Uncle Pete."
         "Yeah, sure!":
             mc "Yeah, sure! You're the expert."
@@ -155,7 +155,7 @@ if time == 1 or time == 2:
     mc "There it is, it has a red spot. Finally found one."
     "You take out your bow."
     mc "Let's get this done."
-    if bowlvl >= 2 and greenarrow ==1:
+    if bowlvl >= 2 and greenarrow == 1:
         "You draw your bow and shoot."
         scene huntfg1
         mc "Yes!"

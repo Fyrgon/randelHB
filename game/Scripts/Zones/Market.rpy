@@ -31,7 +31,7 @@ label market:
             jump theafirsttime
         "Go buy Zenelith a dress" if zenQ == 2 and Zdress == False and marketDebt <= 0:
             mc "{i}Let's find a new dress for her..."
-            "You walk around the market for a while. You see many nice dresses, but a lot of them definitely wouldn't fit on her."
+            "You walk around the market for a while. You see many nice dresses but a lot of them definitely wouldn't fit on her."
             "Then you see a blue dress that looks exactly her size. You approach the seller."
             mc "How much is that?"
             "{color=#fff}Tailor" "It's 15 silver."
@@ -76,15 +76,15 @@ label market:
         "Buy a bed" if zenmattress == False and asked4gift == True:
             if scarlettaughtthatonespell == False:
                 "You wander around the Market for some time. You haven't really ever went shopping for beds or bedding before in your life."
-                "After a few minutes you find someone selling a few mattresses, you go to buy one, but then you stop."
+                "After a few minutes you find someone selling a few mattresses, you go to buy one but then you stop."
                 mc "{i}Wait, how am I going to take a mattress all the way through the forest?"
                 mc "{i}I can't just carry it over my shoulder the whole way through..."
-                mc "{i}I could use a mule, but... I don't have one, they're expensive, and I'm not going to buy one just for this."
+                mc "{i}I could use a mule but... I don't have one, they're expensive and I'm not going to buy one just for this."
                 stop music fadeout 2
                 mc "{i}Maybe Scarlet knows a spell that could be useful for this! Maybe there's a spell that can make stuff smaller or something..."
                 play music academy fadein 1
                 scene lecturemage2 with fade
-                "You decide to go to the Academy, and there you find Scarlet. She's almost done with her class, so you wait outside."
+                "You decide to go to the Academy and there you find Scarlet. She's almost done with her class, so you wait outside."
                 pause 1
                 scene lecturemage1 with fade
                 stop music fadeout 3
@@ -125,7 +125,7 @@ label market:
                 else:
                     mc "Alright, here's the money."
                     $ money -= 20
-                    "You pay the shopkeeper and take the mattress. You use the spell Scarlet taught you to make it lighter, and then roll it and tie it so that it's easier to carry."
+                    "You pay the shopkeeper and take the mattress. You use the spell Scarlet taught you to make it lighter and then roll it and tie it so that it's easier to carry."
                     $ zenmattress = True
             else:
                 "You go back to the shopkeeper to buy the mattress."
@@ -138,7 +138,7 @@ label market:
                 else:
                     mc "Alright, here's the money."
                     $ money -= 20
-                    "You pay the shopkeeper and take the mattress. You use the spell Scarlet taught you to make it lighter, and then roll it and tie it so that it's easier to carry."
+                    "You pay the shopkeeper and take the mattress. You use the spell Scarlet taught you to make it lighter and then roll it and tie it so that it's easier to carry."
                     $ zenmattress = True
     mc "I have nothing to do here right now."
     jump maplimbo

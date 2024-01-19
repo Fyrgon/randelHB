@@ -78,7 +78,7 @@ label forest:
                 "Look for Rosa Flowers" if knowrosa == 1 and rosa < 4:
                     if rosa == 0:
                         mc "Let's see if I can find some."
-                        "You search for a while, but you are unable to find anything."
+                        "You search for a while but you are unable to find anything."
                         mc "Nothing! I thought these weren't rare!"
                         mc "I should come back again."
                         $ rosa += 1
@@ -87,7 +87,7 @@ label forest:
 
                     if rosa == 1:
                         mc "Ok, let's see if we'll get lucky this time."
-                        "You search the forest, but you still couldn't find the flower."
+                        "You search the forest but you still couldn't find the flower."
                         "Disappointed, you decide to head back home. Just as you're about to leave, you see a little girl carrying a pink flower."
                         mc "Hey! Excuse me, can you stop for a second?"
                         "Girl" "What is it, mister?"
@@ -103,7 +103,7 @@ label forest:
                                 "Girl" "Hey! Give that back! *sob*"
                                 $ rosa += 3
                                 scene forest with fade
-                                mc "{i}Yes! Finally, I got the flower! I'm not proud of myself, but still, I got it done."
+                                mc "{i}Yes! Finally, I got the flower! I'm not proud of myself but still, I got it done."
                                 mc "{i}Now I have to use this on Eve. It should be just before the duel. I should wait till the duel happens. Only [evedueltimer] more days."
                                 $ time += 1
                                 $ rosa += 3
@@ -134,7 +134,7 @@ label forest:
 
                     if rosa == 2:
                         mc "Please, at least this time..."
-                        "You search for the flower, but you are still unable to find it."
+                        "You search for the flower but you are still unable to find it."
                         mc "{i}Why, just why can't I find it? That little girl found it, why can't I?"
                         mc "{i}sigh... I'll come back tomorrow then."
                         $ time += 1
@@ -149,8 +149,6 @@ label forest:
                         $ rosa += 1
                         $ time += 1
                         jump forest
-
-
 
                 "Hunt":
                     jump OuterValley

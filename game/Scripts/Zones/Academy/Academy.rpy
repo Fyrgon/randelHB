@@ -165,16 +165,16 @@ label academy:
             b "I said keep it. I have another copy."
             mc "But, sir-"
             if historyClass < 2:
-                b "It's fine. If you care enough to ask I don't mind. I can understand you might be busy, and the law doesn't care whether or not you show up to my class as long as you pass the tests. Keep it."
+                b "It's fine. If you care enough to ask I don't mind. I can understand you might be busy and the law doesn't care whether or not you show up to my class as long as you pass the tests. Keep it."
             else:
-                b "Most students can either read, and so they never show up to class because they can study from the book, or they can't, and show up to every single class."
+                b "Most students can either read and so they never show up to class because they can study from the book, or they can't and show up to every single class."
                 b "It's not often someone is so interested to both show up and want to study more. You can keep the book, kid."
             mc "..."
             mc "Th-Thank you, sir."
             "You creep to his desk and take the book."
             b "Now, go and study."
             mc "Y-yes, sir. Thank you, sir."
-            mc "{i}I don't know what the hell just happened, but I got what I wanted."
+            mc "{i}I don't know what the hell just happened but I got what I wanted."
             $ gabee1 += 1
             jump academy
 

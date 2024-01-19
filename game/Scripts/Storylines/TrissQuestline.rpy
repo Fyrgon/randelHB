@@ -76,7 +76,7 @@ label trissq:
     tr "Don't play dumb... what are you, five?"
     tr "You know what I mean."
     mc "{i}Gulp"
-    tr "Why don't we do this; if you catch more butterflies than me, I'll reward you. That way, you'll put more effort into it and catch more butterflies for... the town, and also get rewarded in the end."
+    tr "Why don't we do this; if you catch more butterflies than me, I'll reward you. That way, you'll put more effort into it and catch more butterflies for... the town and also get rewarded in the end."
     tr "And I, well, will get a certain degree of satisfaction as well."
     mc "What kinda reward are we talking about?"
     scene trisstare with fade
@@ -168,7 +168,7 @@ label butterflyEnough:
     elif bfly <= 5:
         mc "I got [bfly]."
         show talkwatr
-        tr "You did get a few, but... Eh, I hoped you'd try harder."
+        tr "You did get a few but... Eh, I hoped you'd try harder."
         mc "I did try."
         tr "Well, what's done is done. Now for the big reveal! I got..."
     elif bfly <= 20:
@@ -217,14 +217,14 @@ label butterflyEnough:
     show talkwatr
     tr "Oh... about that... I completely lied."
     tr "I just wanted some bloodbutterflies to make a few health potions. I was feeling too lazy to catch them. Thank goodness you showed up, my hero! Haha."
-    tr "Thanks to you, I can make a ton of health potions, and I didn't even have to lift a finger."
+    tr "Thanks to you, I can make a ton of health potions and I didn't even have to lift a finger."
     show angry
     mc "So... the whole thing was a lie?!"
     tr "Yeah, hehe.. You guys would do anything if I get you riled you up enough."
     mc "Just take them, I'm outta here."
     tr "Oh, you don't you want your reward?"
     mc "Huh?"
-    tr "I might be a lying bitch, but I still try to keep my word."
+    tr "I might be a lying bitch but I still try to keep my word."
     "Triss takes off her jacket. She takes off the buttons off her shirt to reveal..."
     show animationtriss
     pause 1.5

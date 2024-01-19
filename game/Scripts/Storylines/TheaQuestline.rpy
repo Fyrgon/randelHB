@@ -24,7 +24,7 @@ label impquest:
     "{color=#fff}Linus" "I can give you 50 silver for that."
     mc "{i}50 silver for one? ...Well, I have about a dozen of em'. So if I sell all of them, I could get..."
     mc "600 silver!"
-    "{color=#fff}Linus" "Huh? ...No... I respect your bartering skills young sir, but 50 silver is the best I can do for one!"
+    "{color=#fff}Linus" "Huh? ...No... I respect your bartering skills young sir but 50 silver is the best I can do for one!"
     mc "{i}Shit, I said that aloud!"
     "{color=#fff}Linus" "What do you say?"
     mc "{i}I could sell them... but then what about the peopel of Yorkel? They need this..."
@@ -153,9 +153,9 @@ label impquest:
                     j "I don't know."
                     j "I'll send a message to Hern to see if they can send a few soldiers to look into this."
                     mc "Would they even care? Yorkel was a small village."
-                    j "I know that, but it's their duty to care."
+                    j "I know that but it's their duty to care."
                     j "Everything is so chaotic these days..."
-                    j "You can go now, [mc]... Oh, but what happened to the crystals?"
+                    j "You can go now, [mc]... Oh but what happened to the crystals?"
                     mc "Oh, I lost them when those Imps tried to attack me."
                     j "That's a shame..."
                     j "Anyway, here's your reward."
@@ -182,7 +182,7 @@ label impquest:
                         mc "{i}Where the hell am I supposed to sleep?"
                         mc "{i}I think I had a spare mattress... and I can let her use Uncle Pete's old room."
                         "When you get home, you take out the spare mattress and dust out Uncle Pete's old room. It doesn't take long since Pete did not leave much behind after he moved out."
-                        "With the mattress, it's a fairly barren room, but still kind of nice. You find yourself hoping that she will like it."
+                        "With the mattress, it's a fairly barren room but still kind of nice. You find yourself hoping that she will like it."
                         mc "All done, I suppose."
                         mc "She doesn't look like she will be waking up anytime soon... I hope she's ok..."
                         mc "{i}Her clothes are pretty torn up. She must be cold."
@@ -212,7 +212,7 @@ label impquest:
                         "You quickly prepare some breakfast and head to Uncle Pete's room."
                         scene theabed2 with fade
                         "{color=#FF893A}Girl" "Who are you?! Where am I?!"
-                        mc "My name is [mc], and you're in my house. Your village was attacked by Imps, remember?"
+                        mc "My name is [mc] and you're in my house. Your village was attacked by Imps, remember?"
                         "{color=#FF893A}Girl" "......"
                         "{color=#FF893A}Girl" "No, no, no... this can't be real!"
                         mc "Do you know what happened?"
@@ -242,7 +242,7 @@ label impquest:
 
                 "Use your sword":
                     mc "{i}I don't need these things! I bet they don't even work."
-                    mc "{i}I got my sword and my wits, and that's all I need!"
+                    mc "{i}I got my sword and my wits and that's all I need!"
                     scene forrest
                     "You decide to face them. You draw your sword and approach them slowly."
                     "Once you get close, all three of them turn at you and smile wickedly."
@@ -320,9 +320,9 @@ label impquest:
             j "I don't know."
             j "I'll send a message to Hern to see if they can send a few soldiers to look into this."
             mc "Would they even care? Yorkel was a small village."
-            j "I know that, but it's their duty to care."
+            j "I know that but it's their duty to care."
             j "Everything is so chaotic these days..."
-            j "You can go now, [mc]... Oh, but what happened to the crystals?"
+            j "You can go now, [mc]... Oh but what happened to the crystals?"
             mc "Oh! I-I lost them when those imps tried to attack me."
             j "That's a shame..."
             j "Anyway, here's your reward."
@@ -387,9 +387,9 @@ label impquest:
            j "I don't know."
            j "I'll send a message to Hern to see if they can send a few soldiers to look into this."
            mc "Would they even care? Yorkel was a small village."
-           j "I know that, but it's their duty to care."
+           j "I know that but it's their duty to care."
            j "Everything is so chaotic these days..."
-           j "You can go now, [mc]... Oh, but what happened to the crystals?"
+           j "You can go now, [mc]... Oh but what happened to the crystals?"
            mc "Oh! I-I lost them when those imps tried to attack me."
            j "That's a shame..."
            j "Anyway, here's your reward."
@@ -446,7 +446,7 @@ label theaintr:
         mc "{i}I have to change the subject."
         mc "So, how do you like it here?"
         scene theabed1
-        th "It's really nice here, and the bed here is super comfy. Thank you."
+        th "It's really nice here and the bed here is super comfy. Thank you."
         mc "I glad you like it. This was my uncle's room."
         th "Really, does that mean he-"
         mc "Oh no... he's living somewhere else now."
@@ -455,7 +455,7 @@ label theaintr:
         mc "Yeah, tell me."
         th "I-I need some clothes..."
         mc "Oh, y-yeah sure, sure."
-        th "It's not that I don't like this jacket you've given me, but I need like... actual clothes?"
+        th "It's not that I don't like this jacket you've given me but I need like... actual clothes?"
         mc "Yeah, sure, no problem! I'll find some."
         th "Thank you."
         $ knowThea = True
@@ -812,7 +812,7 @@ label theaxgabe:
             show gambaruth
             th "It's my fault for putting you in a tough spot, [mc]. I think I should explain myself."
             th "[mc] saved me when my village was attacked by imps. I-I was the only survivor. The whole village was destroyed."
-            th "I had no place to go, but [mc] took me in. He gave me a new life."
+            th "I had no place to go but [mc] took me in. He gave me a new life."
             show talksgop
             g "......"
             g "I'm... Sorry for your loss."
@@ -855,7 +855,7 @@ label theaxgabe:
     g "That's really nice of you."
     g "{i}Clears throat{/i} So, how is it living with [mc]? I hope he hasn't perved around you."
     mc "Hey!"
-    th "Perved? I don't know what that means, but [mc] has been very kind to me."
+    th "Perved? I don't know what that means but [mc] has been very kind to me."
     g "Oh... good."
     show sadnth
     th "Uhm... [mc], I really need to dry these clothes before it rains. Can I...?"
@@ -908,7 +908,7 @@ label theaxgabe:
 label theadoge:
     hide screen hud
     mc "I wonder what Thea's doing?"
-    "You head out to the living room. Thea seems to be in the kitchen, and you can smell that she's cooking something good. You take a peek into the kitchen."
+    "You head out to the living room. Thea seems to be in the kitchen and you can smell that she's cooking something good. You take a peek into the kitchen."
     scene theacook1 with fade
     pause
     th "{i}hum~ hum-hum~ hum-hum~"
@@ -977,7 +977,7 @@ label theadoge:
             hide lolth
             show crysmileth
             th "I'm s-sorry... hehehe... So, did it taste good?"
-            mc "...Well, not feeling any side-effects, but... best thing I've ever tasted."
+            mc "...Well, not feeling any side-effects but... best thing I've ever tasted."
             show lolth with hpunch
             th "Hahahahaha-! {i}snort-{/i} Hahahaha!"
             mc "I sure hope I'm not poisoned..."
@@ -1320,12 +1320,12 @@ label petedinner:
     mc "How's work at the tavern? I never got to ask."
     th "...It's fine. But it does get very hectic at times."
     mc "Yeah, I can imagine."
-    th "But the pay's good, and the innkeeper says I do a good job. So it's not that bad."
+    th "But the pay's good and the innkeeper says I do a good job. So it's not that bad."
     mc "Hmm."
     mc "Do you like working there?"
     th "Y-Yeah."
     mc "That didn't sound honest."
-    th "Well, it's a yes and a no. There are good days, and then there are bad days."
+    th "Well, it's a yes and a no. There are good days and then there are bad days."
     mc "Like what?"
     th "You want to hear them?"
     mc "Yeah, I'm curious."
@@ -1393,7 +1393,7 @@ label petedinner:
     th "Y-Yeah."
     mc "And that's for three? If we're having both Eve and Sander, it's going to cost more."
     th "It will. But don't worry, I got it covered."
-    mc "No, I'll pay. I know you're not going to let me pay for today, but you can't stop me from paying for the next dinner."
+    mc "No, I'll pay. I know you're not going to let me pay for today but you can't stop me from paying for the next dinner."
     th "[mc]-"
     mc "No, you can't convince me!"
     th "......"
@@ -1566,7 +1566,7 @@ label sanderpetedinner:
     sa "Haaaah, I'm full..."
     u "Mmmmm..."
     sa "Now... {i}hic{/i} we dance!"
-    u "Not sure my old bones would work, but why the hell not!"
+    u "Not sure my old bones would work but why the hell not!"
     sa "Yeah, that's the spirit!"
     sa "Come on, [mc]! Get your ass up here!"
     mc "Haaa?"
@@ -1672,7 +1672,7 @@ label sanderpetedinner:
     mc "Bye."
     scene homeday with fade
     "You watch as Thea leaves the house."
-    "You finish drinking Thea's drink. It tastes weird, but you like it."
+    "You finish drinking Thea's drink. It tastes weird but you like it."
     mc "{i}My headache is starting to go away. I guess it works."
     $ time = 3
     $ sanderpetedinner += 1
@@ -1746,7 +1746,7 @@ label sanderevedinner:
         e "We brought salad since [mc] told it was his favorite thing to eat."
         mc "Wow guys, you shouldn't have. Thank you."
     if mcfood == "bread with apple jam":
-        e "We brought some apple pie. [mc] said his favorite thing to eat was bread with apple jam, but that didn't feel right for dinner. So we brought some apple pie instead."
+        e "We brought some apple pie. [mc] said his favorite thing to eat was bread with apple jam but that didn't feel right for dinner. So we brought some apple pie instead."
         mc "Wow guys, you shouldn't have. Thank you."
     if mcfood == "fish":
         e "We brought some fish since [mc] told us that it was his favorite thing to eat."
@@ -1842,7 +1842,7 @@ label sanderevedinner:
     th "Hehehe."
     mc "{i}Our eyes focus on each other. Our hands touching palm to palm in a perfect fit."
     mc "{i}Sander and Eve start to sing. I anticipated to move the moment Thea took her steps."
-    mc "{i}I honestly never danced like this before, but... Following Thea's movements is almost becoming natural for me."
+    mc "{i}I honestly never danced like this before but... Following Thea's movements is almost becoming natural for me."
     mc "{i}It's like Thea and I have been in sync with each other... That I understand her movements very well."
     mc "{i}Every turn, every step, it's like I know how she feels... Her living with me really does wonders."
     mc "{i}But then... What happens if she goes back? All that time I spent with her would have been for nothing..."
@@ -1881,7 +1881,7 @@ label sanderevedinner:
     th "Those two are really fun to be with."
     mc "Yeah."
     th "They reminded me of my little brother and sister."
-    th "They always used to fight with each other, but they were always together. They didn't show, but they loved each other a lot."
+    th "They always used to fight with each other but they were always together. They didn't show but they loved each other a lot."
     th "I always used to watch how they would go from playing to fighting each other in the mud in a matter of seconds. Hehehe."
     th "......"
     "Thea stares at the sink for a while."
@@ -1908,7 +1908,7 @@ label sanderevedinner:
     mc "You can stay here, I mean..."
     mc "I don't want you to leave."
     th "......"
-    mc "I like having you here, and you don't have anyone back at the village."
+    mc "I like having you here and you don't have anyone back at the village."
     th "......"
     th "[mc]... I-I..."
     scene kitchenn
@@ -2106,7 +2106,7 @@ label theadinner:
                 th "Hehehe. Yeah."
             "It's too weak for me.":
                 mc "I don't know. Doesn't have much of a kick."
-                th "True, but I like it. It's got that bouquet smell, the flavor of grapes straight out of the vineyards, even the zesty, velvet touch that hits your tastebuds..."
+                th "True but I like it. It's got that bouquet smell, the flavor of grapes straight out of the vineyards, even the zesty, velvet touch that hits your tastebuds..."
                 mc "You definitely sound like a master brewer's daughter."
                 th "Sorry."
                 mc "No, no, it's fine. I like it, makes drinking it fancier."
@@ -2131,8 +2131,8 @@ label theadinner:
     th "Me? Uhm, no. I'm more of an indoor-type person. I like doing housework."
     mc "Oh, I see."
     "You take a sip of wine."
-    mc "This wasn't strong at first, but I can kinda fell it kicking in now."
-    th "Yeah, and there's still a lot left in the bottle."
+    mc "This wasn't strong at first but I can kinda fell it kicking in now."
+    th "Yeah and there's still a lot left in the bottle."
     mc "Why don't we have a small drinking game?"
     th "Drinking game?"
     mc "Yeah. Haven't you played?"
@@ -2168,7 +2168,7 @@ label theadinner:
     menu:
         "You love reading.":
             "Uhm... you love reading."
-            th "Hmm... I do read, but I wouldn't say I \'love\' reading."
+            th "Hmm... I do read but I wouldn't say I \'love\' reading."
             mc "Urrgh. Guess I'll have to drink."
             th "Yes!"
             "You take another sip."
@@ -2216,9 +2216,9 @@ label theadinner:
             th "Wrong. I don't really like it because I'm not good at it."
             mc "What?! But you danced with me."
             th "And was I good?"
-            mc "Yeah. I mean, I'm no expert in dancing myself, but I think you did pretty well."
+            mc "Yeah. I mean, I'm no expert in dancing myself but I think you did pretty well."
             th "Really?"
-            th "Hmm, but it still doesn't mean I like it. I'm kinda neutral about it now."
+            th "Hmm but it still doesn't mean I like it. I'm kinda neutral about it now."
             mc "Oh, come on!"
             th "Drink up, [mc]."
             "You drink."
@@ -2385,7 +2385,7 @@ label theafirsttime:
     play sound glass
     "Suddenly, you hear the sound of a plate shattering."
     "Unknown" "Hahaha! What the fuck?! Why the hell is this bitch so jumpy?!"
-    "You turn around and see Thea on the floor, and a big man standing in front of her."
+    "You turn around and see Thea on the floor and a big man standing in front of her."
     mc "{i}Thea!"
 
     scene thug with fade
@@ -2408,7 +2408,7 @@ label theafirsttime:
     scene thug
     show thug1
     "Unknown" "Listen here, ya' little shit! I can do whatever the fuck I want!"
-    "Unknown" "Back in my town, tavern wenches would be all over me before I would do anything. The lady wants me, and you know it."
+    "Unknown" "Back in my town, tavern wenches would be all over me before I would do anything. The lady wants me and you know it."
     scene theaprotect
     pause
     mc "...Hrgh..."
@@ -2511,7 +2511,7 @@ label theafirsttime:
     th "He was just... doing what those stupid people always do. You overreacted, as you always do."
     mc "What?! You mean these things happen regularly?!"
     th "No, not regularly, just sometimes. They aren't as serious as you think."
-    th "Those guys may look tough, but they're only talk."
+    th "Those guys may look tough but they're only talk."
     mc "B-But... why didn't you tell me about these things?"
     th "I-I don't know."
     th "I thought you might not let me go there again if I told you about it."

@@ -17,7 +17,7 @@ label store:
         mc "So where's all the stuff?"
         me "In the pot."
         mc "In the pot?"
-        me "Yeah. Tell me what you want, and I will give it to you for the best price."
+        me "Yeah. Tell me what you want and I will give it to you for the best price."
         mc "I see. Is that like a magic pot or something?"
         me "Listen kid, if you wanna buy something, do it or scram."
         mc "Ok, ok, sheesh."
@@ -45,7 +45,7 @@ label store:
                     jump store
 
         "Buy Zenelith a bed" if zenmattress == False and asked4gift == True:
-            mc "This might sound stupid, but do you happen to have a bed?"
+            mc "This might sound stupid but do you happen to have a bed?"
             me "..."
             mc "What?"
             me "I don't have anything that wouldn't fit inside the pot."
@@ -92,7 +92,7 @@ label store:
         "A gift for Gabe" if dildoi == 0 and gabefingerclass == 1:
             mc "Do you have... something that can, uhm, pleasure women?"
             me "Huh, you don't have one?"
-            me "I could give you one, but I don't know how you'd attach it to yourself."
+            me "I could give you one but I don't know how you'd attach it to yourself."
             mc "What? No! I mean something like a sex toy."
             mc "I've herd there's something called a {b}dildo."
             me "Oh yes, yes, I have it. A fancy toy that is, only rich ladies use those silly contraptions."
@@ -186,10 +186,8 @@ label store:
                 jump store
             mc "I dont have enough silver."
             jump store
-
         "A bug net (40 silver)" if ibugnet == 0:
             if money >= 40:
-
                 mc "I want to buy a bug net."
                 me "A bug net eh?"
                 me "Coming right up."
@@ -244,7 +242,6 @@ label store:
                     $ money += 200
                     $ diamond -= 1
                     jump store
-
         "Sell the Wallcrawler Heart" if wcheart == 1:
             mc "Hey there, I've got something for you."
             "You show Mervin the Wallcrawler Heart."
@@ -254,7 +251,7 @@ label store:
             mc "I got it while on a quest."
             me "A quest, you say..."
             me "Alright... I'll give you 200 silver for it, whatcha say?"
-            mc "{i}I have no idea if that's the actual price, but it sounds like a lot of money to me."
+            mc "{i}I have no idea if that's the actual price but it sounds like a lot of money to me."
             mc "200 silver it is."
             me "You made a good deal today, lad."
             play sound chime
@@ -264,14 +261,14 @@ label store:
             jump store
         "Buy Zenelith a dress" if zenQ == 2 and Zdress == False:
             mc "Do you happen to have dresses?"
-            me "I do, but I have to warn you. I can't guarantee you size, color, materials, quality, origin-"
+            me "I do but I have to warn you. I can't guarantee you size, color, materials, quality, origin-"
             mc "Okay, okay! I get it. I'll go look somewhere else."
             me "I'm just trying to help."
             mc "Well, thanks. I'll go then."
             mc "{i}Guess the Market might be a better place..."
             jump store
         "Buy furniture for the shack" if zenQ == 2 and furnitureZ == False:
-            mc "This might sound stupid, but do you have a table?"
+            mc "This might sound stupid but do you have a table?"
             me "..."
             mc "What?"
             me "I don't have anything that wouldn't fit inside the pot."
@@ -280,7 +277,6 @@ label store:
             mc "Alright, I'll go look somewhere else."
             mc "{i}Guess the Market might be a better place..."
             jump store
-
         "Go back":
             jump maplimbo
             pause

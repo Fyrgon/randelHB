@@ -14,7 +14,7 @@ menu:
         $ ForestSaved = True
         mc "{i}C'mon [mc]! You're a bronze-rank adventurer! A single direwolf won't be a problem!"
         "You ready your sword, putting it between you and the direwolf. You're not going down without a fight."
-        "Suddenly, the direwolf jumps towards you. It's way faster than you imagined, but, more importantly, it's way more agile."
+        "Suddenly, the direwolf jumps towards you. It's way faster than you imagined but, more importantly, it's way more agile."
         "The wolf dodges your sword and with a quick motion it bites into your neck. You feel the air leaving your lungs as your vision slowly goes black."
         stop music fadeout 2
         scene black with fade
@@ -22,8 +22,8 @@ menu:
         mc "{i}Is this it...?"
         "You feel the blood flowing out of your neck. The time it's taking to pass out and die is surprisingly long."
         if metFGirl == False:
-                "Then the wolf wails, and everything goes quiet."
-                "You feel a hand on your neck, and before you pass out, you manage to hear one last thing."
+                "Then the wolf wails and everything goes quiet."
+                "You feel a hand on your neck and before you pass out, you manage to hear one last thing."
                 "{color=#fff}???" "You town folks..."
                 pause 2
                 play music night
@@ -33,7 +33,7 @@ menu:
                 mc "...I'm alive! Hahah!"
                 mc "I have no idea how but I'm alive!"
                 "You look around yourself and you see nobody, yet when you touch your neck you feel some bandaging that wasn't there before."
-                "You get up, and ponder for a second calling for whoever helped you, but after the encounter with the direwolf, you decide it's better to stay quiet."
+                "You get up and ponder for a second calling for whoever helped you but after the encounter with the direwolf you decide it's better to stay quiet."
                 mc "{i}Guess I'll have to find my way back..."
                 "You being walking through the woods."
     "Run":
@@ -45,14 +45,14 @@ menu:
         "As you're discovering while traversing the forest, running in the woods isn't exactly the easiest thing to do, especially if half of the trees have branches at the height of your face."
         "And especially so if there's a direwolf right behind you."
         "Yet, somehow, you are still alive."
-        mc "{i}I want to call this a success, but I still need to get out of here-"
+        mc "{i}I want to call this a success but I still need to get out of here-"
         "Suddenly, the trees end."
         "Actually, not just the trees. The ground below you has disappeared as well."
         "The direwolf stays still on the edge of the cliff as you fall to what seems like a very likely death."
         pause 1
         mc "AAAAHHHHHHHHHHHHHH"
         stop music fadeout 2
-        "You fall for what seems like an eternity, but was most likely just three stories. The tress are nice enough to soften your fall by hitting you with their branches in the stomach a few times before you hit the ground."
+        "You fall for what seems like an eternity but was most likely just three stories. The tress are nice enough to soften your fall by hitting you with their branches in the stomach a few times before you hit the ground."
         mc "Ugh... Damn it..."
         scene black with fade
         pause 3
@@ -73,37 +73,37 @@ scene zenelithfire3blr
 play sound magic
 "She points her hand at you and shoots a magic spell, yet when it reaches you, the remains of Scarlet's shield seem to be enough to deflect it back at her."
 $ gameover = "zenelithchoice"
+
+
 label zenelithchoice:
 scene zenelithdown with vpunch
-"Zenelith falls back on the ground, and despite her attempts at getting back up, it seems like she's too weak to even lift her own weight."
+"Zenelith falls back on the ground and despite her attempts at getting back up, it seems like she's too weak to even lift her own weight."
 mc "...How the mighty have fallen."
-zn "You ape... You're lucky I am weak or else you'd be dead..."
-"The two of you stand silent for a moment. You open your mouth, but Zenelith is quicker to talk."
+zn "You ape... You're lucky I am weak or else you'd be dead!"
+"The two of you stand silent for a moment. You open your mouth but Zenelith is quicker to talk."
 if RapeZen == True:
     zn "What are you going to do now? Are you going to violate me again?"
     mc "...Hah, no, not exactly."
-zn "...A-Are you going to kill me then?"
+    zn "...A-Are you going to kill me then?"
+else:
+    zn "So what? Are you going to kill me now?"
 mc "{i}Am I?"
-mc "{i}She's an awful person, but is that enough to kill her? She hasn't killed anyone herself... Maybe there's another way?"
-mc "{i}Killing is wrong, I know that, she's not a demon, but..."
-label zenencountermenu:
+mc "{i}She's an awful person but is that enough to kill her? She hasn't killed anyone herself... Maybe there's another way?"
+mc "{i}Killing is wrong and I know that, she's not a demon... but..."
 menu:
-    "Save her" if bothpath >= 4:
+    "Give her a chance" if bothpath >= 4:
         jump ZenelithWholesome
     "Kill her":
         jump ZenelithMurder
-    "Punish her":
+    "Punish her yourself":
         jump ZenelithSlave
-
-
-
 
 
 label ZenelithMurder:
 play music dark
 $ killZen = True
 $ evil += 1
-mc "{i}Think straight, [mc]! She's evil, if I let her go like this she will just keep doing what she's been doing all this time!"
+mc "{i}Think straight, [mc]! She's evil. If I let her go like this she will just keep doing what she's been doing all this time!"
 mc "Yes, I am."
 zn "..."
 #scene zenelithcamp_resigned
@@ -121,7 +121,7 @@ mc "Gh-"
 scene black with fade
 "And you keep walking."
 scene adventurersguild_day with fade
-"You arrive at the guild in the early morning, there's barely anyone around. July waves at you, but you ignore her."
+"You arrive at the guild in the early morning, there's barely anyone around. July waves at you but you ignore her."
 mc "{i}I need to talk with Eve..."
 "You go up to the guild quarters."
 scene everoom
@@ -129,7 +129,7 @@ scene everoom
 mc "..."
 mc "Maybe she's not here..."
 #scene morningeve
-### It could be nice to have a scene with Eve opening the door here, but it's fine if it's not here.
+### It could be nice to have a scene with Eve opening the door here but it's fine if it's not here.
 "Eve opens the door."
 show eve
 show prot sad
@@ -147,7 +147,7 @@ scene everoom
 show eve
 show prot sad
 pause 2
-e @sadt "...Are you ok?"
+e @sadt "...\nAre you ok?"
 mc @sadt "I've never... I've never killed someone like that."
 mc @sadt "She looked so... helpless..."
 #scene evehug
@@ -155,9 +155,9 @@ mc @sadt "She looked so... helpless..."
 e @hopet "You did the right thing."
 mc @sadt "But..."
 e @smilet "No buts."
-e @angryt "She was evil. Maybe you didn't know Aerin's brother, but I did, and he was the sweetest person in the village, the least deserving of being enslaved for 160 years."
+e @angryt "She was evil. Maybe you didn't know Aerin's brother but I did and he was the sweetest person in the village, the least deserving of being enslaved for 160 years."
 e @angryt "She made the village suffer."
-e @sadt "...Did you get any sleep?"
+e @sadt "...\nDid you get any sleep?"
 mc @sadt "No..."
 show eve smile
 e @smilet "Come inside, you can sleep in my room, it's alright."
@@ -198,10 +198,10 @@ menu:
         mc "I will."
     "It's not like I'd mind having you here next to me":
         mc "It's not like I'd mind having you her-"
-        e "Get out before I decide to kick you out myself, [mc]"
+        e "Get out before I decide to kick you out myself, [mc]!"
         mc "Alright, alright! I'm going."
-        e "...Take care."
-$ zenRouteEnd = False
+        e "...\nTake care."
+$ zenRouteEnd = True
 $ day += 1
 $ time = 2
 jump home

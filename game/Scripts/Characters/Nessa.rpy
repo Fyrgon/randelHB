@@ -138,7 +138,7 @@ label nessatalk:
             n "Robberies?!"
             mc "Yeah, like do people steal stuff from other people by breaking into their houses?"
             n "No! Why would anyone do that? We always share what we have!"
-            mc "I see, but I found that the doors can be locked right. Why is that?"
+            mc "I see but I found that the doors can be locked right. Why is that?"
             n "W-Well, people need privacy, don't they?"
             mc "They're locked by keys, right?"
             n "Yeah, they are."
@@ -182,7 +182,7 @@ label nessatalk:
             show sedtalkn
             n "Ok, now take your pants off!"
             mc "Whoa, whoa, wait a minute. The keys first."
-            n "Ok, fine. Take it, but please don't do anything stupid."
+            n "Ok, fine. Take it but please don't do anything stupid."
             mc "I promise you, nothing's going to happen."
             scene jail with fade
             "Both of you get undressed."
@@ -247,12 +247,12 @@ label nessatalk:
             mc "How much do you know about Aerin?"
             n "We were very close when we were little. Me, Eve and Aerin did everything together."
             mc "So the three of you were pretty close friends?"
-            n "Yeah, but after her mother got banished, we saw less and less of her. She didn't show it, but we knew she blamed the village for abandoning her mother."
-            n "Things got worse when her brother disappeared soon after. The whole village tried to find him but we couldn't. They searched for weeks and months, but all attempts went in vain."
+            n "Yeah but after her mother got banished, we saw less and less of her. She didn't show it but we knew she blamed the village for abandoning her mother."
+            n "Things got worse when her brother disappeared soon after. The whole village tried to find him but we couldn't. They searched for weeks and months but all attempts went in vain."
             n "She was a totally different person after that day. She wouldn't even talk to anyone, she'd just lock herself home, isolated from everything and everyone."
             mc "She must have gone through some really hard times. Did you guys even try to talk to her?"
             show talkangryn
-            n "We did, but she didn't want to talk to us, or anyone. So we gave up as well."
+            n "We did but she didn't want to talk to us, or anyone. So we gave up as well."
             mc "But isn't she your friend?"
             n "What do you suggest I do, then? break down her door, tie her up and force her to talk? If she wants to be left alone, it's better to respect her wishes."
             mc "...So, what happens if she becomes the Elder?"
@@ -260,7 +260,7 @@ label nessatalk:
             mc "How so?"
             n "Because she's been reading and training hard. Since she was a little kid, she always wanted to be the Elder. I think her motivation grew even more after her mother left."
             mc "Who do you think will win then?"
-            n "The duel? Well, it's a close call, but I'd put my silver on Eve. She's got more experience in fighting real enemies, you know? Aerin has trained a lot but, she hasn't put it to much use."
+            n "The duel? Well, it's a close call but I'd put my silver on Eve. She's got more experience in fighting real enemies, you know? Aerin has trained a lot but, she hasn't put it to much use."
             mc "That makes sense, I'd go for Eve too!"
             jump nessatalk
 
@@ -273,17 +273,17 @@ label nessatalk:
             n "Well, what do you want to know?"
             mc "What was she like when she was little?"
             n "She was really kind and mature for her age. She treated us almost like we were her kids or something, even though we were only like 50 years apart."
-            mc "{i}50 years apart does make you a kid compared to her, but these are elves we're talking about."
+            mc "{i}50 years apart does make you a kid compared to her but these are elves we're talking about."
             n "She really liked going outside and seeing things, she was always very curious about the outside world."
             mc "I guess that's why she left."
             n "Yeah. After her mother became the Elder, she begged her for permission to go out to the world. Surprisingly enough, the Elder approved."
             mc "Really?"
             n "Yeah. Eve's mother was very kind, just like Eve."
-            n "So she came back after a few years, and brought us all sorts of cool stuff from the outside world; relics we'd never seen before, even weapons far better than our own."
-            n "She talked about her Guild a lot too, and the different monsters she fought and defeated in battle. She then stayed a few years in the village, and left again, she's been coming and going ever since."
+            n "So she came back after a few years and brought us all sorts of cool stuff from the outside world; relics we'd never seen before, even weapons far better than our own."
+            n "She talked about her Guild a lot too and the different monsters she fought and defeated in battle. She then stayed a few years in the village and left again, she's been coming and going ever since."
             mc "What about you? Don't you want to go outside?"
             show talkblushn
-            n "I do, but I'm not as lucky as Eve. I'm a Taran. Protection of the village is my first priority. So I have to stay here."
+            n "I do but I'm not as lucky as Eve. I'm a Taran. Protection of the village is my first priority. So I have to stay here."
             n "But it's not as bad here as Eve says it is..."
             show sedtalkn
             n "And I think it got a lot better."
@@ -304,7 +304,7 @@ label nessatalk:
                     n "You could say that."
             n "She doesn't really have any friends in the village... I don't think she ever had any besides her brothers."
             mc "She had brothers?"
-            n "Two, but they both died in the war against the Demon King centuries ago."
+            n "Two but they both died in the war against the Demon King centuries ago."
             mc "Oh... How old is she?"
             show suprised
             n "456."

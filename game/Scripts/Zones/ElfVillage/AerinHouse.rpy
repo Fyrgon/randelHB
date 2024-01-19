@@ -61,7 +61,7 @@ label aerinHouse:
                 show aerinhouse with dissolve
                 "You take a seat at a small wooden bench. In front of you is the table where you assume you'll be drinking the tea. The house is small but comfy."
                 "Looking behind, you can see the beautiful sunset coming from the small makeshift window. The whole place gives you a warm and welcome vibe."
-                "You feel safe in this house, and you like that."
+                "You feel safe in this house and you like that."
                 "Aerin returns holding a tray, with the cup of tea and a small muffin inside, she gently places them on the table."
                 scene teaaerin with fade
                 mc "Thank you, is this muffin homemade?"
@@ -137,7 +137,7 @@ label aerinHouse:
                 a "It's ju-"
                 show talkangrya
                 a "You know, I shouldn't have to explain myself to you. I don't even know you!"
-                mc "Well, you don't have to, but I'm not part of the village, am I? Who else can you talk about this with?"
+                mc "Well, you don't have to but I'm not part of the village, am I? Who else can you talk about this with?"
                 a "......"
                 show talksadhappymc
                 mc "Come on, I could be your inside man! I'm really good at giving advice."
@@ -156,8 +156,8 @@ label aerinHouse:
                 show normalmc
                 hide talksadhappymc
                 a "{i}Sigh...{/i} It's true what they said. After my mother got banished, I grew to hate the village. I hated Evelyn's mother, I hated Evelyn, I hated everyone. And then, my brother disappeared."
-                a "The village tried to find him, but they couldn't. I also blamed them for not looking hard enough and for giving up. But as time went on, I realised I was being childish."
-                a "I realised that the village people aren't the ones to blame for my mother's banishment, and that they did their best to find my brother."
+                a "The village tried to find him but they couldn't. I also blamed them for not looking hard enough and for giving up. But as time went on, I realised I was being childish."
+                a "I realised that the village people aren't the ones to blame for my mother's banishment and that they did their best to find my brother."
                 a "But when that happened, it was too late. The village has already given up on me. And I don't blame them for that it was my fault. I treated them too harshly."
                 mc "So you're saying that you don't hate the village?"
                 a " I don't."
@@ -181,7 +181,7 @@ label aerinHouse:
                 a "My what?"
                 mc "Let's start with your appearance."
                 a "Wh-What's wrong with my appearance?"
-                mc "It's perfect, but it's missing an important detail!"
+                mc "It's perfect but it's missing an important detail!"
                 a "Like what?"
                 mc "A smile."
                 a "I do smile."
@@ -196,7 +196,7 @@ label aerinHouse:
                 a "I am smiling."
                 hide talkwaa
                 a "......"
-                mc "You think you are, but I don't see it. How about you try a little harder."
+                mc "You think you are but I don't see it. How about you try a little harder."
                 a "......"
                 show happya with dissolve
                 a "......"
@@ -363,7 +363,7 @@ label aerinHouse:
                 hide suprised
                 mc "Uhh, haha, I think we're being a little too honest here."
                 a "But you said I should be totally honest and open about my feelings."
-                mc "Yeah, but, how about we try to lean on to the more... positive things?"
+                mc "Yeah but, how about we try to lean on to the more... positive things?"
                 a "Oh, okay."
                 mc "A-And I'm sorry for talking while eating, I-I didn't realize I did that."
                 a "It's okay, I avoided looking at your mouth anyway."
@@ -423,7 +423,7 @@ label aerinHouse:
                 mc "I think you understood the lesson, right?"
                 a "Yeah."
                 mc "Don't be afraid to tell anyone how you feel. And don't be scared to apologize; everyone makes mistakes sometimes."
-                mc "Just go tell the village people you're sorry, and tell them how you really feel."
+                mc "Just go tell the village people you're sorry and tell them how you really feel."
                 a "I-I'll try."
                 mc "Sounds good."
                 a "So is that all for the lesson?"
@@ -435,7 +435,7 @@ label aerinHouse:
                 a "I-I'm really glad that I met you."
                 mc "Same here."
                 mc "{i}She's so sweet. It's sad that she's in this situation. What would happen if she lost the duel? She'd have to leave, She'd be all alone."
-                mc "{i}Eve has me, Sander and the whole town with her if she loses. Sure, she'll have to lose her sister, but still! I feel bad for Aerin."
+                mc "{i}Eve has me, Sander and the whole town with her if she loses. Sure, she'll have to lose her sister but still! I feel bad for Aerin."
                 menu:
                     "Help Aerin win the duel":
                         mc "Aerin listen, what I'm about to say might sound stupid... but I... I want to help you win the duel!"
@@ -453,8 +453,8 @@ label aerinHouse:
                         a "Th-This is crazy! What if you get caught? Eve would never trust you again! And she'd be furious enough to kill you!"
                         mc "I'll make sure I don't get caught!"
                         a "......"
-                        a "I know Eve is stronger than me, and I know I would probably lose the duel. But I-I can't cheat, it would be betraying the very principles of my ancestors."
-                        a "I'm sorry, [mc]. Words cannot describe how much I appreciate your help, but I can't do it."
+                        a "I know Eve is stronger than me and I know I would probably lose the duel. But I-I can't cheat, it would be betraying the very principles of my ancestors."
+                        a "I'm sorry, [mc]. Words cannot describe how much I appreciate your help but I can't do it."
                         mc "Come on now, Aerin..."
                         a "I'm sorry, [mc]. Being the village elder was something I swore to my mother I'd do. I can't let that oath be broken."
                         mc "{i}Sigh..."
@@ -465,7 +465,7 @@ label aerinHouse:
                         mc "Okay."
                         scene elfvillage with fade
                         mc "{i}She refused my help. But I could see it in her eyes, she knew she'd lose the duel without my help."
-                        mc "{i}I should find a way to help. One without anyone noticing. Not Eve, not Aerin, and most certainly not anyone else in the village."
+                        mc "{i}I should find a way to help. One without anyone noticing. Not Eve, not Aerin and most certainly not anyone else in the village."
                         mc "{i}Hmmm... I don't think I can convince Eve to lose on purpose."
                         mc "{i}So I got no choice but to make her loose. How do I do it? Eve has to have somekind of weakness, I could use it against her."
                         mc "{i}Finding it is the problem. Maybe I can look through Eve's room at the Guild? her house here is prety much empty, so looking there would be pointless."
@@ -474,7 +474,7 @@ label aerinHouse:
                         $ sawaerin += 1
                         jump elfvillage
                     "Help Eve win the duel":
-                        mc "{i}I know it's sad, but I can't betray Eve. She's my friend, and she trusts me a lot. I can't betray her trust . I've helped Aerin enough already."
+                        mc "{i}I know it's sad but I can't betray Eve. She's my friend and she trusts me a lot. I can't betray her trust . I've helped Aerin enough already."
                         mc "Goodbye then."
                         a "Goodbye, [mc]."
                         $ evepath += 1

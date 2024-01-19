@@ -12,7 +12,7 @@ if zenrel < 0 and zenPlay2 == True:
     mc "What?"
     zn "You just used me to satisfy your needs. I believed you when you said you'd stop and I hoped you would at some point... But you didn't. So, leave."
     mc "Tsk. Whatever you want."
-    "As you leave, Zenelith looks down. For a moment you think you saw a tear, but you don't think much of it."
+    "As you leave, Zenelith looks down. For a moment you think you saw a tear but you don't think much of it."
     mc "{i}Guess I'm not welcome here anymore then."
     $ zenRouteEnd == True
     jump home
@@ -75,12 +75,6 @@ znd @smilet "Oh, hey, [mc]."
 "The two of you chit chat for a while. When the sun is almost down, you tell Zenelith you need to go and you say goodbye to each other."
 jump home
 
-
-
-
-
-
-
 label zenSexing:
 hide screen hud
 stop music fadeout 1
@@ -93,7 +87,7 @@ if zenrel < 0:
         mc "What?"
         zn "You just used me to satisfy your needs. I believed you when you said you'd stop and I hoped you would at some point... But you didn't. So, leave."
         mc "Tsk. Whatever you want."
-        "As you leave, Zenelith looks down. For a moment you think you saw a tear, but you don't think much of it."
+        "As you leave, Zenelith looks down. For a moment you think you saw a tear but you don't think much of it."
         mc "{i}Guess I'm not welcome here anymore then."
         $ zenRouteEnd == True
         jump home
@@ -136,7 +130,7 @@ if zenBlush < 3:
     "You give Zenelith a kiss and she blushes."
     zn "U-Uhm..."
 elif zenBlush > 3 and zenPlay == True:
-    "You kiss Zenelith, but she doesn't return the kiss, she seems to be a bit sour."
+    "You kiss Zenelith but she doesn't return the kiss, she seems to be a bit sour."
 elif zenBlush > 3 and zenBlush < 6:
     "You give Zenelith a kiss and she kisses you back."
     zn "Oh?"
@@ -158,12 +152,12 @@ if zenLove == True:
     zn "I love you too, [mc]."
 elif zenBlush > 5:
     "Zenelith seems to want you more than you want her. She quickly begins to strip you and pushes down on the bed, then she gets naked."
-    "She tries to get on top of you, but you smirk and push her over to the side."
+    "She tries to get on top of you but you smirk and push her over to the side."
     mc "Getting cocky, huh? How about you take my cock instead?"
     jump zenSex2
 elif zenPlay == True:
     $ zenrel -= 20
-    "You undress her and push her over on the bed, almost throwing her. She gives you a disapproving look, but you don't care about it. She only has you, whatever you do to her she won't mind."
+    "You undress her and push her over on the bed, almost throwing her. She gives you a disapproving look but you don't care about it. She only has you, whatever you do to her she won't mind."
     "You get naked and get on the bed. She hesitantly opens her legs and you smile. Then you thrust inside of her."
 elif zenFuck == True:
     "You quickly undress her. She's already wet so there's no need for foreplay. You push her on the bed, she looks at you eagerly. When you take out your cock, her expression melts."

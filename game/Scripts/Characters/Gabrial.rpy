@@ -41,7 +41,7 @@ menu:
                 mc "Does it?"
                 g "Well, you know how when Adventurers get called to the army they get an army rank equivalent to their Guild one?"
                 mc "...Yeah?"
-                g "Bronze-Rank Adventurers become regular soldiers, Silver-Ranks become captains, Gold-Ranks become commanders, and diamond-Ranks get their own special rank above commanders but below major. If it were easy to become Silver-Rank we'd have more captains than soldiers in the army."
+                g "Bronze-Rank Adventurers become regular soldiers, Silver-Ranks become captains, Gold-Ranks become commanders and diamond-Ranks get their own special rank above commanders but below major. If it were easy to become Silver-Rank we'd have more captains than soldiers in the army."
                 mc "Well yeah, that makes sense. Captains do need much more experience compared to regulars... But being a Bronze-Rank isn't as cool as anything above."
                 g "There you go again geeking about being an Adventurer."
                 mc "Hey! It's true. When a Bronze-Rank dies, people just go \"what a shame\" or even worse \"he shouldn't have taken that quest.\" Meanwhile when anyone above dies they are remembered and may even get something made for them."
@@ -65,7 +65,7 @@ menu:
                 $ time += 1
                 jump home
             else:
-                mc "Going well, still just a recruit, but hey, taking things slow has never killed anyone."
+                mc "Going well, still just a recruit but hey, taking things slow has never killed anyone."
                 g "Oh definitely."
                 mc "But don't worry, I'll become a diamond-Rank soon enough."
                 g "Ah yes, a diamond Adventurer. Soon."
@@ -74,7 +74,7 @@ menu:
                 mc "..."
                 g "I'm just messing. I'm glad you're still ambitious one between the two of us."
                 mc "Why? You don't want to become an Imperial mage?"
-                g "Oh, it'd definitely be great, but no one so strong started as late as I have. It'll already be hard to get to the level of a Royal mage the way I am now."
+                g "Oh, it'd definitely be great but no one so strong started as late as I have. It'll already be hard to get to the level of a Royal mage the way I am now."
                 mc "..."
                 menu:
                     "You'll make it":
@@ -86,11 +86,11 @@ menu:
                         mc "I believe in you. With enough willpower you'll become the strongest there is."
                         g "I'm not too sure that's how it works."
                         mc "I am."
-                        g "...I won't argue, but just know I'm not convinced."
+                        g "...I won't argue but just know I'm not convinced."
                     "You're already awesome":
                         mc "You're already awesome the way you are, though."
                         g "H-Huh?"
-                        mc "You're smart, cute, hard-working, and fun. Even if you only become a high mage, who cares? You're great."
+                        mc "You're smart, cute, hard-working and fun. Even if you only become a high mage, who cares? You're great."
                         g "...T-Thanks."
                     "You're right":
                         mc "I guess you're right. But that still shouldn't stop you from trying your best, got it?"
@@ -103,13 +103,13 @@ menu:
                         mc "...I believe in you."
                         g "Thanks, [mc]."
                 mc "Oh yeah, by the way, you haven't really told me a lot about your time in Westian yet. How was it?"
-                "For a second her eyes grow distant, but quickly she lightens up."
+                "For a second her eyes grow distant but quickly she lightens up."
                 g "Oh, it was great! Everything there is so big! The houses, the streets, the libraries... There's even a castle!"
                 mc "Wow, the noble family of Westian must be really rich."
                 g "It really is. The Academy in Westian is even named after them because apparently they were the ones to built it before King Ron mandated Academies should be built in every city."
                 mc "Yeah, Westian is really old, isn't it?"
-                g "Yeah, but that isn't all that there is to it. Randel isn't that much younger but we started as farmers. The nobles we got only came to the town after seeing how profitable it was starting to get. They don't own most of Randel like the nobles in Westian because they werern't the ones that built Randel."
-                mc "That's true. Even though they're the most important noble family in town, the Bryways barely own anything. I think they helped with the Library and I know they own quite a few fields, but they're hardly nobles."
+                g "Yeah but that isn't all that there is to it. Randel isn't that much younger but we started as farmers. The nobles we got only came to the town after seeing how profitable it was starting to get. They don't own most of Randel like the nobles in Westian because they werern't the ones that built Randel."
+                mc "That's true. Even though they're the most important noble family in town, the Bryways barely own anything. I think they helped with the Library and I know they own quite a few fields but they're hardly nobles."
                 g "Yeah, the descendants of James Randel that are still in town are probably wealthier."
                 mc "Hah, yeah."
                 "Gabe looks at the window and sighs."
@@ -180,7 +180,7 @@ menu:
         g "......"
         mc "......"
         show talkwag
-        g "I'm not sure what I was expecting you to ask, but this definitely wasn't it. Why on earth do you need some of my clothes?"
+        g "I'm not sure what I was expecting you to ask but this definitely wasn't it. Why on earth do you need some of my clothes?"
         mc "{i}Should I be honest about this? I'm still not sure if I should tell folk about Thea yet..."
         menu:
             "Be honest":
@@ -261,7 +261,7 @@ menu:
                 $ theaclothestimer += 1
                 $ findtheaclothes +=1
                 $ girlclothes += 1
-                if GabeAcademy == True:
+                if GabeAcademy = True:
                     jump academy
                 jump home
 return
@@ -280,7 +280,7 @@ if gabetrain1 == 0:
     scene gaberoomd with fade
     "Gabe strips down her clothes. You stand there with your mouth open."
     g "What? We can't do anything with our clothes on."
-    mc "Y-Yeah, but I thought we could start slow... because..."
+    mc "Y-Yeah but I thought we could start slow... because..."
     g "I know... so how do we start?"
     mc "{i}Shit! I should've really done some research. I have no idea what to do here."
     g "[mc]?"
@@ -482,7 +482,7 @@ menu:
             mc "HEY!"
             g "Hehehehehe."
             mc "We'll continue tomorrow..."
-            g "Ok, and I'll practice at night."
+            g "Ok, I'll practice at night."
             mc "...Sure."
             "You leave Gabe's house."
             $ gabedildo = 1

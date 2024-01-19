@@ -297,15 +297,15 @@ label copyingGabe:
         $ correct += 1
         "You peek Gabe's paper once again."
         mc "{i}Ahh... I knew it was [testAnswer]."
-        "You write the answer down on your test, but you notice that Boris is looking at you suspisciously."
+        "You write the answer down on your test but you notice that Boris is looking at you suspisciously."
         mc "{i}I think it's better if I don't copy again..."
     if copyGabe == 3:
-        "You try to peek once again and not get seen, but suddenly your hear a hand slam on your desk."
+        "You try to peek once again and not get seen but suddenly your hear a hand slam on your desk."
         "When you turn around Boris is right in front of you."
         b "I am very disappointed in you."
         "He takes your paper away and sits at his desk. You sigh."
         mc "{i}I knew I shouldn't have..."
-        "You wait in silence until the class is done. Boris says your name while listing everyone who failed, and you sadly leave the classroom."
+        "You wait in silence until the class is done. Boris says your name while listing everyone who failed and you sadly leave the classroom."
         scene academytalkblr with fade
         show talksg
         show worriedmc

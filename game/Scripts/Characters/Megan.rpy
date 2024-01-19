@@ -27,7 +27,7 @@ label meganTalk:
         m "{i}Sigh...{/i} You knew, kid."
         show angry
         mc "What?"
-        m "You knew I was drunk, and you took the opportunity to make me spill the beans!"
+        m "You knew I was drunk and you took the opportunity to make me spill the beans!"
         mc "No, how could I kno-"
         show suprised
         m "Shut up! I'll tell ya. No one has talked to me in a while so I'll tell ya."
@@ -44,10 +44,10 @@ label meganTalk:
         m "My brothers and I used to play... and by play, I mean we would beat the living shit out of each other... I guess growing up like that made me strong."
         m "Then I joined the Academy. I was a really cheerful person. I loved hanging out with my new friends."
         m "But all of that changed. When we had our trials, I would always come out on top by miles. I could beat up every single one in the Academy, even the seniors!"
-        m "People slowly started to hate me! My friends ignored me, and in the end... they just became my enemies."
+        m "People slowly started to hate me! My friends ignored me and in the end... they just became my enemies."
         m "You know, not having friends is ok, as long as you don't have enemies. But having enemies, that's the worst! Especially when they used to be frenemies... wait... no, they used to be friends then enemies... Anyway!"
         mc "{i}That's depressing..."
-        m "So I graduated from the Academy. Then I left town, and got to Randel, and joined the Guild. That's when I thought not to stand out. If I did, everyone would hate me again."
+        m "So I graduated from the Academy. Then I left town, got to Randel and joined the Guild. That's when I thought not to stand out. If I did, everyone would hate me again."
         mc "I think you were being paranoid."
         m "Jealousy... it's always there, Monty!"
         show angry

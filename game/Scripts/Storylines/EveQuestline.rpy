@@ -103,7 +103,7 @@ label fightgoblin:
                 "Charge!":
                     " It's injured! Time to charge!"
                     "You charge at the goblin and slash it with your sword."
-                    "The goblin tries to dodge, but it's too injured to move."
+                    "The goblin tries to dodge but it's too injured to move."
                     play sound slash1
                     scene goblin4 with vpunch
                     mc "Yaargh!!!"
@@ -194,7 +194,7 @@ label fightgoblin:
     scene black with fade
     mc "Ewwww... What's that smell?"
     sa "Trust me kid, you don't wanna know."
-    "You proceed further into the cave. As you walk along, you see piles of bones, small beds made out of animal skins, and spears leaning against the walls of the cave."
+    "You proceed further into the cave. As you walk along, you see piles of bones, small beds made out of animal skins and spears leaning against the walls of the cave."
     mc "It looks like the goblins have been living here."
     e "That explains the smell..."
     "A few moments later."
@@ -233,12 +233,12 @@ label fightgoblin:
     sa "Ok, everything's ready."
     show normale with easeinleft
     show talkhe
-    e "I'm back... it's not much, but this is all I could find nearby."
+    e "I'm back... it's not much but this is all I could find nearby."
     hide talkhe
     hide talksr
     sa "That'll do."
     show watalkeve
-    e "Oh, and I also found a lake nearby, I think I'll take a dip. I need to wash this filthy goblin blood off me."
+    e "Oh and I also found a lake nearby, I think I'll take a dip. I need to wash this filthy goblin blood off me."
     e "I'll be right back."
     hide normale
     hide watalke with easeoutleft
@@ -379,7 +379,7 @@ label campq:
             e "...I mean seeing everyone around you age and die... it's hard."
             e "I guess that's why Elves keep their distance from other races."
             mc "Have you lost a lot of friends?"
-            e "Yeah... I try to remember them all, but it's too much. Their faces just fade away after some time."
+            e "Yeah... I try to remember them all but it's too much. Their faces just fade away after some time."
             e "As time goes on when you age, everyone you know dies... and then, your forget who your best friends are."
             e "That's a fate of a living-being with a long lifespan, like me..."
             mc "I'm sorry, Evelyn."
@@ -397,7 +397,7 @@ label campq:
             sa "So I was tracking this thing for days, until I finally found it."
             sa "Then just as I was ready to take the shot, an arrow comes out of nowhere and hits the deer."
             sa "When I looked back, it was Eve."
-            sa "So she says she wants the deer, and I refuse because I tracked that damn thing for days."
+            sa "So she says she wants the deer and I refuse because I tracked that damn thing for days."
             mc "Were you an adventurer too?"
             e "No, I was just hunting. I wasn't even living in Randel at that time. I lived in a small elf town in the forest."
             mc "So then, what happened?"
@@ -529,9 +529,9 @@ label campq:
     sa "Wait, so you weren't born in Randel?"
     mc "No, I was born in Hern."
     e "Hern?"
-    mc "Yeah, but my memory of my time in Hern is very foggy."
+    mc "Yeah but my memory of my time in Hern is very foggy."
     e "How did you end up with your uncle?"
-    mc "He's not my real uncle. When the Demon King attacked Hern, my house was burned down. The soldiers managed to rescue me, but my parents didn't make it..."
+    mc "He's not my real uncle. When the Demon King attacked Hern, my house was burned down. The soldiers managed to rescue me but my parents didn't make it..."
     mc "Then the soldiers brought me back to Fort Hern after the battle. Uncle Pete used to be a traveling merchant and he happened to be there at the time."
     mc "He volunteered to take care of me."
     mc "Then he brought me to Randel."
@@ -544,13 +544,13 @@ label campq:
     "Sander starts to tell some stories of his adventures."
     sa "So, I see this super ripped chick while I was in this tavern in Burdock."
     sa "You see, I was super-into ripped chicks at that time. So, I went to her."
-    sa "We had a few drinks, and I could tell this chick was totally into me. So we decide to take a room and have some fun..."
+    sa "We had a few drinks and I could tell this chick was totally into me. So we decide to take a room and have some fun..."
     sa "Then we got to our room and I take off my clothes. Then, she tells me to rip her clothes off! It was kinky as fuck."
-    sa "So, I savagely strip her down, and when I pulled down her panties... guess what I saw?"
+    sa "So, I savagely strip her down and when I pulled down her panties... guess what I saw?"
     menu:
         "A dick.":
             mc "A dick."
-            sa "Close, but no!"
+            sa "Close but no!"
             sa "It was two dicks!"
             mc "What?!"
             e "Hahahah! Look at [mc]'s face!"
@@ -701,7 +701,7 @@ label campq:
     mc "Um, Eve?"
     e "Yes?"
     mc "So, does all of this go to the guild?"
-    e "Oh... you didn't know? No, not all of it, but most of it goes to the Guild."
+    e "Oh... you didn't know? No, not all of it but most of it goes to the Guild."
     mc "Oh, I see."
     e "Don't be sad, little one. We're paid in both gold and experience points, so it's not that much of a loss."
     mc "Really?"
@@ -816,7 +816,7 @@ label EveQ1pre:
     mc "I'll do my best."
     e "Come meet me here when you're ready to go."
     mc "ok"
-    e "Oh, and do you have camping gear?"
+    e "Oh and do you have camping gear?"
     if icamping == 1:
         mc "Yes."
         e "Good, make sure you bring it. We'll have to spend the night."
@@ -879,7 +879,7 @@ label EveQ1transition:
         "You take the book and open it."
         "Book" "Dururthu Day 23: Today, I got a letter from the Village. It said that I should come to the Village immediately. I'm sure this has something to do with the duel."
         "I stalled this enough. I think I should end this. I can't run away from this anymore."
-        mc "{i}Wow, this is Eve's diary! She's 324, but still has a diary?"
+        mc "{i}Wow, this is Eve's diary! She's 324 but still has a diary?"
         mc "{i}It kinda makes sense though. When you live for about 500 years, you are bound to forget things. I guess that's why she has one."
         mc "{i}Wait! I think I found what I was just looking for. Yes! This could have something about her weakness!"
         "You flip through the pages."
@@ -998,7 +998,7 @@ label EveQ1:
             scene black with vpunch
             "There's a sudden pull on your hand and you fall to the ground."
             mc "Ugh! Did I miss her?!"
-            "You feel a sharp pain at you right arm. You try to see what's causing it, but to your surprise, you right arm is missing. All you see is a pool of blood."
+            "You feel a sharp pain at you right arm. You try to see what's causing it but to your surprise, you right arm is missing. All you see is a pool of blood."
             mc "Huh?"
             "It takes a few seconds for you to notice that your arm has been torn off."
             mc "AAAAAAAAAHH!!!"
@@ -1032,7 +1032,7 @@ label EveQ1:
                     scene black with vpunch
                     "There's a sudden pull on your hand and you fall to the ground."
                     mc "Urgh! Did I miss her?!"
-                    "You feel a sharp pain at you right arm. You try to see what's causing it, but to your surprise, you right arm is missing. All you see is a pool of blood."
+                    "You feel a sharp pain at you right arm. You try to see what's causing it but to your surprise, you right arm is missing. All you see is a pool of blood."
                     mc "Huh?"
                     "It takes a few seconds for you to notice that your arm has been torn off."
                     mc "AAAAAAAAHH!!!"
@@ -1116,7 +1116,7 @@ label EveQ1:
     e "Hehehe. You did great. My plan worked perfectly."
     mc "Huh... plan?"
     e "It takes some time for me to charge the lightning arrow, which is why I needed you to distract it."
-    e "The Ledric is smart, but it's not smart enough."
+    e "The Ledric is smart but it's not smart enough."
     mc "Oohh... so you brought me on this quest because you wanted a bait?"
     e "I needed bait that won't get himself killed! Hehehehe... And you did perfect."
     mc "Th-Thanks, I guess."
@@ -1370,7 +1370,7 @@ label EveQ1:
     pause 0.3
     show talkwanmc
     mc "What?"
-    e "I thought I would wake up after I rested a little, but I slept the whole night. I'm really sorry, [mc]."
+    e "I thought I would wake up after I rested a little but I slept the whole night. I'm really sorry, [mc]."
     mc "{i}Wait, she doesn't remember?"
     mc "Hehehehe, no problem. You didn't wake up in the middle of the night, right?"
     e "Uhm... No, why?"
@@ -1381,7 +1381,7 @@ label EveQ1:
     mc "I don't know... Hehehehe."
     mc "{i}She doesn't have a clue."
     mc "So, how are you feeling? You looked kinda tired yesterday."
-    e "Yeah, I did, but I feel great now."
+    e "Yeah, I did but I feel great now."
     mc "That's good."
     e "Ok, now quick. Pack up your tent, we need to leave."
     mc "Ok."
@@ -1394,7 +1394,7 @@ label EveQ1:
     mc "Milly's birthday party."
     e "Oh yes, we have it this month."
     mc "{i}Ok, she remembers."
-    mc "Yeah, but which day?"
+    mc "Yeah but which day?"
     e "Oh, any day will do, as long as it's this month."
     mc "What?! We're having a birth \"day\", not a birth month!"
     e "Hahahaha! We really don't take it that seriously, remember? And besides; for elves, a day is too... how should I say this? Umm... \"specific\"?"
@@ -1448,7 +1448,7 @@ label EveQ1:
     mc "Uhm... What do you mean?"
     sa "Come on man, you were with Eve alone. I thought you would've gotten a piece of that ass."
     mc "What! W-We just went on a quest!"
-    sa "Yeah, but I thought... something might happen."
+    sa "Yeah but I thought... something might happen."
     mc "Jeez, are you serious?! Do you expect something to happen just like that? What do you think this is, some kind of romance novel?"
     sa "Hahahaha! Don't take it too seriously, kid. But I thought you really had a chance."
     mc "...Hmm?"
@@ -1459,7 +1459,7 @@ label EveQ1:
     pause 0.5
     hide suprised
     mc "Huh?!"
-    sa "Yeah, I've been with her enough. She's normally attracted to small dudes. She says they're cute and all, but I know she likes them in other ways as well."
+    sa "Yeah, I've been with her enough. She's normally attracted to small dudes. She says they're cute and all but I know she likes them in other ways as well."
     mc "{i}gulp{/i} in what way?"
     sa "...You know what I mean."
     mc "Really?"
@@ -1467,7 +1467,7 @@ label EveQ1:
     mc "...What... about you? Don't you like Eve?"
     sa "Me? Pfft, hell no, little man."
     sa "Eve's like my big sister. It would be weird if we were together."
-    mc "Uhm... Yeah, but you still peep on her."
+    mc "Uhm... Yeah but you still peep on her."
     sa "Hey! That's totally different!"
     mc "Oh yeah?"
     sa "Yes! Loving someone isn't just the same as peeping on someone or... or... having sex with them!"
@@ -1542,9 +1542,9 @@ label EveQ2:
         sa "Look what I brought!"
         scene millybday with flash
         mi "Whoah, is that cake for me?"
-        sa "Yeah, and it's not just any cake; it's a birthday cake from the greatest baker in Astylla!"
+        sa "Yeah and it's not just any cake; it's a birthday cake from the greatest baker in Astylla!"
         mi "Heeeeeee~! Thank you, Uncle Sander!"
-        sa "Hehehe. No worries, but don't call me uncle. You're older than my great grandmama."
+        sa "Hehehe. No worries but don't call me uncle. You're older than my great grandmama."
         mi "Hehehhehe!"
         scene heartdiamond with flash
         e "And here's a gift from [mc] and me."
@@ -1581,7 +1581,7 @@ label EveQ2:
         mc "I guess I'll leave too."
         show blushtalke
         e "[mc], wait. I wanted to thank you."
-        e "For helping me with the Ledric, and also for making Milly happy."
+        e "For helping me with the Ledric and also for making Milly happy."
         show talkwamc
         mc "What? I barely did anything."
         e "You're wrong, [mc]. You're a great person. Thank you."
@@ -1625,9 +1625,9 @@ label EveQ2:
         sa "Look what I brought!"
         scene millybday with flash
         mi "Whoah, is that cake for me?"
-        sa "Yeah, and it's not just any cake; it's a birthday cake from the greatest baker in Astylla!"
+        sa "Yeah and it's not just any cake; it's a birthday cake from the greatest baker in Astylla!"
         mi "Heeeeeee~! Thank you, Uncle Sander!"
-        sa "Hehehe. No worries, but don't call me uncle. You're older than my great grandmama."
+        sa "Hehehe. No worries but don't call me uncle. You're older than my great grandmama."
         mi "Hehehhehe!"
         e "And here's a gift from [mc] and me."
         scene heartdiamond with flash
@@ -1646,7 +1646,7 @@ label EveQ2:
         mi "REALLY?!"
         a "Yeah, I can make the cake for that."
         a "By the way, [mc], why didn't you tell me to bake the cake? You told me that you... liked my baking, right?"
-        mc "Y-Yeah, but Sander said he would bring one."
+        mc "Y-Yeah but Sander said he would bring one."
         a "Hmm... it's ok. Next time you'll see, my cake will be better."
         sa "I doubt that."
         a "Huh, what did you say?"
@@ -1654,7 +1654,7 @@ label EveQ2:
         scene evehousebd3
         a "Hmph... You wouldn't be saying that if you had tasted one of my cakes."
         if sanderatemuff == 1:
-            sa "I did eat one of your muffins. It wasn't bad, but it just didn't surpass Mary's muffins."
+            sa "I did eat one of your muffins. It wasn't bad but it just didn't surpass Mary's muffins."
             a "Impossible!"
             mc "{i}This cake debate is getting serious."
         else:
@@ -1694,7 +1694,7 @@ label EveQ2:
         mc "I guess I'll leave too."
         show blushtalke
         e "[mc], wait. I wanted to thank you."
-        e "For helping me with the Ledric, and also for making Milly happy."
+        e "For helping me with the Ledric and also for making Milly happy."
         show talkwamc
         mc "What? I barely did anything."
         e "You're wrong, [mc]. You're a great person. Thank you."
@@ -1745,7 +1745,7 @@ label EveQ3:
     "Diary" "It was all because of that Ledric blood. It acted as some kind of stimulant, which made me want to- UGH- I don't want to think about it anymore."
     "Diary" "[mc] thinks I forgot all about it, which is good. I don't know how I'm supposed to apologize."
     mc "{i}Apologize?! What the hell is wrong with her? I should be thanking her!"
-    "Diary" "But ever since that day, whenever I see [mc], I see him differently. I know I said earlier that I have motherly feelings for him, but now, I'm not sure if that's exactly what I'm feeling."
+    "Diary" "But ever since that day, whenever I see [mc], I see him differently. I know I said earlier that I have motherly feelings for him but now, I'm not sure if that's exactly what I'm feeling."
     "Diary" "I feel like doing things with him, things that a mother should not do with her son."
     mc "{i}Holy-"
     "The door suddenly opens."
@@ -1787,7 +1787,7 @@ label EveQ3:
     e "F-F-Finger?! Nothing like that happened! Wh-What are you talking about?"
     mc "Don't lie, Eve. It's here in the diary."
     e "So you read it!"
-    mc "Yeah, and what about this? \"I feel like doing things with him, things that a mother should not do with her so-\""
+    mc "Yeah and what about this? \"I feel like doing things with him, things that a mother should not do with her so-\""
     e "NOOOOOOO! Give it here!"
     "Eve swipes the book from your hands."
     hide supriseblushe
@@ -1801,7 +1801,7 @@ label EveQ3:
     e "I did! Otherwise, why would you do something so shameful?!"
     show worriedmc
     mc "I liked it."
-    e "I-I... did, but it was still something I should never have done!"
+    e "I-I... did but it was still something I should never have done!"
     mc "Eve, I said I liked it."
     show supriseblushe
     e "Wh-What?!"
@@ -1845,11 +1845,11 @@ label EveQ4:
         scene evetowel1
         e "[mc], why are you here?"
         mc "I came here to confess."
-        mc "I really like you, and it had nothing to do with what happened that night."
+        mc "I really like you and it had nothing to do with what happened that night."
         e "......"
         mc "And I'm not a little kid, these feelings are real."
         e "No, little one. You still don't understand these things."
-        mc "I'm 19. I know it's little in elf years, but I'm not a kid."
+        mc "I'm 19. I know it's little in elf years but I'm not a kid."
         e "But... why would you like this old elf anyway, little one? There are a lot of beautiful young girls out there."
         mc "I really need to get you a mirror."
         e "Huh?"

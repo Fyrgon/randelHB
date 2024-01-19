@@ -1,10 +1,10 @@
 default dayWhenBronze = 500
 
 label julyFollowed:
-    if greenarrow == 1:
+    if greenarrow == 1 and alphafalcon < 3:
         mc "{i}I have finally reached the right level for Bronze... but I really should finish Evelyn's quest first so I can immediately into her party!"
         jump guildMenu
-    elif greenarrow == 1 and alphafalcon >= 3:
+    elif greenarrow == 1:
         mc "{i}Eheh... Time to show Eve what I've got!"
         show normalmc
         show talkwanmc
@@ -53,7 +53,7 @@ label julyFollowed:
         j "Oh really? That's great! You're lucky, being able to join such a great party."
         j "And another thing I forgot to mention in the briefing. You will get your very own room in the Guild Quarters!"
         mc "Really?!"
-        j "Yeah, but your room is still under construction, so it might take a while. But you can still visit the other Guild members in their quarters."
+        j "Yeah but your room is still under construction, so it might take a while. But you can still visit the other Guild members in their quarters."
         mc "Nice!"
         j "Run along now! Go give them the news!"
         mc "Bye, July!"
@@ -145,7 +145,7 @@ label julyFollowed:
         stop music
         mc "I'm finally an adventurer... I can't wait to tell Uncle Pete."
         mc "This badge looks really cool too..."
-        "You look at your chest, but the badge isn't there."
+        "You look at your chest but the badge isn't there."
         mc "Fuck, where is it...?"
         mc "Aghh! It must have fallen off while I was dancing!"
         mc "Damnit!"
@@ -206,12 +206,12 @@ label julypt2:
         mc "Where is she?"
         "You look around the Guild; it's total silence seems wrong compared to how much activity goes on during the day. A mote of moonlight shines in through the window as you search for her bedroom. Besides a storage closet, you find nothing."
         mc "I wonder where she sleeps at night? I can't find her room..."
-        "You feel the hair on the back of your neck stand up, and goosebumps ripple down your arm."
+        "You feel the hair on the back of your neck stand up and goosebumps ripple down your arm."
         mc "It's that strange feeling again... like that night I saw July in the woods."
         mc "I can sense something dark. How though? It's weird."
         mc "It's coming from below me..."
         mc "Mhh..."
-        "You kneel down and pull the huge bear rug. It's surprisingly heavy, but you manage to pull it aside."
+        "You kneel down and pull the huge bear rug. It's surprisingly heavy but you manage to pull it aside."
         "You find a trap door."
         mc "Bingo!"
         mc "It's not locked either..."
@@ -246,7 +246,7 @@ label julypt2:
         mc "Feeding? Feeding on what?"
         j "I'll explain everything tomorrow. Please, [mc], you have to trust me."
         mc "......"
-        j "I'm sorry I kept this from you, but you have to promise me that you won't tell this to anyone."
+        j "I'm sorry I kept this from you but you have to promise me that you won't tell this to anyone."
         mc "What are you?"
         j "......"
         j "I'm a Vampire."
@@ -272,7 +272,7 @@ label julypt2:
         j "I'm telling the truth."
         mc "...Ok, tell me this; if you're actually July, how on Astylla are you able to be out in the day, in the sun?"
         j "Have you ever seen me outside in the day?"
-        mc "Ehm... no, but still, at the Guild, there's plenty of light."
+        mc "Ehm... no but still, at the Guild, there's plenty of light."
         j "I've gotten used to minor amounts of sunlight."
         mc "Enough of your bullshit! I'm asking you again what did you do to July?!"
         j "{i}sigh{/i}... If you don't believe me, kill me."
@@ -280,7 +280,7 @@ label julypt2:
             "Kill her":
                 $ notrustjuly += 1
                 mc "Nice try."
-                "You raise your sword to strike her down, but as you do, July collapses to the floor."
+                "You raise your sword to strike her down but as you do, July collapses to the floor."
                 scene julyvampire1 with vpunch
                 mc "Huh... Wh-What? Get up!"
                 "She lies on the floor, unresponsive."

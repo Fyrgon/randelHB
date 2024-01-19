@@ -27,7 +27,7 @@ label elfPrison:
                 show wan
                 mc "WHAT?!"
                 hide wan
-                n "Look, I know you're angry at me, but I did it for your own good."
+                n "Look, I know you're angry at me but I did it for your own good."
                 mc "Can you please explain how this is for my own good?"
                 n "Alright, alright, you see, most of the women here are horny lunatic nymphos that'd go wild at the sight of a man."
                 n "And if you walk in here with that dick hanging around like that, do you have any idea what would happen?"
@@ -68,7 +68,7 @@ label elfPrison:
                 n "Ohhh... No, I can't."
                 hide talkwamc
                 mc "{i}Of course, it isn't that easy. There always has to be some sort of grind."
-                n "Not like this. I could do it right now, but that would ruin the experience. I need to savor it more. Like, I need to work my way to it, you know?"
+                n "Not like this. I could do it right now but that would ruin the experience. I need to savor it more. Like, I need to work my way to it, you know?"
                 mc "Huh?"
                 n "It's no fun when you get things without earning them."
                 mc "Ok, so what do you want me to do?"
@@ -82,7 +82,7 @@ label elfPrison:
                 show hornn
                 n "YES! YES!"
                 show talkwamc
-                mc "{i}Makes no sense, but I like it."
+                mc "{i}Makes no sense but I like it."
                 mc "Ok, so why not suck my cock and I'll reward you with a good fucking?"
                 n "Not something like that, idiot. Hehehe. Something that doesn't involve... sex stuff."
                 mc "Ok."
