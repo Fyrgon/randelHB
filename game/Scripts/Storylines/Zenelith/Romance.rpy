@@ -1,7 +1,7 @@
 default zenQ = 0
 default mattressDebt = 0
 default foodDebt = 0
-default marketDebt = mattressDebt+foodDebt
+default marketDebt = 0
 default dayZ = 0
 default toolz = False
 default humanHate = False
@@ -9,10 +9,6 @@ default furnitureZ = False
 default Zdress = False
 default zenPeek = False
 default zenNoticed = False
-default lookgreatz = False
-default fitsperfectly = False
-default lookgorgeusz = False
-default looksgreat = False
 default zenPlay = False
 default zenFuck = False
 default zenLove = False
@@ -268,20 +264,19 @@ else:
     $ money -= 20
     "You pay the man the money for the mattress, then you use the spell on it to bring it along."
 mc "{i}Oh, I almost forgot! I need to bring her some food too."
-if mattressDebt > 0:
+if money < 5:
     mc "{i}...But I'm out of money."
     mc "{i}Well, I'll just use my incredible charisma to convince people to give me stuff for free."
     "You look around and end up buying a few vegetables."
     mc "{i}I'll pay it all back I swear!"
+    $ foodDebt = 5-money
+    $ money = 0
+    mc "{i}Damn it, I didn't have enough money..."
+    mc "{i}But they said it's fine if I pay it back next time I come here."
 else:
+    $ money -= 5
     "You look around and end up buying a few vegetables."
-    if money < 5:
-        $ foodDebt = 5-money
-        $ money = 0
-        mc "{i}Damn it, I didn't have enough money..."
-        mc "{i}But they said it's fine if I pay it back next time I come here."
-    else:
-        $ money -= 5
+$ marketDebt = mattressDebt+foodDebt
 stop music fadeout 1
 "Satisfied with what you got, you head to the forest."
 scene forrest with fade

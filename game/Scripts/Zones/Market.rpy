@@ -66,12 +66,13 @@ label market:
             $ money -= 120
             jump market
         "Pay the debts back" if marketDebt > 0:
-            if money > marketDebt:
-                mc "{i}Wait, I don't have enough money... Better go get some."
+            if money < marketDebt:
+                mc "{i}Wait, I don't have enough money... I need [marketDebt] gp. Better go get some."
                 jump home
             "You go pay the people with whom you had debts."
             mc "{i}Alright. Debts paid."
             $ money = money-marketDebt
+            $ marketDebt = 0
             jump market
         "Buy a bed" if zenmattress == False and asked4gift == True:
             if scarlettaughtthatonespell == False:
