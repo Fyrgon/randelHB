@@ -748,12 +748,11 @@ if TQ1p1 == False:
     hide text with dissolve
     scene taliyaminigame3
     $ fightMiniGame = "postTaliyaTrain1"
-    $ fmgd = 6/(swordlvl/25)
-    if fmgd < 1:
-        $ fmgd = 1
+    $ fable_minigame_difficulty = "extreme"
+    $ fable_minigame_max_attempts = 3
     jump start_fightMiniGame
     label postTaliyaTrain1:
-    if randel_fails < 3 and swordlvl > 12:
+    if fable_minigame_score > 0 and swordlvl > 12:
         "Taliya starts attacking you. It's clear she's not being serious but you're still parrying all her hits. You're doing pretty good."
         "After a few parries you decide it's your turn to try and hit her so you step in and try a thrust. You can see a look of surprise on her face before she steps aside, parries you and then taps you on the head with the tip of her training sword."
         t "Hit."
@@ -762,7 +761,7 @@ if TQ1p1 == False:
         mc "Well, thanks."
         t "It wouldn't take much to make you into a formidable swordsman. Just..."
         "She thinks for a second before continuing her sentence."
-    elif randel_fails < 3:
+    elif fable_minigame_score > 0:
         "You start parrying a few of her hits and you think you're doing good but Taliya soon decides she can be serious with you and with just two hits she knocks you down on the ground."
         scene taliyaq1b with hpunch
         t "Not bad recruit. I'm impressed."
@@ -772,7 +771,6 @@ if TQ1p1 == False:
         scene taliyaq1b with hpunch
         t "Not horrible but there's a lot of room for improvement."
         mc "Thanks, I guess."
-    $ randel_fails = 0
     t "Practice the basics more. You swing around your sword more than necessary, if you controlled it more you'd be able to hit and parry much faster."
     mc "Understood, ma'am."
     scene arena
@@ -797,12 +795,11 @@ elif TaliyaTrain == False:
     t "There you are. Let's get started."
     scene taliyaminigame3
     $ fightMiniGame = "postTaliyaTrain2"
-    $ fmgd = 6/(swordlvl/20)
-    if fmgd < 1:
-        $ fmgd = 1
+    $ fable_minigame_max_attempts = 3
+    $ fable_minigame_difficulty = "hard"
     jump start_fightMiniGame
     label postTaliyaTrain2:
-    if randel_fails < 3:
+    if fable_minigame_score > 0:
         "You immediately begin assault Taliya, trying to bypass her defenses but it doesn't work. It's not like you didn't try or didn't put up a fight but Taliya is just {b}that{/b} good."
         "So, Taliya simply pushes your sword to the side and then thrusts towards your chest."
         mc "Owch..."
@@ -846,21 +843,18 @@ elif TaliyaTrain == False:
 else:
     t "Alright, let's see what you've got."
     "Taliya gets into position."
-$ fmgd = 4/(swordlvl/10)
-if fmgd < 1:
-    $ fmgd = 1
+$ fable_minigame_difficulty = "normal"
 if swordlvl < 10:
     scene taliyaq1a
 else:
     scene taliyaq1c
 $ fightMiniGame = "postTaliyaTrainChecks"
+$ fable_minigame_max_attempts = 3
 jump start_fightMiniGame
 label postTaliyaTrainChecks:
-if randel_fails < 3:
-    $ randel_fails = 0
+if fable_minigame_score > 0:
     jump heckYeahTaliya
 else:
-    $ randel_fails = 0
     jump fuckYouFailedAgainAgainstTaliya
 label fuckYouFailedAgainAgainstTaliya:
     scene taliyaq1b
@@ -2466,12 +2460,9 @@ if swordlvl >= 10:
     jump finishfightt1
 $ renpy.notify ("{color=#fff}Sword skill check: {color=#A50000}Fail. ([swordlvl] < 10)")
 $ fightMiniGame = "abgiaeguodaghu"
-$ fmgd = 3/(swordlvl/8)
-if fmgd < 1:
-    $ fmgd = 1
+$ fable_minigame_difficulty = "easy"
 jump start_fightMiniGame
 label abgiaeguodaghu:
-$ randel_fails = 0
 label finishfightt1:
     "They're good, just... not as good as you."
 mc "Is that it?"
@@ -2484,12 +2475,9 @@ if swordlvl >= 10:
     jump finishfightt2
 $ renpy.notify ("{color=#fff}Sword skill check: {color=#A50000}Fail. ([swordlvl] < 10)")
 $ fightMiniGame = "abgiaegu247odaghu"
-$ fmgd = 4.25/(swordlvl/8)
-if fmgd < 1:
-    $ fmgd = 1
+$ fable_minigame_difficulty = "normal"
 jump start_fightMiniGame
 label abgiaegu247odaghu:
-$ randel_fails = 0
 label finishfightt2:
 "Incredibly, you are managing to hold back all the cultists. It's probably not much considering they have probably never trained in their life and you hardly hit anyone but you're still proud of yourself."
 "...Or at least you were until you realize that Taliya has already defeated the minotaur. When the other cultists notice, they all get out of the way."
@@ -3172,12 +3160,11 @@ mc "You're on."
 t "No blind fold this time, let's see how much you've improved."
 scene taliyaminigame3
 $ fightMiniGame = "a23456789087654"
-$ fmgd = 4/(swordlvl/25)
-if fmgd < 1:
-    $ fmgd = 1
+$ fable_minigame_max_attempts = 4
+$ fable_minigame_difficulty = "hard"
 jump start_fightMiniGame
 label a23456789087654:
-if randel_fails < 4 and swordlvl > 18:
+if fable_minigame_score > 0 and swordlvl >= 19:
     "It's only been about a month since you started but you've improved a lot. You've seen Taliya fight for real during your time with her and you can sense her fighting you more seriously now than she did the first time."
     t "You know, [mc]."
     menu:
@@ -3225,7 +3212,7 @@ if randel_fails < 4 and swordlvl > 18:
             mc "Yeah, in a few years."
             t "I'm twice your age, [mc], that's still pretty good."
             mc "Yeah, I guess you're right."
-elif randel_fails < 4:
+elif fable_minigame_score > 0:
     $ renpy.notify ("{color=#fff}Sword skill check: {color=#A50000}Fail. ([swordlvl] < 19)")
     "You are doing much better than last time but you still aren't hitting her... She's too strong."
     t "Not bad."

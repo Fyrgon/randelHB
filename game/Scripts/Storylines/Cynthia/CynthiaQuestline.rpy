@@ -2246,9 +2246,7 @@ label cynthquest5:
     show text "{color=#fff}Press space, click or tap the screen while the dot is on the green to win!" at truecenter
     pause 3.5
     hide text
-    $ fmgd = 2/(swordlvl/10)
-    if fmgd < 1:
-        $ fmgd = 1
+    $ fable_minigame_difficulty = "easy"
     $ fightMiniGame = "finishfight"
     jump start_fightMiniGame
 label finishfight:
@@ -2263,22 +2261,18 @@ label finishfight:
     show text "{color=#fff}Press space, click or tap the screen while the dot is on the green to win!" at truecenter
     pause 3.5
     hide text
-    $ fmgd = 3.5/(swordlvl/10)
-    if fmgd < 1:
-        $ fmgd = 1
+    $ fable_minigame_difficulty = "normal"
+    $ fable_minigame_max_attempts = 3
     $ fightMiniGame = "secondfightchecks"
     jump start_fightMiniGame
 ######## SECOND FIGHT CHECKS
 label secondfightchecks:
-    if randel_fails < 3:
-        $ randel_fails = 0
+    if fable_minigame_score > 0:
         jump fightover
     else:
-        $ randel_fails = 0
         jump losebandit
 ###############################
 label losebandit:
-    $ randel_fails = 0
     mc "Ahh shit!"
     "You have cuts all over your body. Blood pours out of your wounds."
     "Your energy slowly starts to drain out."
@@ -2287,7 +2281,6 @@ label losebandit:
     jump GameOver
 ###############################
 label fightover:
-    $ randel_fails = 0
     mc "{i}I can't keep doing this."
     mc "{i}I should try dodging instead of deflecting and then find an opening."
     "You leap to the side as the bandit swings his sword. Your speed is much faster now."

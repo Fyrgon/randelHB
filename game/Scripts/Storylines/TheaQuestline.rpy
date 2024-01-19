@@ -1,6 +1,6 @@
 default triedSavingThea = False
 default livingWithThea = False
-default gabesClothes = False
+default thea_clothes = ""
 default gabeKnowThea = False
 
 label impquest:
@@ -708,45 +708,7 @@ label theaxgabe:
     "Gabe makes her way in and looks around herself, admiring the house."
     g "Whoa, this place hasn't changed a bit... It's bringing back memories."
     g "You've kept this place very clean. I'm surprised."
-    if gabesClothes == False:
-        mc "Ah... yeah."
-        mc "{i}It really was all just thanks to Thea, though-{p}...Wait."
-        mc "{i}Oh god, I haven't told Gabe about Thea. I guess I should do it now..."
-        #mc "{i}Should I?"
-        #menu:
-        #    "Yes, you moron":
-        #        mc "{i}Of course I should."
-        mc "Well, actually..."
-        g "Mh? What is it?"
-        mc "You see, about a week ago I went on a quest to Yorkel..."
-        g "Wait, where is this going? Wasn't Yorkel..."
-        mc "Yes, it was."
-        g "Oh Astylla."
-        mc "You see, when I arrived at the village it was already in the middle of being destroyed. I had never seen so much chaos in my life, and I was powerless to stop it, yet... I saw a girl getting attacked by imps and I somehow managed to fend off the imps."
-        g "Wow. Alright... but why are you telling me this?"
-        mc "Well... She had nowhere to go, so I brought her home."
-        g "Oh."
-        mc "Yeah..."
-        "A rattling sound comes from the kitchen."
-        g "Is that her?"
-        mc "...Yeah."
-        scene theagabe2 with dissolve
-        th "Uhm... [mc]? Some of your underwear is missing. Did you pu-"
-        show theagabe3
-        g "Hi there."
-        th "O-Oh, hi!"
-        scene homeday
-        show prot normal
-        show gabrial smile
-        show normalth at flip
-        th "Sorry, [mc] didn't tell me we had guests. My name's Thea, it's a pleasure to meet you."
-        "Gabrial examines her from head to toe for a moment then she smiles"
-        g "The pleasure, and surprise, is mine. Name's Gabrial, but you can call me Gabe. I'm one of [mc]'s childhood friends."
-        "Gabe then turns towards you and raises an eyebrow."
-        g "I'm glad she's safe, but are you sure making her do housework was necessary?"
-        #    "Nah, what's the worst that could happen?":
-        #        "peepoobleh"
-    else:
+    if thea_clothes == "Gabe":
         mc "Hehehe, thanks."
         if gabeKnowThea == False:
             mc "{i}Wait, Thea's here!"
@@ -845,6 +807,38 @@ label theaxgabe:
             g "Uh-huh... didn't know that."
             g "Explains why this place looks so clean."
             g "I see you've enslaved the poor girl."
+    else:
+        mc "Ah... yeah."
+        mc "{i}It really was all just thanks to Thea, though-{p}...Wait."
+        mc "{i}Oh god, I haven't told Gabe about Thea. I guess I should do it now..."
+        mc "Well, actually..."
+        g "Mh? What is it?"
+        mc "You see, about a week ago I went on a quest to Yorkel..."
+        g "Wait, where is this going? Wasn't Yorkel..."
+        mc "Yes, it was."
+        g "Oh Astylla."
+        mc "You see, when I arrived at the village it was already in the middle of being destroyed. I had never seen so much chaos in my life and I was powerless to stop it, yet... I saw a girl getting attacked by imps and I somehow managed to fend off the imps."
+        g "Wow. Alright... but why are you telling me this?"
+        mc "Well... She had nowhere to go, so I brought her home."
+        g "Oh."
+        mc "Yeah..."
+        "A rattling sound comes from the kitchen."
+        g "Is that her?"
+        mc "...Yeah."
+        scene theagabe2 with dissolve
+        th "Uhm... [mc]? Some of your underwear is missing. Did you pu-"
+        show theagabe3
+        g "Hi there."
+        th "O-Oh, hi!"
+        scene homeday
+        show prot normal
+        show gabrial smile
+        show normalth at flip
+        th "Sorry, [mc] didn't tell me we had guests. My name's Thea, it's a pleasure to meet you."
+        "Gabrial examines her from head to toe for a moment then she smiles"
+        g "The pleasure and surprise, is mine. Name's Gabrial but you can call me Gabe. I'm one of [mc]'s childhood friends."
+        "Gabe then turns towards you and raises an eyebrow."
+        g "I'm glad she's safe but are you sure making her do housework was necessary?"
     hide talksadhappymc
     mc "What?"
     g "Look she's washing your underwear, cleaning the house, I bet she's doing the cooking too."
