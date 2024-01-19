@@ -20,7 +20,10 @@ label forest:
         $ saq += 1
         jump forest
     show screen hud
-    scene forest
+    if time >= 3:
+        scene forrestn
+    else:
+        scene forest
     if cynthquest4 == 1 and  cynthquest5 == 0:
         jump cynthquest5
 
@@ -152,4 +155,7 @@ label forest:
 
                 "Hunt":
                     jump OuterValley
+
+        "Outer Forest" if persistent.bronzeParty == True:
+            jump OuterForest
     return
