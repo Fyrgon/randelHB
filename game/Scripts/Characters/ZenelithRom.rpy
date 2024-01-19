@@ -3,6 +3,9 @@ default zenFuckDone = False
 default zenBlush = 0
 default zenAdventuring = False
 default zenSexDone = False
+default zen_love_talked_ovulation = False
+default zen_love_impregnated_day = 0
+default zen_love_talked_parents = False
 
 label zenTalk:
 if zenrel < 0 and zenPlay2 == True:
@@ -14,7 +17,7 @@ if zenrel < 0 and zenPlay2 == True:
     mc "Tsk. Whatever you want."
     "As you leave, Zenelith looks down. For a moment you think you saw a tear but you don't think much of it."
     mc "{i}Guess I'm not welcome here anymore then."
-    $ zenRouteEnd == True
+    $ zenRouteEnd = True
     jump home
 play music happy
 "You go inside the cabin and find Zenelith there."
@@ -25,8 +28,19 @@ show prot smile
 if zenFuckDone == True:
     jump postsexzen
 $ zenrel += 10
-#if zenrel > 140:
-#    jump zenelith6
+if zen_love_impregnated_day > 0 and day - zen_love_impregnated_day > 5 and zen_love_talked_parents == False:
+    mc @smilet "Hey there, Z-"
+    znd @smilet "[mc]! You won't believe me! I'm pregnant!"
+    mc @smilet "You are joking! Are you sure?!?"
+    znd @smilet "I am. I've used magic to check and also some books. I was bafled about it but, [mc], it seems we conceived a child!"
+    mc @smilet "Oh my, that's wonderfull... I'm... be... a father?"
+    znd @smilet "Yes [mc]... you and I... will be parents! I love SO MUCH [mc]."
+    show zenkiss with vpunch
+    pause 2.0
+    hide zenkiss
+    mc @smilet "Oh WOW!!! That's crazy. I'm so happy. I love you Zen."
+    $ zen_love_talked_parents = True
+    jump zenSex3L
 mc @smilet "Hey there, Zen."
 znd @smilet "Oh, hey, [mc]. How are you?"
 mc @smilet "I'm doing fine, how about you?"
@@ -66,6 +80,16 @@ menu:
     "No, thanks":
         mc @smilet "No, thanks."
         znd @smilet "Alright then."
+$ days_since_love = day - zen_love_day
+if zen_love_day > 0 and days_since_love > 10:
+    "The two of you talk for a while. When she gets little serious and tell you that something interesting happened to her recently."
+    znd @smilet "I felt a sudden pain under my stomach as I was working in the garden... it never happened to me before."
+    "You feel worried and try to find the place. She let you touch her and after some time you think you might know the cause."
+    mc @smilet "That place should be your womb. I've heard that human women experience pain in this area when they have their period. It might mean something in your body changed..."
+    znd @smilet "Do... Do you think,- I might..."
+    mc @smilet "I don't know. It might be possible but I wouldn't get my hopes so high for now..."
+    "You keep talking about it for a while and you figure out that she might have ovulation every tenth day since you had sex for the first time."
+    $ zen_love_talked_ovulation = True
 "The two of you talk for a while. When the sun is almost down, you tell Zenelith you need to go and you say goodbye to each other."
 jump home
 
@@ -89,7 +113,7 @@ if zenrel < 0:
         mc "Tsk. Whatever you want."
         "As you leave, Zenelith looks down. For a moment you think you saw a tear but you don't think much of it."
         mc "{i}Guess I'm not welcome here anymore then."
-        $ zenRouteEnd == True
+        $ zenRouteEnd = True
         jump home
     zn "No."
     mc "Huh?"
@@ -102,29 +126,25 @@ if zenrel < 0:
     $ zenBlush = 0
     menu:
         "Yes (lie)":
-            $ zenPlay2 == True
+            $ zenPlay2 = True
             mc "Yes, I promise."
             zn "Sigh... You're forgiven."
             pause 1
             zn "Now come here..."
             "Zenelith kisses you and the two of you slowly make your way into the house."
             mc "{i}Let's be nice just this once so she'll let me keep fucking her..."
-            "The two of you begin to undress each other as you kiss. You feel her body with your hands as she hugs you tightly, then you slowly move to the bed."
-            mc "I love you."
-            zn "I love you too, [mc]."
-            jump zenSex2L
         "Yes (truth)":
-            $ zenPlay == False
-            $ zenFuck == True
+            $ zenPlay = False
+            $ zenFuck = True
             mc "I promise, I'm sorry."
             zn "You're forgiven."
             pause 1
             zn "Now come here..."
             "Zenelith kisses you and the two of you slowly make your way into the house."
-            "The two of you begin to undress each other as you kiss. You feel her body with your hands as she hugs you tightly, then you slowly move to the bed."
-            mc "I love you."
-            zn "I love you too, [mc]."
-            jump zenSex2L
+    "The two of you begin to undress each other as you kiss. You feel her body with your hands as she hugs you tightly, then you slowly move to the bed."
+    mc "I love you."
+    zn "I love you too, [mc]."
+    jump zenSex2L
 zn "Oh, hey, [mc]!"
 if zenBlush < 3:
     "You give Zenelith a kiss and she blushes."
@@ -170,7 +190,10 @@ $ zenBlush += 1
 if zenFuck == True:
     jump zenSex2F
 if zenLove == True:
-    jump zenSex2L
+    if zen_love_talked_parents == False:
+        jump zenSex2L
+    else:
+        jump zenSex3L
 if zenPlay == True:
     jump zenSex2P
 
@@ -281,6 +304,7 @@ $ time += 1
 jump zenShack
 
 label zenSex2L:
+label zenSex3L:
 scene zenelith movie with fade
 pause 2
 zn "[mc]...!"
@@ -322,6 +346,10 @@ show zenelithsexc4 with dissolve
 zn "That was amazing..."
 mc "Yeah..."
 zn "I can feel your seed inside of me, eheh..."
+$ days_since_love = day - zen_love_day
+if zen_love_talked_ovulation == True and (days_since_love % 10 == 0) and zen_love_impregnated_day == 0:
+    $ zen_love_impregnated_day = day
+    $ renpy.notify("{color=#da2}Zenelith was impregnated{/color}")
 show zenelithsexc7 with dissolve
 mc "Eheh..."
 zn "I love you."
@@ -329,6 +357,124 @@ mc "I love you too."
 zn "Come back whenever you want."
 mc "That's what I already do~"
 "You kiss each other for a while and then dress up again."
+$ zenSexDone = True
+$ time += 1
+jump zenShack
+
+label zenFirstAnal:
+hide screen hud
+mc @talk "How about we try something new?"
+znr @talk "Oh, I wonder what that would be... what should I do?"
+mc @talk "Lets get naked and you go on all four, your beautifull behind up."
+"She giggles and undress seducingly, winking at you as she gets on all fours on the ground, clearly intrigued what is about to come. There she awaits your move."
+scene znanalbase with fade
+zn "You shouldn't look like that... I'm gonna blush if you keep staring at me like that."
+mc "I can't help it. You are so beatiful."
+zn "Oh? Haha, then you can stare..."
+scene znanalbasemc with dissolve
+mc "Let's try this hole today."
+zn "Mh?-"
+scene znanalanim with dissolve
+"You give her no time to say anything that you're already inside of her ass, thrusting in and out of her."
+zn "OH GOD~! YES!"
+"You can feel her shiver with pleasure with each thrust, her lewd pants and, every once in a while, you hear her let out a satisfied giggle."
+scene znanalanim with vpunch
+zn "You are so big in... there~!"
+mc "You are wonderfull Zen, your ass is so good."
+zn "Mess my insides... do me harder~!"
+scene znanalanim with hpunch
+zn "OH~!"
+scene znanalanim with hpunch
+zn "AHN~!"
+mc "{i}Oh god... I'm going to cum..."
+scene znanalanim with hpunch
+zn "I can feel you groving~!"
+mc "{i}I'm... so close..."
+scene znanalanim with vpunch
+zn "I'M-"
+mc "-Cumming!"
+scene znanalanim with flash
+pause 0.2
+scene znanalanim with flash
+pause 0.1
+scene znanalanim with flash
+pause 0.1
+scene znanalanim with flash
+menu:
+    "Cum outside":
+        pause 1
+        scene znanalbasemc with flash
+        pause 0.1
+        scene znanalcumout with flash
+    "Cum inside":
+        pause 1
+        scene znanalanimcum with flash
+        pause 0.1
+        scene znanalcumin with dissolve
+mc "Ah..."
+pause 1
+mc "You're so fucking tight, you know?"
+zn "Did you liked it [mc]?"
+mc "Hah, it was perfect... I love you so much."
+zn "I love you too."
+$ persistent.zenAnal = True
+$ analDone = True
+$ zenSexDone = True
+$ time += 1
+jump zenShack
+
+label zenAnal:
+$ zenSexDone = True
+hide screen hud
+mc @talk "Alright, get on the ground. Now"
+znr @talk "Yes, master."
+"She gets on all fours on the ground. After the first time she knows what this is for. She takes off her clothes and eagerly shakes her ass."
+scene znanalbase with fade
+zn "C'mon master, take me~"
+scene znanalbasemc with dissolve
+mc "I will."
+show znanalanim with vpunch
+"You slip your manhood inside of her ass, immediately starting to thrust."
+zn "OH GOD~! YES!"
+"You can feel her shiver with pleasure with each thrust, her lewd pants and, every once in a while, you hear her let out a satisfied giggle."
+scene znanalanim with vpunch
+zn "Fuck... me... Harder~!"
+mc "{i}Look at her... My own personal toy."
+zn "Mess my insides master~!"
+scene znanalanim with hpunch
+zn "OH~!"
+scene znanalanim with hpunch
+zn "AHN~!"
+mc "{i}Mhh... I'm going to cum..."
+scene znanalanim with hpunch
+zn "Use me~!"
+mc "{i}I'm... so close..."
+scene znanalanim with vpunch
+zn "I'M-"
+mc "-Cumming!"
+scene znanalanim with flash
+pause 0.2
+scene znanalanim with flash
+pause 0.1
+scene znanalanim with flash
+pause 0.1
+scene znanalanim with flash
+menu:
+    "Cum outside":
+        pause 1
+        scene znanalbasemc with flash
+        pause 0.1
+        scene znanalcumout with flash
+    "Cum inside":
+        pause 1
+        scene znanalanimcum with flash
+        pause 0.1
+        scene znanalcumin with dissolve
+mc "Ah..."
+pause 1
+mc "You're so fucking tight, you know?"
+zn "I-I always am for my master~"
+mc "Love you!"
 $ zenSexDone = True
 $ time += 1
 jump zenShack

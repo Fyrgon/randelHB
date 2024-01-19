@@ -198,7 +198,9 @@ elif lastAte < 10 and RapeZen == True:
 elif lastAte < 10:
     jump day3f
 elif lastAte >= 10:
+    $ evil += 1
     jump starvedZen
+
 
 label day1:
 play sound doorknock
@@ -809,6 +811,8 @@ menu:
         zn "S-Shthop~! Ah~!"
         show znboobmouth with vpunch
         zn "N-Not like th- AH~!"
+        scene znboobgrope
+        show znboobfing with vpunch
         mc "Heheh... That's enough, I'm satisfied. You can eat."
         scene znboobnude
         show znboobshy
@@ -1164,7 +1168,7 @@ menu:
         mc "Even for what she's done... She didn't deserve a death like this. It's too cruel even for me."
         mc "Sigh... Well, whatever. I guess she managed to avoid what I wanted to do with her."
         "You decide to leave her there and go home. There's no reason to stay or come back."
-$ zenRouteEnd == True
+$ zenRouteEnd = True
 $ chargedRune -= 1
 $ time += 1
 jump home
@@ -1360,4 +1364,5 @@ zn "I-I always am for my master~"
 mc "Hah, you really are a slut."
 $ persistent.zenAnal = True
 $ analDone = True
+call ItsFoodOrNothing from _call_ItsFoodOrNothing_first
 jump zenMenuC

@@ -66,10 +66,10 @@ menu:
                 call zSex from _call_zSex
                 call ItsFoodOrNothing from _call_ItsFoodOrNothing_3
                 jump zenMenuC
-            "Anal" if (if endZenFeed = True and endZenUse = True and endZenPunish = True and endZenBathe = True) or  analDone == True:
+            "Anal" if (endZenFeed == True and endZenUse == True and endZenPunish == True and endZenBathe == True) or  analDone == True:
                 if analDone == False:
-                    jump zenFirstAnal
-                call zAnal from _call_zAnal
+                    jump zFirstAnal
+                call zAnal from _call_zAnal_slave_first
                 call ItsFoodOrNothing from _call_ItsFoodOrNothing_4
                 jump zenMenuC
     "Use":
@@ -88,7 +88,7 @@ menu:
                 call zSex from _call_zSex_1
                 jump zenMenuC
             "Anal" if analDone == True:
-                call zAnal from _call_zAnal_1
+                call zAnal from _call_zAnal_slave
                 jump zenMenuC
     "Punish":
         $ endZenPunish = True
@@ -142,6 +142,8 @@ menu:
         zn "S-Shthop~! Ah~!"
         show znboobmouth with vpunch
         zn "N-Not like th- AH~!"
+        scene znboobgrope
+        show znboobfing with vpunch
         mc "Heheh... You're all red.{p}Fine, this is all for today."
         scene znboobnude
         show znboobshy

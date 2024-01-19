@@ -12,6 +12,7 @@ default zenNoticed = False
 default zenPlay = False
 default zenFuck = False
 default zenLove = False
+default zen_love_day = 0
 
 
 label ZenelithWholesome:
@@ -723,11 +724,9 @@ show prot smile
 mc @ smilet "Wow..."
 menu:
     "You look great":
-        $ lookgreatz = True
         mc @ smilet "...You look great."
         znd @ blusht "...Thanks."
     "It fits you perfectly":
-        $ fitsperfectly = True
         show zndress normal
         mc @ smilet "...It fits you perfectly."
         znd @ talk "It's a bit tight in the back."
@@ -738,14 +737,14 @@ menu:
         show zndress angry
         znd @ angryt "No."
         mc @ smirkt "Exactly."
-    "You look gorgeus":
-        $ lookgorgeusz = True
-        mc @ smilet "...You look gorgeus."
-        znd @ blusht "Thank you, [mc]"
+    "You look gorgeous":
+        mc @ smilet "You ... look ... gorgeous."
+        znd @ blusht "Thank you, [mc]."
+        mc @smilet "Nice to hear you say my name like that."
+        znd @ blusht "Nice of you that you took care of me."
     "It looks great":
-        $ looksgreat = True
         show zndress normal
-        mc @ smilet "It looks great."
+        mc @ smilet "...It looks great."
         znd @ talk "It's weird."
         show prot question
         mc @ smilet "Is it?"
@@ -847,7 +846,7 @@ mc @hopet "Then there's still hope."
 znd @sadct "What?"
 mc @hopet "You aren't a bad person, Zen, you only did bad things."
 znd @smilect "That doesn't make much of a difference."
-mc @smilet "It does."
+mc @smilet "It does. It's a whole world of difference"
 mc @hopet "Zen, you wouln't feel bad if you weren't a good person. You wouldn't cry when you're alone.{p}I want to prove that everyone was wrong in treating you like this. I'm giving you a chance to show the world how good you really are."
 mc @hopet "You're not in the village anymore. Now you're here with me and the only thing I want you to do is being yourself. I don't want you to become a priestess, I don't want you to become a mother, I just want you to be yourself, because...{p}It's how you should be."
 mc @smilet "Zen, I've never had to take care of anyone else before."
@@ -1408,12 +1407,19 @@ menu:
         scene shackinteriorbasen
         show shacktablen
 mc "{i}Ending up in the same bed as Zenelith... definitely wouldn't have believed it'd happen a few weeks ago."
-mc "So uhm..."
-zn "Yeah?"
-mc "Nothing."
-mc "{i}God this is so awkward..."
-"You take off what you think is appropriate to take off, and then get into the bed, facing towards the wall. Then soon after Zenelith joins you."
-"The two of you lay in silence for a while. You do your best to not turn towards her."
+if mcBold == True:
+    mc "I wonder if elves do kick around while they sleep..."
+    zn "Would you like me to kick you?"
+    mc "Mh... maybe."
+    "You take off all but your long shirt and get into the bed, watching Zenelith as she joins you."
+    "The two of you lay in silence for a while. You occasionally looks towards her, she looks in thought."
+else:
+    mc "So uhm..."
+    zn "Yeah?"
+    mc "Nothing."
+    mc "{i}God this is so awkward..."
+    "You take off what you think is appropriate to take off and get into the bed, facing towards the wall. Then soon after Zenelith joins you."
+    "The two of you lay in silence for a while. You do your best to not turn towards her."
 scene shackinteriorbasen
 show shacktablen
 pause 3
@@ -1582,6 +1588,7 @@ menu:
         mc "{i}Sure, she's fun but I definitely don't love her... But I won't complain if I get to fuck her whenever I want."
     "To be with.":
         $ zenLove = True
+        $ zen_love_day = day
         mc "{i}...To be with."
         mc "{i}She really is a good person. I can't believe everybody casted her aside... If I'm going to be her first, I'll do my best to be great."
 $ zenrel += 100

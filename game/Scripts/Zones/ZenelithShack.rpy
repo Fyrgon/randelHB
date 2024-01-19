@@ -163,5 +163,12 @@ menu:
     "Make love" if zenLove == True and zenSexDone == False:
         $ time += 1
         jump zenSexing
+    "Go wild" if zenLove == True and zenSexDone == False:
+        $ time += 1
+        if analDone == False:
+            $ analDone = True
+            jump zenFirstAnal
+        jump zenAnal
+
     "Go back":
         jump forest
