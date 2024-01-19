@@ -1,3 +1,4 @@
+default aerin_one_hour_stand = 0
 label elfTemple:
 stop music
 if time == 4:
@@ -44,6 +45,37 @@ menu:
                                 mc "Ok, bye."
                                 $ time += 1
                                 jump elfvillage
+        "Let's just play with Aerin" if aerinrel > 20:
+                scene highelfroomblr with fade
+                show talkwamc
+                show happya
+                a "You are here, [mc]... I'm always happy to see you."
+                mc "Hello babe, how about a break? We can do all sorts of stuff..."
+                a "Mhhh, what sort of stuff do you mean? I wouldn't mind a small break."
+                show blushtalka
+                menu:
+                        "Lets have a quick one":
+                                show shytalkha
+                                a "Ah... ok... oh god, now I'm getting wet already."
+                                $ aerin_one_hour_stand = 1
+                                jump aerin_sex_repeat
+                        "Lets do it lovingly":
+                                show shytalkha
+                                a "Oh [mc], I would love to experience that again."
+                                $ aerin_one_hour_stand = 1
+                                jump aerin_sex_first
+                        "I would love to eat you out again":
+                                show shytalkha
+                                a "Am... Am I that tasty down... there? Em, ok... if you like it that much... I love it too."
+                                $ aerin_one_hour_stand = 1
+                                jump aerin_sex_licking
+                        "How about I gave you a massage":
+                                a "Mh. Ok, my shoulders are little stiff..."
+                                mc "I will also massage your pussy with my fingers."
+                                show shytalkha
+                                a "Oh-? Oh! ... You naughty... ok."
+                                $ aerin_one_hour_stand = 1
+                                jump aerin_sex_fingering
         "Talk to Milly" if millyangry == 0:
                 if evelost:
                         show worriedmc
