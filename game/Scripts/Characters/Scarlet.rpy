@@ -95,6 +95,7 @@ label Scarlet:
     show smilemc
     show talkwam
     s "Hey there, ki-... I mean, [mc], what's up?"
+    label ScarletTalk:
     menu:
         "Talk":
             mc "Just came for a chat."
