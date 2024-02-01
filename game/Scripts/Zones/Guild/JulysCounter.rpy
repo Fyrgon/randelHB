@@ -38,7 +38,7 @@ menu:
                 jump guild
 
 
-lable jullyTalkVampire:
+label jullyTalkVampire:
 scene adgc7
 mc "Is it ok now?"
 scene adgc6

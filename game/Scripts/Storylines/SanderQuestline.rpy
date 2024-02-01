@@ -66,7 +66,7 @@ menu:
                         menu:
                                 "Try it.":
                                         jump sanderTrip
-                                "Thx... I'l pass."
+                                "Thx... I'l pass.":
                                         mc "Thx... I'l pass."
                                         sa "Whatever [mc], your loss."
                                         jump sanderRefusedTrip
