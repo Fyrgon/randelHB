@@ -5,6 +5,8 @@ default magicLessons = 0
 label magicalClass:
     if time >= 3:
         mc "{i}Seems like Scarlet isn't in the class this late... where can she be?"
+        if magiclvl >= 10:
+            $ renpy.notify ("{color=#fff}Magic skill check: {color=#A50000}Fail! ([magiclvl] >= 3)")
         menu:
             "Go back":
                 jump academy
@@ -80,6 +82,7 @@ label magicalClass:
                                 jump academy
                             "Wake her up":
                                 mc "{i}I'm not a damn pervert. I gotta wake her up."
+                                show sleepmclose
                                 "You close the locker, move away and speak as if you were looking for her."
                                 he "Hey, Scarlet, are you here?!? I need to talk to you!"
                                 "A sudden sounds of a person waking up can be heard from the locker with a soft curse and then Scarlet walks out of the locker"
