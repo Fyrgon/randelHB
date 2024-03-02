@@ -16,7 +16,7 @@
 # obtaining a copy of this software and associated documentation files
 # (the "Software"), to deal in the Software without restriction,
 # including without limitation the rights to use, copy, modify, merge,
-# publish, distribute, sublicense and/or sell copies of the Software,
+# publish, distribute, sublicense, and/or sell copies of the Software,
 # and to permit persons to whom the Software is furnished to do so,
 # subject to the following conditions:
 #
@@ -327,7 +327,7 @@ init python:
 
     # The following is an alternative version of rotate that allows for rotation in the x and y axis
     # Functionally equivalent to using a Transform and flipping it using ATL xzoom and yzoom constrained between 0 and 1
-    # Using a Transform might be better in some cases but I'll leave this here for anyone who'd prefer to work with angles
+    # Using a Transform might be better in some cases, but I'll leave this here for anyone who'd prefer to work with angles
     # for this kind of effect.
     # Other matrix functions of note include
     # renpy.display.matrix.perspective(w,h,n,p,f)
@@ -429,7 +429,7 @@ init python:
 
     # An example of text that moves and reacts to the mouse.
     # Sidenote: The position the mouse is distorted if the screen is resized.
-    # I did try to find a way to counteract this but didn't have much luck.
+    # I did try to find a way to counteract this, but didn't have much luck.
     # Seems to only happen on the x component though. No clue why.
     # If anyone can pinpoint the issue, please let me know and I'll be happy to fix it.
     class MoveText(renpy.Displayable):

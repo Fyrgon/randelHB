@@ -20,7 +20,7 @@ screen navigation():
 
         textbutton _("{b}Load") action ShowMenu("load")
 
-        textbutton _("{b}Preferences") action ShowMenu("preferences")
+        textbutton _("{b}Options") action ShowMenu("options")
 
         if _in_replay:
 
@@ -37,7 +37,7 @@ screen navigation():
         if renpy.variant("pc"):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("{b}Help") action ShowMenu("help")
+            textbutton _("{b}Controls") action ShowMenu("help")
 
             ## The quit button is banned on iOS and unnecessary on Android.
             textbutton _("{b}Quit") action Quit(confirm=not main_menu)

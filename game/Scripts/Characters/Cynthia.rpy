@@ -51,7 +51,7 @@ label cynthiaAcademyTalk:
         show normalcb
         show talkwancb
         show normalmc
-        c "Ok [mc], I am actively trying to be less of an asshole towards you. I've got this thing going on here. You know it's bullshit but it's important to me. So please, don't break my cover here."
+        c "Ok [mc], I am actively trying to be less of an asshole towards you. I've got this thing going on here. You know it's bullshit, but it's important to me. So please, don't break my cover here."
         hide talkwancb
         show talksadhappymc
         mc "I just-"
@@ -59,7 +59,7 @@ label cynthiaAcademyTalk:
         hide talksadhappymc
         c "Look... we went on an adventure, you managed to not molest me in a tent, it was fun and you are a good guy. I just can't risk my persona being... compromised..."
         mc "......"
-        c " Hey, I'm just being honest and nobody else here besides you is getting that. Nobody here is my friend. The guys are present dispensers and the girls are annoying fuckwits. I can't risk losing social status by getting figured out."
+        c " Hey, I'm just being honest and nobody else here besides you is getting that. Nobody here is my friend. The guys are present dispensers, and the girls are annoying fuckwits. I can't risk losing social status by getting figured out."
         mc "......"
         c "It's nothing personal. It's just school politics."
         show talkwanmc
@@ -98,7 +98,7 @@ label cynthiaAcademyTalk:
                 jump academy
             "Don't ask her":
                 mc "It's fine Cynthia. I get it."
-                c "Look, for what it's worth, I think you are a really nice guy. I have an act to upkeep and something about you..."
+                c "Look, for what it's worth, I think you are a really nice guy. I have an act to upkeep, and something about you..."
                 mc "Me?"
                 c "Ugh... nevermind. Just avoid me at school, ok?"
                 mc "Just at school?"
@@ -111,7 +111,7 @@ label cynthiaAcademyTalk:
                 jump academy
     if cynthquest4 > 0 and cynthiaPelt == False:
         c "Oh, [mc], have this."
-        $ renpy.notify("{color=#fff}You gained 15 silver")
+        $ renpy.notify("{color=#fff}You gained 15 gold")
         $ money += 15
         "She hands you a pouch with money."
         mc "Huh?"
@@ -161,7 +161,7 @@ label cynthiaGuildTalk:
     c "Hey, [mc]."
     if cynthquest4 > 0 and cynthiaPelt == False:
         c "Oh, [mc], have this."
-        $ renpy.notify("{color=#fff}You gained 15 silver")
+        $ renpy.notify("{color=#fff}You gained 15 gold")
         $ money += 15
         "She hands you a pouch with money."
         mc "Huh?"
@@ -203,7 +203,7 @@ label cynthiaGuildTalk:
             c "Looks like [mc] is still alive."
             mc "Keeping up with you girls ain't easy."
             c "Eheh, you asked for it."
-            mc "Yeah and I don't regret it."
+            mc "Yeah, and I don't regret it."
             "The three of you fall asleep."
             call sleepvars from _call_sleepvars_13
             jump guild

@@ -1,3 +1,5 @@
+#define config.speaking_attribute = "talking"
+
 ###   MC
 image prot normal = "normalmc.webp"
 image prot talk = "talkmc.webp"
@@ -26,7 +28,7 @@ image prot worried = "worriedmc.webp"
 image tarm normal = "taliya/tarmnormal.webp"
 image tarm talk = "taliya/tarmtalk.webp"
 image tarm angryt = "taliya/tarmangrytalk.webp"
-image tarm angryt = "taliya/tarmangryblushtalk.webp"
+image tarm angrybt = "taliya/tarmangryblushtalk.webp"
 image tarm sad = "taliya/tarmsad.webp"
 image tarm sadt = "taliya/tarmsadtalk.webp"
 image tarm smile = "taliya/tarmsmile.webp"
@@ -91,6 +93,18 @@ image znstaff angry = "zenelith/znstaffangry.webp"
 image znstaff angryt = "zenelith/znstaffangrytalk.webp"
 image znstaff determined = "zenelith/znstaffdetermined.webp"
 image znstaff determinedt = "zenelith/znstaffdeterminedtalk.webp"
+
+
+
+###   LORI
+#image
+# ADVENTURER #
+image lori adv normal = "lori/loriadvnormal.webp"
+image lori adv smile = "lori/loriadvsmile.webp"
+image lori adv blush = "lori/loriadvblush.webp"
+# DATE       #
+image lori date smile = "lori/loridatesmile.webp"
+image lori date blush = "lori/loridateblush.webp"
 
 
 

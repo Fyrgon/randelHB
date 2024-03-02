@@ -17,7 +17,7 @@ label store:
         mc "So where's all the stuff?"
         me "In the pot."
         mc "In the pot?"
-        me "Yeah. Tell me what you want and I will give it to you for the best price."
+        me "Yeah. Tell me what you want, and I will give it to you for the best price."
         mc "I see. Is that like a magic pot or something?"
         me "Listen kid, if you wanna buy something, do it or scram."
         mc "Ok, ok, sheesh."
@@ -31,9 +31,9 @@ label store:
                 mc "Anything an elf would enjoy reading."
                 me "Tough one, kid. I'll see what I have."
                 scene mervins2 with dissolve
-                me "Alright, for these it's 40 silver."
+                me "Alright, for these it's 40 gold."
                 if money < 40:
-                    mc "Oh, damn it, I don't have enough silver."
+                    mc "Oh, damn it, I don't have enough gold."
                     me "That's a shame, kid. But you can always come back when you got enough."
                     mc "You're right, see you then."
                     jump store
@@ -45,7 +45,7 @@ label store:
                     jump store
 
         "Buy Zenelith a bed" if zenmattress == False and asked4gift == True:
-            mc "This might sound stupid but do you happen to have a bed?"
+            mc "This might sound stupid, but do you happen to have a bed?"
             me "..."
             mc "What?"
             me "I don't have anything that wouldn't fit inside the pot."
@@ -61,18 +61,18 @@ label store:
             me "We got here some Dornish white wine if you're looking for something fancy. Or you could just buy the normal cheap wine, your pick."
             mc "Hmmm..."
             menu:
-                "Buy cheap wine (10 silver)":
+                "Buy cheap wine (10 gold)":
                     if money < 10:
                         mc "I don't have enough money. I'll come back later."
                         jump store
                     $ money -= 10
                     mc "Give me the cheap one."
-                    me "I figured, here take it. That will be 10 silver."
+                    me "I figured, here take it. That will be 10 gold."
                     $ cheapwine += 1
                     $ iwine += 1
                     jump store
 
-                "Buy expensive wine (150 silver)":
+                "Buy expensive wine (150 gold)":
                     if money < 150:
                         mc "I don't have enough money. I'll come back later."
                         jump store
@@ -92,7 +92,7 @@ label store:
         "A gift for Gabe" if dildoi == 0 and gabefingerclass == 1:
             mc "Do you have... something that can, uhm, pleasure women?"
             me "Huh, you don't have one?"
-            me "I could give you one but I don't know how you'd attach it to yourself."
+            me "I could give you one, but I don't know how you'd attach it to yourself."
             mc "What? No! I mean something like a sex toy."
             mc "I've herd there's something called a {b}dildo."
             me "Oh yes, yes, I have it. A fancy toy that is, only rich ladies use those silly contraptions."
@@ -102,11 +102,11 @@ label store:
             me "Oh... I get ya, you want to know what it feels like, eh?"
             mc "NO!"
             mc "{i}Sigh...{/i} just tell me how much it will cost."
-            me "Uhh... 1000 silver."
+            me "Uhh... 1000 gold."
             mc "Come on, Mervin."
             me "......{p}998?"
             mc "Ok, bye."
-            me "No wait! I'll give it for 146 silver, happy?"
+            me "No wait! I'll give it for 146 gold, happy?"
             mc "Huh... ok, that's better."
             menu:
                 "Buy":
@@ -126,7 +126,7 @@ label store:
                 "Later":
                     mc "I'll come back later."
                     jump store
-        "Eye Orb (30 silver)" if ieyeorb < 1:
+        "Eye Orb (30 gold)" if ieyeorb < 1:
             if money >= 30:
                 mc "I'd like to buy an Eye Orb"
                 me "Here you go"
@@ -148,9 +148,9 @@ label store:
                     $ bothpath += 1
                     jump store
                 jump store
-            mc "I dont have enough silver."
+            mc "I dont have enough gold."
             jump store
-        #"A book for lori (40 silver)" if ibooklori == 0:
+        #"A book for lori (40 gold)" if ibooklori == 0:
            # if money >= 40:
 
               #  mc "i want to buy a book for lori"
@@ -167,10 +167,10 @@ label store:
              #   $ money -= 40
               #  me "pleasure doing business with ya"
               #  jump store
-            #mc "i dont have enough silver"
+            #mc "i dont have enough gold"
            # jump store
 
-        "Camping gear (50 silver)" if icamping < 1:
+        "Camping gear (50 gold)" if icamping < 1:
             if money >= 50:
                 mc "I'm looking for some camping gear."
                 me "Here you go."
@@ -184,10 +184,12 @@ label store:
                 $ money -= 50
                 me "Pleasure doing business with ya."
                 jump store
-            mc "I dont have enough silver."
+            mc "I dont have enough gold."
             jump store
-        "A bug net (40 silver)" if ibugnet == 0:
+
+        "A bug net (40 gold)" if ibugnet == 0:
             if money >= 40:
+
                 mc "I want to buy a bug net."
                 me "A bug net eh?"
                 me "Coming right up."
@@ -201,9 +203,9 @@ label store:
                 $ money -= 40
                 me "Pleasure doing business with ya."
                 jump store
-            mc "I dont have enough silver."
+            mc "I dont have enough gold."
             jump store
-        "Buy magical lamp(200 silver)" if magic_lamp == 0:
+        "Buy magical lamp(200 gold)" if magic_lamp == 0:
             if money >= 200:
                 mc "I would like to buy that lamp."
                 me "Oh, are you going to sneak around during the night?"
@@ -218,7 +220,7 @@ label store:
                 $ money -= 200
                 me "Enjoy the light just don't stare to it for too long, no complaints!"
                 jump store
-            mc "I dont have enough silver."
+            mc "I dont have enough gold."
             jump store
         "Sell diamond" if diamond == 1:
             mc "Here, I've got something for you."
@@ -228,17 +230,17 @@ label store:
             me "Hmm... this is very valuable boy, where did you get it?"
             mc "I found it while I was on a quest."
             me "A quest you say..."
-            me "Ok... I'll give you 100 silver for it, whatcha say?"
-            mc "100 silver? The dwarf in the cave said I could sell it for at least 200 silver."
-            me "...Dont lie to me boy. This might be a valuable diamond but its not worth 200 silver!"
+            me "Ok... I'll give you 100 gold for it, whatcha say?"
+            mc "100 gold? The dwarf in the cave said I could sell it for at least 200 gold."
+            me "...Dont lie to me boy. This might be a valuable diamond but its not worth 200 gold!"
             menu:
                 "How about 150?":
                     mc "Ok what about 150?"
                     me "...{p}......"
                     me "Ok, fine I'll give you 150."
-                    mc "{i}Well, still better than 100 silver."
+                    mc "{i}Well, still better than 100 gold."
                     play sound chime
-                    $ renpy.notify("{color=#fff}You gained 150 silver")
+                    $ renpy.notify("{color=#fff}You gained 150 gold")
                     $ diamond -= 1
                     $ money += 150
                     jump store
@@ -246,7 +248,7 @@ label store:
                     mc "Alright, give it here. I'll find some other place to sell it."
                     me "What- wait!"
                     mc "...Hm?"
-                    me "Ok, what if I gave you 130 silver for it?"
+                    me "Ok, what if I gave you 130 gold for it?"
                     mc "No."
                     me "150!"
                     mc "I said 200, if you can't give me that then I'll pass."
@@ -254,10 +256,11 @@ label store:
                     me "Ok, fine!"
                     mc "Heh."
                     play sound chime
-                    $ renpy.notify("{color=#fff}You gained 200 silver")
+                    $ renpy.notify("{color=#fff}You gained 200 gold")
                     $ money += 200
                     $ diamond -= 1
                     jump store
+
         "Sell the Wallcrawler Heart" if wcheart == 1:
             mc "Hey there, I've got something for you."
             "You show Mervin the Wallcrawler Heart."
@@ -266,25 +269,25 @@ label store:
             me "Hmm... Yup, this is a Wallcrawler Heart. It's really valuable, where did you get it?"
             mc "I got it while on a quest."
             me "A quest, you say..."
-            me "Alright... I'll give you 200 silver for it, whatcha say?"
-            mc "{i}I have no idea if that's the actual price but it sounds like a lot of money to me."
-            mc "200 silver it is."
+            me "Alright... I'll give you 200 gold for it, whatcha say?"
+            mc "{i}I have no idea if that's the actual price, but it sounds like a lot of money to me."
+            mc "200 gold it is."
             me "You made a good deal today, lad."
             play sound chime
-            $ renpy.notify("{color=#fff}You gained 200 silver")
+            $ renpy.notify("{color=#fff}You gained 200 gold")
             $ money += 200
             $ wcheart -= 1
             jump store
         "Buy Zenelith a dress" if zenQ == 2 and Zdress == False:
             mc "Do you happen to have dresses?"
-            me "I do but I have to warn you. I can't guarantee you size, color, materials, quality, origin-"
+            me "I do, but I have to warn you. I can't guarantee you size, color, materials, quality, origin-"
             mc "Okay, okay! I get it. I'll go look somewhere else."
             me "I'm just trying to help."
             mc "Well, thanks. I'll go then."
             mc "{i}Guess the Market might be a better place..."
             jump store
         "Buy furniture for the shack" if zenQ == 2 and furnitureZ == False:
-            mc "This might sound stupid but do you have a table?"
+            mc "This might sound stupid, but do you have a table?"
             me "..."
             mc "What?"
             me "I don't have anything that wouldn't fit inside the pot."
@@ -293,6 +296,7 @@ label store:
             mc "Alright, I'll go look somewhere else."
             mc "{i}Guess the Market might be a better place..."
             jump store
+
         "Go back":
             jump maplimbo
             pause

@@ -1,136 +1,173 @@
 default cynthiaPelt = False
 
 label preCynthia:
-        pause
-        if sawcynth == 1:
-            hide screen hud
-            mc "Oh... it's Cynthia!"
-            scene cynthia
-            mc "...She's so beautiful."
-            mc "She seems really friendly too."
-            mc "I wonder if she's still single?"
-            mc "Should I go talk to her?"
-            menu:
-                "Yes":
-                    mc "I gotta be a man... Ok [mc], you can do this!"
-                    g "Hey, [mc]!"
-                "No":
-                    mc "Nooo... I can't, I'm socially awkward. I-I don't even know what to say to her!"
-                    g "Hey, [mc]!"
-            scene academytalkblr
-            show normalmc
-            show normalgabe
-            show talksadhappymc
-            mc "Oh... Hey, Gabe."
-            hide talksadhappymc
-            show talkgabe
-            g "I see you're early today."
-            hide talkgabe
-            show talkhappymc
-            mc "Haha... Yeah."
-            hide talkhappymc
-            show talkwagabe
-            g "Watcha' doing standing here anyway?"
-            hide talkwagabe
-            show talksadhappymc
-            mc "It's nothing, I was just... just... looking at the notice board... Yeah."
-            show angrygabeblush
-            "Gabe leans and looks behind you."
-            mc "......"
-            show cutegabe
-            g "You know what? You better go and ask her out rather than stalking her all the time."
-            mc "What?! No... I wasn't-"
-            g "Whatever! I'm going to class. See yah later, [mc]."
-            scene academytalkblr
-            show talkwanmc
-            mc "Gabe, wait-"
-            show thinkmc
-            mc "{i}What's her problem anyway...?"
-            $ sawcynth += 1
-            jump academy
-        mc "Wait... Who's that?"
+    pause 2
+    if sawcynth == 1:
+        hide screen hud
+        mc "Oh... it's Cynthia!"
         scene cynthia
-        mc "She's so beautiful... How have I never seen her before?"
-        mc "Is she new in town or something?"
-        g "Oh [mc], watcha' doing?"
+        mc "...She's so beautiful."
+        mc "She seems really friendly too."
+        mc "I wonder if she's still single?"
+        mc "Should I go talk to her?"
+        menu:
+            "Yes":
+                mc "I gotta be a man... Ok [mc], you can do this!"
+                g "Hey, [mc]!"
+            "No":
+                mc "Nooo... I can't, I'm socially awkward. I-I don't even know what to say to her!"
+                g "Hey, [mc]!"
         scene academytalkblr
         show normalmc
         show normalgabe
         show talksadhappymc
-        mc "Oh! Gabe, hi."
-        show talkgabe
+        mc "Oh... Hey, Gabe."
         hide talksadhappymc
-        g "Hello, you're early today."
+        show talkgabe
+        g "I see you're early today."
         hide talkgabe
         show talkhappymc
-        mc "Haha... Yeah... "
+        mc "Haha... Yeah."
         hide talkhappymc
-        show talkgabe
-        g "Oh, it's Cynthia..."
-        show talkwanmc
-        mc "Who?"
-        g "Cynthia, the new girl over there."
-        mc "Where?"
-        mc "Oh, her!"
-        show angrygabeblush
-        pause
-        show cutegabeu
-        g "...I know you were staring at her."
+        show talkwagabe
+        g "Watcha' doing standing here anyway?"
+        hide talkwagabe
         show talksadhappymc
-        mc "Me? Nah..."
-        hide cutegabeu
-        show talkgabe
-        hide angrygabeblush
-        g "Pfft, whatever!"
-        mc "Where is she from?"
-        g "She's from Thane."
-        mc "In the east?"
-        g "Yeah. Thane is under high alert, since it's near Fort Hern."
-        g "If the fort goes down, they'll be the first to get attacked."
-        mc "But why now? Hern's still holding, right?"
-        g "Yeah but for how long? They say the Demon King's army is getting stronger every day."
+        mc "It's nothing, I was just... just... looking at the notice board... Yeah."
+        show angrygabeblush
+        "Gabe leans and looks behind you."
         mc "......"
-        g "Anyway, I hear she's a really nice person. Friendly, caring and beautiful, of course."
-        hide talkhappymc
-        hide talkgabe
-        mc "......"
-        g "We better get going. Class will be starting soon."
-        mc "Ok."
-        $ sawcynth += 2
+        show cutegabe
+        g "You know what? You better go and ask her out rather than stalking her all the time."
+        mc "What?! No... I wasn't-"
+        g "Whatever! I'm going to class. See yah later, [mc]."
+        scene academytalkblr
+        show talkwanmc
+        mc "Gabe, wait-"
+        show thinkmc
+        mc "{i}What's her problem anyway...?"
+        $ sawcynth += 1
         jump academy
+    mc "Wait... Who's that?"
+    scene cynthia
+    mc "She's so beautiful... How have I never seen her before?"
+    mc "Is she new in town or something?"
+    g "Oh [mc], watcha' doing?"
+    scene academytalkblr
+    show normalmc
+    show normalgabe
+    show talksadhappymc
+    mc "Oh! Gabe, hi."
+    show talkgabe
+    hide talksadhappymc
+    g "Hello, you're early today."
+    hide talkgabe
+    show talkhappymc
+    mc "Haha... Yeah... "
+    hide talkhappymc
+    show talkgabe
+    g "Oh, it's Cynthia..."
+    show talkwanmc
+    mc "Who?"
+    g "Cynthia, the new girl over there."
+    mc "Where?"
+    mc "Oh, her!"
+    show angrygabeblush
+    pause
+    show cutegabeu
+    g "...I know you were staring at her."
+    show talksadhappymc
+    mc "Me? Nah..."
+    hide cutegabeu
+    show talkgabe
+    hide angrygabeblush
+    g "Pfft, whatever!"
+    mc "Where is she from?"
+    g "She's from Thane."
+    mc "In the east?"
+    g "Yeah. Thane is under high alert, since it's near Fort Hern."
+    g "If the fort goes down, they'll be the first to get attacked."
+    mc "But why now? Hern's still holding, right?"
+    g "Yeah, but for how long? They say the Demon King's Army is getting stronger every day."
+    mc "......"
+    g "Anyway, I hear she's a really nice person. Friendly, caring and beautiful, of course."
+    hide talkhappymc
+    hide talkgabe
+    mc "......"
+    g "We better get going. Class will be starting soon."
+    mc "Ok."
+    $ sawcynth += 2
+    jump academy
 
 
 
 
 label cynthiaBeginning:
-        hide screen hud
-        mc "I wonder who the dude in the green shirt is? He just stands there all day like a weirdo..."
-        "Suddenly, someone runs up and bumps into you."
-        scene academytalkblr with vpunch
-        show angryc
-        show normalmc
-        c "Ow! What in the hell?! {b}WATCH WHERE YOU'RE GOING, FU-{/b}"
-        show wac
-        show suprised
-        pause
-        c "-uuuuuu...riend!"
-        mc "What?"
-        show talkshc
-        c "I mean... sorry! I didn't see you there, friend!"
-        c "...Ok, bye!"
-        hide wac
-        hide angryc
-        hide talkshc with easeoutright
-        pause
-        mc "{i}What was that? ...Did I just bump into Cynthia?"
-        mc "{i}Did she call me a..."
-        mc "{i}No, I must have heard it wrong. It's Cynthia, she wouldn't say something like that."
-        $ sawcynth += 1
-        jump academy
+    hide screen hud
+    mc "I wonder who the dude in the green shirt is? He just stands there all day like a weirdo..."
+    "Suddenly, someone runs up and bumps into you."
+    scene academytalkblr with vpunch
+    show angryc
+    show normalmc
+    c "Ow! What in the hell?! {b}WATCH WHERE YOU'RE GOING, FU-{/b}"
+    show wac
+    show suprised
+    pause 1
+    c "—uuuu...riend!"
+    mc "What?"
+    show talkshc
+    c "I mean- Sorry! I didn't see you there, friend!"
+    c "...Ok, bye!"
+    hide wac
+    hide angryc
+    hide talkshc with easeoutright
+    pause
+    mc "{i}What was that? ...Did I just bump into Cynthia?"
+    mc "{i}Did she call me a..."
+    mc "{i}No, I must have heard it wrong. It's Cynthia, she wouldn't say something like that."
+    $ sawcynth += 1
+    jump academy
 
 
 
 label questcynth:
+    hide screen hud
+    scene adgc1 with fade
+    j "Oh, [mc]! You're just in time!"
+    j "Have you and Cynthia met before? You both go to the Academy, right?"
+    "Cynthia stands with her teeth clenched into an annoying fake smile."
+    mc "Y-Yeah..."
+    j "Oh goodie, she is about to go out on a quest and I thought it would be safer if another recruit could join her!"
+    j "The quest is a touch too difficult for a single recruit. I'm honestly not sure how it got up there on the board in the first place! But there it is!"
+    j "So, what do you say?"
+    mc "Uhm... I'm not sur-"
+    j "C'mon, it would good for the both of you! You both need the experience and I need the quest off my board! Everybody wins!"
+    mc "Uhm... are you sure she is ok with that?"
+    j "Why wouldn't she be! You're ok with having a little help, aren't you, sweetie?"
+    c "Yeah, I'm ok! Actually, I would really appreciate it if [mc] could help me."
+    mc "{i}How does she do it? It's like she transforms into a totally different person..."
+    j "See? She said she would appreciate it!"
+    mc "Ok, then..."
+    j "Yay! Ok, it's settled then. Now, the two of you go talk it out and make some game plans. Remember, it's a tough quest, so do your best to work together!"
+    if time < 3:
+        scene agblr with fade
+    else:
+        scene agblrevening with fade
+    show normalc
+    show talkwanmc
+    mc "Ok so-"
+    show talkwancb
+    c "Do not speak a single word. Just come with me."
+    mc "What? Are w-"
+    c "Shut up. We are going now."
+    mc "......"
+    c "You have your sword, right?"
+    mc "......"
+    c "Hello? Do you have your sword or not?!"
+    mc "You said shut up."
+    c "UGH! Let's just get going already!"
+    "You pack up your camping gear just in case."
+    "The two of you leave the Guild."
     scene ambush1 with fade
     play music forest
     show normalmc
@@ -149,7 +186,7 @@ label questcynth:
     show suprised
     mc "What! Are you serious?"
     hide suprised
-    c "Yeah? Oh wait, do you think they'll leave if we asked them nicely? My god [mc], you genius! I can't believe nobody thought of that!"
+    c "Yeah? Oh wait, do you think they'll leave if we asked them nicely? Damn, [mc], you genius! I can't believe nobody thought of that!"
     c "They are bandits, they kill people. We have to use force."
     show talkwanmc
     mc "B-But they're people... H-How are we going to kill them?"
@@ -160,7 +197,7 @@ label questcynth:
     hide talkwanmc
     c "Do you hesitate?"
     show talkwanmc
-    mc "N-No but they're-"
+    mc "N-No, but they're-"
     hide talkwanmc
     c "Monsters? "
     c "Well let me tell you something; these \"people\" steal, murder and rape innocent people. These \"people\" are worse than monsters."
@@ -178,14 +215,14 @@ label questcynth:
     c "Ok, Ehm... What was your name again?"
     mc "...[mc]."
     c "Ok [mc], we'll have to scout the area. We can cover more ground if we split up."
-    c "Find the base and look around for about ten minutes. Then we'll regroup here. And for the love of god, keep quiet."
+    c "Find the base and look around for about ten minutes. Then we'll regroup here. And for the love of Astylla, keep quiet."
     mc "{i}Why is she bossing me around?"
     mc "{i}...And why am I ok with it?"
     show talkwamc
     mc "Sounds like a plan."
     scene ambush1 with fade
     "The two of you separate and start to scout the area, keeping mindful of traps that may have been placed around the camp."
-    "After a few minutes you spot the bandit camp but realize that the camp has apparently been attacked already. There is blood everywhere but no sign of any dead bandits."
+    "After a few minutes you spot the bandit camp, but realize that the camp has apparently been attacked already. There is blood everywhere but no sign of any dead bandits."
     mc "{i}What the hell happened here? Where are the bodies? Did Cynthia do this?"
     mc "{i}No, she went in the other direction, it can't be her... and I would've heard something if there was a big brawl here while I was scouting... I better leave and regroup with Cynthia."
     "You carefully head back to where Cynthia told you to meet her. As you near the area you hear a deep gravelly voice..."
@@ -202,10 +239,10 @@ label questcynth:
     mc "{i}What should I do?"
     label abandonCynthiasRoute:
     menu:
-        "Watch":
+        "Watch" if easyMode == False:
             if knowAbandonCRoute == False:
                 $ knowAbandonCRoute = True
-                "This choices will end Cynthia's route, are you sure?"
+                "This choice will end Cynthia's route, are you sure?"
                 menu:
                     "No":
                         jump abandonCynthiasRoute
@@ -233,7 +270,7 @@ label questcynth:
         "Save her":
             $ persistent.saveCynthia = True
             $ savecynth += 1
-            mc "{i}She might be a bitch but I have to help her."
+            mc "{i}She might be a bitch, but I have to help her."
             "You come out of the bushes screaming."
             mc "COME GET SOME, ASSHOLE!!"
             "Unknown" "What the fu-"
@@ -261,7 +298,7 @@ label questcynth:
     c "Look away, you fucking pervert!"
     pause
     mc "Hehe."
-    "Cythia quickly covers herself up."
+    "Cynthia quickly covers herself up."
     label beheading:
     $ gameover = "beheading"
     scene qtebehead1 with fade
@@ -282,19 +319,26 @@ label questcynth:
         jump liveqte1
     $ renpy.notify ("{color=#fff}Sword skill check: {color=#A50000}Fail. ([swordlvl] < 8)")
     c "DUCK!"
-    $ qtesection = "liveqte1"
-    call screen qte1
-
-label liveqte1:
-    scene qtebehead5
-    pause
-    scene bandit1
-    play music battlemusic1
+    if easyMode:
+        jump cynthiaDQTE
+    $ duckQTE = "cynthiaDQTE"
+    call screen duckQTE
+    label lostCynthiaDQTE:
+        show qtebehead4 with vpunch
+        play sound slash1
+        pause
+        scene black
+        jump GameOver
+    label cynthiaDQTE:
+        scene qtebehead5
+        pause
+        scene bandit1
+        play music battlemusic1
     mc "What the hell?!"
     c "......"
     mc "C'mon Cynthia, we can take him!"
     c "Run."
-    mc "What!? It's two on  and he's already injured-"
+    mc "What!? It's two on , and he's already injured-"
     c "I SAID FUCKING RUN!"
     mc "Your bag!"
     c "Leave it!"
@@ -355,7 +399,7 @@ label liveqte1:
     scene forrestn
     "You pitch in the tent."
     mc "Come in, m'lady!"
-    c "Try anything and I will kill you."
+    c "Try anything, and I will kill you."
     mc "Ok, ok, sheesh."
     scene sleepcynthia5
     pause
@@ -381,7 +425,7 @@ label liveqte1:
     c "The stupid bitches at the Academy are annoying though, always following me around asking this and that."
     c "\"Do you think Lenius likes me?\", \"Do you think my boobs look big in this dress?\" ...Urgh, I don't give a shit! Just fucking shut up!"
     mc "......"
-    mc "The way you killed that guy back there... I mean, he was already dead but... you showed no hesitation."
+    mc "The way you killed that guy back there... I mean, he was already dead, but... you showed no hesitation."
     c "......"
     c "I lived in Thane. That city has been in chaos since before I was even born. Maybe because it was the closest to the border."
     c "Since the army was so preoccupied with the border, bandits would always break into houses and steal, murder... Rape."
@@ -389,7 +433,7 @@ label liveqte1:
     mc "So... you've killed people before?"
     c "......"
     c "Yeah... but I don't like to call them people."
-    mc "I never knew it was that bad. I mean I've heard the town had some problems but I didn't think it was that bad."
+    mc "I never knew it was that bad. I mean I've heard the town had some problems, but I didn't think it was that bad."
     c "The town was beyond saving in the eyes of the kingdom, so they didn't really care. They were too busy holding the border."
 
     mc "It must have been very tough for you, I'm sorry."
@@ -398,10 +442,7 @@ label liveqte1:
     c "I'm sorry if was overly mean to you, it's just that I don't really trust people."
     mc "It's ok, I get it."
     if savecynth == 1:
-        c "But you're a good person..."
-        show screen notice
-        pause
-        hide screen notice
+        c "...But you're a good person."
         mc "Huh?"
         c "You tried to save me... even though I was such a bitch to you."
         mc "I just did what I had to do... No, what {b}anyone{/b} should do in that situation."
@@ -512,14 +553,14 @@ label liveqte1:
     "Cynthia screams out. The Lelluk turns to her. With a silent gesture, it commands the bandits to attack her."
     mc "Shit! Cynthia won't be able to hold them off! It's distracted now, this is my chance."
     menu:
-        "Stab its eyes":
+        "Stab its eyes" if easyMode == False:
             "You stab at its eyes."
             "But the sword passes right through."
             mc "What?!"
             "The Lelluk grabs you with its huge claws, you hear a deafening crack as it rips you in half."
             scene black with fade
             jump GameOver
-        "Stab its heart":
+        "Stab its heart" if easyMode == False:
             "You stab its heart."
             "But the sword passes right through."
             mc "What?!"
@@ -549,7 +590,7 @@ label liveqte1:
     show talkwancb
     c "You cut off its arms, right?"
     mc "Yeah, I think it was controlling those bandits with the orbs in its hands."
-    c "I thought so too. If it can't possess bodies, then its prety much harmless... creepy but still harmless."
+    c "I thought so too. If it can't possess bodies, then its prety much harmless... creepy, but still harmless."
     mc "You're right."
     mc "So, it's over then?"
     hide talkwancb
@@ -568,14 +609,14 @@ label liveqte1:
     mc "Yeah, we're fine."
     j "I never would have thought that a Lelluk could be so close to Randel."
     c "Yeah, I was pretty suprised too."
-    j "It's a good thing you had Cynthia with you, [mc]. She might not look like it but she's a tough nut to crack!"
+    j "It's a good thing you had Cynthia with you, [mc]. She might not look like it, but she's a tough nut to crack!"
     mc "......"
     c "Well... it was [mc] who slayed it."
     j "Really?! ...Wow [mc], well done."
     mc "Thanks, hehe."
     mc "{i}Why didn't she take all the credit? Is this just a part of her act?"
     j "Here's a little extra because of all the trouble you two went through."
-    $ renpy.notify("{color=#fff}You gained 70 silver")
+    $ renpy.notify("{color=#fff}You gained 70 gold")
     $ money += 70
     "Cynthia and [mc]" "Thanks, July."
     scene agblr
@@ -604,14 +645,6 @@ label liveqte1:
     play sound chime
     $ renpy.notify("{color=#fff}Quest completed")
     jump guild
-
-label death:
-    show qtebehead4 with vpunch
-    play sound slash1
-    pause
-    scene black
-    jump GameOver
-
 
 
 label cynthquest3:
@@ -830,9 +863,9 @@ label cynthquest3:
     c "Trust me!"
     mc "...URGH!"
     hide glob5 with easeoutleft
-    "Without second thoughts, you jump to the side. The monster rushes pass you. It moves straight forward and after some time it stops... by tripping over and skidding across the ground. It lies dead."
+    "Without second thoughts, you jump to the side. The monster rushes pass you. It moves straight forward, and after some time it stops... by tripping over and skidding across the ground. It lies dead."
     stop music fadeout 0.9
-    "Cynthia jumps down from the dead monster and walks towards you, hardly with any major damage on her but still roughed up."
+    "Cynthia jumps down from the dead monster and walks towards you, hardly with any major damage on her, but still roughed up."
     scene forrest with fade
     show smilenc with easeinright
     play music forest
@@ -869,7 +902,7 @@ label cynthquest3:
     show talknc
     c "Uhm... yes."
     hide talknc
-    mc "Oh my god! I could've died!"
+    mc "Oh Astylla! I could've died!"
     show talknc
     c "Relax, I wouldn't let that happen."
     hide talknc
@@ -931,7 +964,7 @@ label cynthquest3:
     c "But you'll need to train a bit."
     mc "Why?"
     c "The way you ran earlier. If that wasn't a glob chasing you, you would've been eaten."
-    c "I don't know about your sword and bow skills but your agility needs some work."
+    c "I don't know about your sword and bow skills, but your agility needs some work."
     mc "So, you want me to be better at running away from monsters?"
     c "That's important too, you know."
     mc "For you, that would make me better bait."
@@ -960,7 +993,7 @@ label cynthquest3:
     hide smilenc with easeoutleft
     mc "B-Bye."
     show normalcg with easeinleft
-    c "Oh and [mc], what the glob showed you back there. You better erase it from your mind."
+    c "Oh, and [mc], what the glob showed you back there. You better erase it from your mind."
     show suprised
     hide normalcg with easeoutleft
     mc "{i}She heard me."
@@ -975,471 +1008,469 @@ label cynthquest3:
 
 
 label cynthFirstDate:
-hide screen hud
-scene agblr
-"You see Cynthia enter the Guild. She seems to be carrying a large box with her as she struggles."
-show talkwamc
-show normalcb
-mc "Hey."
+    hide screen hud
+    scene agblr
+    "You see Cynthia enter the Guild. She seems to be carrying a large box with her as she struggles."
+    show talkwamc
+    show normalcb
+    mc "Hey."
+    c "Ahh... H-Hey [mc]."
+    $ cynthquest2 += 1
+    mc "What are you doing."
+    c "...I'm carrying this box?"
+    mc "Where to?"
+    show talkwancb
+    c "Urgh... do you always put your nose into other people business like this."
+    show talkwanmc
+    mc "I was only asking. Sheesh, I thought I'd give you a hand."
+    show sadc
+    c "......"
+    show talksc
+    c "{i}Sigh{/i} I'm sorry... [mc]."
+    c "I'm taking these to my room at the Guild Quarters."
+    mc "You got promoted to a Bronze?"
+    c "Y-Yeah. Can we talk at my room? This thing is pretty heavy."
+    mc "Oh, ok... are there any more boxes?"
+    c "...Th-There's  more outside."
+    mc "Wait, I'll bring it."
+    hide talksc
+    hide sadc
+    c "Wh-What? ...You don't need to."
+    mc "It's no big deal, really."
+    show sadc
+    c "O-Ok, then."
+    scene agblr with fade
+    "You go outside and pick up Cynthia's box. The large wooden box, you thought, would be a piece of cake. But looks betrayed you as you find out how much it weighs."
+    mc "Got it... Ack."
+    scene agblr with fade
+    show talkwamc
+    show smilenc
+    mc "These things are pretty heavy."
+    show talknc
+    c "Yeah. That's the last of my stuff. I crammed them all into these two boxes"
+    scene adventurersguild_day with fade
+    "The two of you start to walk to the guild quarters."
+    c "Oh... I heard you got promoted too."
+    c "Congrats, sorry I missed the party. I was a bit busy."
+    mc "Ahh, don't worry."
+    mc "And congratulations to you too."
+    c "Thanks."
+    mc "Wait, when did you get promoted?"
+    c "Today."
+    mc "Really? but didn't you have a party or did I miss it."
 
-c "Ahh... H-Hey [mc]."
-$ cynthquest2 += 1
-mc "What are you doing."
-c "...I'm carrying this box?"
-mc "Where to?"
-show talkwancb
-c "Urgh... do you always put your nose into other people business like this."
-show talkwanmc
-mc "I was only asking. Sheesh, I thought I'd give you a hand."
-show sadc
-c "......"
-show talksc
-c "{i}Sigh{/i} I'm sorry... [mc]."
-c "I'm taking these to my room at the Guild Quarters."
+    c "Nah, I didn't. Looks like I'm not as popular as you in the Guild, as surprising as it may sound."
+    mc "Seriously?"
+    c "Hehe, yeah."
+    mc "Hmmm, that's hard to believe."
+    c "Don't you see anything different about me here?"
+    mc "Uhm... no."
+    c "I'm not acting like Miss Prefect."
+    mc "Oh... yeah, I forgot all about that persona."
+    mc "But, why? Are the men here too tough to woo?"
 
-mc "You got promoted to a Bronze?"
-c "Y-Yeah. Can we talk at my room? This thing is pretty heavy."
-mc "Oh, ok... are there any more boxes?"
-c "...Th-There's  more outside."
-mc "Wait, I'll bring it."
-hide talksc
-hide sadc
-c "Wh-What? ...You don't need to."
-mc "It's no big deal, really."
-show sadc
-c "O-Ok, then."
-scene agblr with fade
-"You go outside and pick up Cynthia's box. The large wooden box, you thought, would be a piece of cake. But looks betrayed you as you find out how much it weighs."
-mc "Got it... Ack."
-scene agblr with fade
-show talkwamc
-show smilenc
-mc "These things are pretty heavy."
-show talknc
-c "Yeah. That's the last of my stuff. I crammed them all into these two boxes"
-scene adventurersguild_day with fade
-"The two of you start to walk to the guild quarters."
-c "Oh... I heard you got promoted too."
-c "Congrats, sorry I missed the party. I was a bit busy."
-mc "Ahh, don't worry."
-mc "And congratulations to you too."
-c "Thanks."
-mc "Wait, when did you get promoted?"
-c "Today."
-mc "Really? but didn't you have a party or did I miss it."
+    c "Huh! No!"
+    c "I just need to be myself somewhere. If keep pretending to be that princess every time, I think I would go crazy."
+    mc "Hm..."
+    mc "To be honest, I thought you'd get promoted sooner."
 
-c "Nah, I didn't. Looks like I'm not as popular as you in the Guild, as surprising as it may sound."
-mc "Seriously?"
-c "Hehe, yeah."
-mc "Hmmm, that's hard to believe."
-c "Don't you see anything different about me here?"
-mc "Uhm... no."
-c "I'm not acting like Miss Prefect."
-mc "Oh... yeah, I forgot all about that persona."
-mc "But, why? Are the men here too tough to woo?"
+    c "Yeah. I really was busy with some other stuff. I didn't have time for Guild work."
+    menu:
+        "Ask what she was busy with":
+            mc "What were you busy with."
+            c "Ugh... just some stuff. Man, [mc], you really need to give people space, seriously."
+            mc "Alright, alright, sorry."
+        "Don't ask her":
+            mc "{i}She really doesn't like people meddling with her business. Privacy and all that."
+            mc "{i}I should probably leave it as that."
+    "The two of you go to Cynthia's room. "
+    stop music fadeout 0.3
+    scene cynthiaroom with fade
+    "The room is mostly empty, mainly because Cynthia just moved in. There's nothing else except a desk, a dresser and a cupboard to store books."
+    "You put down the box."
+    show talksadhappymc
+    show normalcb
+    mc "Whoah, nice place."
+    show talknc
+    c "...Thanks."
+    mc "How come I'm the only  who doesn't have a room?"
+    c "You don't?"
+    mc "They said it's still in renovation."
+    show talkwahcb
+    c "Well, it might be another way of saying we don't want you here."
+    mc "Yeah, very funny."
+    c "Alright, thanks for the help then, [mc]."
+    mc "Glad to help. That's everything right?"
+    c "Yup."
+    c "Wait, let me see."
+    hide normalcb
+    hide talknc
+    hide talkwahcb with easeoutleft
+    "Cynthia looks around the room to see if she's got everything."
+    "She then checks her pockets and her satchel."
+    c "Fuck!"
+    show talkwanmc
+    mc "What?"
+    show thinkmc
+    c "My knives! I thought I brought them."
+    "She starts to look around her room."
+    c "Did I bring them earlier."
+    hide thinkmc
+    mc "Should I help you check"
+    "Cynthia's too busy searching she doesn't hear you."
+    mc "I guess I'll help."
+    scene cynthiaroom with fade
+    "You start to look around."
 
-c "Huh! No!"
-c "I just need to be myself somewhere. If keep pretending to be that princess every time, I think I would go crazy."
-mc "Hm..."
-mc "To be honest, I thought you'd get promoted sooner."
+    "You open a few drawers but find nothing."
+    "You open  of the boxes you just brought, hoping she would find her knives. To your disappointment, it's filled with different kinds of jewels and chocolate. Gifts from her \"lovers\"."
+    "You went over to the big cupboard to look until you come across some jars neatly stacked together. "
+    "It takes a few seconds for you to process what you're just seeing..."
+    scene ears
+    pause 0.9
+    scene ears with vpunch
+    $ persistent.ears = True
+    "{b}IT'S A JAR FULL OF HUMAN EARS.{/b}"
+    mc "What the hell is this?!"
+    c "Oh, great. You just can't keep to yourself, can you?"
+    scene cynthiaroom
+    show angry
+    show normalcb
+    mc "Why are there glasses full of human ears in your cupboard?!"
+    c "{i}sigh"
+    hide normalcb
+    show talkwancb
+    c "They're bandit ears."
+    show talkwanmc
+    mc "B-Bandit ears?!"
+    c "Yes, [mc], bandit ears."
+    mc "Uhh, O-Ok."
+    mc "Why?"
+    c "You get paid for these."
+    mc "What?"
+    c "Yeah, if you give them to the barracks, you get paid."
+    mc "Then why the hell are you keep them stored in your cupboard?"
+    c "Well..."
+    c "First, I thought of handing them over to the barracks, but..."
+    c "I couldn't convince myself to give them away."
+    show talknc
+    c "I kinda like looking at them."
+    mc "WHAT?!"
+    show talkwacb
+    c "Helps me to keep count of how many I've killed."
+    mc "{i}This girl is messed up. Better not to push this anymore or I'll end up in  of those jars."
+    mc "{i}Gulp{/i} I leave it at there then."
+    show talkwahcb
+    c "Yeah... I think that would be better."
+    mc "So... Umm... did you find your knives?"
+    hide talkwacb
+    hide talknc
+    hide talkwahcb
+    show talkwancb
+    c "No. It looks like I left them at my old house."
+    c "I'm going to get them."
+    mc "I'll come with you."
+    hide talkwancb
+    show normalcb
+    "Cynthia looks at you. You can tell that she's trying her hardest not to say something mean."
+    show sadc
+    pause 0.5
+    show talkwancb
 
-c "Yeah. I really was busy with some other stuff. I didn't have time for Guild work."
-menu:
-    "Ask what she was busy with":
-        mc "What were you busy with."
-        c "Ugh... just some stuff. Man, [mc], you really need to give people space, seriously."
-        mc "Alright, alright, sorry."
-    "Don't ask her":
-        mc "{i}She really doesn't like people meddling with her business. Privacy and all that."
-        mc "{i}I should probably leave it as that."
-"The two of you go to Cynthia's room. "
-stop music fadeout 0.3
-scene cynthiaroom with fade
-"The room is mostly empty, mainly because Cynthia just moved in. There's nothing else except a desk, a dresser and a cupboard to store books."
-"You put down the box."
-show talksadhappymc
-show normalcb
-mc "Whoah, nice place."
-show talknc
-c "...Thanks."
-mc "How come I'm the only  who doesn't have a room?"
-c "You don't?"
-mc "They said it's still in renovation."
-show talkwahcb
-c "Well, it might be another way of saying we don't want you here."
-mc "Yeah, very funny."
-c "Alright, thanks for the help then, [mc]."
-mc "Glad to help. That's everything right?"
-c "Yup."
-c "Wait, let me see."
-hide normalcb
-hide talknc
-hide talkwahcb with easeoutleft
-"Cynthia looks around the room to see if she's got everything."
-"She then checks her pockets and her satchel."
-c "Fuck!"
-show talkwanmc
-mc "What?"
-show thinkmc
-c "My knives! I thought I brought them."
-"She starts to look around her room."
-c "Did I bring them earlier."
-hide thinkmc
-mc "Should I help you check"
-"Cynthia's too busy searching she doesn't hear you."
-mc "I guess I'll help."
-scene cynthiaroom with fade
-"You start to look around."
+    c "...Fine."
+    c "You sure do have a lot of free time."
+    scene villageback with fade
+    play music forest
+    "The two of you head out of the Guild. You pass the market and go to a really shady part of town."
+    play music cynthtown
+    scene cynthtown with fade
+    " You've lived here since you were a child but you've never been here."
 
-"You open a few drawers but find nothing."
-"You open  of the boxes you just brought, hoping she would find her knives. To your disappointment, it's filled with different kinds of jewels and chocolate. Gifts from her \"lovers\"."
-"You went over to the big cupboard to look until you come across some jars neatly stacked together. "
-"It takes a few seconds for you to process what you're just seeing..."
-scene ears
-pause 0.9
-scene ears with vpunch
-$ persistent.ears = True
-"{b}IT'S A JAR FULL OF HUMAN EARS.{/b}"
-mc "What the hell is this?!"
-c "Oh, great. You just can't keep to yourself, can you?"
-scene cynthiaroom
-show angry
-show normalcb
-mc "Why are there glasses full of human ears in your cupboard?!"
-c "{i}sigh"
-hide normalcb
-show talkwancb
-c "They're bandit ears."
-show talkwanmc
-mc "B-Bandit ears?!"
-c "Yes, [mc], bandit ears."
-mc "Uhh, O-Ok."
-mc "Why?"
-c "You get paid for these."
-mc "What?"
-c "Yeah, if you give them to the barracks, you get paid."
-mc "Then why the hell are you keep them stored in your cupboard?"
-c "Well..."
-c "First, I thought of handing them over to the barracks but..."
-c "I couldn't convince myself to give them away."
-show talknc
-c "I kinda like looking at them."
-mc "WHAT?!"
-show talkwacb
-c "Helps me to keep count of how many I've killed."
-mc "{i}This girl is messed up. Better not to push this anymore or I'll end up in  of those jars."
-mc "{i}Gulp{/i} I leave it at there then."
-show talkwahcb
-c "Yeah... I think that would be better."
-mc "So... Umm... did you find your knives?"
-hide talkwacb
-hide talknc
-hide talkwahcb
-show talkwancb
-c "No. It looks like I left them at my old house."
-c "I'm going to get them."
-mc "I'll come with you."
-hide talkwancb
-show normalcb
-"Cynthia looks at you. You can tell that she's trying her hardest not to say something mean."
-show sadc
-pause 0.5
-show talkwancb
+    show talkwancb
+    show thinkmc
+    c "Ok, we're here."
+    show talkwanmc
+    mc "You lived in a place like this before?"
 
-c "...Fine."
-c "You sure do have a lot of free time."
-scene villageback with fade
-play music forest
-"The two of you head out of the Guild. You pass the market and go to a really shady part of town."
-play music cynthtown
-scene cynthtown with fade
-" You've lived here since you were a child but you've never been here."
+    c "Yeah, it's the cheapest place I could find."
+    show talknc
+    c "And it reminds me of home. Makes it easier to settle in."
+    mc "O-Ok."
+    hide talknc
+    c "No  needs to know, got it?"
+    mc "Yeah, yeah."
+    hide talkwancb with easeoutleft
+    "Cynthia goes into a small house built out of black wood. It almost looks like a shack, most of the wood have rotted while the ceiling had been patched up with more wood. It had seen better days."
+    "After a couple of minutes, Cynthia comes out."
+    show normalcg with easeinleft
+    mc "Found them?"
+    c "Yup."
+    mc "Back to the Guild then?"
+    c "Ye-"
+    show shockc
+    play sound stomach
+    "{i}grumble"
+    "You hear Cynthia stomach rumble."
+    "Her face turns bright red."
+    show talkwamc
+    mc "You're hungry, right?"
+    show talkwancb
+    c "No!"
+    show normalcb
+    c "......"
+    play sound stomach
+    c "{i}stomach grumbles"
+    hide normalcb
+    c "Ok, a little, yeah."
+    mc "Why don't we grab something to eat on our way back?"
+    c "I didn't bring any money."
+    mc "Come on, it'll be my treat."
+    mc "Think of it as a way of celebrating your promotion."
+    "Cynthia eyes at you suspiciously."
+    c "Fine."
+    mc "Nice. Any suggestions."
+    c "Wh-Why are you asking me?"
+    show normalcb
+    mc "Well, it's your treat. And I don't eat out that often, so I don't really know where to go."
+    "Again, her stern eyes fix on you. She analyses you, maybe trying to find whether you have an ulterior motive."
+    "Then she gives up and answer shyly."
+    hide normalcb
+    c "There's a small cafe close by."
+    mc "Great, lead the way."
+    "You follow Cynthia."
+    play music home
+    scene cafe with fade
+    "You finally come to a small cafe, another place you haven't been before. The street looks more well organized and livelier than the  you were at previously."
+    stop music fadeout 0.9
+    "You go inside and get seated."
+    window hide
+    scene cynthiadate2
+    play music happy
+    mc "It's a really nice place. I've never been here before."
+    scene cynthiadate1
+    c "It's pretty new actually. It opened just a few days before I arrived."
+    mc "Hmmm... when did you come to Randel... if you don't mind me asking?"
+    scene cynthiadate2
+    c "......"
+    c "It's been... like a month."
+    mc "You lived there for a month? Man, that must've been horrible."
+    c "What choice did I have? I was short on gold."
+    "A waitress comes to your table. She's dressed in a very strange outfit, something very different to a tavern wench."
+    "Waitress" "What will y'all be having?"
+    scene cynthiadate1
+    c "Cream cake and a coffee for me."
+    "Waitress" "And you, sir?"
+    mc "Uhm... A steak and some ale."
+    scene cynthiadate2
+    "Waitress" "Um..."
+    "Waitress" "I'm sorry sir but we don't serve steak... or ale."
+    mc "Uhh... th-then... some chic-"
+    scene cynthiadate1
+    c "He'll have the same as me."
+    "Waitress" "O-Ok... two cream cakes and two coffees."
+    c "Yes."
+    "Waitress" "Alright, you order will be served soon."
+    "The waitress leaves."
+    scene cynthiadate3
+    c "The hell, [mc]? Haven't you ever been to a cafe before?"
+    mc "Uhm, no."
+    c "{i}sigh{/i} What did I expect from a farmer's village?"
+    mc "So... they don't have ale or meat?"
+    c "No... do you see drunks dancing around in here? This isn't a tavern!"
+    "You take a good look around again. She's right, the atmosphere is the total opposite of that of a Tavern."
+    "It's... peaceful and cozy. No brawls or anything messy lying on the floor. People show proper etiquette having their meals."
+    mc "Hmm... Yeah, this IS different."
+    mc "What can you eat here?"
+    c "Cake, sweets, pastries, you can drink coffee as well."
+    scene cynthiadate2
+    mc "Whoa. Man, I never knew a place like this existed."
+    mc "Thanks."
+    scene cynthiadate3
+    c "For what?"
+    mc "For bringing me here."
+    scene cynthiadate2
+    c "Oh... Uh, no problem."
+    c "But remember, you're still paying."
+    mc "Ah, yeah, almost forgot."
+    scene cynthiadate4
+    "A slight smile lights up Cynthia's face."
+    mc "......"
+    mc "So... you've gone to a lot of cafes?"
+    c "Yeah... more than you can count."
+    mc "Really?"
+    c "It's the place most people normally go for dates... in other towns."
+    mc "Oh... dates, yeah."
+    mc "How many towns have you been to?"
+    c "A lot."
+    mc "Whoa, so you've been traveling from town to town."
+    c "Yup. Ever since I left Karnak, I've been on the road."
 
-show talkwancb
-show thinkmc
-c "Ok, we're here."
-show talkwanmc
-mc "You lived in a place like this before?"
+    mc "That must've been fun. I mean travelling all around Astylla."
+    c "...Yeah... it kinda was."
+    mc "So you must have a lot of stories to tell, of you adventures."
+    c "Whoah, buster. I think I've shared more than I'm comfortable with."
+    mc "Urgh.. fine. At least I got this much out of you."
+    c "Yes."
+    mc "But man, you're a natural adventurer. No wonder why you're so good at what you do."
+    c "Heheh. I guess you're right."
+    "The waitress brings you your food."
+    show cynthiadate5 with easeinright
+    pause
+    "Waitress" "Enjoy."
 
-c "Yeah, it's the cheapest place I could find."
-show talknc
-c "And it reminds me of home. Makes it easier to settle in."
-mc "O-Ok."
-hide talknc
-c "No  needs to know, got it?"
-mc "Yeah, yeah."
-hide talkwancb with easeoutleft
-"Cynthia goes into a small house built out of black wood. It almost looks like a shack, most of the wood have rotted while the ceiling had been patched up with more wood. It had seen better days."
-"After a couple of minutes, Cynthia comes out."
-show normalcg with easeinleft
-mc "Found them?"
-c "Yup."
-mc "Back to the Guild then?"
-c "Ye-"
-show shockc
-play sound stomach
-"{i}grumble"
-"You hear Cynthia stomach rumble."
-"Her face turns bright red."
-show talkwamc
-mc "You're hungry, right?"
-show talkwancb
-c "No!"
-show normalcb
-c "......"
-play sound stomach
-c "{i}stomach grumbles"
-hide normalcb
-c "Ok, a little, yeah."
-mc "Why don't we grab something to eat on our way back?"
-c "I didn't bring any money."
-mc "Come on, it'll be my treat."
-mc "Think of it as a way of celebrating your promotion."
-"Cynthia eyes at you suspiciously."
-c "Fine."
-mc "Nice. Any suggestions."
-c "Wh-Why are you asking me?"
-show normalcb
-mc "Well, it's your treat. And I don't eat out that often, so I don't really know where to go."
-"Again, her stern eyes fix on you. She analyses you, maybe trying to find whether you have an ulterior motive."
-"Then she gives up and answer shyly."
-hide normalcb
-c "There's a small cafe close by."
-mc "Great, lead the way."
-"You follow Cynthia."
-play music home
-scene cafe with fade
-"You finally come to a small cafe, another place you haven't been before. The street looks more well organized and livelier than the  you were at previously."
-stop music fadeout 0.9
-"You go inside and get seated."
-window hide
-scene cynthiadate2
-play music happy
-mc "It's a really nice place. I've never been here before."
-scene cynthiadate1
-c "It's pretty new actually. It opened just a few days before I arrived."
-mc "Hmmm... when did you come to Randel... if you don't mind me asking?"
-scene cynthiadate2
-c "......"
-c "It's been... like a month."
-mc "You lived there for a month? Man, that must've been horrible."
-c "What choice did I have? I was short on silver."
-"A waitress comes to your table. She's dressed in a very strange outfit, something very different to a tavern wench."
-"Waitress" "What will y'all be having?"
-scene cynthiadate1
-c "Cream cake and a coffee for me."
-"Waitress" "And you, sir?"
-mc "Uhm... A steak and some ale."
-scene cynthiadate2
-"Waitress" "Um..."
-"Waitress" "I'm sorry sir but we don't serve steak... or ale."
-mc "Uhh... th-then... some chic-"
-scene cynthiadate1
-c "He'll have the same as me."
-"Waitress" "O-Ok... two cream cakes and two coffees."
-c "Yes."
-"Waitress" "Alright, you order will be served soon."
-"The waitress leaves."
-scene cynthiadate3
-c "The hell, [mc]? Haven't you ever been to a cafe before?"
-mc "Uhm, no."
-c "{i}sigh{/i} What did I expect from a farmer's village?"
-mc "So... they don't have ale or meat?"
-c "No... do you see drunks dancing around in here? This isn't a tavern!"
-"You take a good look around again. She's right, the atmosphere is the total opposite of that of a Tavern."
-"It's... peaceful and cozy. No brawls or anything messy lying on the floor. People show proper etiquette having their meals."
-mc "Hmm... Yeah, this IS different."
-mc "What can you eat here?"
-c "Cake, sweets, pastries, you can drink coffee as well."
-scene cynthiadate2
-mc "Whoa. Man, I never knew a place like this existed."
-mc "Thanks."
-scene cynthiadate3
-c "For what?"
-mc "For bringing me here."
-scene cynthiadate2
-c "Oh... Uh, no problem."
-c "But remember, you're still paying."
-mc "Ah, yeah, almost forgot."
-scene cynthiadate4
-"A slight smile lights up Cynthia's face."
-mc "......"
-mc "So... you've gone to a lot of cafes?"
-c "Yeah... more than you can count."
-mc "Really?"
-c "It's the place most people normally go for dates... in other towns."
-mc "Oh... dates, yeah."
-mc "How many towns have you been to?"
-c "A lot."
-mc "Whoa, so you've been traveling from town to town."
-c "Yup. Ever since I left Karnak, I've been on the road."
+    "You take a bite from the piece of cake."
 
-mc "That must've been fun. I mean travelling all around Astylla."
-c "...Yeah... it kinda was."
-mc "So you must have a lot of stories to tell, of you adventures."
-c "Whoah, buster. I think I've shared more than I'm comfortable with."
-mc "Urgh.. fine. At least I got this much out of you."
-c "Yes."
-mc "But man, you're a natural adventurer. No wonder why you're so good at what you do."
-c "Heheh. I guess you're right."
-"The waitress brings you your food."
-show cynthiadate5 with easeinright
-pause
-"Waitress" "Enjoy."
+    pause
+    "It's sweet, soft, and like the best cake you've ever eaten."
+    mc "This is... Mmmh, this is good!"
+    c "Oh,... I thought you wouldn't like it."
+    mc "Are you kidding me? It's the best cake I've ever had."
+    c "That good? Ok."
 
-"You take a bite from the piece of cake."
+    show cynthiadate6 with dissolve
+    "The two of you start to eat. You can't restrain yourself as you gobble up the cake like a hound."
+    pause
+    "Cynthia cuts a piece of the cake with a knife and eats it with a fork."
+    "You stare at her elegant handling while you had cream all over your face and hands."
+    mc "A-Ah... that's how you're supposed to eat it."
+    scene cynthiadate2
+    pause
+    scene cynthiadate1
 
-pause
-"It's sweet, soft and like the best cake you've ever eaten."
-mc "This is... Mmmh, this is good!"
-c "Oh,... I thought you wouldn't like it."
-mc "Are you kidding me? It's the best cake I've ever had."
-c "That good? Ok."
+    "She bursts out laughing."
+    c "Hahaha... yeah."
+    "She hands you a piece of paper cloth that was placed at the table."
+    c "Here, wipe you're mouth with this."
+    mc "Th-Thanks."
+    "You wipe up your mouth, making sure your face is clean."
+    scene cynthiadate4
+    show cynthiadate5
+    c "Hehehe. Why didn't I date someone dumb like you? It's so much more fun."
+    mc "I couldn't help myself, ok?"
+    c "Hehehe."
+    mc "{i}She does genuinely look happy. Not like the fake smile she has in the Academy."
+    c "Imagine if some guy from the Academy sees us."
+    mc "Oh, yeah. I'll be on the hitlist of every guy at the Academy."
+    c "Hehehe. Yeah."
+    "The two of you finish your drinks."
+    mc "I think I'll be coming here a lot."
+    c "And it's all thanks to me."
+    mc "Yes. I'm eternally grateful."
+    "The waitress comes to your table."
+    "Waitress" "Did you guys enjoy the meal?"
+    mc "Yeah."
+    "Waitress" "We're so glad."
+    "Waitress" "That will be 30 gold."
+    mc "{i}Did she say thirty? Or was it thirteen?"
+    mc "Uhh, right, thirty...."
+    $ persistent.cynthiaFirstDate = True
+    if money > 30:
+        "You give the money."
+        $ money -= 30
+        $ paycynth = True
+        "Waitress" "Thank you. Please do come again."
+        "The two of you leave the cafe."
+        scene villageback with fade
+        show talkwanmc
+        show smilenc
+        mc "I didn't know I was paying for a feast."
+        show talkwahcb
+        c "Hehehe, yeah. It's pretty expensive, hence why I go there for dates."
+        mc "You're very resourceful."
+        c "Yes, I am."
+        show talknc
+        c "Thanks for the treat, [mc]."
+        show talksadhappymc
+        mc "No problem."
+        mc "I guess I'll have to take back what I said earlier. I won't be coming here any time soon."
+        c "To the Guild then?"
+        menu:
+            "Go home":
+                mc "I'll be going home."
+                c "Oh, ok."
+                c "......"
+                c "Bye, then."
 
-show cynthiadate6 with dissolve
-"The two of you start to eat. You can't restrain yourself as you gobble up the cake like a hound."
-pause
-"Cynthia cuts a piece of the cake with a knife and eats it with a fork."
-"You stare at her elegant handling while you had cream all over your face and hands."
-mc "A-Ah... that's how you're supposed to eat it."
-scene cynthiadate2
-pause
-scene cynthiadate1
 
-"She bursts out laughing."
-c "Hahaha... yeah."
-"She hands you a piece of paper cloth that was placed at the table."
-c "Here, wipe you're mouth with this."
-mc "Th-Thanks."
-"You wipe up your mouth, making sure your face is clean."
-scene cynthiadate4
-show cynthiadate5
-c "Hehehe. Why didn't I date someone dumb like you? It's so much more fun."
-mc "I couldn't help myself, ok?"
-c "Hehehe."
-mc "{i}She does genuinely look happy. Not like the fake smile she has in the Academy."
-c "Imagine if some guy from the Academy sees us."
-mc "Oh, yeah. I'll be on the hitlist of every guy at the Academy."
-c "Hehehe. Yeah."
-"The two of you finish your drinks."
-mc "I think I'll be coming here a lot."
-c "And it's all thanks to me."
-mc "Yes. I'm eternally grateful."
-"The waitress comes to your table."
-"Waitress" "Did you guys enjoy the meal?"
-mc "Yeah."
-"Waitress" "We're so glad."
-"Waitress" "That will be 30 silver."
-mc "{i}Did she say thirty? Or was it thirteen?"
-mc "Uhh, right, thirty...."
-$ persistent.cynthiaFirstDate = True
-if money > 30:
-    "You give the money."
-    $ money -= 30
-    $ paycynth = True
-    "Waitress" "Thank you. Please do come again."
+                mc "Bye."
+                scene villageback with fade
+                show thinkmc
+                mc "{i}I'm slowly getting to know the real Cynthia. She doesn't seem that bad. Beneath that cold appearance, she turns out to be pretty nice."
+
+                $ time += 1
+                jump home
+            "Go to the Guild":
+                mc "Ok"
+                "The two of you go to the Guild."
+                scene agblr with fade
+                show smilenc
+                show smilemc
+                c "That took longer than expected."
+                mc "It did."
+                c "......"
+                c "Alright, see you later. I have to unpack my stuff."
+                mc "Bye."
+                hide smilenc with easeoutleft
+                mc "{i}I'm slowly getting to know the real Cynthia. She doesn't seem that bad. Beneath that cold appearance, she turns out to be pretty nice."
+                $ time += 1
+                jump guild
+    $ paycynth = False
+    mc "{i}Shit all I have is [money]!"
+    scene cynthiadate2
+    "Cynthia notices you panicking and had to react, pulling out her satchel to draw out money."
+    $ paycynth = False
+    c "Uhh, put it on my tab."
+    "Waitress" "Alright. Please do come again."
     "The two of you leave the cafe."
     scene villageback with fade
-    show talkwanmc
-    show smilenc
+    show talkwancb
+    c "Thanks for the treat, [mc]."
+    show worriedmc
+    mc "Sorry, Cynthia, I'll pay you back."
+    c "You better."
     mc "I didn't know I was paying for a feast."
     show talkwahcb
-    c "Hehehe, yeah. It's pretty expensive, hence why I go there for dates."
+    c "Hehehe, yeah. It's pretty expensive hence why I go there for dates."
+    show talksadhappymc
     mc "You're very resourceful."
     c "Yes, I am."
-    show talknc
-    c "Thanks for the treat, [mc]."
-    show talksadhappymc
-    mc "No problem."
-    mc "I guess I'll have to take back what I said earlier. I won't be coming here any time soon."
-    c "To the Guild then?"
+    show smilenc
+    c "To the Guild then."
     menu:
         "Go home":
             mc "I'll be going home."
             c "Oh, ok."
-            c "......"
             c "Bye, then."
-
-
+            mc "Sorry again for earlier."
+            c "Ahh, it's no problem. You paying back anyway."
+            mc "I'll be sure to."
+            c "..."
+            c "Alright, see you later."
             mc "Bye."
             scene villageback with fade
             show thinkmc
             mc "{i}I'm slowly getting to know the real Cynthia. She doesn't seem that bad. Beneath that cold appearance, she turns out to be pretty nice."
-
             $ time += 1
             jump home
         "Go to the Guild":
-            mc "Ok"
+            mc "Ok."
             "The two of you go to the Guild."
             scene agblr with fade
+            show worriedmc
             show smilenc
-            show smilemc
-            c "That took longer than expected."
-            mc "It did."
+            mc "Sorry again for earlier."
+            show talkwahcb
+            c "Ahh, it's no problem. You paying back anyway."
+            show talksadhappymc
+            mc "I'll be sure to."
             c "......"
             c "Alright, see you later. I have to unpack my stuff."
             mc "Bye."
+            hide talkwahcb
             hide smilenc with easeoutleft
-            mc "{i}I'm slowly getting to know the real Cynthia. She doesn't seem that bad. Beneath that cold appearance, she turns out to be pretty nice."
+            mc "{i}I'm getting to know the real Cynthia. She doesn't seem that bad. Beneath that cold appearance, she turns out to be pretty nice."
             $ time += 1
             jump guild
-$ paycynth = False
-mc "{i}Shit all I have is [money]!"
-scene cynthiadate2
-"Cynthia notices you panicking and had to react, pulling out her satchel to draw out money."
-$ paycynth = False
-c "Uhh, put it on my tab."
-"Waitress" "Alright. Please do come again."
-"The two of you leave the cafe."
-scene villageback with fade
-show talkwancb
-c "Thanks for the treat, [mc]."
-show worriedmc
-mc "Sorry, Cynthia, I'll pay you back."
-c "You better."
-mc "I didn't know I was paying for a feast."
-show talkwahcb
-c "Hehehe, yeah. It's pretty expensive hence why I go there for dates."
-show talksadhappymc
-mc "You're very resourceful."
-c "Yes, I am."
-show smilenc
-c "To the Guild then."
-menu:
-    "Go home":
-        mc "I'll be going home."
-        c "Oh, ok."
-        c "Bye, then."
-        mc "Sorry again for earlier."
-        c "Ahh, it's no problem. You paying back anyway."
-        mc "I'll be sure to."
-        c "..."
-        c "Alright, see you later."
-        mc "Bye."
-        scene villageback with fade
-        show thinkmc
-        mc "{i}I'm slowly getting to know the real Cynthia. She doesn't seem that bad. Beneath that cold appearance, she turns out to be pretty nice."
-        $ time += 1
-        jump home
-    "Go to the Guild":
-        mc "Ok."
-        "The two of you go to the Guild."
-        scene agblr with fade
-        show worriedmc
-        show smilenc
-        mc "Sorry again for earlier."
-        show talkwahcb
-        c "Ahh, it's no problem. You paying back anyway."
-        show talksadhappymc
-        mc "I'll be sure to."
-        c "......"
-        c "Alright, see you later. I have to unpack my stuff."
-        mc "Bye."
-        hide talkwahcb
-        hide smilenc with easeoutleft
-        mc "{i}I'm getting to know the real Cynthia. She doesn't seem that bad. Beneath that cold appearance, she turns out to be pretty nice."
-        $ time += 1
-        jump guild
 
 
 
@@ -1519,7 +1550,7 @@ label cynthquest4:
     mc "From where?"
     show sadhtalke
     e "From me."
-    sa "She's the best barber in town but don't tell anyone. I like to keep her to myself."
+    sa "She's the best barber in town, but don't tell anyone. I like to keep her to myself."
     mc "But your hair... looks fine."
     sa "Fine! Look here."
     hide talksr
@@ -1612,7 +1643,7 @@ label cynthquest4:
     c "It has soft edges, so it's not a hoof. It has to be a paw print."
     mc "All I see is a small dent. Aren't the paw prints supposed to be like this?"
     "You draw what you think looks like a paw on the ground."
-    c "Well, yeah. That's what you see in the books but you don't find prints that perfect in the wild."
+    c "Well, yeah. That's what you see in the books, but you don't find prints that perfect in the wild."
     mc "Oh... right."
     c "It's not a bad trail. It goes through those bushes."
     "She points to some bushes."
@@ -1676,7 +1707,7 @@ label cynthquest4:
     $ gameover = "baiting"
     scene forrest
     menu:
-        "Don't be bait":
+        "Don't be bait" if easyMode == False:
             show sadc
             show angry
             mc "I can't be bait."
@@ -1703,7 +1734,7 @@ label cynthquest4:
             mc "{i}Alright, I'm doing it."
             mc "{i}Just a little m-"
             "SNAP"
-            "The branch you were holding snaps. You lose your footing and your body is pulled downwards. You try to get hold of anything but you grab only air."
+            "The branch you were holding snaps. You lose your footing and your body is pulled downwards. You try to get hold of anything, but you grab only air."
             "Just before you could scream, everything goes black."
             scene black with hpunch
             jump GameOver
@@ -1717,7 +1748,7 @@ label cynthquest4:
             mc "Why?"
             show talksc
             c "Because I'm the  who's going to kill it."
-            c "The EXP charm only gains EXP if the person who holds it kills a monster. You may get EXP killing  by yourself but the charm gains extra for you and stores it."
+            c "The EXP charm only gains EXP if the person who holds it kills a monster. You may get EXP killing  by yourself, but the charm gains extra for you and stores it."
             show talkwancb
             c "Unless you don't want any EXP, I suggest it would be better if you gave it to me."
             mc "Fine, take it."
@@ -1737,7 +1768,7 @@ label cynthquest4:
             scene direwolf
             mc "Hey there, doggie!"
             mc "COME AND GET IT!"
-            "The wolf growls and without warning, it rushes towards you."
+            "The wolf growls, and without warning, it rushes towards you."
             mc "FUUUUUCK!!!"
             scene forrest
             show glob5 with easeinright
@@ -1844,21 +1875,21 @@ label cynthquest4:
             c "Well, I don't know. I kinda liked it, spending time with you."
             c "I really can't think of an exact reason."
             c "I mean, thinking logically, there's nothing I could benefit from you."
-            c "You're not rich, you aren't that strong and you aren't that good looking. You're no good to me at all."
+            c "You're not rich, you aren't that strong, and you aren't that good looking. You're no good to me at all."
             mc "{i}An arrow to the heart."
             c "But there was still something about you. I felt comfortable around you, like I could say anything to you and be my self..."
             c "......"
             c "You felt like a real person. And when I was spending time with you I felt like I was {p} really living with someone else rather than by myself."
             c "I never expected you to show up for training but you came."
             c "You still wanted to hang out with me."
-            c "You knew who I really was but you were still nice to me. You trusted me multiple times even though I was a bitch to you."
+            c "You knew who I really was, but you were still nice to me. You trusted me multiple times even though I was a bitch to you."
             mc "Well, that's what friends do, I guess. They put up with each other's bullshit and stick together."
             scene cynthiatalk1
             c "You thought of me as a friend?"
             mc "Uhm... yeah."
             mc "Didn't you?"
             scene cynthiatalk4
-            c "I've had a lot of \"friends\" but as far as real friends go... If I had  the only person I could think of, it would be you."
+            c "I've had a lot of \"friends\", but as far as real friends go... If I had  the only person I could think of, it would be you."
             mc "{i}Guess I'm friendzoned now."
             if gabetrip >= 1:
                 mc "{i}...AGAIN!"
@@ -1868,7 +1899,7 @@ label cynthquest4:
             show cynthiatalk5
             c "Yeah, make sure you write it down somewhere."
             mc "I will."
-            mc "Oh and thanks for all the compliments earlier. I'm not rich, strong or good looking, that'll really help to boost my confidence."
+            mc "Oh, and thanks for all the compliments earlier. I'm not rich, strong or good looking, that'll really help to boost my confidence."
             c "What? I was just saying..."
             scene cynthiatalk4
             c "Ok, you're not bad looking either. Does that make you happy?"
@@ -1882,12 +1913,12 @@ label cynthquest4:
             if paycynth == False:
                 c "But you're not really good at paying back debts."
                 mc "Huh?"
-                c "Remember? That day at the cafe. You still owe me 30 silver asshole."
+                c "Remember? That day at the cafe. You still owe me 30 gold asshole."
                 mc "Ah shit, I forgot."
                 c "Hehe it's alright."
                 c "......"
             show cynthiatalk6
-            c "What you said earlier. That I had to trust someone and they trust back..."
+            c "What you said earlier. That I had to trust someone, and they trust back..."
             c "I think you're right."
             mc "Of course I am."
             c "And I thought if we're friends, now I have to trust you."
@@ -1937,7 +1968,7 @@ label cynthquest4:
             c "Why?"
             mc "Because I want to get to know you better."
             c "And talking about my past will help?"
-            mc "Yeah and I'll tell you about mine!"
+            mc "Yeah, and I'll tell you about mine!"
             c "But I don't want to know."
             mc "Uh."
             mc "Well, it's something friends do, ok?!"
@@ -1952,7 +1983,7 @@ label cynthquest4:
             mc "Well, we've got nothing else to do here on out until we go to sleep, don't we?"
             c "......"
             c "Well, ok."
-            c "I was born in Thane. I lived there with my mother for 8 years. Then I was sold to a slave trader and th-"
+            c "I was born in Thane. I lived there with my mother for 8 years. Then I was sold to a slave trader, and th-"
             mc "Wait, what? You were sold to slave trader?!"
             c "Yeah."
             mc "{i}How is she so casual about this?"
@@ -1974,7 +2005,7 @@ label cynthquest4:
             mc "......"
             scene cynthiatalk3
             "She stares deeply into the bonfire with cold dead eyes."
-            c "They raped her and killed right before my very eyes."
+            c "They raped her, and killed right before my very eyes."
             mc "......"
             c "Then they caught me and sold me to a slave trader."
             c "I was taken to Karnak. It's a place where slavery is still legal."
@@ -2002,7 +2033,7 @@ label cynthquest4:
             c "After that... I ran away."
             c "I spent some days in the streets, stealing and barely had enough food to survive."
             mc "Didn't the guards find you after you killed the general?"
-            c "No, Karnak is a big city and the major part of it are slums. There's a  in a million chance that they can find you."
+            c "No, Karnak is a big city, and the major part of it are slums. There's a  in a million chance that they can find you."
             mc "How long did you live there?"
             c "A couple of years."
             mc "You survived that long alone?"
@@ -2014,7 +2045,7 @@ label cynthquest4:
             c "Picked up a few tricks there. But living there was tough. As they say; there is no honor among thieves."
             c "In the slums, the thieves are always at war with each other. So you always had to have eyes at the back of your head."
             mc "{i}She really going into full detail here. I guess she's never had the chance to talk about her past to anyone close to her."
-            c "Then, after I had enough money, I left that goddamn city."
+            c "Then, after I had enough money, I left that damned city."
             mc "Where did you go then?"
             c "Dermis, Winden, Dorn, all around Astylla."
             c "I've even been to the capital."
@@ -2038,7 +2069,7 @@ label cynthquest4:
             c "No, I want to know."
             mc "Ok then."
             "You tell Cynthia about your past. There isn't much to talk about your memories, other than the part where you've lost your parents."
-            "You were more in detail as you talked about Uncle Pete, Gabe and the simpler times, good and bad, of you spent growing up in Randel."
+            "You were more in detail as you talked about Uncle Pete, Gabe, and the simpler times, good and bad, of you spent growing up in Randel."
             "You ended on how you got into the Adventurers' Guild and got to meet Sander, Eve and Cynthia."
             c "Neat... Well, you haven't had the smoothest life either."
             mc "Nothing compared to yours, though."
@@ -2057,7 +2088,7 @@ label cynthquest4:
             c "...I wish I could forget all this and start again... as a normal person."
             mc "......"
             c "......"
-            c "Ugh, what's wrong with me? I'm talking way too much and I'm not even drunk."
+            c "Ugh, what's wrong with me? I'm talking way too much, and I'm not even drunk."
             mc "Heh, it's ok. It's good to see that side of you."
             show cynthiatalk4
             c "......"
@@ -2066,7 +2097,7 @@ label cynthquest4:
             mc "Yeah, let's go to sleep."
             c "Thank you for listening, [mc]. "
             c "I've never told my story to anyone before."
-            c "I didn't expect it but I feel better after I put that out."
+            c "I didn't expect it, but I feel better after I put that out."
             mc "No problem."
             c "Goodnight."
             mc "Goodnight."
@@ -2091,7 +2122,7 @@ label cynthquest4:
             mc "Ah yeah."
             c "I'll give you your cut when we meet next time."
             if paycynth == False:
-                mc "Nah you can keep all the silver."
+                mc "Nah you can keep all the gold."
                 mc "Think of it as me paying off my debt."
                 c "You sure?"
                 mc "Yeah."
@@ -2136,7 +2167,7 @@ label cynthquest5:
     c "It's from the barracks. I'm going to kill some bandits."
     mc "Oh..."
     show talksc
-    c "I would've called you but since you're not... comfortable with killing... I thought I'd do this alone."
+    c "I would've called you, but since you're not... comfortable with killing... I thought I'd do this alone."
     mc "......"
     mc "I'm coming with you."
     show shockc
@@ -2216,7 +2247,7 @@ label cynthquest5:
     "You hear laughing from behind you. You look around and spot 2 more bandits. They slowly walk towards the two of you."
     "Bandit 1" "{i}Whistle{/i} We've got a nice  here, boss."
     "Bandit 1" "Mmm-Mm!"
-    "Bandit 2" "God, I don't know the last time I had some pussy."
+    "Bandit 2" "Astylla, I don't know the last time I had some pussy."
     "Cynthia spits onto the ground."
     "Bandit Leader" "Hehehe. A feisty , isn't she? Yeah, she'll do just great. I'll like it when they're rough."
     "Bandit Leader" "Bill take care of this little brat for me. Gavin and I will take care of the little lady."
@@ -2238,7 +2269,7 @@ label cynthquest5:
     "Bandit Leader" "Let's make this quick, boy!"
     scene forrest with fade
     show banditfight with easeinright
-    if swordlvl >= 10:
+    if swordlvl >= 10 or easyMode:
         $ renpy.notify ("{color=#fff}Sword skill check: {color=#00C413}Success! ([swordlvl] >= 10)")
         $ round1banditfight = 0
         jump finishfight
@@ -2250,11 +2281,11 @@ label cynthquest5:
     $ fightMiniGame = "finishfight"
     jump start_fightMiniGame
 label finishfight:
-    "The bandit's strikes were strong. You were quick to deflect his strikes with your blade but even you can't keep up with his relentlessness."
+    "The bandit's strikes were strong. You were quick to deflect his strikes with your blade, but even you can't keep up with his relentlessness."
     "Bandit" "Not bad."
     "Bandit" "Let's see if you can keep up."
     $ round1banditfight += 1
-    if swordlvl >= 12:
+    if swordlvl >= 12 or easyMode:
         $ renpy.notify ("{color=#fff}Sword skill check: {color=#00C413}Success! ([swordlvl] >= 12)")
         jump fightover
     $ renpy.notify ("{color=#fff}Sword skill check: {color=#A50000}Fail. ([swordlvl] < 12)")
@@ -2432,7 +2463,7 @@ label fightover:
     scene black with fade
     play sound doorknock
     c "Someone help... {i}huff... huff...{/i} It's [mc]!"
-    j "Oh my god!"
+    j "Oh Astylla!"
     scene agblr with fade
     show talksads
     pause 0.2
@@ -2556,7 +2587,7 @@ label fightover:
     mc "H-Hey."
     tr "You're all good."
     mc "Huh?"
-    "You look at the area of your wound but you don't see anything. You look as if you've been as you always were before getting the wound."
+    "You look at the area of your wound, but you don't see anything. You look as if you've been as you always were before getting the wound."
     mc "What?"
     mc "I'm completely healed?"
     $ trissheal += 1
@@ -2577,7 +2608,7 @@ label fightover:
     mc "Oh, I-I don't know what to say."
     tr "Hmmm. It did surprise me quite a bit; you would've been a goner if you bled out along the way."
     mc "Maybe Cynthia used some first aid."
-    tr "There was a bandage but that's it. She didn't use any magic."
+    tr "There was a bandage, but that's it. She didn't use any magic."
     mc "......"
     tr "Ok, enough about that."
     tr "I'll be leaving now. You're ok to go as well."
@@ -2688,86 +2719,86 @@ label fightover:
 
 
 label PREcynthquest6:
-        hide screen hud
-        "As you enter you see cynthia waving at you"
-        "You go to her."
-        show talknc
-        show smilemc
-        c "You're looking good now."
-        show talksadhappymc
-        mc "Yeah, I feel much better."
-        c "Good."
-        c "I was just about to visit you."
-        mc "Hmmm? whats up?"
-        c "Come with me."
-        mc "......?"
-        stop music
-        scene cynthiaroom with fade
-        "You follow cynthia into her guild quarters"
-        show talknc
-        show talksadhappymc
-        c "Here."
-        "Cynthia hands you a box."
-        mc "What is it?"
-        c "Open it."
-        "You open the box."
-        "You find two new boots."
-        mc "Wait are these for me?"
-        c "Yup."
-        mc "oh...b-but why."
-        c "It's a gift from me for saving my life and..."
-        show blushtalkhc
-        c "And for being my friend."
-        mc "Whoa cynthia, I don't know what to say"
-        hide blushtalkhc
-        c "I hope it fits you."
-        mc "They look really expensive."
-        show talkwahcb
-        c "Uhm... A bit. But it was nothing.  You know how much money I have in my cupboard, right?"
-        c "Thought I'd put them to some use."
-        mc "Ahh... Yes... The ears."
-        mc "But you really shouldn't have, I didn't do much."
-        c "Are you kidding me. You're the only person whos ever saved my life, you deserve a reward for that."
-        mc "hehehe alright then."
-        c "Ok now try them on already."
-        "You remove your old worn out boots and try the new ones. They fit perfectly and feel very commfortable."
-        mc "They're perfect. Thanks cynthia."
-        hide talkwahcb
-        c "Hehe you're welcome."
-        mc "......"
-        c "......"
-        mc "So, have any more monster hunts planned."
-        c "Uhm no not really. I think it's best if we had a small break."
-        mc "Hmmm yeah."
-        c "But I have been hearing alot of rumours about a vampire."
-        show talkwanmc
-        mc "Vampire?"
-        c "Yeah and they say it's living very close by."
-        mc "{i}Shit. That's July she's talking about."
-        hide talkwanmc
-        mc "B-but...... I've heard vampires are...... Really powerfull."
-        c "Oh yeah they are. We wouldn't stand a chance."
-        c "But I would really like to see one, for once in my life."
-        mc "You've never seen one."
-        c "No. There are very few vampires in Astylla, most of them are in the darklands."
-        mc "Ah."
-        c "It's just a thought."
-        mc "Ok."
-        mc "{i}Thank god she's not too serious about this."
-        hide talknc
-        show talkwanc
-        c "Alright, thats it. now leave, I've got an assignment to complete."
-        mc "hehe fine."
-        show talknc
-        c "Bye, [mc]."
-        mc "Bye."
-        scene agblr with fade
-        mc "{i}Man these boots feel great."
-        mc "{i}Damn, who would've thought I would be getting a gift from cynthia."
-        mc "{i}July should be carefull. But when you think about it, She's been here for so long, I'm suprised that she some how manged to mantain her cover."
-        mc "{i}I guess rumors are bound to appear."
-        $ cynthboots += 1
-        jump guild
+    hide screen hud
+    "As you enter you see cynthia waving at you"
+    "You go to her."
+    show talknc
+    show smilemc
+    c "You're looking good now."
+    show talksadhappymc
+    mc "Yeah, I feel much better."
+    c "Good."
+    c "I was just about to visit you."
+    mc "Hmmm? whats up?"
+    c "Come with me."
+    mc "......?"
+    stop music
+    scene cynthiaroom with fade
+    "You follow cynthia into her guild quarters"
+    show talknc
+    show talksadhappymc
+    c "Here."
+    "Cynthia hands you a box."
+    mc "What is it?"
+    c "Open it."
+    "You open the box."
+    "You find two new boots."
+    mc "Wait are these for me?"
+    c "Yup."
+    mc "oh...b-but why."
+    c "It's a gift from me for saving my life and..."
+    show blushtalkhc
+    c "And for being my friend."
+    mc "Whoa cynthia, I don't know what to say"
+    hide blushtalkhc
+    c "I hope it fits you."
+    mc "They look really expensive."
+    show talkwahcb
+    c "Uhm... A bit. But it was nothing.  You know how much money I have in my cupboard, right?"
+    c "Thought I'd put them to some use."
+    mc "Ahh... Yes... The ears."
+    mc "But you really shouldn't have, I didn't do much."
+    c "Are you kidding me. You're the only person whos ever saved my life, you deserve a reward for that."
+    mc "hehehe alright then."
+    c "Ok now try them on already."
+    "You remove your old worn out boots and try the new ones. They fit perfectly and feel very commfortable."
+    mc "They're perfect. Thanks cynthia."
+    hide talkwahcb
+    c "Hehe you're welcome."
+    mc "......"
+    c "......"
+    mc "So, have any more monster hunts planned."
+    c "Uhm no not really. I think it's best if we had a small break."
+    mc "Hmmm yeah."
+    c "But I have been hearing alot of rumours about a vampire."
+    show talkwanmc
+    mc "Vampire?"
+    c "Yeah, and they say it's living very close by."
+    mc "{i}Shit. That's July she's talking about."
+    hide talkwanmc
+    mc "B-but...... I've heard vampires are...... Really powerfull."
+    c "Oh yeah they are. We wouldn't stand a chance."
+    c "But I would really like to see one, for once in my life."
+    mc "You've never seen one."
+    c "No. There are very few vampires in Astylla, most of them are in the darklands."
+    mc "Ah."
+    c "It's just a thought."
+    mc "Ok."
+    mc "{i}Thank Astylla she's not too serious about this."
+    hide talknc
+    show talkwanc
+    c "Alright, thats it. now leave, I've got an assignment to complete."
+    mc "hehe fine."
+    show talknc
+    c "Bye, [mc]."
+    mc "Bye."
+    scene agblr with fade
+    mc "{i}Man these boots feel great."
+    mc "{i}Damn, who would've thought I would be getting a gift from cynthia."
+    mc "{i}July should be carefull. But when you think about it, She's been here for so long, I'm suprised that she some how manged to mantain her cover."
+    mc "{i}I guess rumors are bound to appear."
+    $ cynthboots += 1
+    jump guild
 
 
 
@@ -2872,7 +2903,7 @@ label cynthquest6:
     c "Yes."
 
     mc "B-But how do you know it's a vampire? I mean aren't vampires famous for feeding on human?"
-    c "Yeah but the woodcutter describes the boars being shriveled up and having bite marks."
+    c "Yeah, but the woodcutter describes the boars being shriveled up and having bite marks."
     mc "{i}Shit, she's onto her."
     mc "But you can't be sure, right?"
     c "Vampires can survive with any type of blood, it doesn't have to be human. They prefer the taste of human blood, that's why they normally feed on humans."
@@ -2882,7 +2913,7 @@ label cynthquest6:
     c "Just think about it; A vampire that's grown very close to humans and sees them as their own kind. So, they don't feed on humans and have to survive on alternative means for blood."
     mc "That's q-quite a stretch."
     c "Yeah, the second theory is quite a bit..."
-    c "I know there's a probability that this isn't a vampire but it's at least worth checking out."
+    c "I know there's a probability that this isn't a vampire, but it's at least worth checking out."
     mc "Anyway, where are we going now?"
     c "To the place where the woodcutter saw the bodies. He marked a few places. I checked them all out except this one."
     c "I thought I'd have better luck with you around."
@@ -2903,7 +2934,7 @@ label cynthquest6:
     mc "{i}July, please don't be there..."
     c "Almost there."
     mc "We're pretty deep into the forest."
-    c "Yeah and the fact that we're here at night makes it all the more dangerous."
+    c "Yeah, and the fact that we're here at night makes it all the more dangerous."
     mc "You're actually excited about whether or not this vampire exists, aren't you?"
     c "No..."
     c "Ok, a bit."
@@ -2920,7 +2951,7 @@ label cynthquest6:
     "She takes a closer look."
     c "No."
     c "Oh wait, I know what you're trying to do."
-    c "Hehehe. Nice try, [mc] but you can't scare me like that."
+    c "Hehehe. Nice try, [mc], but you can't scare me like that."
     mc "{i}She can't see her!"
     scene forrestn
     show talkwancb
@@ -2949,7 +2980,7 @@ label cynthquest6:
     show julysave2 with easeinright
     "Then out of nowhere, July swipes in and grabs the wolf before it ever lands on Cynthia."
     "She grabs the wolf by its torso and tears it in half."
-    mc "{i}Oh my god."
+    mc "{i}Oh Astylla."
     "She throws the brutalized carcass at the two remaining wolves, blood splatter onto them where she threw."
     "They stand on their ground, growling and snarling after what July did with such murderous intent."
     "July stands in front of you with her hands stretched apart, anticipating for the wolves to try their next move."
@@ -2978,7 +3009,7 @@ label cynthquest6:
     c "......!"
     c "Ugh..."
     c "Fine. I let you pass on that one."
-    c "I just can't believe I'm standing in front of a vampire and it's July!"
+    c "I just can't believe I'm standing in front of a vampire, and it's July!"
     j "......"
     c "I mean... you're still July, right? You're not evil or anything?"
     c "...Wait!"
@@ -3009,7 +3040,7 @@ label cynthquest6:
     mc "But I could see. It was July."
     c "What?"
     mc "Yeah, it's weird. Do you know anything about this, July?"
-    j "I don't know if you've heard but vampires can turn invisible. Normally, when I go out at night, I turn invisible so no one from town might see me."
+    j "I don't know if you've heard, but vampires can turn invisible. Normally, when I go out at night, I turn invisible so no one from town might see me."
     c "But [mc] saw you."
     j "Yes, he did. Today and the day he found me."
     mc "How's that possible?"
@@ -3036,7 +3067,7 @@ label cynthquest6:
     c "So are we the only ones who know?"
 
     j "No."
-    mc "Wait but you told me-"
+    mc "Wait, but you told me-"
     j "Sorry, [mc]. I lied."
     j "Everybody at the Guild knows."
     mc "What?! Even Sander and Eve?"
@@ -3081,7 +3112,7 @@ label cynthquest6:
     c "I could be that fake princess... for real, you know?"
     mc "......"
     menu:
-        "Don't say anything":
+        "Don't say anything" if easyMode == False:
             mc "......"
             c "......"
             show talksc
@@ -3097,7 +3128,7 @@ label cynthquest6:
         "No.":
             mc "But that wouldn't be you!"
             c "Huh?"
-            mc "You are the person you are now. It doesn't matter if you are fucked up or not, you are {b}you{/b} and I wouldn't change that for anything."
+            mc "You are the person you are now. It doesn't matter if you are fucked up or not, you are {b}you{/b}, and I wouldn't change that for anything."
             c "......"
             show worriedmc
             mc "If erasing your past erases the you who's standing in front of me right now, I don't want that!"
@@ -3134,122 +3165,122 @@ label cynthquest6:
 
 
 label preCynthDate:
-hide screen hud
-scene academytalk
-"As you walk in you notice that there's a huge commotion coming from some students."
-"Student 1" "What the hell happened?"
-"Student 2" "Cynthia knocked Jamie's teeth off."
-"Student 1" "Wait, what?"
-"Student 2" "Yeah."
-"Student 3" "She even swore at me earlier, told me to fuck off. What's wrong with her?"
-"Student 1" "Did she break up with anyone?"
-"Student 2" "Was she with anyone to break up with?"
-"The chatter continues as you continue walking towards your class."
-mc "Whoa, I guess I must have missed one hell of a show. And avoided being roughed up."
-"As you're walking, your eye catches something. It's Cynthia. She's poking her head out of the storage room and is gesturing you enter into the room with her."
-mc "Uh... ok?"
-"You slowly go into the storge room, making sure no one spots you."
-mc "Hey, what's g-"
-scene cynthkiss1 with hpunch
-"Cynthia kissing you before you can say another word."
-mc "......!?"
-scene storeroomblr
-show talknc
-show suprised
-c "I love you, [mc]."
-"You stand there with your mouth wide open."
-mc "......"
-show blushtalkac
-c "I said I love you, asshole."
-c "Say something."
-mc "I-I... love you too."
-c "Ugh... That's the least romantic thing you could've said."
-mc "I'm just trying to process what's happening-"
-show cynthkiss1 with fade
-"She kisses you again, pining you to the wall. Her hands pressed against the wall with your head in-between."
-hide cynthkiss1 with fade
-hide blushtalkac
-show talksc
-show talksadhappymc
-c "Thank you, [mc], for loving me."
-c "The real me."
-c "That night, You showed me that there are still people in this world who want me, you gave me a reason to stay in this world."
-mc "Wh-what are you saying?"
-c "Just forget it. It's not important anymore."
-show cynthkiss1 with fade
-pause
-hide cynthkiss1 with fade
-c "Who would've thought my first friend... would be my first lover."
-mc "Wait, I'm your first lover?"
-c "Yeah..."
-c "And..."
-hide talknc
-show blushtalkhc
-c "...That was my first kiss."
-mc "{i}I'm Cynthia's first kiss!?"
-c "......"
-mc "{i}Whoah, she's blushing."
-show talknc
-c "Anyway, I was wondering if we could go on a date."
-mc "A d-date?"
-c "Yeah. I'd like to know what it's like to go on a real date, for a change."
-mc "{i}This is going really fast."
-mc "Th-this is going really fast."
-show blushtalkac
-c "What? You want us to kiss like ten times and then go on a date."
-mc "N-no, I mean this all is so sudden."
-c "Ok. Do you want to go on a date with me or not!"
-mc "I-I do."
-show angryc
-c "Then why are you wining retard!"
-mc "{i}Sigh{/i} alright alright."
-mc " Where do you want to go?"
-show smilenc
-c "......"
-c "How about the café?"
-mc "{i}A shit, there goes my purse again."
-mc "Alright, when?"
-c "Anytime."
-c "And you are paying, by the way."
-if paycynth == 1:
-    c "I don't mind paying but I would really appreciate it if you could bring some money this time."
-    mc "Yeah, yeah, don't worry."
-else:
-    mc "Ok. Sure."
-c "Great, then I'm outta here."
-mc "Now? But the Academy's still not over."
-show talkwahcb
-c "Well, I'm not in the Academy anymore."
-mc "What do you mean you aren't in the Academy."
-c "I'm dropping out."
-mc "Oh... and the talk about you going crazy in the Academy has something to do with it?"
-c "Yup. I always hated being in this fucking place. Besides, I got the Guild to fall back to now. And I didn't want to pretend being this fake-ass popular girl anymore."
-c "Because I know there's someone who really loves me for being... well, me."
-mc "......"
-c "But damn, it felt so good punching Jamie."
-mc "What happened there?"
-c "He always keeps giving me these perverted looks. And just today, he groped my butt."
-c "That's where I lost it. I punched the fucker so hard; I knocked his teeth out. Hahaha!"
-mc "I guess he deserved it then."
-c "Of course he did."
-scene storeroomblr
-show talknc
-show smilemc
-c "......"
-c "It's kinda weird. Even though we're lovers now, I feel like nothings really changed between us."
-show talkwamc
-mc "Hehehe,. Yeah, me too."
-c "I think it's better that way. I don't like being too mushy anyway. Hehe."
-c "Alright, I'll see you later then?"
-mc "Yeah."
-hide talknc with easeoutright
-mc "{i}Wow."
-mc "{i}That really happened."
-mc "{i}Ok, I need to get ready for the date. So I'll have to collect a pack ton of silver."
-mc "{i}A date with Cynthia!"
-mc "{i}You finally did it, [mc]!"
-$ cynthkiss += 1
-jump academy
+    hide screen hud
+    scene academytalk
+    "As you walk in you notice that there's a huge commotion coming from some students."
+    "Student 1" "What the hell happened?"
+    "Student 2" "Cynthia knocked Jamie's teeth off."
+    "Student 1" "Wait, what?"
+    "Student 2" "Yeah."
+    "Student 3" "She even swore at me earlier, told me to fuck off. What's wrong with her?"
+    "Student 1" "Did she break up with anyone?"
+    "Student 2" "Was she with anyone to break up with?"
+    "The chatter continues as you continue walking towards your class."
+    mc "Whoa, I guess I must have missed one hell of a show. And avoided being roughed up."
+    "As you're walking, your eye catches something. It's Cynthia. She's poking her head out of the storage room and is gesturing you enter into the room with her."
+    mc "Uh... ok?"
+    "You slowly go into the storge room, making sure no one spots you."
+    mc "Hey, what's g-"
+    scene cynthkiss1 with hpunch
+    "Cynthia kissing you before you can say another word."
+    mc "......!?"
+    scene storeroomblr
+    show talknc
+    show suprised
+    c "I love you, [mc]."
+    "You stand there with your mouth wide open."
+    mc "......"
+    show blushtalkac
+    c "I said I love you, asshole."
+    c "Say something."
+    mc "I-I... love you too."
+    c "Ugh... That's the least romantic thing you could've said."
+    mc "I'm just trying to process what's happening-"
+    show cynthkiss1 with fade
+    "She kisses you again, pining you to the wall. Her hands pressed against the wall with your head in-between."
+    hide cynthkiss1 with fade
+    hide blushtalkac
+    show talksc
+    show talksadhappymc
+    c "Thank you, [mc], for loving me."
+    c "The real me."
+    c "That night, You showed me that there are still people in this world who want me, you gave me a reason to stay in this world."
+    mc "Wh-what are you saying?"
+    c "Just forget it. It's not important anymore."
+    show cynthkiss1 with fade
+    pause
+    hide cynthkiss1 with fade
+    c "Who would've thought my first friend... would be my first lover."
+    mc "Wait, I'm your first lover?"
+    c "Yeah..."
+    c "And..."
+    hide talknc
+    show blushtalkhc
+    c "...That was my first kiss."
+    mc "{i}I'm Cynthia's first kiss!?"
+    c "......"
+    mc "{i}Whoah, she's blushing."
+    show talknc
+    c "Anyway, I was wondering if we could go on a date."
+    mc "A d-date?"
+    c "Yeah. I'd like to know what it's like to go on a real date, for a change."
+    mc "{i}This is going really fast."
+    mc "Th-this is going really fast."
+    show blushtalkac
+    c "What? You want us to kiss like ten times and then go on a date."
+    mc "N-no, I mean this all is so sudden."
+    c "Ok. Do you want to go on a date with me or not!"
+    mc "I-I do."
+    show angryc
+    c "Then why are you wining retard!"
+    mc "{i}Sigh{/i} alright alright."
+    mc " Where do you want to go?"
+    show smilenc
+    c "......"
+    c "How about the café?"
+    mc "{i}A shit, there goes my purse again."
+    mc "Alright, when?"
+    c "Anytime."
+    c "And you are paying, by the way."
+    if paycynth == 1:
+        c "I don't mind paying, but I would really appreciate it if you could bring some money this time."
+        mc "Yeah, yeah, don't worry."
+    else:
+        mc "Ok. Sure."
+    c "Great, then I'm outta here."
+    mc "Now? But the Academy's still not over."
+    show talkwahcb
+    c "Well, I'm not in the Academy anymore."
+    mc "What do you mean you aren't in the Academy."
+    c "I'm dropping out."
+    mc "Oh... and the talk about you going crazy in the Academy has something to do with it?"
+    c "Yup. I always hated being in this fucking place. Besides, I got the Guild to fall back to now. And I didn't want to pretend being this fake-ass popular girl anymore."
+    c "Because I know there's someone who really loves me for being... well, me."
+    mc "......"
+    c "But damn, it felt so good punching Jamie."
+    mc "What happened there?"
+    c "He always keeps giving me these perverted looks. And just today, he groped my butt."
+    c "That's where I lost it. I punched the fucker so hard; I knocked his teeth out. Hahaha!"
+    mc "I guess he deserved it then."
+    c "Of course he did."
+    scene storeroomblr
+    show talknc
+    show smilemc
+    c "......"
+    c "It's kinda weird. Even though we're lovers now, I feel like nothings really changed between us."
+    show talkwamc
+    mc "Hehehe,. Yeah, me too."
+    c "I think it's better that way. I don't like being too mushy anyway. Hehe."
+    c "Alright, I'll see you later then?"
+    mc "Yeah."
+    hide talknc with easeoutright
+    mc "{i}Wow."
+    mc "{i}That really happened."
+    mc "{i}Ok, I need to get ready for the date. So I'll have to collect a pack ton of gold."
+    mc "{i}A date with Cynthia!"
+    mc "{i}You finally did it, [mc]!"
+    $ cynthkiss += 1
+    jump academy
 
 
 
@@ -3274,7 +3305,6 @@ label cynthdate:
     scene villageback with fade
     if theaguildjob == 1:
         c "I talked with Thea today."
-
         mc "{i}Shit!"
         c "She said you saved her from Yorkel."
         mc "Y-Yeah."
@@ -3296,7 +3326,7 @@ label cynthdate:
         c "I'm not."
         c "......"
         mc "Don't worry you're still my only girl."
-        c "God, how are you so cheesy."
+        c "Astylla, how are you so cheesy."
         c "......"
         c "But it did make feel a bit better"
         mc "See. Being cheesy always works."
@@ -3305,7 +3335,6 @@ label cynthdate:
     "The two of you arrive at the cafe."
     "You get seated."
     scene cynthiadate1 with fade
-
     "The waitress comes to your table."
     "Waitress" "Oh, glad to see the two of you here again."
     "Waitress" "What will you be having."
@@ -3367,7 +3396,7 @@ label cynthdate:
     c "Yeah, where is this going?"
     mc "Are you a... virgin?"
     scene cynthiadate3
-    c "Oh my god, [mc]! That's where this was going?"
+    c "Oh Astylla, [mc]! That's where this was going?"
     mc "Whaaat? I'm just curious."
     c "You're a damn pervert!"
     mc "Yes, yes , I am."
@@ -3479,7 +3508,6 @@ label cynthdate:
     mc "You can take those off."
     c "I-its better if I keep them on."
     mc "......"
-
     "You remove cynthias gloves, she doesn't resist."
     scene cynthsex21 with dissolve
     mc "C-Cynthia? Wh-What happened?"
@@ -3554,8 +3582,6 @@ label cynthdate:
             mc "Really?"
             c "Of course. It's essential for pretty girl like me."
             mc "Right."
-
-
         "Cum outside":
             scene cynthsexcumout with flash
             mc "Ahhhh!"
@@ -3584,7 +3610,6 @@ label cynthdate:
     scene cynthiaroom with fade
     "Cynthia gets up and hurrys to one of her desks. She takes out a bottle."
     "You recognise it imidiatly. It's Cynthia's special mix!"
-
     c "Drink up."
     mc "Will this work?"
     c "Only one way to find out."
@@ -3605,20 +3630,15 @@ label cynthdate:
     pause 0.5
     scene cynthiaroom
     "Each time you ejaculate you take another sip of Cynthia's magic elxir and keep continuing."
-
     show cynthiaroomsex2 with dissolve
     pause 0.8
     "Hours pass, the two of you have no idea of stoping."
     hide cynthiaroomsex2 with dissolve
-
     show cynthiaroomsex1 with dissolve
     pause 0.8
     c "Ahhh... Shit...!"
     c "I've never felt this fucking great!!!!"
-
     hide cynthiaroomsex1 with dissolve
-
-
     pause 0.3
     scene cynthiaroomn with dissolve
     show cynthiaroomsex3 with dissolve
@@ -3633,7 +3653,6 @@ label cynthdate:
     mc "It's empty."
     c "Ahh shit!"
     c "That was my last batch."
-
     "Cynthia walks up to her hammock and falls into it."
     c "Fuuuuck! that was crazy!"
     "You join her."
@@ -3646,13 +3665,11 @@ label cynthdate:
     c "I love you, [mc]."
     mc "..."
     mc "I love you too."
-
     scene black with fade
     "The two of you fall asleep."
     scene cynthiaroom with fade
     "You wake up next morning."
     show smilenc
-
     c "Hey you're up."
     show smilemc
     show talksadhappymc
@@ -3705,7 +3722,7 @@ label cynthdate:
         mc "Ah y-yeah."
         th "I'll be seeing you soon then."
         mc "Bye."
-        mc "{i}Thea. God what am I going to say to her."
+        mc "{i}Thea. Oh Astylla, what am I going to say to her?"
         mc "{i}This was your choice, [mc]. You'll just have to live with it."
     $ cynthdate += 1
     jump home

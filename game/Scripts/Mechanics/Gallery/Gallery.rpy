@@ -65,21 +65,47 @@ screen gallery():
             if persistent.studying == True:
                 gallery_items.append(GalleryItem("Chit chat with Gabe", ["studygabe1", "studygabe2"]))
 ####MISC STUFF
-            if persistent.peteStargazing == True:
-                gallery_items.append(GalleryItem("Watching the Stars", ["petestargaze"]))
             if persistent.bronzeParty == True:
                 gallery_items.append(GalleryItem("Promotion Party", ["bronzeparty"]))
-            if persistent.eveBath == True:
-                gallery_items.append(GalleryItem("Evelyn Bathing", ["evebathe1", "evebathe2"]))
+            if persistent.peteStargazing == True:
+                gallery_items.append(GalleryItem("Watching the Stars", ["petestargaze"]))
             if persistent.scenery == True:
                 gallery_items.append(GalleryItem("Randel", ["end"]))
             if persistent.yakina == True:
                 gallery_items.append(GalleryItem("Unknown Demon Girl", ["yakina"]))
-            if persistent.testDone == True:
-                gallery_items.append(GalleryItem("The Test", ["testgabe1"]))
+####LORI STUFF
+            if persistent.loriDayDreaming == True:
+                gallery_items.append(GalleryItem("Lori Daydreaming", ["loridaydreaming"]))
+            if persistent.loriEmbarassedPanic == True:
+                gallery_items.append(GalleryItem("Lori Panics", ["loripanic"]))
+            if persistent.loriDistant == True:
+                gallery_items.append(GalleryItem("Lori Flashbacks", ["loridistant"]))
+            if persistent.loriMadeCry == True:
+                gallery_items.append(GalleryItem("Lori Crying", ["loricry"]))
+            if persistent.loriReveal == True:
+                gallery_items.append(GalleryItem("Lori Reveals her Lab", ["lorireveal"]))
+            if persistent.loriQuesting == True:
+                gallery_items.append(GalleryItem("Lori Trap", ["loriquesttrap1", "loriquesttrap2", "loriquesttrap3"]))
+                gallery_items.append(GalleryItem("Dealing with a Demon Deer", ["loriquestdeer", "loriquestdeerdead", "loriquestgem", "lorigembeam"]))
+                gallery_items.append(GalleryItem("Drake Appears", ["loriquestdrake", "lorirun"]))
+                gallery_items.append(GalleryItem("Holding off the Drake", ["loriquestchasesword", "loriquestchasebow", "loriquestchasemagic"]))
+                gallery_items.append(GalleryItem("Lori Shoots", ["lorishoot"]))
+                gallery_items.append(GalleryItem("Lori Hugs", ["lorihug"]))
+                gallery_items.append(GalleryItem("Lori Kiss on the Cheek", ["lorikiss"]))
+            if persistent.loriDate == True:
+                gallery_items.append(GalleryItem("Lori Shows off her Dress", ["loridatedress"]))
+                gallery_items.append(GalleryItem("Lori Date pt.1", ["loridate1", "loridate2", "loridate3", "loridate4", "loridate5"]))
+            if persistent.loriFirstTime == True:
+                gallery_items.append(GalleryItem("Lori Bumps", ["lorispill1", "lorispill2"]))
+                gallery_items.append(GalleryItem("Lori's BJ", ["loriblowjob1", "loriblowjob2", "loriblowjob3"]))
+                gallery_items.append(GalleryItem("Lori Confession", ["loriconfess"]))
+                gallery_items.append(GalleryItem("Lori Serious Kiss", ["lorifinalkiss"]))
+                gallery_items.append(GalleryItem("Lori First Sex", ["lorisex1", "lorisex2", "lorisex4", "lorisexcum"]))
 ####GABE STUFF
             #if persistent.gabeBondage == True:
             #    gallery_items.append(GalleryItem("Tied Gabe", ["gabebond2"]))
+            if persistent.testDone == True:
+                gallery_items.append(GalleryItem("The Test", ["testgabe1"]))
             if persistent.gabeSleep == True:
                 gallery_items.append(GalleryItem("Sleeping Together", ["gabesleep1"]))
             if persistent.gabeFingering == True:
@@ -189,6 +215,9 @@ screen gallery():
                 gallery_items.append(GalleryItem("Making Love to Aerin", ["aerinsex1", "aerinsex2", "aerinsexfinal movie", "aerinsexcum"]))
             if persistent.helpAerin == True:
                 gallery_items.append(GalleryItem("Helping Aerin", ["highelfroom", "aerinworkhelp"]))
+####EVELYN STUFF
+            if persistent.eveBath == True:
+                gallery_items.append(GalleryItem("Evelyn Bathing", ["evebathe1", "evebathe2"]))
 ####ZENELITH STUFF
             if persistent.introZen == True:
                 gallery_items.append(GalleryItem("Zenelith on the Ground", ["zenelithdown"]))

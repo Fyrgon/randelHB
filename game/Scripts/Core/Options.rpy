@@ -26,7 +26,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.4.6"
+define config.version = "1.5.8"
 define patreonVersion = False
 default version = 99999
 

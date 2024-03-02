@@ -1,7 +1,5 @@
-screen qte1():
-
+screen duckQTE():
     vbox xalign 0.5 yalign 0.9:
-
         imagebutton:
 
             idle "duckbtn"
@@ -11,10 +9,10 @@ screen qte1():
     timer 1.0 action Jump("qtefail")
 
 label qtefail:
-    if qtesection == "liveqte1":
-        jump death
-    if qtesection == "taliyaQTE1":
+    if duckQTE == "cynthiaDQTE":
+        jump lostCynthiaDQTE
+    if duckQTE == "taliyaDQTE":
         jump gitGudIdiot
 
 label qtesuccess:
-    jump expression qtesection
+    jump expression duckQTE

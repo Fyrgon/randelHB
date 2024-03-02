@@ -8,19 +8,34 @@ label home:
             scene black with fade
     jump versionCheck
     label home2:
+    if easyMode:
+        $ money = 1000
     $ atHome = True
-    play music home
+    stop music fadeout 1
+    stop sound fadeout 1
     if time < 3:
+        play sound [ home ] loop volume 0.5 fadein 1
         scene homeday
-    if time == 3:
+        if time == 0:
+            play music homemorning
+        if time == 1:
+            play music homenoon
+        if time == 2:
+            play music homeafternoon
+    elif time == 3:
+        play sound [ home ] loop volume 0.5 fadein 1
+        play music homeevening
         scene homeevening
-    if time > 3:
-        play music night
+    else:
+        # $ time = 4
+        play music homenight
+        play sound [ night ] loop volume 0.5 fadein 1
         scene homenight
     hide screen hud
 
     call homeEvents
 
+label postMusic:
     if time < 3:
         $ timeName = "day"
     elif time == 3:
@@ -28,7 +43,7 @@ label home:
     else:
         $ timeName = "night"
     show screen interactivehome
-    show screen hud
+    call screen hud
     pause
 
 screen interactivehome():
@@ -48,7 +63,7 @@ screen interactivehome():
                 tooltip _("{color=#fff}Rescued Stranger")
         else:
             action Call("noOneHome")
-            tooltip _("{color=#fff}Door")
+            tooltip _("{color=#fff}Check who else is home")
     imagebutton:
         xalign 0.765
         yalign 0.403
@@ -101,29 +116,33 @@ screen interactivehome():
                 text tooltip
 
 
+
+
+
 label skippingTime:
     hide screen interactivehome
     if time > 3:
         jump sleeping
     else:
+        stop music fadeout 1
         hide screen hud
         show black with fade
-        pause 2
+        pause 0.5
         $ time += 1
         jump home
 
 label nameChange:
     hide screen interactivehome
-    $ mcn = renpy.input("Change name to")
+    $ mcn = renpy.input("Change name to...")
     "You name is now [mc]"
-    jump home
+    jump postMusic
 
 label eatingFishe:
     hide screen interactivehome
     mc "Mmh, salmon! My favorite."
     mc "Thanks, Uncle Pete."
     $ petefish = 0
-    jump home
+    jump postMusic
 
 label theaStuff:
     hide screen interactivehome
@@ -139,13 +158,17 @@ label theaStuff:
 
 label noOneHome:
     hide screen interactivehome
-    show text "{color=#000}No one else is home.":
-        align (.41, .39)
+    if time < 4:
+        show text "{color=#000}No one else is home.":
+            align (.41, .39)
+    else:
+        show text "{color=#fff}No one else is home.":
+            align (.41, .39)
     pause 1
     hide text with dissolve
-    jump home
+    jump postMusic
 
 label inventoryHome:
     hide screen interactivehome
     "You don't have anything in your closet."
-    jump home
+    jump postMusic

@@ -53,7 +53,7 @@ label GuildTalk:
                                 c "If you had been sleeping with some other bitch I'd whoop your ass and hers too!"
                                 show talksc
                                 c "But Thea... She's an angel."
-                                c "God this sucks!"
+                                c "Damn it, this sucks!"
                                 mc "I'm sorry."
                                 c "So... Are you going to break up with me?"
                                 mc "...Uhm, Are... you?"
@@ -115,7 +115,7 @@ label GuildTalk:
                                 if money < 30:
                                     mc "I should probably save up some money before going on a date with Cynthia."
                                     mc "How much was it last time?"
-                                    mc "Yeah, I think it was 30 silver."
+                                    mc "Yeah, I think it was 30 gold."
                                     jump guild
                                 jump cynthdate
                             "Pay Cynthia's debt" if paycynth == False and money >= 30:

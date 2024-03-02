@@ -126,7 +126,7 @@ label guild:
         mc "It all worked out then?"
         j "Yes."
         scene adgc5
-        j "Oh and [mc], I'm keeping my eye on the Guild members. I'll steer away all of your competition away from her."
+        j "Oh, and [mc], I'm keeping my eye on the Guild members. I'll steer away all of your competition away from her."
         mc "July!"
         scene adgc1
         j "Hehehe. I just can't help it. I love making you blush. Hihi."
@@ -252,43 +252,6 @@ label guild:
         mc "Yes! I reached level 5, finally! This means I can go on quests now. I'd better go check on the Quest Board."
 
     if icamping == 1 and sawcynth == 5:
-        hide screen hud
-        scene adgc1 with fade
-        j "Oh, [mc]! You're just in time!"
-        j "Have you and Cynthia met before? You both go to the Academy, right?"
-        "Cynthia stands with her teeth clenched into an annoying fake smile."
-        mc "Y-Yeah..."
-        j "Oh goodie, she is about to go out on a quest and I thought it would be safer if another recruit could join her!"
-        j "The quest is a touch too difficult for a single recruit. I'm honestly not sure how it got up there on the board in the first place! But there it is!"
-        j "So, what do you say?"
-        mc "Uhm... I'm not sur-"
-        j "C'mon, it would good for the both of you! You both need the experience and I need the quest off my board! Everybody wins!"
-        mc "Uhm... are you sure she is ok with that?"
-        j "Why wouldn't she be! You're ok with having a little help, aren't you, sweetie?"
-        c "Yeah, I'm ok! Actually, I would really appreciate it if [mc] could help me."
-        mc "{i}How does she do it? It's like she transforms into a totally different person..."
-        j "See? She said she would appreciate it!"
-        mc "Ok, then..."
-        j "Yay! Ok, it's settled then. Now, the two of you go talk it out and make some game plans. Remember, it's a tough quest, so do your best to work together!"
-        if time < 3:
-            scene agblr with fade
-        else:
-            scene agblrevening with fade
-        show normalc
-        show talkwanmc
-        mc "Ok so-"
-        show talkwancb
-        c "Do not speak a single word. Just come with me."
-        mc "What? Are w-"
-        c "Shut up. We are going now."
-        mc "......"
-        c "You have your sword, right?"
-        mc "......"
-        c "Hello? Do you have your sword or not?!"
-        mc "You said shut up."
-        c "UGH! Let's just get going already!"
-        "You pack up your camping gear just in case."
-        "The two of you leave the Guild."
         jump questcynth
 
 
@@ -326,7 +289,7 @@ label guild:
         show normalmc
         pause
         show normalcb
-        c "Oh my god... it's this guy again."
+        c "Oh Astylla... it's this guy again."
         show talkwancb
         c "Can you stop following me?"
         hide talkwancb
@@ -342,7 +305,7 @@ label guild:
         c "Oh no..."
         hide talkwancb
         show angry
-        mc "Hey! I joined the Guild way before you, ok!"
+        mc "Hey! I definitely joined the Guild way before you, ok!"
         show talkwahcb
         c "Oh, ok then, tough guy! What's your level?"
         mc "[level]"
@@ -358,8 +321,10 @@ label guild:
             mc "Wh-What level are you then?"
             c "The same as you."
             show talkwanmc
-            mc "Huh... B-But how?!"
-            c "It's called skill, loser. Bye now!"
+            mc "Huh... B-But how?! When did you even join the guild?!"
+            c "Three days ago."
+            mc "Wh- How?!"
+            c "It's called skill, loser. Bye~!"
         else:
             $ cynthknowmcbronze += 1
             c "A Bronze, aye? Not bad for a total loser. I guess it's true that you've been here a lot longer than me."
@@ -394,5 +359,5 @@ label guildMenu:
                 jump gquarters
             mc "I should probably visit them after noon when they aren't busy."
             jump guild
-        "Check the Quest Board":
+        "Check the Quest Board" if level >= 5:
             jump QuestBoard

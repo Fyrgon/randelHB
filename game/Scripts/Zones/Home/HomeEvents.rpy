@@ -2,16 +2,20 @@ define firstTimeThisSpecificEventShows_YupOnlyThisOneAndNotAnotherOne = True
 
 label homeEvents:
     if cynthtimer >= 3 and cynthquest6 == 0:
+        stop sound fadeout 3
         jump cynthquest6
 
-    if testtimer >= 3 and didtest == 0:
+    if testtimer >= 3 and testDone == False:
+        stop sound fadeout 3
         jump test
 
     if gabethea == 0 and gabeintro == 1 and theajob == 1 and time == 0:
+        stop sound fadeout 3
         jump theaxgabe
 
     if evetimer >= 1 and sawelfvillage == False:
-        jump evequeststart
+        stop sound fadeout 3
+        jump elfqueststart
 
     if punchtriss == 1:
         show worriedmc
@@ -48,6 +52,7 @@ label homeEvents:
         $ throwfishout = True
 
     if theajobtimer > 2 and theajob == 1:
+        stop sound fadeout 3
         jump theaworks
 
     if petesawthea == 1 and time == 0:
@@ -58,23 +63,27 @@ label homeEvents:
         mc "{i}Send this to Uncle Pete."
         "The bird flies away."
         $ petesawthea += 1
-        jump home
+        jump postMusic
 
     if  theadogfood == 1 and petesawthea == 0 and time == 0:
+        stop sound fadeout 3
         jump petemeeting
 
     if sanderevedinner == 1 and time == 4:
+        stop sound fadeout 3
         jump sanderevedinner
 
     if sanderpetedinner == 1 and time == 4:
+        stop sound fadeout 3
         jump sanderpetedinner
 
     if theadinner == 2 and time == 4:
+        stop sound fadeout 3
         jump theadinner
 
     if petesawthea == 2 and time == 4 and petedinner == 0:
+        stop sound fadeout 3
         jump petedinner
-
     return
 
 
@@ -85,6 +94,8 @@ label homeEvents:
 label sleeping:
     "Gotta sleep..."
     hide screen hud
+    stop music fadeout 1
+    stop sound fadeout 1
     show sleep with fade
     pause 1
     scene black
@@ -173,7 +184,7 @@ label sleeping:
             show talkhappymc
             mc "Thanks."
             play sound chime
-            $ renpy.notify("{color=#fff}You gained 20 silver.")
+            $ renpy.notify("{color=#fff}You gained 20 gold.")
             $ money += 20
             $ payday -= 7
     jump home

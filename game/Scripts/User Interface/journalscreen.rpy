@@ -33,7 +33,7 @@ screen hud():
         yalign 0.015
         idle "UI/map.webp"
         hover "UI/maph.webp"
-        action Jump("maplimbo")
+        action Hide("hud"), Jump("maplimbo")
         activate_sound "map.mp3"
         tooltip _("{color=#fff}Map")
 

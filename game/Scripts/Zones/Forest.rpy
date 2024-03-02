@@ -26,17 +26,13 @@ label forest:
         scene forest
     if cynthquest4 == 1 and  cynthquest5 == 0:
         jump cynthquest5
-
     if sawtriss == 1:
         jump trissq
-
     if sawmegan == 1:
         jump meganq
-
     if sawelfvillage >= 1 and sanderhigh == 0 and elfday+12 <= day:
         jump sanderHigh
-
-    if elfday+7 <= day and zenBegun == False and savedaerin == 1:
+    if elfday+7 <= day and zenBegun == False and bothpath >= 6 and killZen == False:
         jump ZenelithEncounter
 
     menu:
@@ -55,7 +51,7 @@ label forest:
             jump zenShack
 
         "Go to the Elf Village" if sawelfvillage == 1:
-            jump elfvillage
+            jump elfVillage
 
         "Outer Valley":
             if day >= 8 and sawjunglegirl == 0:
@@ -81,7 +77,7 @@ label forest:
                 "Look for Rosa Flowers" if knowrosa == 1 and rosa < 4:
                     if rosa == 0:
                         mc "Let's see if I can find some."
-                        "You search for a while but you are unable to find anything."
+                        "You search for a while, but you are unable to find anything."
                         mc "Nothing! I thought these weren't rare!"
                         mc "I should come back again."
                         $ rosa += 1
@@ -90,7 +86,7 @@ label forest:
 
                     if rosa == 1:
                         mc "Ok, let's see if we'll get lucky this time."
-                        "You search the forest but you still couldn't find the flower."
+                        "You search the forest, but you still couldn't find the flower."
                         "Disappointed, you decide to head back home. Just as you're about to leave, you see a little girl carrying a pink flower."
                         mc "Hey! Excuse me, can you stop for a second?"
                         "Girl" "What is it, mister?"
@@ -106,15 +102,15 @@ label forest:
                                 "Girl" "Hey! Give that back! *sob*"
                                 $ rosa += 3
                                 scene forest with fade
-                                mc "{i}Yes! Finally, I got the flower! I'm not proud of myself but still, I got it done."
+                                mc "{i}Yes! Finally, I got the flower! I'm not proud of myself, but still, I got it done."
                                 mc "{i}Now I have to use this on Eve. It should be just before the duel. I should wait till the duel happens. Only [evedueltimer] more days."
                                 $ time += 1
                                 $ rosa += 3
                                 jump forest
 
-                            "Trade for 50 silver" if money >= 50:
+                            "Trade for 50 gold" if money >= 50:
                                 mc "Oh, that's nice. But you see, I'm looking for a Rosa Flower as well. How about we trade?"
-                                mc "I'll give you 50 silver for that flower. You can get a better present for your mother with that money."
+                                mc "I'll give you 50 gold for that flower. You can get a better present for your mother with that money."
                                 "Girl" "Uhm..."
                                 mc "{i}Come on kid, take the money. Don't be stupid."
                                 "Girl" "Ok!"
@@ -137,7 +133,7 @@ label forest:
 
                     if rosa == 2:
                         mc "Please, at least this time..."
-                        "You search for the flower but you are still unable to find it."
+                        "You search for the flower, but you are still unable to find it."
                         mc "{i}Why, just why can't I find it? That little girl found it, why can't I?"
                         mc "{i}sigh... I'll come back tomorrow then."
                         $ time += 1
@@ -145,13 +141,15 @@ label forest:
                         jump forest
 
                     if rosa == 3:
-                        mc "Please god..."
+                        mc "Please Astylla..."
                         "You search the forest for a while. You decide to go deeper into the valley. After searching for hours, you find it near a lake."
                         mc "{i}Yes! I found it, finally!"
                         mc "{i}Now I have to use this on Eve. It should be just before the duel. I should wait till the duel happens. Only [evedueltimer] more days."
                         $ rosa += 1
                         $ time += 1
                         jump forest
+
+
 
                 "Hunt":
                     jump OuterValley

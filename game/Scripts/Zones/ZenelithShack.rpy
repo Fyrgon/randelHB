@@ -5,6 +5,7 @@ elif zenS >= 1:
     jump zenSlaveHouse
 
 
+
 label zenSlaveHouse:
 if zenS == 1:
     jump foodShenanigans
@@ -20,6 +21,10 @@ if zenS == 7:
     jump zenMenu
 if zenS >= 2:
     jump slaveMenu
+
+
+
+
 
 
 label slaveMenu:
@@ -97,7 +102,7 @@ if zenQ == 1 and toolz == 0:
         mc "Agh, I'm an idiot!"
         $ zenLeft = True
         mc "...Let's head back home."
-        $ time += 2
+        $ time += 1
     jump home
 if zenQ == 1 and toolz == 1:
     hide screen hud
@@ -111,7 +116,7 @@ if zenQ == 1 and toolz == 1:
         mc "Agh, I'm an idiot!"
         $ zenLeft = True
         mc "...Let's head back home."
-        $ time += 2
+        $ time += 1
         jump home
     jump zenelith2
 
@@ -167,7 +172,7 @@ menu:
         $ time += 1
         if analDone == False:
             $ analDone = True
-            jump zenFirstAnal
+            jump zenFirstAnalRom
         jump zenAnal
 
     "Go back":

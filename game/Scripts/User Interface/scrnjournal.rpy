@@ -1,7 +1,17 @@
+########## Note for Myself: #######################
+## This can be done in a different, better way.  ##
+## By adding a variable for when quests are      ##
+## finished, you can put the tips for each quest ##
+## in a single if statement tree, instead of     ##
+## multiple different if statements — which      ##
+## repeat endlessly "X's Storyline"              ##
+###################################################
+
+
 screen screenjournal:
     modal True
     add "images/journalscrn.webp"
-    vbox ymaximum 0.8 xalign 0.8 yalign 0.2 xsize 0.32 xanchor 0.8 yanchor 0:
+    vbox ymaximum 0.8 xalign 0.8 yalign 0.1 xsize 0.32 xanchor 0.8 yanchor 0:
         ## Storyline 1
         if q1 == 0:
             text "{b}Guild Storyline{/b}"
@@ -39,25 +49,30 @@ screen screenjournal:
 
 
 
-
-        if level >= 5 and icamping == 0:
-            text "{b}Advancing in the Guild{/b}"
-            text "> Now that I can go on quests, I should buy some camping gear."
         if level < 10:
             text "{b}Advancing in the Guild{/b}"
-            text "> I should level up more in the Guild."
-        if level >= 10 and party == 1 and sawtriss == 0:
-            text "{b}Advancing in the Guild{/b}"
-            text "> I should visit the Guild."
-        if party == 1 and showpetebadge == 0:
-            text "{b}Advancing in the Guild{/b}"
-            text "> I'm a Bronze-Rank Adventurer now! I should go and tell Uncle Pete the good news."
-        if level >= 10 and party == 1 and sawjuly == 1:
-            text "{b}July's Storyline{/b}"
-            text "> July is hiding something. I should sneak into the Guild at night and see what's going on."
-        if level >= 10 and party == 1 and sawjuly == 2 and sawjuly < 4:
-            text "{b}July's Storyline{/b}"
-            text "> I should check on July and see what's really going on."
+            text "> I want to reach Bronze-Rank in the guild..."
+            text "> Better start leveling up."
+        if level >= 5:
+            if icamping == 0:
+                text "{b}Advancing in the Guild{/b}"
+                text "> Now that I can go on quests, I should buy some camping gear."
+            if level >= 10:
+                if party == 0:
+                    text "{b}Advancing in the Guild{/b}"
+                    text "> Now that I've reached level 10, I can become a Bronze-Rank adventurer!"
+                if party == 1 and showpetebadge == 0:
+                    text "{b}Advancing in the Guild{/b}"
+                    text "> I'm a Bronze-Rank Adventurer now! I should go and tell Uncle Pete the good news."
+                if party == 1 and sawtriss == 0:
+                    text "{b}Advancing in the Guild{/b}"
+                    text "> I should visit the Guild."
+                if party == 1 and sawjuly == 1:
+                    text "{b}July's Storyline{/b}"
+                    text "> July is hiding something. I should sneak into the Guild at night and see what's going on."
+                if party == 1 and sawjuly == 2 and sawjuly < 4:
+                    text "{b}July's Storyline{/b}"
+                    text "> I should check on July and see what's really going on."
 
 
 
@@ -95,7 +110,7 @@ screen screenjournal:
             text "{b}Eve's Storyline{/b}"
             text "> I should probably talk to Eve if I want to go on a quest with them."
         #Q1pre
-        if savedaerin == 1 and evemillyquest == 0:
+        if bothpath > 6 and evemillyquest == 0:
             text "{b}Eve's Storyline{/b}"
             text "> I should go see how Eve's doing in her quarters."
         #Q1t-Q1
@@ -119,6 +134,44 @@ screen screenjournal:
 
 
 
+        if loriFunValue > 0 and loriDone == False and loriDropped == False:
+            text "{b}Lori's Storyline{/b}"
+            if loriEventValue < 4:
+                text "> Keep studying with Lori."
+            if loriEventValue == 4:
+                if askedAboutLori == False:
+                    text "> I could ask around and find out what's up with Lori..."
+                    text "> Even if I don't, I have to apologize."
+                else:
+                    text "> Now that I know about her father I understand..."
+                    text "> Let's go apologize."
+            if loriEventValue == 5:
+                text "> She likes adventuring so much... What if I take her on a quest?"
+                text "> Let's go ask her."
+            if loriEventValue == 6:
+                text "> Let's ask Gabe if she can take care of the library."
+            if loriEventValue == 7:
+                text "> Now, when I'm ready, I can take Lori on a quest."
+                text "> I should definitely go before it's afternoon, though..."
+            if loriEventValue == 8:
+                text "> After what happened the other day... Lori definitely likes me."
+                text "> I should do the right thing and go talk to her."
+            if loriEventValue == 9:
+                if loriDateDate > day:
+                    text "> Tomorrow afternoon I need to be at the market."
+                elif loriDateDate == day and time < 2:
+                    text "> This afternoon I've got my date with Lori..."
+                    text "> Let's make sure I show up at the market."
+                elif loriDateDate == day and time == 2:
+                    text "> I need to be quick and get to the market or I'll miss my date!"
+                else:
+                    text "> ...I've missed the date with Lori."
+            if loriEventValue == 10:
+                text "> I wonder..."
+                text "> ...Will she tell me her true feelings if I go visit her again?"
+
+
+
 
         if day >= 5 and gabee1 == 0:
             text "{b}Gabe's Storyline{/b}"
@@ -129,16 +182,16 @@ screen screenjournal:
         if gabee1 == 2:
             text "{b}Gabe's Storyline{/b}"
             text "> I couldn't find a book in the Library. Lori told me to ask Boris."
-        if gabee1 == 3 and studygabe2 == 0:
+        if gabee1 == 3 and didtest == False:
             text "{b}Gabe's Storyline{/b}"
             text "> I should study the books and go to Gabe's house after noon."
-        if studygabe2 == 1 and didtest == 0:
+        if didtest == True and testDone == False:
             text "{b}Gabe's Storyline{/b}"
             text "> I should wait until the test."
-        if didtest == 1 and faila == 0 and level < 10:
+        if testDone == True and level < 10:
             text "{b}Gabe's Storyline{/b}"
             text "> I should focus on levelling up in the Guild."
-        if gabe2 == 1 and level >= 10 and gabequest2 == 0:
+        if testDone == True and level >= 10 and gabequest2 == 0:
             text "{b}Gabe's Storyline{/b}"
             text "> I think I saw a new quest on the Questboard."
         if gabequest2 == 1 and gabequest3 == 0:
@@ -156,9 +209,7 @@ screen screenjournal:
         if gabequest2 >= 1 and gabequest3 == 0:
             text "{b}???'s Storyline{/b}"
             text "> Go to the Academy."
-        if  sanderquest == 0:
-            text "{b}Gabe's Storyline{/b}"
-            text "> I should complete Sander's Storyline first."
+
 
 
 
@@ -295,7 +346,7 @@ screen screenjournal:
         if dayTQ5 == day+1:
             text "{b}Taliya's Storyline{/b}"
             text "> I have got to go to the Market tomorrow morning."
-        if dayTQ5 == day and time == 0:
+        if dayTQ5 >= day and time == 0 and TaliyaQ == 5:
             text "{b}Taliya's Storyline{/b}"
             text "> I need to go to the Market or Taliya will go without me."
         if TaliyaQ == 6 and Taliya6Talk == False:

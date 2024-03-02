@@ -7,10 +7,10 @@ if time == 4 and theagotjob == 1 and TheaMolest == True and theanight == False:
     mc "{i}......"
     mc "{i}A beautiful log."
     mc "{i}Hah..."
-    mc "{i}No, what the hell am I thinking? I shouldn't perv on her."
+    mc "{i}No, what the hell am I thinking? I shouldn't a perv."
     "..."
     "......"
-    "{i}Or should I?"
+    "{i}Or should you?"
     menu:
         "No.":
             mc "{i}No! [mc], you're better than this! You're not a sick pervert who molests innocent girls at night!"
@@ -61,7 +61,7 @@ menu:
                 mc "Nah, I'm fine. It might just heal itself."
                 th "Wait, I think I have some herbs for this. I plucked some earlier to make some soup. There might be some left."
                 th "I'll go check, wait here."
-                "Thea runs to the kitchen and after a while, she comes back with some grinded leaves."
+                "Thea runs to the kitchen, and after a while, she comes back with some grinded leaves."
                 th "We're in luck! There were some herbs left. Now, stay still."
                 show black with fade
                 "Thea carefully applies the medicine around your black eye."
@@ -190,7 +190,7 @@ menu:
             jump home
         "Dinner with Sander and Eve" if time == 0 and petedinner == 1 and sequest1 == 1 and sanderevedinner < 1:
             if money < 50:
-                mc "{i}Thea said she would need 50 silver. I'll have to get that first."
+                mc "{i}Thea said she would need 50 gold. I'll have to get that first."
             $ money -= 50
             mc "Here Thea, the money for tonight."
             th "Ah yes, thank you. I'll buy everything on my way home from work."
@@ -210,7 +210,7 @@ menu:
             jump home
         "Dinner with Sander and Pete" if sanderpetedinner == 0  and time ==0 and sanderevedinner == 2 and showpetebadge == 1:
             if money < 50:
-                mc "{i}I still need 50 silver."
+                mc "{i}I still need 50 gold."
                 jump home
             mc "Here Thea, the money for tonight."
             th "Ah yes, thank you. Who are we inviting today?"
@@ -225,6 +225,8 @@ menu:
             $ sanderpetedinner += 1
             "The bird flies away."
             jump home
+
+
 
 
 label theaTalkHome:
@@ -253,6 +255,18 @@ menu:
         mc "See you later then!"
         th "Bye, [mc]."
         jump home
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 label theanight:

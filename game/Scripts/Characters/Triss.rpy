@@ -54,7 +54,7 @@ label trissTalk:
         mc "That doesn't surprise or convince me."
         tr "You'll want it sooner or later, you'll see."
         mc "We'll see."
-        tr "Nice talking to you, [mc] but I've got a lot of beauty sleep to catch up on."
+        tr "Nice talking to you, [mc], but I've got a lot of beauty sleep to catch up on."
         tr "Byeeee!"
         show talkwamc
         hide talkwanmc

@@ -7,7 +7,7 @@ default degradation = 0
 default analDone = False
 default endZenFeed = False
 default endZenUse = False
-default endZenPusnih = False
+default endZenPusnish = False
 default endZenBathe = False
 
 
@@ -68,8 +68,8 @@ menu:
                 jump zenMenuC
             "Anal" if (endZenFeed == True and endZenUse == True and endZenPunish == True and endZenBathe == True) or  analDone == True:
                 if analDone == False:
-                    jump zFirstAnal
-                call zAnal from _call_zAnal_slave_first
+                    jump zenFirstAnalSla
+                call zAnal from _call_zAnal
                 call ItsFoodOrNothing from _call_ItsFoodOrNothing_4
                 jump zenMenuC
     "Use":
@@ -88,7 +88,7 @@ menu:
                 call zSex from _call_zSex_1
                 jump zenMenuC
             "Anal" if analDone == True:
-                call zAnal from _call_zAnal_slave
+                call zAnal from _call_zAnal_1
                 jump zenMenuC
     "Punish":
         $ endZenPunish = True
@@ -109,6 +109,20 @@ menu:
         jump zBathing
     #"Toilet" if watersports == True:
     #    ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 label zGrope:
 mc @smirkt "Good. Take off your top."
@@ -142,8 +156,6 @@ menu:
         zn "S-Shthop~! Ah~!"
         show znboobmouth with vpunch
         zn "N-Not like th- AH~!"
-        scene znboobgrope
-        show znboobfing with vpunch
         mc "Heheh... You're all red.{p}Fine, this is all for today."
         scene znboobnude
         show znboobshy
@@ -177,7 +189,7 @@ show znfinger1
 mc "Would you look at that? Already wet."
 zn "M-Master..."
 mc "Yes, slut?"
-"You don't give her time to reply, you start moving your fingers inside her."
+"You don't give her time to reply that you start moving your fingers again."
 show zenfingering1
 zn "Mnh~ K-Keep going!"
 mc "I shall."
@@ -217,10 +229,10 @@ scene zenbj with dissolve
 pause 1
 mc "{i}Ahh... This feels amazing... So wet and hot..."
 mc "You're doing a great job taking it, toy. Keep going just like this..."
-mc "{i}Sure, she still looks like she wouldn't mind killing me but... Right now, she's taking my dick and she's not complaining, so it's all good."
+mc "{i}Sure, she still looks like she wouldn't mind killing me, but... Right now, she's taking my dick and she's not complaining, so it's all good."
 scene zenbj with dissolve
 pause 5
-mc "{i}God, this is so good..."
+mc "{i}Fuck, this is so good..."
 scene zenbj with dissolve
 pause 1
 mc "{i}I-I might..."
@@ -254,7 +266,7 @@ zn "Mnh~!"
 scene zenpress with dissolve
 pause 2
 zn "Ahh~!"
-mc "{i}God— She's so tight!"
+mc "{i}Fuck— She's so tight!"
 scene zenpress with dissolve
 pause 1.7
 zn "Ngh~! M-Master I-I'm...!"
@@ -298,7 +310,7 @@ scene znanalbasemc with dissolve
 mc "I will."
 show znanalanim with vpunch
 "You slip your manhood inside of her ass, immediately starting to thrust."
-zn "OH GOD~! YES!"
+zn "OH FUCK~! YES!"
 "You can feel her shiver with pleasure with each thrust, her lewd pants and, every once in a while, you hear her let out a satisfied giggle."
 scene znanalanim with vpunch
 zn "Fuck... me... Harder~!"
@@ -439,14 +451,14 @@ jump zenMenuC
 
 label zBathing:
 scene zenelithshack with fade
-"The two of you get out of the house and you take Zenelith to the lake. Her eyes sparkle when she sees the water but as soon as she remembers she needs to undress in front of you she sulks."
+"The two of you get out of the house and you take Zenelith to the lake. Her eyes sparkle when she sees the water, but as soon as she remembers she needs to undress in front of you she sulks."
 mc "Have a nice bath."
 zn "..."
 "Zenelith strips and gets into the water."
 scene znbath1
 menu:
     "Say nothing":
-        "Zenelith washes herself thoroughly and, when she's done, she gets out of the water. You order her to wait until she's dry before putting back her clothes. At first, she wants to protest but seems to decide not to."
+        "Zenelith washes herself thoroughly and, when she's done, she gets out of the water. You order her to wait until she's dry before putting back her clothes. At first, she wants to protest, but seems to decide not to."
         "Then when she's finally dry and dressed again you decide to go back."
         $ addiction += 1
     "Degrade her":
@@ -462,6 +474,6 @@ menu:
 $ time += 1
 if time > 3:
     "You take Zenelith back to the shack, then you realize how late it already is."
-    mc "{i}Oh god, better get home before it's dark."
+    mc "{i}Oh shit, better get home before it's dark."
     jump home
 jump zenMenuC

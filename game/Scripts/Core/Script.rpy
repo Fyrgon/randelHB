@@ -10,12 +10,14 @@
     play sound bunis
     pause 4
     stop sound fadeout 1.2
-    scene rinmakesgames with fade
+    scene splashrin with fade
     play music seagulls
     pause 4
     stop music fadeout 3.0
     scene splashwarning with fade
     pause 10
+    scene splashpatrons with fade
+    pause 5
     scene main_menu with fade
     return
 
@@ -32,7 +34,7 @@ label start:
     pause 4
     hide text with dissolve
     pause 1
-    show text "{fi}{color=#fff}Certain choices you make can lead to character deaths which will completely terminate their quest line.{/color}{/fi}" with dissolve
+    show text "{fi}{color=#fff}Certain choices you make can lead to character deaths which will completely terminate their stories.{/color}{/fi}" with dissolve
     pause 5
     hide text with dissolve
     show text "{fi}{color=#fff}Choose wisely.{/color}{/fi}" with dissolve
@@ -43,31 +45,46 @@ label start:
     window hide
     pause 2
     hide text with dissolve
-    scene mcsml with dissolve
-    pause 5
-    scene jumpscare1
+    scene intro1 with dissolve
     pause 2
-    play sound chime
     $ renpy.notify ("{color=#fff}Left click to go forward.")
+    he "Huff..."
+    window hide
+    pause 2
+    scene intro2 with fade
+    pause 1
     he "We need to go!"
-    pause 3
+    window hide
+    scene intro2 with Fade(0.7, 0.2, 1.5)
+    pause 1
     he "They're coming!"
     play sound campfire
-    pause 2
-    scene talkdream
-    he "We need to go! NOW!"
+    scene black with fade
+    show text "{color=#fff}{i}The smell of smoke fills your nostrils.{/color}" with dissolve
+    pause 2.5
+    hide text with dissolve
+    scene intro2 with dissolve
+    he "We need to go!"
+    scene intro2 with flash
+    he "NOW!"
     window hide
     pause 1
+    play voice crash
+    scene intro3 with flash
     he "MOM! DAD!"
-    play sound bamintro2
-    $renpy.pause(delay = 2.25, hard = True)
-    stop music
-    $renpy.pause(delay = 0.3, hard = True)
-    show animation1
-    $renpy.pause(delay = 2.4, hard = True)
-    scene jumpscare5
+    window hide
+    scene black with flash
+    play music horror fadein 2
+    scene intro4 with Fade(0.1, 1.0, 2.5)
+    pause 2
+    scene intro5 with fade
+    pause 2
+    scene intro6 with Fade(0.5, 0.1, 4)
+    pause 2
+    stop music fadeout 2
     scene black with flash
     he "{i}Ugh..."
+    stop sound
     play music home fadein 1
     pause 0.5
     scene black with flash
@@ -80,7 +97,7 @@ label start:
     he "{i}Wait... the sun is already up!"
     scene wakeup1
     he "{i}Damn it! I've overslept!"
-    he "{i}God... looks like I'm gonna be late on the first day of Academy."
+    he "{i}Astylla be cursed... looks like I'm gonna be late on the first day of Academy."
     show text "{color=#fff}You quickly get up and get changed.{/color}" at truecenter with dissolve
     pause 3
     hide text with dissolve
@@ -114,7 +131,7 @@ label out1:
     u "{i}Pant... Pant..."
     show suprised
     show sadtalkuncle
-    u "Whew... Thank god your still here."
+    u "Whew... Thank Astylla your still here."
     show unclenormal
     hide suprised
     hide lookdownsupmc
@@ -135,23 +152,22 @@ label out1:
     show uncletalk
     u "Then I want you to have this."
     scene sword with fade
-    # We need a new sword CG
     he "What?! Really?"
     u "Of course. It's my old sword."
     he "Wow... Uncle, I don't know what to say... are you sure?"
     u "Yeah. An old fisherman like me has no use for it now."
+    scene villageback with fade
+    show smilemc
+    show uncletalk
     u "Oh, and take these as well. You wanted to join the Adventurers' Guild, didn't you?"
     $ money += 30
-    $ renpy.notify("{color=#FFBB00}You receive 30 silver coins")
+    $ renpy.notify("{color=#FFBB00}You receive 30 gold coins")
     menu:
         "Thank you so much, Uncle":
             scene villageback
             show unclesmilet
             show talksadhappymc
             he "Thank you so much, Uncle."
-            show screen notice
-            pause 2
-            hide screen notice
             $ unclerel += 10
             show uncletalk
             show normalmc
@@ -187,9 +203,6 @@ label out1:
             "Well, whatever give it here. I'm late."
             $ unclerel -= 10
             show saduncle
-            show screen notice2
-            pause 2
-            hide screen notice2
             pause 0.5
             hide saduncle
     show normalmc
@@ -254,7 +267,7 @@ label out1:
     scene academy with fade
     show normalmc with easeinright
     if mcBreakfast == True:
-        he "{i}God- The first period is about to start!"
+        he "{i}Damn it- The first period is about to start!"
     if mcBreakfast == False:
         he "{i}I made it. It looks like I'm still early."
     he "{i}Hmm... It looks bigger from the outside..."
@@ -424,11 +437,9 @@ label out1:
             he "You look kinda cute with the hoodie."
             $ gabeLooksCute = True
             show cutegabe
-            g "......"
-            g "It's not supposed to look cute."
-            show screen notice
-            pause 2
-            hide screen notice
+            window hide
+            pause 1.5
+            g "...It's not supposed to look cute."
             show worriedblushdgabe
             show talkwamc
             he "Oooh, I see."
@@ -649,15 +660,15 @@ label out1:
                 $ gabeSandwich = True
                 he "Yes please."
                 g "Well, you sure haven't changed, you dork."
-                "She hands you the sandwich and you start eating it"
-                he "Wow, this *munch* is good... Did you make it?"
+                "She hands you the sandwich and you start eating it."
+                he "Wow, this is good... Did you make it?"
                 g "Yeah."
                 he "I didn't know you were such a good cook!"
                 g "Making a sandwich isn't actually considered cooking, but I'll take the compliment."
                 he "It's way better than the ones Uncle Pete used to make..."
                 g "Heheh, thanks."
                 $ gaberel += 5
-            "Grab the sandwich but don't say thanks.":
+            "Grab the sandwich but don't say thanks":
                 $ gabeSandwich = True
                 g "Wh- You're welcome."
                 he "{i}Nom nom..."
@@ -675,7 +686,7 @@ label out1:
     pause 0.4
     show smilemc
     hide normalgabe with easeoutright
-    "{i}Gabe's really changed a lot. It was really nice talking to her after all this time."
+    he "{i}Gabe's really changed a lot. It was really nice talking to her after all this time."
     pause 0.2
     show suprised
     "{color=#fff}Groundskeeper" "Hey, lad, wait up!"
@@ -720,8 +731,8 @@ label out1:
     he "{i}There it is again."
     hide suprised
     show thinkmc
-    "{i}It sounds like someone's sleeping."
-    "{i}It's coming from one of these lockers."
+    he "{i}It sounds like someone's sleeping."
+    he "{i}It's coming from one of these lockers."
     scene sleepmclose with fade
     "{color=#EFC667}Unknown voice" "{i}ZZZZ......"
     he "There's someone inside."
@@ -881,9 +892,6 @@ label mage2:
             hide plsm
             show angry
             mc "Ok, fine!"
-            show screen notice
-            pause 2
-            hide screen notice
             hide angry
             show angrynmc
             show teethecm
@@ -1070,15 +1078,15 @@ label class1:
                     mc "{i}Might as well look at Cynthia again."
                     "You slowly look at Cynthia from the corner of your eye so that Gabe doesn't notice."
                     scene stare
-                    mc "She looks so pretty..."
+                    mc "{i}She looks gorgeous..."
                     scene stare
                     pause
-                    mc "Like... An... Angel..."
+                    mc "{i}Like... An... Angel..."
                     scene stare1 with dissolve
-                    mc "An...gel..."
+                    mc "{i}An...gel..."
                     scene black with dissolve
                     pause
-                    g "{size=-5}[mc], wake up! Goddammit, [mc]! Wake up!"
+                    g "{size=-5}[mc], wake up! Damn it, [mc]! Wake up!"
                     "You hear Gabe whisper harshly as she nudges you with her elbow."
                     scene lecturetalk with vpunch
                     "You automatically stand up."
@@ -1330,12 +1338,12 @@ label mageclass:
     "{color=#fff}Student 1" "Yeah, man, they've seen her around town these past few days..."
     "{color=#fff}Student 2" "Will she teach us how to defeat a minotaur single-handedly?"
     "{color=#fff}Student 1" "Who cares about that! I wanna see her without armor on-"
-    show normalt with easeinright
+    show tarm normal with easeinright
     "A woman in armor marches in front of the students."
-    show aten
+    show tarm angryt
     "{color=#DD8E8B}Woman in armor" "Attention students!"
-    hide aten
-    show talkt
+    hide tarm angryt
+    show tarm talk
     t "My name is Taliya Bridges. As you may know, I am here to train all of you new recruits."
     t "Because Randel is one of the closest towns to Hern, we need as many soldiers from this town as possible."
     t "That is why I personally came to Randel to make sure each one of you will be trained well enough to defend Astylla."
@@ -1478,7 +1486,7 @@ label mageclass:
     mc "{i}...Is she asleep?"
     mc "Uhm..."
     scene adgc2 with vpunch
-    j "Yes...? What brings you to the Adventurers' Guild?"
+    j "Greetings. What brings you to the Adventurers' Guild?"
     mc "{i}Oh shit, she scared me."
     mc "Oh, uhm, I thought tha-"
     j "I was asleep? ...Yeah, I get that a lot... My eyes are just really tiny. Hehehehe."
@@ -1506,7 +1514,7 @@ label mageclass:
     show mf with dissolve
     j "If you slay any boars, please bring them to the Guild."
     mc "Will I get paid?"
-    j "Yes... 5 silver per boar until you become a Bronze Adventurer, then you'll get 20 silver per boar."
+    j "Yes... 5 gold per boar until you become a Bronze Adventurer, then you'll get 10 gold per boar."
     mc "Nice."
     j "And here's your EXP Charm."
     mc "Uhh... What does it do?"
@@ -1605,7 +1613,7 @@ label qg:
     show talksadhappymc
     mc "...Yeah."
     show talkhl
-    l "Really?! Oh my god, I- ...I mean, {b}we{/b} rarely get any actual readers here!"
+    l "Really?! Astylla be blessed, I- ...I mean, {b}we{/b} rarely get any actual readers here!"
     hide talkhl
     show talkhsl
     l "Sorry for being harsh... Most people come here just to fool around."
@@ -1660,17 +1668,20 @@ label qg:
     mc "It's ok. I'll come back tomorrow then."
     hide talkhappymc
     show talkhsl
-    l "By the way... [mc], are you a student at the Academy?"
+    l "By the way... [mc], you seem pretty young. Are you studying at the Academy?"
     hide talkhsl
-    mc "Yeah."
+    mc "Yeah, I am."
     show talkhsl
-    l "If you have any trouble with your studies, feel free to ask... I'll be glad to help."
+    l "Well... if you have any trouble with Astyllian, feel free to ask any help. I like to think I'm a decent teacher."
     hide talkhsl
     show talksadhappymc
-    mc "Really? Thanks, Lori, I really appreciate that."
+    if flirtingWithLori == True:
+        mc "Oh, I'm sure you're a great teacher. I'll make sure to come as often as I can."
+    else:
+        mc "Really? Thanks, Lori, I really appreciate that. I'll make sure to come then."
     hide talksadhappymc
     show talkhsl
-    l "No problem! I like helping others, y'know... and it gets really boring sitting in here all day."
+    l "I'll be glad to have you around, y'know... and it gets really boring sitting in here all day."
     hide talkhsl
     show talkhappymc
     mc "Heh, don't worry, I'll be back."
@@ -1687,34 +1698,32 @@ label qg:
     scene black with fade
     scene homenight with dissolve
     pause 1
-    show normalmc
     mc "{i}Finally, I'm home. That was one hell of a day."
     mc "{i}Now I can jump into my bed!"
     "{i}Knock knock knock"
-    show thinkmc
     mc "{i}Ugh, who is it this late?"
-    scene ut1 with fade
+    show prot questiont with easeinright
     mc "Hello? Who's there?"
     u "Open up, [mc], it's me."
     mc "Oh, Uncle Pete, wait a sec..."
-    scene ut2 with dissolve
+    scene introend1 with Fade(0.7, 0.5, 1.5)
     u "Hey, kid... I was just passing by, so I came for a quick chat."
-    scene ut3 with dissolve
+    scene introend2 with dissolve
     u "And I brought fish."
-    scene ut2 with dissolve
+    scene introend1 with dissolve
     $ petefish += 1
     mc "Thanks, Uncle Pete, why don't you come in?"
     u "No, no. I just came for a quick visit and it's already late. How was your first day?"
     mc "It was cool. A bit hectic, but alright... and I saw Gabrial."
     mc "She's changed a lot since I last saw her."
-    scene utsmirk with dissolve
+    scene introend5 with dissolve
     pause 2
     mc "What?"
     u "She's grown a lot, hasn't she?"
     mc "Yeah?"
     u "...Mh."
     mc "Wait... again!? Don't you ever get tired of the same joke, uncle?"
-    scene ut2 with dissolve
+    scene introend1 with dissolve
     u "Hahahahaha... I sure don't get tired seeing your face blush every time."
     mc "There's nothing like that, we're just friends, ok!?"
     u "I get it, I get it, I won't bring it up again... Haha."
@@ -1733,10 +1742,10 @@ label qg:
     mc "Yeah, but this time I think they said something."
     u "What did they say?"
     mc "It didn't make any sense... It kinda sounded like..."
-    scene ut4
+    scene introend3 with dissolve
     mc "\"...You are not our son.\""
     mc "I don't know what it means."
-    scene ut2
+    scene introend4
     u "It's probably nothing. Dreams usually don't make much sense... I've had a lot of weird dreams myself."
     u "Don't worry about it too much, kid."
     mc "Yeah, but I keep seeing it again, and again..."
@@ -1747,7 +1756,8 @@ label qg:
     u "...Sleep early. See you, kid."
     mc "Bye, Uncle Pete! Same goes for you... It's too late to go fishing, you know?"
     u "Hah, smartass."
-    scene ut1 with dissolve
+    scene homenight with dissolve
+    "Uncle Pete leaves and you're alone once again."
     mc "{i}Anyway, he's right. I better go to bed."
     scene sleep with fade
     mc "Ahh... I've missed you, bed."
@@ -1755,15 +1765,7 @@ label qg:
     hide screen skipintro with dissolve
     scene black with fade
     pause 1
-    #show text "{color=#fff}Would you like to enable cheats?"
-    #pause 2
-    #hide text
-    #menu:
-    #    "No (Recommended for first time players)":
-    #        he "No cheats for me."
-    #    "Yes (Recommended for players who are coming back)":
-    #        he "No grinding for me."
-    #        $ easyMode = True
+    call easyMode
     #show text "{color=#fff}Would you like to enable monogamy?"
     #pause
     #show text "{color=#fff}This options only blocks you from having a specific polygamorous relationship, you can still do multiple routes at once."
@@ -1788,17 +1790,25 @@ label qg:
     pause 25
     scene tutorial5 with dissolve
     pause 20
-    scene tutorial6 with dissolve
-    pause 20
     scene tutorial7 with fade
     pause 10
     jump home
 
 
 
-
-
-
+label easyMode:
+    show text "{color=#fff}Would you like to enable {b}Easy Mode?{/b}\nThis will give you infinite money, half the xp required to level up,\n and will remove options that lead to bad endings.\n{i}This will make the game feel much more linear, so we don't recommend it." with dissolve
+    pause 7.5
+    hide text with dissolve
+    menu:
+        "Yes":
+            he "No grinding for me."
+            $ easyMode = True
+            $ level = 2
+        "No (Recommended)":
+            he "No cheats for me."
+            return
+    return
 
 
 
@@ -1847,13 +1857,5 @@ if choseName == False:
             $ mcn = "Robin"
     $ choseName = True
     pause 1
-#show text "{color=#fff}Would you like to enable cheats?"
-#pause 1
-#hide text
-#menu:
-#        "No":
-#            he "No cheats for me."
-#        "Yes":
-#            he "No grinding for me."
-#            $ easyMode = True
+call easyMode
 jump home

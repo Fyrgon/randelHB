@@ -29,9 +29,9 @@ label gabehouse:
         mc "I'm ready."
         "The both of you go to your normal positions."
         jump gabeQuestions1
-    if gabee1 >= 1 and studygabe1 == 1 and gabeintro == 1 and studygabe2 == 0:
+    if gabee1 >= 1 and studygabe1 == 1 and gabeintro == 1 and didtest == False:
         jump gabeStudyingPt3
-    if gabee1 >= 1 and studygabe1 == 1 and gabeintro == 1 and studygabe2 == 1:
+    if gabee1 >= 1 and studygabe1 == 1 and gabeintro == 1 and didtest == True:
         show talkg
         show smilemc
         g "Hi, [mc]."
@@ -41,3 +41,6 @@ label gabehouse:
         $ GabeAcademy = False
         $ GabeHome = True
         call gabrialTalk
+    "{size=-2}{b}If you see this, please report it on the Discord server and send your save file."
+    jump maplimbo
+    return

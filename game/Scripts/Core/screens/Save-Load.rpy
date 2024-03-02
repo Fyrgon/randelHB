@@ -82,7 +82,7 @@ screen file_slots(title):
                     textbutton _("{#quick_page}Q") action FilePage("quick")
 
                 ## range(1, 10) gives the numbers from 1 to 9.
-                for page in range(1, 10):
+                for page in range(1, 16):
                     textbutton "[page]" action FilePage(page)
 
                 textbutton _(">") action FilePageNext()

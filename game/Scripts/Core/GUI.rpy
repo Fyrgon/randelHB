@@ -6,7 +6,7 @@
 ## to run before init statements in any other file.
 init offset = -2
 
-## Calling gui.init resets the styles to sensible default values and sets the
+## Calling gui.init resets the styles to sensible default values, and sets the
 ## width and height of the game.
 init python:
     gui.init(1280, 720)
@@ -47,7 +47,7 @@ define gui.selected_color = '#ffffff'
 define gui.insensitive_color = '#8888887f'
 
 ## Colors used for the portions of bars that are not filled in. These are not
-## used directly but are used when re-generating bar image files.
+## used directly, but are used when re-generating bar image files.
 define gui.muted_color = '#512800'
 define gui.hover_muted_color = '#7a3d00'
 
@@ -101,7 +101,7 @@ define gui.game_menu_background = "gui/main_menu.png"
 define gui.textbox_height = 185
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
-## center and 1.0 is the bottom.
+## center, and 1.0 is the bottom.
 define gui.textbox_yalign = 1.0
 
 
@@ -111,10 +111,10 @@ define gui.name_xpos = 200
 define gui.name_ypos = -10
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
-## aligned, 0.5 for centered and 1.0 for right-aligned.
+## aligned, 0.5 for centered, and 1.0 for right-aligned.
 define gui.name_xalign = 0.0
 
-## The width, height and borders of the box containing the character's name, or
+## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.
 define gui.namebox_width = None
 define gui.namebox_height = None
@@ -138,7 +138,7 @@ define gui.dialogue_ypos = 50
 define gui.dialogue_width = 835
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
-## aligned, 0.5 for centered and 1.0 for right-aligned.
+## aligned, 0.5 for centered, and 1.0 for right-aligned.
 define gui.dialogue_text_xalign = 0.0
 
 
@@ -176,7 +176,7 @@ define gui.button_text_xalign = 0.0
 
 
 ## These variables override settings for different kinds of buttons. Please see
-## the gui documentation for the kinds of buttons available and what each is
+## the gui documentation for the kinds of buttons available, and what each is
 ## used for.
 ##
 ## These customizations are used by the default interface:
@@ -220,7 +220,7 @@ define gui.choice_button_text_insensitive_color = "#000000"
 ## File Slot Buttons ###########################################################
 ##
 ## A file slot button is a special kind of button. It contains a thumbnail
-## image and text describing the contents of the save slot. A save slot uses
+## image, and text describing the contents of the save slot. A save slot uses
 ## image files in gui/button, like the other kinds of buttons.
 
 ## The save slot button.
@@ -300,15 +300,15 @@ define gui.notify_frame_borders = Borders(16, 5, 40, 5)
 define gui.frame_tile = False
 
 
-## Bars, Scrollbars and Sliders ###############################################
+## Bars, Scrollbars, and Sliders ###############################################
 ##
-## These control the look and size of bars, scrollbars and sliders.
+## These control the look and size of bars, scrollbars, and sliders.
 ##
 ## The default GUI only uses sliders and vertical scrollbars. All of the other
 ## bars are only used in creator-written screens.
 
-## The height of horizontal bars, scrollbars and sliders. The width of vertical
-## bars, scrollbars and sliders.
+## The height of horizontal bars, scrollbars, and sliders. The width of vertical
+## bars, scrollbars, and sliders.
 define gui.bar_size = 25
 define gui.scrollbar_size = 12
 define gui.slider_size = 25
@@ -344,14 +344,14 @@ define config.history_length = 250
 ## the cost of performance.
 define gui.history_height = 140
 
-## The position, width and alignment of the label giving the name of the
+## The position, width, and alignment of the label giving the name of the
 ## speaking character.
 define gui.history_name_xpos = 155
 define gui.history_name_ypos = 0
 define gui.history_name_width = 155
 define gui.history_name_xalign = 1.0
 
-## The position, width and alignment of the dialogue text.
+## The position, width, and alignment of the dialogue text.
 define gui.history_text_xpos = 170
 define gui.history_text_ypos = 2
 define gui.history_text_width = 740
@@ -373,24 +373,24 @@ define gui.nvl_list_length = 6
 ## dynamically adjust height.
 define gui.nvl_height = 115
 
-## The spacing between NVL-mode entries when gui.nvl_height is None and between
+## The spacing between NVL-mode entries when gui.nvl_height is None, and between
 ## NVL-mode entries and an NVL-mode menu.
 define gui.nvl_spacing = 10
 
-## The position, width and alignment of the label giving the name of the
+## The position, width, and alignment of the label giving the name of the
 ## speaking character.
 define gui.nvl_name_xpos = 430
 define gui.nvl_name_ypos = 0
 define gui.nvl_name_width = 150
 define gui.nvl_name_xalign = 1.0
 
-## The position, width and alignment of the dialogue text.
+## The position, width, and alignment of the dialogue text.
 define gui.nvl_text_xpos = 450
 define gui.nvl_text_ypos = 8
 define gui.nvl_text_width = 590
 define gui.nvl_text_xalign = 0.0
 
-## The position, width and alignment of nvl_thought text (the text said by the
+## The position, width, and alignment of nvl_thought text (the text said by the
 ## nvl_narrator character.)
 define gui.nvl_thought_xpos = 240
 define gui.nvl_thought_ypos = 0
@@ -437,7 +437,7 @@ init python:
 
         ## Adjust the location of the textbox.
         gui.textbox_height = 170
-        gui.name_xpos = 220
+        gui.name_xpos = 240
         gui.text_xpos = 40
         gui.text_width = 1116
 

@@ -58,7 +58,7 @@ menu:
         mc "{i}I think there's no harm in telling Sander. He's not part of the village and I think he'll believe me"
         mc "You remember that elf priestess Zenelith at Eve's village?"
         sa "Oh yeah, that hot cow!"
-        mc "Uhm, yeah but it turns out that she has a sex dungeon."
+        mc "Uhm, yeah, but it turns out that she has a sex dungeon."
         sa "A SEX DUNGEON?!"
         mc "SHHH!!! ...Yeah, it's a sex dungeon. And guess who she has locked up there."
         sa "Uhm..."
@@ -75,7 +75,7 @@ menu:
         sa "Oh, yeah... that could've happened."
         sa "But why?"
         mc "I don't know. The thing is, I need the Eye Orb to show the village people what she's doing."
-        sa "Oooooh, nice. I knew that bitch was evil. I wish I could help you out, little man but I'm not sure if I'll be able to sneak in again. They've probably tighten the security after last time."
+        sa "Oooooh, nice. I knew that bitch was evil. I wish I could help you out, little man, but I'm not sure if I'll be able to sneak in again. They've probably tighten the security after last time."
         mc "Yeah, it's ok. I can do this on my own."
         sa "That's my little man! Good luck, kid."
         "Sander gives you the Eye Orb."
@@ -106,14 +106,14 @@ menu:
         show talkns
         sa "Sheesh, ok then. Your loss!"
         jump guild
-    "About Gabe" if studygabe2 == 1:
+    "About Gabe" if didtest:
         show talkwanmc
         mc "Hey, Sander, did you meet Gabe recently?"
         sa "Who?"
         mc "Gabe, the girl with the purple hair."
         sa "Oh, Gabe. Yeah, yeah, I met her. She was snooping around here looking for you. She looked very familiar, that's why I talked to her."
         mc "You don't remember where you saw her before?"
-        sa "No but I swear I've seen her somewhere."
+        sa "No, but I swear I've seen her somewhere."
         show angry
         mc "She was in the orb, the one I gave you."
         hide angry
@@ -235,7 +235,7 @@ sa "Oh... you are in need of sensei's assistance, I see..."
 mc "Yeah..."
 show creeps
 sa "What do you wish to know, young apprentice?"
-mc "So... this is completely hypothetical, o-okay? Uhm... let's say there's this girl and- and she's asleep and someone wanted to-"
+mc "So... this is completely hypothetical, o-okay? Uhm... let's say there's this girl and- and she's asleep, and someone wanted to-"
 show suprised
 sa "-Spy on her without waking her up?"
 hide suprised
@@ -294,7 +294,7 @@ menu:
         sa "Come on, little man. You are diverging off the true path of voyeurism."
         sa "We only observe from a distance, we do not interfere with the freedom of our specimen. We treat it with respect and appreciate its beauty \"from a distance\"."
         sa "Do not be consumed by the dark side."
-        sa "Sorry but I can't help you."
+        sa "Sorry, but I can't help you."
         sa "You think this through again and you will understand the path you have chosen is not the right one."
         mc "......"
         mc "Fine."

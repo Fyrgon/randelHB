@@ -1,10 +1,10 @@
 screen screenmap():
     if time < 3:
-        image ("mapbaseTEST.webp")
+        image ("mapbaseday.webp")
     elif time == 3:
-        image ("mapbasee.webp")
+        image ("mapbaseevening.webp")
     else:
-        image ("mapbasenightTEST.webp")
+        image ("mapbasenight.webp")
 
 
     if time < 3:
@@ -14,7 +14,7 @@ screen screenmap():
             idle "MAPlibrary.webp"
             hover "MAPlibraryLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("library")
+            action Show("hud"), Show("hud"), Jump("library")
             tooltip _("{color=#fff}Library")
         imagebutton:
             xalign 0.829
@@ -22,7 +22,7 @@ screen screenmap():
             idle "MAPadguild.webp"
             hover "MAPadguildLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("guild")
+            action Show("hud"), Show("hud"), Jump("guild")
             tooltip _("{color=#fff}Adventurers' Guild")
         imagebutton:
             xalign 0.599
@@ -30,7 +30,7 @@ screen screenmap():
             idle "MAPmervinhut.webp"
             hover "MAPmervinhutLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("store")
+            action Show("hud"), Jump("store")
             tooltip _("{color=#fff}Mervin's Shop")
         imagebutton:
             xalign 0.573
@@ -38,7 +38,7 @@ screen screenmap():
             idle "MAPgabehouse.webp"
             hover "MAPgabehouseLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("gabehouse")
+            action Show("hud"), Jump("gabehouse")
             tooltip _("{color=#fff}Gabe's House")
         imagebutton:
             xalign 0.0001
@@ -46,7 +46,7 @@ screen screenmap():
             idle "MAPacademy.webp"
             hover "MAPacademyLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("academy")
+            action Show("hud"), Jump("academy")
             tooltip _("{color=#fff}Academy")
         imagebutton:
             xalign 0.69
@@ -54,7 +54,7 @@ screen screenmap():
             idle "MAPmchouse.webp"
             hover "MAPmchouseLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("home")
+            action Show("hud"), Jump("home")
             tooltip _("{color=#fff}Home")
         imagebutton:
             xalign 0.984
@@ -62,7 +62,7 @@ screen screenmap():
             idle "MAPpetehouse.webp"
             hover "MAPpetehouseLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("fishhut")
+            action Show("hud"), Jump("fishhut")
             tooltip _("{color=#fff}Pete's Hut")
         imagebutton:
             xalign 0.0001
@@ -70,7 +70,7 @@ screen screenmap():
             idle "MAPforest.webp"
             hover "MAPforestLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("forest")
+            action Show("hud"), Jump("forest")
             tooltip _("{color=#fff}Forest")
         imagebutton:
             xalign 0.0275
@@ -78,7 +78,7 @@ screen screenmap():
             idle "MAPmarket.webp"
             hover "MAPmarketLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("market")
+            action Show("hud"), Jump("market")
             tooltip _("{color=#fff}Central Market")
 
     elif time == 3:
@@ -88,7 +88,7 @@ screen screenmap():
             idle "MAPlibrarye.webp"
             hover "MAPlibraryeLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("library")
+            action Show("hud"), Jump("library")
             tooltip _("{color=#fff}Library")
         imagebutton:
             xalign 0.829
@@ -96,7 +96,7 @@ screen screenmap():
             idle "MAPadguilde.webp"
             hover "MAPadguildeLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("guild")
+            action Show("hud"), Jump("guild")
             tooltip _("{color=#fff}Adventurers' Guild")
         imagebutton:
             xalign 0.599
@@ -104,7 +104,7 @@ screen screenmap():
             idle "MAPmervinhute.webp"
             hover "MAPmervinhuteLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("store")
+            action Show("hud"), Jump("store")
             tooltip _("{color=#fff}Mervin's Shop")
         imagebutton:
             xalign 0.573
@@ -112,7 +112,7 @@ screen screenmap():
             idle "MAPgabehousee.webp"
             hover "MAPgabehouseeLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("gabehouse")
+            action Show("hud"), Jump("gabehouse")
             tooltip _("{color=#fff}Gabe's House")
         imagebutton:
             xalign 0.0001
@@ -120,7 +120,7 @@ screen screenmap():
             idle "MAPacademye.webp"
             hover "MAPacademyeLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("academy")
+            action Show("hud"), Jump("academy")
             tooltip _("{color=#fff}Academy")
         imagebutton:
             xalign 0.69
@@ -128,7 +128,7 @@ screen screenmap():
             idle "MAPmchousee.webp"
             hover "MAPmchouseeLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("home")
+            action Show("hud"), Jump("home")
             tooltip _("{color=#fff}Home")
         imagebutton:
             xalign 0.984
@@ -136,7 +136,7 @@ screen screenmap():
             idle "MAPpetehousee.webp"
             hover "MAPpetehouseeLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("fishhut")
+            action Show("hud"), Jump("fishhut")
             tooltip _("{color=#fff}Pete's Hut")
         imagebutton:
             xalign 0.0001
@@ -144,7 +144,7 @@ screen screenmap():
             idle "MAPforeste.webp"
             hover "MAPforesteLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("forest")
+            action Show("hud"), Jump("forest")
             tooltip _("{color=#fff}Forest")
         imagebutton:
             xalign 0.0275
@@ -152,7 +152,7 @@ screen screenmap():
             idle "MAPmarkete.webp"
             hover "MAPmarketeLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("market")
+            action Show("hud"), Jump("market")
             tooltip _("{color=#fff}Central Market")
 
 
@@ -163,7 +163,7 @@ screen screenmap():
             idle "MAPlibraryn.webp"
             hover "MAPlibrarynLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("library")
+            action Show("hud"), Jump("library")
             tooltip _("{color=#fff}Library")
         imagebutton:
             xalign 0.829
@@ -171,7 +171,7 @@ screen screenmap():
             idle "MAPadguildn.webp"
             hover "MAPadguildnLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("guild")
+            action Show("hud"), Jump("guild")
             tooltip _("{color=#fff}Adventurers' Guild")
         imagebutton:
             xalign 0.0275
@@ -179,7 +179,7 @@ screen screenmap():
             idle "MAPmarketn.webp"
             hover "MAPmarketnLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("market")
+            action Show("hud"), Jump("market")
             tooltip _("{color=#fff}Mervin's Shop")
         imagebutton:
             xalign 0.573
@@ -187,7 +187,7 @@ screen screenmap():
             idle "MAPgabehousen.webp"
             hover "MAPgabehousenLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("gabehouse")
+            action Show("hud"), Jump("gabehouse")
             tooltip _("{color=#fff}Gabe's House")
         imagebutton:
             xalign 0.0001
@@ -195,7 +195,7 @@ screen screenmap():
             idle "MAPacademyn.webp"
             hover "MAPacademynLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("academy")
+            action Show("hud"), Jump("academy")
             tooltip _("{color=#fff}Academy")
         imagebutton:
             xalign 0.69
@@ -203,7 +203,7 @@ screen screenmap():
             idle "MAPmchousen.webp"
             hover "MAPmchousenLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("home")
+            action Show("hud"), Jump("home")
             tooltip _("{color=#fff}Home")
         imagebutton:
             xalign 0.984
@@ -211,7 +211,7 @@ screen screenmap():
             idle "MAPpetehousen.webp"
             hover "MAPpetehousenLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("fishhut")
+            action Show("hud"), Jump("fishhut")
             tooltip _("{color=#fff}Pete's Hut")
         imagebutton:
             xalign 0.0001
@@ -219,7 +219,7 @@ screen screenmap():
             idle "MAPforestn.webp"
             hover "MAPforestnLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("forest")
+            action Show("hud"), Jump("forest")
             tooltip _("{color=#fff}Forest")
         imagebutton:
             xalign 0.599
@@ -227,7 +227,7 @@ screen screenmap():
             idle "MAPmervinhutn.webp"
             hover "MAPmervinhutnLIT.webp"
             activate_sound "hover.mp3"
-            action Jump("store")
+            action Show("hud"), Jump("store")
             tooltip _("{color=#fff}Central Market")
 
     $ tooltip = GetTooltip()

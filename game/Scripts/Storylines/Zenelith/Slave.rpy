@@ -26,12 +26,12 @@ mc "C'mon, get up before I change my mind."
 zn "Wh-Why? T-Too afraid to dirty your hands with the blood of an elf?"
 mc "{i}Oh, no. I just want to lure you somewhere to lock you in for another century."
 mc "No, you don't deserve to live like this because of what you did. I want to make it right. I'll help you."
-"Zenelith looks at you in anger but slowly, she gets up."
+"Zenelith looks at you in anger, but slowly, she gets up."
 zn "Don't think I trust you, ape."
 mc "You have no reason to."
 zn "Tsk."
-"She's so weak she almost falls again but she manages to stay upright."
-mc "Let's get going. I'm as lost as you are but we shouldn't be too far from the road."
+"She's so weak she almost falls again, but she manages to stay upright."
+mc "Let's get going. I'm as lost as you but we shouldn't be too far from the road."
 show forrestn
 "She reluctantly starts following you."
 scene forrestn
@@ -39,7 +39,7 @@ mc "{i}Alright, there's still a problem with all of this..."
 mc "{i}I can't just take her to Randel, my home doesn't have anywhere to keep her."
 if thealive == True:
     mc "{i}And I've already got Thea at home..."
-mc "{i}Obviously the Elf Village isn't an option either."
+mc "{i}Obviously, the Elf Village isn't an option either."
 mc "{i}Even if her house is empty now, they'd get suspicious of me going there often.{p}What a shame! Her basement would've been perfect."
 mc "{i}I'm starting to think It'd be better to just kill her and be done with her..."
 "The two of you walk for what seems an eternity before Zenelith speaks up."
@@ -52,7 +52,7 @@ zn "..."
 mc "Listen, I'm already helping you here. Let's make a deal."
 zn "What deal?"
 mc "I'll keep helping you so long you stop questioning me."
-zn "How could I not question the actions of an ape like you?."
+zn "How could I not question the actions of an ape like you?"
 mc "It's easy. You just have to not open your mouth."
 "Zenelith doesn't reply."
 mc "Exactly like that."
@@ -75,7 +75,7 @@ znr @angryt "Of course, it's the standard for you apes."
 mc @smilet "Ah yes, that's exactly what I meant."
 mc @smilet "Let's sleep here for tonight. Tomorrow morning we'll find another solution."
 znr @angryt "I'm not going to sleep with an ape."
-mc @hopet "I'l sleep outside if that makes you feel better."
+mc @hopet "I'll sleep outside if that makes you feel better."
 znr @angryt "It doesn't."
 mc @talk "Well, can't do much about that. Have a good night."
 znr @angryt "...What stops me from killing you while you're asleep?"
@@ -83,12 +83,12 @@ mc @smirkt "They're gonna come look for me if I suddenly disappear. \"They\" inc
 hide prot normal with easeoutleft
 "And as Zenelith glares at you one last time, you leave the shack."
 scene zenelithshackn with fade
-"Once outside you turn around and look at the door. How can you lock her in? You don't have chains nor a seal to-"
+"Once outside, you turn around and look at the door. How can you lock her in? You don't have chains nor a seal to-"
 mc "{i}Wait! What did Scarlet say about the rune? The spell could turn off that kind of seals... but it can also turn them on!"
 mc "{i}Maybe if I carve the seal onto the door and use the rune I could imprison her. Her magic is too weak to even hurt me, she definitely won't be able to undo the seal."
 mc "{i}Let's hope I didn't throw the rune at some point."
 "You decide to go to bed for now. It's going to be easier to check your bag when the sun comes out."
-"Thus you use your camping gear and set up a tent for yourself. You slowly fall asleep."
+"Thus, you use your camping gear and set up a tent for yourself. You slowly fall asleep."
 stop music fadeout 1
 scene black with fade
 pause 2
@@ -103,17 +103,17 @@ mc "{i}Smiling even after all the things she's done... Tsk."
 scene zenelithshack with fade
 "You get your bag and start checking every pocket hoping to find the rune. You almost end up taking everything out of the bag before you can find it at the bottom of one of the main pockets."
 mc "{i}I knew I hadn't thrown it away! Now let's start carving the symbol."
-"You take out your knife and begin carving the seal on the door hoping she doesn't wake up."
+"You take out your knife and begin carving the seal on the door, hoping she doesn't wake up."
 "Fortunately, she doesn't."
 "Once you're done you use the rune to try and activate the seal.{p}...{p}......"
 show zenss1 with dissolve
 "The carving suddenly glows yellow and when you try to open the door it doesn't even flinch slightly. The seal works."
 mc "{i}Good job, [mc]. Now I've just got to repeat this... two more times for the windows."
 show zenss with dissolve
-"You manage to finish all the seals before she wakes up but right after using the rune on the last window you notice that the rune feels a lot lighter."
+"You manage to finish all the seals before she wakes up, but, right after using the rune on the last window, you notice that the rune feels a lot lighter."
 mc "{i}Huh? Why is it...?"
-mc "{i}Wait. Could it be that the spell can only be cast a certain amount of times?"
-mc "{i}If that's the case then I need to have Scarlet cast magic on the rune every now and then or else I won't be able to get in and out of the house... God damn it."
+mc "{i}Wait. Could it be that the spell can only be cast a certain number of times?"
+mc "{i}If that's the case, then I need to have Scarlet cast magic on the rune every now and then or else I won't be able to get in and out of the house... God damn it."
 mc "{i}I don't want to risk undoing the seal just to get in the house now... I guess I'll wake her up from here."
 play sound doorknock
 mc "Zenelith! Wake up!"
@@ -122,34 +122,35 @@ play sound doorknock
 zn "What the hell is wrong with you, ape?! I am trying to sleep!"
 mc "You know how yesterday I told you that you had no reason to trust me?"
 zn "...Huh?"
-mc "Well, I wasn' being sarcastic."
+mc "Well, I wasn't being sarcastic."
 zn "What the hell do you-"
 "You hear Zenelith rushing over the door and trying to open it to no avail."
 zn "No... You couldn't have-"
 mc "I have. Thank you very much for teaching me about seals."
 zn "You piece of-!"
 mc "Nuh-uh. Don't be like that, that will only make it worse for you."
-zn "As soon as I get out of here you're dead!"
-mc "See, that's the thing. You won't get out of here. How long do elves live again?"
-zn "W-What are you trying to say?"
-mc "You kept Morgan in your dungeon for 160 years. I was wondering if you even had that many years left before your death considering you were the oldest in the village."
+zn "As soon as I get out of here, you're dead!"
+mc "See, that's the thing. You won't get out of here."
+mc "...How long do elves live, again?"
+zn "Wh-What are you trying to say?"
+mc "You kept Morgan in your dungeon for 160 years. I was wondering if you even had that many years left before your death considering you were the oldest in the Village."
 zn "You can't leave me here that long! You won't even live for that much!"
-mc "You're right, I won't live 160 years and most likely I won't live another 80 either. But that doesn't matter. I can make it much, much worse for you in this shorter time together to keep it fair."
+mc "You're right, I won't live 160 years, and most likely I won't live another 80 either. But that doesn't matter. I can make it much, much worse for you in this shorter time together to keep it fair."
 zn "Please! Don't! I'm sorry for what I've done!"
 mc "Hah! ...It's too late to apologize. I've already decided what to do with you."
 mc "At first I thought I could kill you, but then I thought... \"Why not punish her?\"{p}You're horrible, Zenelith, you deserve this."
 mc "Plus, I also get to enjoy using you as much as I want~ You're lucky your looks are right up my alley."
 zn "As if I'd ever let you, disgusting ape!"
-mc "You're weak and frail. You can't use your magic against me... And if you were to venture out alone I think you'd quickly die. Honestly, I'm impressed you didn't die before I found you."
+mc "You're weak and frail. You can't use your magic against me... And if you were to venture out alone, I think you'd quickly die. Honestly, I'm impressed you didn't die before I found you."
 mc "You can't do anything to stop this, Zenelith."
-zn "I won't become a slave of an ape!"
+zn "I won't become the slave of an ape...!"
 mc "You already have."
 "Zenelith bangs on the door, you can almost hear her grinding her teeth."
 zn "FUCK YOU!"
 mc "That's a really bad start. You need to learn some manners."
 zn "I won't treat you as anything other than a dumb ape, you little-"
 mc "Yeah, yeah. That's enough. I'm going to go. If by next time you've calmed down, I'll give you something to eat, alright?"
-zn "If you step inside you're dead!"
+zn "If you step inside, you're dead!"
 mc "I'll take that as a yes."
 scene ambush1 with fade
 "You leave as the sound of Zenelith slamming her fists on the door and calling out slowly fades away. You end up finding your way back to the main road and leave a small mark on a tree to remind yourself where to head for the shack."
@@ -170,11 +171,12 @@ $ time += 1
 jump home
 
 
+
 label foodShenanigans:
 scene ambush1 with fade
 hide screen hud with dissolve
-"You leave Randel with a basket full of fruit. You don't exactly know what people from the elf village usually eat but you figured that if they live in trees they likely enjoy fruit."
-"You walk for a while until you reach the tree you had left a mark on. From there you walk inside the forest until arriving at the cabin you left Zenelith in."
+"You leave Randel with a basket full of fruit. You don't exactly know what people from the Elf Village usually eat, but you figured that if they live in trees, they likely enjoy fruit."
+"You walk for a while until you reach the tree you had left a mark on. From there, you walk inside the forest until arriving at the cabin you left Zenelith in."
 scene zenss with fade
 if chargedRune < 1 and scarletCharge == False:
     "You take out the rune from your bag and remember that you still haven't asked Scarlet to repair it."
@@ -201,7 +203,6 @@ elif lastAte >= 10:
     $ evil += 1
     jump starvedZen
 
-
 label day1:
 play sound doorknock
 mc "Goodmorning, Zen."
@@ -214,20 +215,19 @@ zn "My position? You're the ape here."
 mc "And you're a slave."
 zn "Not for long."
 mc "Sure thing.{p}Well, Zen, I guess I'll go again. I hope next time you'll have changed idea."
-"And thus you leave."
+"And thus, you leave."
 $ zd1 = True
 $ time += 1
 jump home
-
-
+###############
 label day2:
 if zd1 == True:
     play sound doorknock
-    mc "Goodmorning again, Zenelith."
+    mc "Good morning again, Zenelith."
     zn "..."
     "She stays quiet. For a second you believe she might have decided to calm down, then you hear her punching the door."
     zn "LET ME OUT!"
-    mc "Oh, no no no. You got this wrong Zen. You aren't getting out."
+    mc "Oh, no, no, no. You got this wrong, Zen. You aren't getting out."
     zn "You apes are all the same... Deceitful and cruel."
     mc "It's funny to hear that from you, Elder Priestess. I wonder if Morgan would agree with you."
     zn "SHUT UP!"
@@ -236,7 +236,7 @@ if zd1 == True:
         zn "Tsk. Yeah, come another day. You will still be a disgusting ape."
     else:
         zn "...Y-Yeah! Come another day! I'm n-not going to give up!"
-    mc "The more you resist the worse it'll be for you in the end. It would've been much easier to be obedient...{p}...Now though, that won't be enough."
+    mc "The more you resist, the worse it'll be for you in the end. It would've been much easier to be obedient...{p}...Now though, that won't be enough."
     zn "Wh-What?"
     mc "You'll see.{p}Have a nice day."
     zn "You-!"
@@ -251,10 +251,10 @@ else:
     "Zenelith doesn't answer."
     mc "Have you decided to ignore me or have you resigned yourself?"
     zn "I-I'm not giving you any satisfactions, ape."
-    mc "Oh but you've already satisfied me by letting yourself get trapped so easily."
+    mc "Oh, but you've already satisfied me by letting yourself get trapped so easily."
     zn "...I trusted you."
     mc "Too bad."
-    zn "As soon as you lower your guard I-I'll show you how that feels."
+    zn "As soon as you lower your guard, I-I'll show you how that feels."
     mc "That won't happen. I won't lower my guard around a bitch like you."
     zn "How {b}dare{/b} you call me that!?"
     mc "Is \"toy\" better? That's how you called Aerin's brother, right?"
@@ -264,16 +264,15 @@ else:
         zn "Yeah, come another day. You will still be a disgusting ape."
     else:
         zn "...Y-Yeah! Come another day! I'm n-not going to give up!"
-    mc "The more you resist the worse it'll be for you in the end. It would be much easier for you to be obedient...{p}...But I guess that if you won't behave, I have no reason to behave either."
+    mc "The more you resist, the worse it'll be for you in the end. It would be much easier for you if you were obedient...{p}...But I guess that if you won't behave, I have no reason to behave either."
     zn "Wh-What do you mean?"
-    mc "You'll see.{p}Have a nice day."
+    mc "...You'll see.{p}Have a nice day!"
     zn "You-!"
     "And then you leave."
     $ zd2 = True
     $ time += 1
     jump home
-
-
+###############
 label day3:
 if (zd1 == True) or (zd2 == True):
     play sound doorknock
@@ -284,15 +283,15 @@ if (zd1 == True) or (zd2 == True):
     mc "Hungry?"
     zn "Not enough to have lost my spirit."
     mc "I noticed."
-    zn "It's being harder than you expected isn't it?"
+    zn "It's being harder than you expected, isn't it?"
     mc "Maybe you're just angrier because I raped you back there in your basement."
     zn "{b}Don't{/b} bring that up."
-    mc "Why not? sore spot? I could've done much worse honestly."
+    mc "Why not? Sore spot? I could've done much worse honestly."
     zn "You defiled me, ape. And I won't forgive that easily. Come back however many times you want, I am not giving up."
     mc "We're just on the third day, Zen. We still got a long time ahead of us."
     zn "I'm an elf, a human day for me is nothing."
     mc "We'll see about that next time around. See you."
-    "And then you leave Zenelith once again."
+    "And then, you leave Zenelith once again."
     mc "{i}What a pain in the ass..."
     $ zd3 = True
     $ time += 1
@@ -313,12 +312,11 @@ else:
     zn "You... I'll kill you!"
     mc "You can try."
     mc "Anyways, I hope next time you'll be calmer. Have a nice day."
-    "And then you turn around and leave. You hear Zenelith protesting but you ignore her."
+    "And then you turn around and leave. You hear Zenelith protesting, but you ignore her."
     $ zd3 = True
     $ time += 1
     jump home
-
-
+###############
 label day4:
 play sound doorknock
 mc "Zenelith~? How are you?"
@@ -336,8 +334,7 @@ mc "Heh. Bye, Zen."
 $ zd4 = True
 $ time += 1
 jump home
-
-
+###############
 label day3f:
 play sound doorknock
 mc "Zenelith~?"
@@ -358,20 +355,20 @@ zn "W-What is it?"
 mc "From now on, call me {b}master{/b}."
 zn "I am not-!{p}I-I'm...{p}...Yes, master."
 mc "{i}Hah! She's actually doing it!"
-mc "That's good. Now I'm going to come in. If you try to jump me when I get in, you're dead."
+mc "That's good. Now, I'm going to come in. If you try to jump me when I get in, you're dead."
 zn "Y-Yes..."
 mc "I don't think I've heard that right."
-zn "{size=-4}Y-Yes, master."
+zn "{size=-4}Y-Yes, m-master."
 mc "What?"
-zn "Yes, m-master!"
+zn "Yes, master!"
 mc "That's more like it."
 "You walk over to the door and use the rune on it. The glow of the seal disappears and then you walk inside."
 scene shackinteriorb
-"As soon as you get in you see Zenelith sitting with her back on a wall trying to get up."
+"As soon as you get in, you see Zenelith sitting with her back on a wall trying to get up."
 mc "There's no need to stand up. I'll come over there."
 scene znboobcloths
 show znboobworried
-"You make your way to her and sit in front of her. You put the basket to the side and when Zenelith tries to reach for it you push it just far enough that she can't grab it."
+"You make your way to her and sit in front of her. You put the basket to the side and when Zenelith tries to reach for it, you push it just far enough that she can't grab it."
 show znboobangry
 zn "What are you-"
 mc "Take off your top."
@@ -385,8 +382,8 @@ show znboobshy
 hide znboobangry
 zn "W-Why do you have to-"
 mc "5...{p}4...{p}3..."
-zn "F-Fine!"
-"As your count approaches zero, she hastily removes her top. She clearly doesn't like it but she doesn't have the energy to protest anymore."
+zn "...F-Fine!"
+"As your count approaches zero, she hastily removes her top. She clearly doesn't like it, but she doesn't have the energy to protest anymore."
 scene black with dissolve
 pause 0.2
 scene znboobnude
@@ -412,10 +409,10 @@ mc "I am."
 show znboobshy
 show znboobeyeside
 hide znboobangry
-"The moment her hand manages to reach the first fruit she completely forgets about her missing top and starts to eat eagerly."
+"The moment her hand manages to reach the first fruit, she completely forgets about her missing top and starts to eagerly eat."
 mc "{i}I'd say it's enough for now. If I try to push it some more she might go back to how she was before."
 mc "Alright Zen, I'm going to go now. Enjoy your meal."
-"She barely pays you any attention as you leave the shack. Once outside you close the door and apply the seal again."
+"She barely pays you any attention as you leave the shack. Once outside, you close the door and apply the seal again."
 mc "{i}I wonder how many things I can get her to do without forcing her... Maybe she will actually become like a slave if I train her the right way... Hm..."
 "And while you think about that, you return home."
 $ chargedRune -= 1
@@ -424,7 +421,7 @@ $ zenS = 2
 $ lastAte = 0
 $ time += 1
 jump home
-
+###############
 label day5:
 play sound doorknock
 mc "Zenelith~?"
@@ -468,9 +465,7 @@ if zd3 == True and (zd1 == False or zd2 == False):
     zn "...{p}I-I...{p}...Yes, master."
     mc "Good."
 else:
-    zn "W-What do you want me to do?"
-    mc "You know what I want you to do."
-    zn "A-And you'll let me eat afterwards...?"
+    zn "W-Will you really let me eat if I behave?"
     mc "Of course I will. I've already got you where I wanted, there's no reason to let you die."
     zn "F-Fine then..."
     mc "Ahhh... Good! Then let's start with something easy, aye?"
@@ -481,9 +476,9 @@ else:
     mc "That's good. Now I'm going to come in. If you try to jump me when I get in, you're dead."
     zn "Y-Yes..."
     mc "I don't think I've heard that right."
-    zn "{size=-4}Y-Yes, master."
+    zn "{size=-4}Y-Yes, m-master."
     mc "What?"
-    zn "Yes, m-master!"
+    zn "Yes, master!"
     mc "That's more like it."
     "You walk over to the door and use the rune on it. The glow of the seal disappears and then you walk inside."
     scene shackinteriorb
@@ -506,7 +501,7 @@ else:
     zn "W-Why do you have to-"
     mc "5...{p}4...{p}3..."
     zn "F-Fine!"
-    "As your count approaches zero, she hastily removes her top. She clearly doesn't like it but she doesn't have the energy to protest anymore."
+    "As your count approaches zero, she hastily removes her top. She clearly doesn't like it, but she doesn't have the energy to protest anymore."
     scene black with dissolve
     pause 0.2
     scene znboobnude
@@ -532,7 +527,7 @@ else:
 show znboobshy
 show znboobeyeside
 hide znboobangry
-"The moment her hand manages to reach the first fruit she completely forgets about her missing top and starts to eagerly eat."
+"The moment her hand manages to reach the first fruit, she completely forgets about her missing top and starts to eagerly eat."
 mc "{i}I'd say it's enough for now. If I try to push it some more she might go back to how she was before."
 mc "Alright Zen, I'm going to go now. Enjoy your meal."
 "She barely pays you any attention as you leave the shack. Once outside you close the door and apply the seal again."
@@ -544,8 +539,7 @@ $ zenS = 2
 $ lastAte = 0
 $ time += 1
 jump home
-
-
+###############
 label starvedZen:
 scene zenss with fade
 "You knock on the door of the shack."
@@ -555,7 +549,7 @@ pause 1
 "...Silence."
 mc "Zen?"
 "Still no answer."
-mc "I'm getting angry, Zen. If you don't answer I'll get in and teach you a lesson."
+mc "I'm getting angry, Zen. If you don't answer, I'll get in and teach you a lesson."
 "Again, she doesn't answer. You can't even hear the creaks of the floorboards."
 mc "Alright, that's it."
 scene shackinteriorb
@@ -568,13 +562,13 @@ mc "God damn it."
 scene zenelithshack
 "You quickly get up and walk outside. You know it's your fault she's dead."
 menu:
-    "She deserved it.":
+    "She deserved it":
         "But after all, she deserved to suffer. She's probably lucky she managed to die before you could do anything worse to her."
-        mc "...Tsk. I guess I've got something less to worry about at least."
+        mc "{i}...Tsk. I guess I've got something less to worry about at least."
         "You leave her there and go home. You decide you won't come back."
-    "She didn't deserve it.":
-        mc "Even for what she's done... She didn't deserve a death like this. It's too cruel even for me."
-        mc "Sigh... Well, whatever. I guess she managed to avoid what I wanted to do with her."
+    "She didn't deserve it":
+        mc "{i}Even for what she's done... She didn't deserve a death like this. It's too cruel even for me."
+        mc "{i}Sigh... Well, whatever. I guess she managed to avoid what I wanted to do with her."
         "You decide to leave her there and go home. There's no reason to stay or come back."
 $ zenRouteEnd = True
 $ chargedRune -= 1
@@ -606,8 +600,6 @@ else:
     mc @talk "Sigh. Well, see you then."
     $ time += 1
     jump home
-
-
 label zenGrope1:
 $ chargedRune -= 1
 hide screen hud
@@ -675,7 +667,7 @@ hide screen hud
 show prot normal
 $ chargedRune -= 1
 mc @smilet "Good day. I've brought you something to eat."
-"Zenelith glares at you then tries reaching for the food but you immediately step back."
+"Zenelith glares at you then tries reaching for the food, but you immediately step back."
 mc @talk "I think you still haven't understood how this works, slave."
 zn "..."
 mc @talk "First of all, I want to hear you calling me master from now on. Always."
@@ -697,7 +689,7 @@ mc "I see you're starting to get it. But you know that your disobedience can't g
 zn "W-What?"
 mc "No food today. Have a nice day."
 zn "B-But I just did what you asked me to!"
-mc "I asked you to do it the other day and the day before too. I don't want a slave who does what I say whenever they want to. I want a slave who does what I want when I want."
+mc "I asked you to do it the other day and the day before too. I don't want a slave who does what I say whenever they want. I want a slave who does what I want when {b}I{/b} want."
 "You start heading towards the door."
 scene shackinteriorb with fade
 show znrag angry
@@ -711,7 +703,7 @@ jump home
 label zenGrope2:
 hide screen hud
 show prot normal
-mc @talk "Goodmorning, slave."
+mc @talk "Good morning, slave."
 zn "..."
 mc @talk "I hope you're hungry, because I got some food for you."
 znr @angryt "...I am, master."
@@ -827,7 +819,7 @@ menu:
         "Unlike the other times, she doesn't immediately start eating. Her breath is heavy and when you look down at her legs..."
 mc "{i}Heh, so sensitive."
 scene shackinteriorb with fade
-"As soon as she regains composure she starts eating and once again you leave."
+"As soon as she regains composure, she starts eating and once again you leave."
 mc "Goodbye, toy."
 zn "G-Goodbye, master."
 mc "{i}Oh, I like the sound of that. She's definitely improved..."
@@ -866,7 +858,7 @@ menu:
             jump zen5Menu
     "Feed":
         hide screen hud
-        mc @talk "Goodmorning, toy. Hungry?"
+        mc @talk "Good morning, toy. Hungry?"
         znr @talk "Yes, master."
         mc @smilet "That's nice to hear. I brought lots of tasty food just for you."
         "Zenelith looks down and takes a deep breath, then she takes off her top."
@@ -903,17 +895,17 @@ menu:
                 scene znboobnude
                 show znboobshy
                 show znboobeyeside
-                "Once you let her be she doesn't immediately start eating. One of her hands is between her legs to stop something from leaking."
+                "Once you let her be, she doesn't immediately start eating. One of her hands is between her legs to stop something from leaking."
             "Stop":
                 mc "{i}That's enough teasing for now."
                 mc "Alright, I'm satisfied. You can eat."
                 scene znboobnude
                 show znboobshy
                 show znboobeyeside
-                "Once you let her be she doesn't immediately start eating. Her breath is heavy and when you look down at her legs..."
+                "Once you let her be, she doesn't immediately start eating. Her breath is heavy and when you look down at her legs..."
         mc "{i}Heh, so sensitive."
         scene shackinteriorb with fade
-        "As soon as she regains composure she starts eating and once again you leave."
+        "As soon as she regains composure, she starts eating and once again you leave."
         mc "Goodbye, toy."
         zn "G-Goodbye, master."
         $ lastAte = 0
@@ -925,31 +917,31 @@ label zen5A:
 mc @smilet "Hey there, Zen. How are you?"
 znr @talk "Are you really interested in that, master?"
 mc @talk "I was trying to be nice."
-znr @talk "Sigh. Well, I'm bored. I spend all day here doing nothing waiting for you to come for anything to happen."
+znr @talk "{i}Sigh...{/i} Well, I'm bored. I spend all day here doing nothing waiting for you to come for anything to happen."
 mc @smirkt "We can have more fun together if you insist."
-znr @angryt "I... appreciate the offer, master but I was talking about when I'm alone."
+znr @angryt "I... appreciate the offer, master, but I was talking about when I'm alone."
 mc @talk "I see."
 mc "{i}Hm... I guess she's not totally wrong. She might die from boredom if she just spends all her day by herself in a cabin that has nothing outside rubble..."
 mc @smilet "Would you like something in particular?"
 znr @talk "Huh?"
 mc @normal "I'm asking if you want me to bring you something."
 znr @smilet "R-Really? I'd appreciate that so much..."
-mc @normal "Yes, yes but what would you like?"
+mc @normal "Yes, yes, but what would you like?"
 znr @talk "Uhm..."
-"Zenelith looks up at the ceiling and for a second you see her smile satisfied but it quickly fades away as she looks back at you."
+"Zenelith looks up at the ceiling and for a second you see her smile satisfied, but it quickly fades away as she looks back at you."
 znr @talk "Maybe a book or two... And, you know the camp where you found me? Well, when we left I forgot to take with me my bag."
 mc @questiont "Your bag?"
 znr @talk "Yes, I had a bag full of gems... I, uhm, kept them for... personal reasons. Memorabilia, yes."
 mc @questiont "Memorabilia, huh?{p}...Alright, I'll see what I can do."
-znr @smilet "Thank you very much master."
-mc "{i}Mh... Maybe I should get her a bed as well. That way when she finally gives in to sex we'll have a place to do it."
+znr @smilet "Thank you very much, master."
+mc "{i}Mh... Maybe I should get her a bed as well. That way when she finally gives in to sex, we'll have a place to do it."
 $ asked4gift = True
 jump zen5Menu
 
 label zen5B:
 scene forrest
 hide screen hud
-"You walk through the forest for a few hours trying to find Zenelith's old camp but it's proving to be real difficult."
+"You walk through the forest for a few hours trying to find Zenelith's old camp, but it's proving to be real difficult."
 mc "{i}Is this really worth it? It's literally just a bunch of rocks..."
 "But as you question what you're doing, you stumble right in the camp where Zenelith was."
 mc "{i}Oh well, I'm here now anyways."
@@ -966,9 +958,9 @@ label zen5C:
 mc @smirkt "Guess what I've got for you?"
 znr @talk "...No way."
 mc @smilet "Yup."
-"You take the books and zenelith's gems from your backpack and show them to her. She smiles but for a brief moment more than a happy smile it looks like a mischevious smile."
+"You take the books and Zenelith's gems from your backpack and show them to her. She smiles, but for a brief moment, more than a happy smile, it looks like a mischevious one."
 znr @smilet "Thank you very much, master."
-"Zenelith goes to take the gifts from you hands but you move them closer to you."
+"Zenelith goes to take the gifts from your hands, but you move them closer to you."
 mc @talk "I didn't say I am going to give them to you."
 znr @angryt "Huh?"
 mc @smirkt "I am being extra generous to you, so I want something more than the usual from you."
@@ -998,17 +990,17 @@ show znfinger1
 mc "Heh. Look how wet you are."
 zn "P-Please stop."
 mc "No, I don't think I will."
-"You don't give her time to reply as you start moving your fingers again."
+"You don't give her time to reply that you start moving your fingers again."
 show zenfingering1
 zn "Mnh~ S-Stop!"
-"You don't pay attention to her plead and instead smile as each little moan escapes her mouth with another movement of your hand."
+"You don't pay attention to her pleas and instead smile as each little moan escapes her mouth with another movement of your hand."
 zn "Ahmn~... Ngh..."
 mc "{i}Let's make this a bit better for her~"
 hide znfinger1
 hide znfingering1
 show zenfingering2 with vpunch
 zn "Wha- ANH~! Ah~!"
-mc "Better, isn't it?"
+mc "Better isn't it?"
 zn "I- mnh~! I'm gonna-"
 scene znfingerbase3
 show zenfingering2 with flash
@@ -1023,7 +1015,7 @@ show znfinger5 with flash
 pause 1.3
 mc "Wow, you really came a lot."
 zn "Mnh... Y-You b-bastard..."
-mc "I'd normally punish you for calling me that but I'll let it pass just because I love the look on your face right now."
+mc "I'd normally punish you for calling me that, but I'll let it pass just because I love the look on your face right now."
 zn "You..."
 mc "And since you didn't resist at all while I did all that, you've deserved to have your gifts as well. Here."
 scene shackinteriorb with dissolve
@@ -1043,7 +1035,7 @@ scene zenelithshack
 hide screen hud with dissolve
 show zenss1 with fade
 mc "{i}I wonder... What could I have her do today? She already let me finger her... I wonder if she's already willing to blow me off."
-"As you get closer to the shack, though, something feels off. You can't quite put your hand on it but..."
+"As you get closer to the shack, though, something feels off. You can't quite put your hand on it, but..."
 mc "{i}Wait. Why are two of the seals turned off?!"
 "Without a second thought you rush inside the shack. Could it be that her magic finally started working again?"
 stop music
@@ -1053,7 +1045,7 @@ show prot angry
 mc "{i}Wait a second-"
 show znrag satis with dissolve
 znr @angryt "Hah. Look who showed up."
-mc @angryt "So those were actually the pieces of your staff, huh?"
+mc @angryt "So, those were actually the pieces of your staff, huh?"
 znr @angryt "Yes. And now I can finally use my magic again."
 mc @smirkt "Then you shouldn't have wasted time talking."
 znr @angryt "What-"
@@ -1064,23 +1056,23 @@ hide znrag angry with easeoutleft
 mc @talk "Pathetic."
 zn "Y-You!"
 mc @talk "I guess having a slave for 160 years hasn't taught you what happens when a slave tries to run away."
-"With your foot you crush her staff, rendering it useless once again. She tries to protest but you don't listen to her."
+"With your foot, you crush her staff, rendering it useless once again. She tries to protest, but you don't listen to her."
 mc @smilet "And now I'm going to teach you a lesson."
 zn "H-Huh?"
-"You walk over to Zenelith and she steps back, unfortunately the wall blocks her from going further."
+"You walk over to Zenelith and she steps back. Unfortunately, the wall blocks her from going further."
 mc @angryt "Take those off and turn around."
 zn "W-What?"
 mc @angryt "You heard me."
 zn "..."
-"At first you think she isn't going to undress but surprisingly she starts stripping and once she's naked she turns around."
+"At first, you think she isn't going to undress, but surprisingly she starts stripping. Once she's naked she turns around."
 scene zenspankpre1 with fade
 pause 1.5
-zn "P-Please be gentle..."
+zn "P-Please, be gentle..."
 mc "Would you've been gentle to Morgan if he did the same?"
 zn "..."
-mc "You know maybe I won't be satisfied regardless of what I do to you.{p}...Maybe I should kill you for trying to trick me."
+mc "You know, maybe I won't be satisfied regardless of what I do to you.{p}...Maybe I should kill you for trying to trick me."
 scene zenspankpre2 with dissolve
-zn "N-No! Please I don't want to die!"
+zn "N-No! Please, I don't want to die!"
 mc "Tsk."
 scene zenspanking with hpunch
 pause 0.4
@@ -1123,12 +1115,12 @@ mc "Anything?"
 zn "Y-Yes, please..."
 mc "..."
 mc "Goodbye, toy."
-zn "N-No wait!"
+zn "N-No, wait!"
 scene zenelithshack with fade
 mc "{i}Time to re-apply all the seals..."
 scene zenss with dissolve
-zn "M-Master please... Don't leave me..."
-mc "{i}Oh, I'm not leaving forever... I'll leave her alone for only a week. When I'll be back she'll have definitely learned the lesson if she's still alive."
+zn "M-Master, please... Don't leave me..."
+mc "{i}Oh, I'm not leaving forever... I'll leave her alone for only a week. When I'll be back, she'll have definitely learned the lesson if she's still alive."
 zn "M-Master! Come back please!"
 mc "{i}God, she's annoying."
 zn "W-What do you want me to do? H-How can I convince you?"
@@ -1141,17 +1133,17 @@ jump home
 label zenLateturn:
 scene zenss with fade
 "You knock on the door of the shack."
-mc "I'm back toy."
+mc "I'm back, toy."
 scene zenss
 pause 1
 "...Silence."
 mc "Toy?"
 "Still no answer."
-mc "I'm getting angry, Zen. If you don't answer I'll get in and teach you another lesson."
+mc "I'm getting angry, Zen. If you don't answer, I'll get in and teach you another lesson."
 "Again, she doesn't answer. You can't even hear the creaks of the floorboards."
 mc "Alright, that's it."
 scene shackinteriors
-"You undo the seal and storm inside, ready to teach her a lesson, yet when you get in she's on the floor. Motionless."
+"You undo the seal and storm inside, ready to teach her a lesson. Yet when you get in, she's on the floor. Motionless."
 mc "Zen?"
 "You tap her lightly with the foot. She doesn't flinch."
 mc "Uh..."
@@ -1162,11 +1154,11 @@ scene zenelithshack
 menu:
     "She deserved it.":
         "But after all, she deserved to suffer. She's probably lucky she managed to die before you could do anything worse to her."
-        mc "...Tsk. I guess I've got something less to worry about at least."
+        mc "{i}...Tsk. I guess I've got something less to worry about at least."
         "You leave her there and go home. You decide you won't come back."
     "She didn't deserve it.":
-        mc "Even for what she's done... She didn't deserve a death like this. It's too cruel even for me."
-        mc "Sigh... Well, whatever. I guess she managed to avoid what I wanted to do with her."
+        mc "{i}Even for what she's done... She didn't deserve a death like this. It's too cruel even for me."
+        mc "{i}Sigh... Well, whatever. I guess she managed to avoid what I wanted to do with her."
         "You decide to leave her there and go home. There's no reason to stay or come back."
 $ zenRouteEnd = True
 $ chargedRune -= 1
@@ -1176,43 +1168,43 @@ jump home
 label zenReturn:
 hide screen hud
 mc "{i}It's time."
-"Before you leave to the shack you take with you food for Zenelith. If she does everything you ask her maybe she'll deserve to eat it."
+"Before you leave to the shack, you take with you food for Zenelith. If she does everything you ask her, maybe she'll deserve to eat it."
 scene zenss with fade
 mc "{size=-3}...I'm back."
 "..."
 mc "{i}I don't know why I expected someone to answer after whispering that."
 "You decide to start getting closer to the cabin."
-zn "{size=-7}Master...{/size}{p}{size=-5}Master come back...{/size}{p}{size=-3}come back...{/size}{p}{size=-2}master...{/size}{p}"
+zn "{size=-7}Master...{/size}{p}{size=-5}Master, come back...{/size}{p}{size=-3}come back...{/size}{p}{size=-2}master...{/size}{p}"
 mc "{i}Oh, I see, she's gone insane, great."
 mc "I'm here."
 scene zenss with vpunch
-zn "{size=+5}Master!"
-mc "Stop shouting. If you attract any monster I won't hesitate to use you as meat shield."
+zn "{size=+7}Master!"
+mc "Stop shouting. If you attract any monster, I won't hesitate to use you as meat shield."
 zn "{size=-3}Y-Yes master."
 mc "Good. I'm coming in then."
 scene shackinteriors with fade
-"You get inside and there she is, kneeling still on the bed, she looks at you uncertain of what's going to happen."
+"You get inside and there she is, standing still on the bed on her knees. She looks at you uncertain of what's going to happen."
 mc "So, toy, have you understood the lesson?"
 zn "Y-Yes, master."
 mc "I hope something like this won't happen again."
 zn "I-It won't, master."
-mc "{i}She at least sounds more complacent... Let's see how obedient she is now."
+mc "{i}She at least sounds more complacent... Let's see if how obedient she is now."
 mc "Are you hungry?"
 zn "...Yes, master."
-mc "Good, I've got just the thing for you then. Sit down.{p}...Naked."
+mc "Good, I've got just the thing for you then. Sit down...{p}...Naked."
 zn "Y-Yes."
 scene bjanimstart with fade
 pause 2
 mc "{i}Just how I like 'em."
-mc "I don't think I need to tell you but... Don't try biting."
+mc "I don't think I need to tell you, but... Don't try biting."
 zn "Y-Yes..."
 mc "Perfect. Now open your mouth wide."
 "She opens her mouth as you slowly lower your pants. She doesn't flinch when you take your dick out."
 scene zenbj with dissolve
 pause 1
 mc "{i}H-Holy fuck, this feels amazing... I guess her mouth is good for more stuff other than talking shit."
-mc "You're doing a great job taking it, toy. Keep going like this.."
-mc "{i}Sure, she still looks like she wouldn't mind killing me but... Heh, she has clearly understood who's the boss."
+mc "You're doing a great job taking it, toy. Keep going like this..."
+mc "{i}Sure, she still looks like she wouldn't mind killing me, but... Heh, she has clearly understood who's the boss."
 scene zenbj with dissolve
 pause 5
 mc "{i}God, this is so good..."
@@ -1229,7 +1221,7 @@ pause 0.1
 scene bjanimcum with flash
 mc "Ahh... Much better."
 zn "..."
-mc "{i}That wasn't bad but I haven't heard her squel like she usually does..."
+mc "{i}That wasn't bad, but I haven't heard her squeal like she usually does..."
 mc "{i}I want something more, like..."
 mc "...Get on the bed."
 zn "...?"
@@ -1279,10 +1271,10 @@ pause 3
 mc "Ah... Much, {b}much{/b} better."
 zn "M-Master..."
 mc "...You're forgiven, toy."
-zn "Th-thanks~"
+zn "Th-Thanks~"
 scene shackinteriors with fade
-"Not soon after Zenelith passes out. She probably used too much energy."
-"You sigh and get up. You leave her there with some food next to her and leave. From now on you'll be back and you know she'll listen to all your requests."
+"Not soon after, Zenelith passes out. She probably used too much energy."
+"You sigh and get up. You leave her there with some food next to her and leave. From now on, you'll be back and you know she'll listen to all your requests."
 mc "{i}Heh, I really am the luckiest. I get to fuck her whenever I feel like so."
 $ zenS = 7
 $ chargedRune -= 1
@@ -1293,11 +1285,11 @@ jump home
 
 
 
-label zFirstAnal:
+label zenFirstAnalSla:
 hide screen hud
-mc @talk "Alright, get on the ground. Now"
+mc @talk "Alright, get on the ground. Now."
 znr @talk "Yes, master."
-"She gets on all fours on the ground. This is new but she thinks she knows what's going to happen. She takes off her clothes and waits."
+"She gets on all fours on the ground. This is new, but she thinks she knows what's going to happen. She takes off her clothes and waits."
 scene znanalbase with fade
 zn "C'mon master, I can't wait for it any longer~"
 mc "...Let's try something new."
@@ -1312,7 +1304,7 @@ zn "OH GOD~! YES!"
 scene znanalanim with vpunch
 zn "Fuck... me... Harder~!"
 mc "{i}Look at her... To think just some weeks ago she wanted to leave."
-zn "Mess my insides master~!"
+zn "Mess my insides, master~!"
 scene znanalanim with hpunch
 zn "OH~!"
 scene znanalanim with hpunch
@@ -1343,7 +1335,7 @@ menu:
     "Cum inside":
         scene znanalanim with vpunch
         zn "I'M-"
-        mc "-Cumming!"
+        mc "-CUMMING!"
         scene znanalanim with flash
         pause 0.2
         scene znanalanim with flash
@@ -1364,5 +1356,4 @@ zn "I-I always am for my master~"
 mc "Hah, you really are a slut."
 $ persistent.zenAnal = True
 $ analDone = True
-call ItsFoodOrNothing from _call_ItsFoodOrNothing_first
 jump zenMenuC

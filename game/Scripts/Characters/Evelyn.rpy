@@ -55,15 +55,15 @@ menu:
         #    jump guild
     "Guess who'll be joining your party soon?" if askeve == 1:
         jump swta1
-    "Ok, I did it." if alphafalcon >= 3 and greenarrow ==1 and evequest == 0:
+    "Ok, I did it" if alphafalcon >= 3 and greenarrow ==1 and evequest == 0:
         jump swta3
-    "I'm ready, let's go." if level >= 10 and sequest1 == 0:
+    "I'm ready, let's go" if level >= 10 and sequest1 == 0:
         if swordlvl < 6:
             mc "{i}Wait, if I'm gonna go on a quest with these guys, {b}I better train a bit more.{/b}"
             mc "{i}I've gotta show that I have what it takes to be in their party."
             jump guild
         jump cavetresureq
-    "Nothing!":
+    "Nothing":
         hide talkhe
         show talkhappymc
         mc "Just came by the Guild, thought I would come see you."
@@ -175,7 +175,7 @@ elif evesex == 1:
             jump guild
 
 ##### EVENTS
-if savedaerin == 1 and evemillyquest == 0:
+if bothpath > 6 and evemillyquest == 0:
     jump EveQ1pre
 if evemillyquest == 1 and ledricquest == 0:
     jump EveQ1transition
@@ -203,7 +203,7 @@ menu:
         mc "Why does your house look kinda empty? There's almost nothing here except for those beds and that table."
         hide talkwamc
         show talkwae
-        e "What did you expect, [mc]? I don't really spend much time here and neither does Milly. So, this place was kinda abandoned."
+        e "What did you expect, [mc]? I don't really spend much time here, and neither does Milly. So, this place was kinda abandoned."
         mc "Oh yeah, right, that makes sense. Totally forgot about that."
         jump eveHouse
 
@@ -220,11 +220,11 @@ menu:
         mc "Uhh... I guess \"In love\"?"
         show blushtalke
         e "What? Nooo way! Hahahaha! What made you think that we were?"
-        mc "Well, it's just that since the two of you are, well, always together and do almost everything together, I just thought it made sense that you two were dating..."
+        mc "Well, it's just that since the two of you are, well, always together, and do almost everything together, I just thought it made sense that you two were dating..."
         e "It's nothing like that, little one. We're partners and that's all there is to it. And besides, I don't think Sander has a romantic side to him at all. He's just a pervert most of the time."
         mc "Oh, I see. Hahaha."
         show blushtalke
-        e "Don't worry, little one.  I'm still a maiden and I don't plan on changing that anytime soon."
+        e "Don't worry, little one.  I'm still a maiden, and I don't plan on changing that anytime soon."
         jump eveHouse
 
     "About Milly":
@@ -252,11 +252,11 @@ menu:
         mc "Hmm... you're right."
         mc "I guess Milly must be really lonely then, being the last born of the whole generation..."
         show sadtalke
-        e "Yeah, the few born of the last generation are a bit too young to be her friends. I try to come here every day but sometimes I can't make it when I'm on quests and I feel very selfish most of the time."
+        e "Yeah, the few born of the last generation are a bit too young to be her friends. I try to come here every day, but sometimes I can't make it when I'm on quests, and I feel very selfish most of the time."
         e "You know, for leaving her alone here and all, while I explore the beauties of the outside world and have fun on quests."
         mc "But you try your best to come here every day, right?"
         e "I do."
-        mc "And that means you care about her and I think that's what matters the most."
+        mc "And that means you care about her, and I think that's what matters the most."
         e "Thank you, [mc]. Look at you giving this 300-year-old elf lessons about life."
         mc "Heh, I guess I'm pretty wise, aren't I?"
         show talkhe
@@ -284,8 +284,8 @@ menu:
         e "Well, little one, let's say she is... Strict."
         e "She doesn't really have any friends in the Village. She's the last living member of the sixth generation and the only one who didn't give birth to any of us of the seventh generation."
         mc "She was the only one of her generation who didn't generate offspring?"
-        e "Yes and after all the men died, she accepted her clan duty to become the priestess."
-        e "Nobody really knows how she was before becoming priestess but she was probably just as \"strict\" before becoming the priestess."
+        e "Yes, and after all the men died, she accepted her clan duty to become the priestess."
+        e "Nobody really knows how she was before becoming priestess, but she was probably just as \"strict\" before becoming the priestess."
         e "But after all being strict is the job of the priestess. She needs to keep our traditions alive, so it's not really bad that she's this way."
         mc "I see. Thanks Eve!"
         e "No problem, little one."
@@ -294,4 +294,4 @@ menu:
     "Leave":
         mc "That's all, I'll be leaving now. Make sure to get some rest."
         e "Okay, [mc]. Thank you for the visit!"
-        jump elfvillage
+        jump elfVillage

@@ -1,7 +1,7 @@
 default zenQ = 0
 default mattressDebt = 0
 default foodDebt = 0
-default marketDebt = 0
+default marketDebt = mattressDebt+foodDebt
 default dayZ = 0
 default toolz = False
 default humanHate = False
@@ -9,6 +9,10 @@ default furnitureZ = False
 default Zdress = False
 default zenPeek = False
 default zenNoticed = False
+default lookgreatz = False
+default fitsperfectly = False
+default lookgorgeusz = False
+default looksgreat = False
 default zenPlay = False
 default zenFuck = False
 default zenLove = False
@@ -25,7 +29,7 @@ zn "...Huh?"
 mc "C'mon, grab my hand before I change idea."
 zn "Wh-Why? Don't want to get your hands dirty with the blood of an elf?"
 mc "No, you have barely anything on and you probably haven't eaten in a while... Your magic is so weak you couldn't even scratch me."
-mc "You seem in need of help and I'd like to offer it to you."
+mc "You seem in need of help, and I'd like to offer it to you."
 mc "...Unless you'd prefer me killing you."
 if RapeZen == True:
     znr "Maybe I would..."
@@ -60,11 +64,11 @@ if RapeZen == True:
     pause 3
     hide text
     jump GameOver
-"Zenelith looks at you in anger but slowly, she extends her hand."
+"Zenelith looks at you in anger, but slowly, she extends her hand."
 scene zenelithhelp
 znr "Don't think I trust you, ape."
 mc "Alright."
-"You pull Zenelith up and she almost falls again but she manages to stay upright."
+"You pull Zenelith up and she almost falls again, but she manages to stay upright."
 show forrestn
 show znrag
 show znrag angry
@@ -127,14 +131,14 @@ mc @ talk "Sigh... Listen, you know very well I am not getting anything out of h
 mc @ talk "I'm friends with both Aerin and Eve, the fact that I'm helping you is striking to me as well."
 mc @ talk "But you're still a person and I'm trying to help you, because maybe there is still some good in you."
 if millyInfo == True:
-    mc @ hopet "Afterall, before everything happened, Milly said you weren't a bad person and I'd like to believe her."
+    mc @ hopet "Afterall, before everything happened, Milly said you weren't a bad person, and I'd like to believe her."
 mc @ talk "This house, regardless of how rundown it is, is a house. There's no other place in which you'd be safe. In Randel there's people who don't like you and obviously you can't go back to your village any time soon."
 znr "..."
-"For a brief second her expression of contempt disappears but you don't have time to decipher her new expression as she goes back to angry again."
+"For a brief second her expression of contempt disappears, but you don't have time to decipher her new expression that she goes back to normal."
 show znrag angry
 znr @ angryt "Fine, I can't expect much more from an ape."
 show prot angry
-mc @ angryt "I'm not an ape. I'm a human and my name is [mc]."
+mc @ angryt "I'm not an ape. I'm a human, and my name is [mc]"
 znr @ angryt "I will not stain my mouth with your monkey name... Be grateful I'm speaking your tongue."
 show prot sad
 mc "{i}Let's just hope she'll get better with time."
@@ -159,17 +163,17 @@ pause 2
 "You decide to go inside the house to check on her."
 scene znsleep
 "She's still sleeping, a faint smile on her face... She looks nice for once."
-mc "{i}I really wish she were like that when awake as well."
+mc "{i}Really wish she were like that when awake as well."
 scene forrest
 "You then decide to leave for Randel. Despite what you had said, she wasn't totally wrong. That house is so run down that it makes little difference whether you sleep inside of it or outside."
 mc "{i}First things first, I'll get her a bed and bring her some food for the day, then tomorrow we'll start cleaning that whole place up."
 scene villageback with fade
 mc "{i}Alright, time to buy a mattress."
 "You wander around the market for some time, you haven't really ever went shopping for beds or bedding before in your life."
-"After a few minutes you find someone selling a few mattresses, you go to buy one but then you stop."
+"After a few minutes you find someone selling a few mattresses, you go to buy one, but then you stop."
 mc "{i}Wait, how am I going to take a mattress all the way through the forest?"
 mc "{i}I can't just carry it over my shoulder the whole way through..."
-mc "{i}I could use a mule but... I don't have one, they're expensive and I'm not going to buy one just for this."
+mc "{i}I could use a mule, but... I don't have one, they're expensive, and I'm not going to buy one just for this."
 stop music fadeout 2
 mc "{i}Maybe Scarlet knows a spell that could be useful for this! Maybe there's a spell that can make stuff smaller or something..."
 play music academy fadein 1
@@ -192,7 +196,7 @@ s "Why you ask?"
 mc "Uhm..."
 menu:
     "Lie":
-        mc "I, uhm, wanted to take more equipment with me while adventuring and-"
+        mc "I, uhm, wanted to take more equipment with me while adventuring, and-"
         s "[mc]."
         mc "Y-Yes?"
         s "Has anyone ever told you that you're bad at lying?"
@@ -237,8 +241,8 @@ menu:
         mc "Alright."
         mc "You see, there's this elf priestess who did some bad stuff. She got what she deserved and has been trying to survive by herself in the forest since."
         mc "I found her and despite knowing what she has done I... I don't know, I decided to help her."
-        mc "We found a shack in the woods and we decided she'd stay there but it only had rubble in it, not even a bed to sleep in..."
-        mc "So I wanted to buy a mattress for her to sleep in but carrying through the entire forest would be hard by myself..."
+        mc "We found a shack in the woods and we decided she'd stay there, but it only had rubble in it, not even a bed to sleep in..."
+        mc "So I wanted to buy a mattress for her to sleep in, but carrying through the entire forest would be hard by myself..."
         s "Oh, wow."
         s "Well, that's a lot of information. You didn't have to to tell me all of that."
         s "...But I getcha."
@@ -259,8 +263,8 @@ play music tavern
 if money < 20:
     $ mattressDebt = 20-money
     $ money = 0
-    "You didn't have enough money but you promised you will be back and pay for it later."
-    "Somehow you convinced them."
+    "You didn't have enough money, but you promise you will be back and pay for it later."
+    "Somehow you convince them."
 else:
     $ money -= 20
     "You pay the man the money for the mattress, then you use the spell on it to bring it along."
@@ -327,7 +331,7 @@ menu:
         "You look up and Zenelith turns her head away, yet you can still see that her face is red."
         show prot smile
         mc @smilet "C'mon, we're both hungry, let's just eat."
-        "She groans but she still ends up sitting down, doing her best to not look at you."
+        "She groans, but she still ends up sitting down, doing her best to not look at you."
         show znrag angry
         "She grabs some food and you do as well. The two of you start eating."
         znr @talk "I don't understand you."
@@ -350,7 +354,7 @@ menu:
                 mc @talk "When?"
                 znr @angryt"When you arrived to the village, there was another ape with you."
                 mc "{i}Oh right, Sander. He doesn't really give the best impression of the human race..."
-                mc @talk "His name is Sander, he might not have great manners but he has been Eve's adventuring partner for years, do you really think she'd be friends with a bad person?"
+                mc @talk "His name is Sander, he might not have great manners, but he has been Eve's adventuring partner for years, do you really think she'd be friends with a bad person?"
                 znr "She has been wandering among you apes too long, her judgement has been clouded from her time away from our village-"
                 mc @angryt "We both know that's not true."
                 znr @angryt"Tch, what would an ape know?"
@@ -449,7 +453,7 @@ mc @smilet "Shall we get started?"
 znr @angryt  "...Fine."
 "You put the toolbox on the ground and take out a hammer and a few nails and the two of you get to work."
 scene shackbuild with dissolve
-"It's a tiring job and it's definitely taking a lot of time. If you had been doing it with anyone else it'd have still been a really fun time but Zenelith... She's not the best talker."
+"It's a tiring job, and it's definitely taking a lot of time. If you had been doing it with anyone else it'd have still been a really fun time, but Zenelith... She's not the best talker."
 mc "{i}At least she hasn't called me ape yet today."
 if humanHate == True:
     scene shackbuild2 with dissolve
@@ -461,11 +465,11 @@ if humanHate == True:
     mc "You're sorry?"
     zn "Yes."
     mc "For what?"
-    mc "{i}I should probably ask \"For what in particular\" but..."
+    mc "{i}I should probably ask \"For what in particular\", but..."
     zn "..."
     zn "For yesterday, I should've not thrown you out."
     mc "Oh."
-    zn "You called me out and I got angry but you are right."
+    zn "You called me out and I got angry, but you are right."
     zn "How can I say anything about Evelyn? I know her judgment hasn't become clouded, she still acts the same way she did before her mother's death. She almost hasn't changed at all."
     zn "But I did change over time and not into something better."
     zn "What I did is unforgivable, I always knew it, yet it didn't stop me. I..."
@@ -480,9 +484,9 @@ if humanHate == True:
             znr @angryt "Shut up."
             stop music fadeout 2
         "You can be a better person":
-            mc @talk "Yes, you did something horrible but that doesn't mean you can't change Zenelith."
+            mc @talk "Yes, you did something horrible, but that doesn't mean you can't change Zenelith."
             znr "..."
-            mc @hopet "I know you can be a better person and I know you are going to try. It's why I'm giving you this chance: to show the world you're not just the mean priestess but much more."
+            mc @hopet "I know you can be a better person, and I know you are going to try. It's why I'm giving you this chance: to show the world you're not just the mean priestess, but much more."
             znr @talk "...Thank you, [mc]."
             mc @smilet "It's weird hearing you say my name."
             znr @angryt "Should I go back to ape?"
@@ -490,17 +494,17 @@ if humanHate == True:
             stop music fadeout 2
         "What's done is done":
             mc @talk "What's done is done."
-            mc @hopet "You can't change the past but you can change the present. You're not too old for that."
+            mc @hopet "You can't change the past, but you can change the present. You're not too old for that."
             mc @smilet "If Zenelith in the past wasn't a good person, make the Zenelith in the present a good person. Maybe that way people will forgive you."
             znr @talk "...If you say so."
-            mc @smilet "Maybe they still won't forgive you but maybe by then you'll have done enough good that they won't care anymore."
+            mc @smilet "Maybe they still won't forgive you, but maybe by then you'll have done enough good that they won't care anymore."
             mc @smilet "I believe in you."
             znr @talk "Thanks, [mc]..."
             stop music fadeout 2
             mc "{i}Oh wow, she actually said my name."
 scene shackinteriorbase with fade
 play music forest
-"The two of you work until dawn, not speaking much after that conversation. When you're finished the place is finally looking like a real house and a cozy one at that."
+"The two of you work until dawn, not speaking much after that conversation. When you're finished the place is finally looking like a real house, and a cozy one at that."
 mc "See? Now it's way better."
 zn "It is."
 mc "Well, it's gotten late, I'm going to leave. I'm sorry I didn't bring more food, I hope what I brought yesterday was enough."
@@ -515,13 +519,13 @@ mc "Bye then."
 zn "Bye."
 scene zenelithshack
 if humanHate == True:
-    mc "{i}Today's been a productive day. She not only finally called me by name but also thanked me... Maybe I {b}am{/b} making progress."
+    mc "{i}Today's been a productive day. She not only finally called me by name, but also thanked me... Maybe I {b}am{/b} making progress."
 else:
     mc "{i}Welp, next time I come over it'll go even better, I'm sure of it."
 mc "{i}That house is still missing a table and some chairs... I'll bring them next time around."
 mc "{i}...And maybe I could buy her an actual dress too."
 if evil > 2:
-    mc "{i}I don't mind the view but..."
+    mc "{i}I don't mind the view, but..."
 else:
     mc "{i}She can't be going around like that forever."
 $ persistent.zenRepaired = True
@@ -548,7 +552,7 @@ else:
     mc @smilet "Hey."
     znr @talk "Good evening, human."
 if humanHate == True:
-    mc "{i}Not my name but not ape either, I guess it's an improvement."
+    mc "{i}Not my name, but not ape either, I guess it's an improvement."
     mc @smilet "Hey there, Zenelith."
     znr @talk "What is that you brought with you?"
     mc @smilet "They're gifts for you."
@@ -582,7 +586,7 @@ mc "I choose the nicest table to-"
 with vpunch
 mc "Owch-"
 "You feel a sharp pain on your hand, when you look at it, you see a big splinter stuck halfway inside your finger."
-"You quickly take it out but the wound is big enough that blood starts flowing down from it."
+"You quickly take it out, but the wound is big enough that blood starts flowing down from it."
 "Then Zenelith grabs your hand."
 $ persistent.zenHeal
 scene zenelithmcheal2 with dissolve
@@ -617,7 +621,7 @@ if magiclecture == True:
     znd @ talk "...Zen is better."
 else:
     mc "Not really."
-    zn "Well, to cast any spell you need a catalyst. For low level spells your body can work just fine but after that you need to use something external to not injure yoursel."
+    zn "Well, to cast any spell you need a catalyst. For low level spells your body can work just fine, but after that you need to use something external to not injure yoursel."
     mc "I see."
     zn "If I still had my staff I could do more magic than this. It would also be a lot less time consuming to take care of the garden I made..."
     mc "I could get you a staff if you want."
@@ -724,9 +728,11 @@ show prot smile
 mc @ smilet "Wow..."
 menu:
     "You look great":
+        $ lookgreatz = True
         mc @ smilet "...You look great."
         znd @ blusht "...Thanks."
     "It fits you perfectly":
+        $ fitsperfectly = True
         show zndress normal
         mc @ smilet "...It fits you perfectly."
         znd @ talk "It's a bit tight in the back."
@@ -737,14 +743,16 @@ menu:
         show zndress angry
         znd @ angryt "No."
         mc @ smirkt "Exactly."
-    "You look gorgeous":
-        mc @ smilet "You ... look ... gorgeous."
-        znd @ blusht "Thank you, [mc]."
+    "You look gorgeus":
+        $ lookgorgeusz = True
+        mc @ smilet "...You look gorgeus."
+        znd @ blusht "Thank you, [mc]"
         mc @smilet "Nice to hear you say my name like that."
         znd @ blusht "Nice of you that you took care of me."
     "It looks great":
+        $ looksgreat = True
         show zndress normal
-        mc @ smilet "...It looks great."
+        mc @ smilet "It looks great."
         znd @ talk "It's weird."
         show prot question
         mc @ smilet "Is it?"
@@ -776,12 +784,12 @@ play music lake
 menu:
     "Wait":
         mc "{i}Yeah... I should wait."
-        "And you wait for what seems an eternity. Sometimes her crying tones down and for a moment you believe she is going to stop but she doesn't."
+        "And you wait for what seems an eternity. Sometimes her crying tones down and for a moment you believe she is going to stop, but she doesn't."
         mc "{i}I can't take this anymore, I need to know what's up."
     "Knock":
         mc "{i}I told myself I'd help her. This is part of that."
 play sound doorknock
-"You take a deep breath and then you lightly knock on the door. The crying suddenly stops and then you hear Zenelith getting up. Despite having wiped off her tears, when she opens the door it's clear as day that she has been crying."
+"You take a deep breath and then you lightly knock on the door. The crying suddenly stops, and then you hear Zenelith getting up. Despite having wiped off her tears, when she opens the door it's clear as day that she has been crying."
 show zndress sadc
 show prot sad
 znd @smilect "Hey..."
@@ -827,10 +835,10 @@ znd @smilect "I became horrible, [mc]."
 znd @smilect "I was scared to be tossed aside and I gave up on what I wanted to feel safe, to feel needed."
 znd "...{p}...Morgan was the last man of our village. The only one who still hadn't left for the war."
 znd @sadct "I... I'll n-never forgive myself."
-"For a moment she seems to be going to cry again but she manages to hold her tears back."
+"For a moment she seems to be going to cry again, but she manages to hold the tears back."
 znd @sadct "I was desperate. For centuries nobody had spoken to me with pleasure, sometimes I even thought of...{p}...{p}But... I didn't."
 znd @smilect "Instead I decided to prove to myself I was strong. That I wasn't a scared little girl anymore. That I only did it for myself and not for those ungrateful elves..."
-znd @sadct "So I kidnapped Morgan. I locked him up and tortured him.{p}At first it was only to see if I could fool everyone but then...{p}Then I became worse."
+znd @sadct "So I kidnapped Morgan. I locked him up and tortured him.{p}At first it was only to see if I could fool everyone, but then...{p}Then I became worse."
 znd @sadct "He was the last male in the village... And I had him all for myself."
 znd @smilect "I told myself I was doing it to degrade him, to pleasure myself..."
 znd @sadct "The truth is, [mc], that I hoped I would get pregnant."
@@ -841,23 +849,23 @@ mc @sadt "...Were you happy?"
 znd @sadct "What?"
 mc @sadt "When you did those things, were you happy?"
 play music reflection
-znd @sadct "I wasn't. Even though I hoped I would... I was miserable."
+znd @sadct "...I wasn't. Even though I hoped I would, I was miserable."
 mc @hopet "Then there's still hope."
 znd @sadct "What?"
 mc @hopet "You aren't a bad person, Zen, you only did bad things."
 znd @smilect "That doesn't make much of a difference."
-mc @smilet "It does. It's a whole world of difference"
+mc @smilet "It does."
 mc @hopet "Zen, you wouln't feel bad if you weren't a good person. You wouldn't cry when you're alone.{p}I want to prove that everyone was wrong in treating you like this. I'm giving you a chance to show the world how good you really are."
-mc @hopet "You're not in the village anymore. Now you're here with me and the only thing I want you to do is being yourself. I don't want you to become a priestess, I don't want you to become a mother, I just want you to be yourself, because...{p}It's how you should be."
+mc @hopet "You're not in the village anymore. Now you're here with me and the only thing I want you to do is be yourself. I don't want you to become a priestess, I don't want you to become a mother, I just want you to be yourself, because...{p}It's how you should be."
 mc @smilet "Zen, I've never had to take care of anyone else before."
 if girlclothes > 0:
-    mc @hopet "Sure, there's Thea but I barely had to do anything for her."
+    mc @hopet "Sure, there's Thea, but I barely had to do anything for her."
     mc @hopet "On the other hand for you I've been doing so many things and... Up until not too long ago I had my uncle care for me."
 else:
     mc @hopet "Yet I've done lots of things for you when not too long ago I still had my uncle taking care of me."
 mc @hopet "He decided to leave now that I'm 19 and let the house all for myself but even then I didn't feel so much like an adult. I was just a boy."
 mc @hopet "But I've been taking care of you, I've helped you in all the ways I can. I've spent entire days just doing stuff for you and... I don't regret it."
-mc @hopet "I've never had much responsibility in my life and now I have you."
+mc @hopet "I've never had much responsibility in my life, and now I have you."
 mc @smilet "I guess my uncle is right... I'm becoming an adult."
 mc @smilet "You've shown me that you're not a bad person. You've shown me that you regret it and that nobody ever gave you a chance to begin with."
 show zndress blush
@@ -889,7 +897,7 @@ if time < 3:
 else:
     scene zenelithshackn
 mc "{i}That went really well."
-"You sigh and only then you notice your clothes now have her sweet aroma."
+"You sigh, and only then you notice your clothes now have her sweet aroma."
 $ zenQ = 4
 $ time += 1
 jump home
@@ -898,7 +906,7 @@ label zenelith5:
 hide screen hud with dissolve
 scene forrest
 "As you walk towards Zenelith's hut, you notice something. Some branches on the path have been broken, higher than what you usually need to break to pass."
-"At first you think it could've been Zenelith deciding to go on a walk but then you see footprints and they seem to point towards the cabin."
+"At first you think it could've been Zenelith deciding to go on a walk, but then you see footprints, and they seem to point towards the cabin."
 stop music fadeout 2
 mc "{i}Uh-oh."
 "You begin to run towards the shack."
@@ -944,8 +952,8 @@ menu:
         mc @angryt "You all casted her aside and when she couldn't become a mother, she became the priestess because that way she would at least be respected."
         mc @angryt "What do you think would happen if someone lived like that for over four hundred years? Would you still be yourself? Would you still be kind? Because it seems to me it takes you much less to forget kindness."
         e @angryt "That doesn't excuse it."
-        mc @angryt "It doesn't. She's done something terrible but she's not an evil person. Have you never done something that you regret?"
-        e @angryt "I did but it was-"
+        mc @angryt "It doesn't. She's done something terrible, but she's not an evil person. Have you never done something that you regret?"
+        e @angryt "I did, but it was-"
         mc @angryt "...Completely different?"
         pause 1
         mc @angryt "That's what I thought."
@@ -954,7 +962,7 @@ menu:
         e @angryt "{size=-2}Shut up."
         mc @angryt "What?"
         e @angryt "{size=-2}Sh!"
-        "You go quiet, then you hear it. The leaves all around you rustle and then..."
+        "you go quiet, then you hear it. The leaves all around you rustle and then..."
     "She regrets it":
         mc @angryt "She regrets it Eve. She knows what she did is wrong."
         e @angryt "Then let her face what she deserves."
@@ -984,12 +992,12 @@ menu:
         e @angryt "What do you mean?"
         mc @angryt "She was despised since birth and her family, the only people who ever showed her any kind of love, died centuries ago."
         mc @angryt "You all casted her aside and, when she couldn't become a mother, she became the priestess because that was the only way she would at least be respected."
-        mc @angryt "She didn't even get that. Whenever she wasn't around you all talked shit about her and you didn't know she had done anything to Morgan."
+        mc @angryt "She didn't even get that. Whenever she wasn't around you all talked shit about her, and you didn't know she had done anything to Morgan."
         mc @angryt "You wanna tell me she was strict? That she was a bitch? She gave you 60 years, Eve. Why didn't you become the village chief? You didn't want to let Sander go? If I wasn't around who knows what could've happened."
         mc @angryt "Now tell me: what do you think would happen if someone lived like Zenelith had to for over four hundred years? Would you still be yourself? Would you still be kind?"
         mc @angryt "She never got a chance, Evelyn. I'm giving her that chance because she has shown me she can be more than what everybody made her out to be, I'm giving her a chance because she's a good person."
         e "..."
-        mc @angryt "Eve, please. I know she has done something horrible but give her a chance. Let her at least try to redeem herself."
+        mc @angryt "Eve, please. I know she has done something horrible, but give her a chance. Let her at least try to redeem herself."
         e @angryt "{size=-2}Wait."
         mc @angryt "What?"
         e @angryt "{size=-2}Be quiet!"
@@ -1012,12 +1020,12 @@ menu:
         show zndress r angry
         show eve angry
         pause 2
-        znd @r angryt "That was all I wanted, Eve! I wanted someone to be my friend! I've been cast aside all my life and I couldn't even become a mother. You know how that is like, Eve."
-        znd @r angryt "Torturing Morgan isn't my greatest sin for you and the others from the village, no, that is my inability to procreate and before that it was my reluctance to follow traditions. I didn't want to be the priestess, Eve."
+        znd @r angryt "That was all I wanted, Eve! I wanted someone to be my friend! I've been cast aside all my life, and I couldn't even become a mother. You know how that is like, Eve."
+        znd @r angryt "Torturing Morgan isn't my greatest sin for you and the others from the village, no, that is my inability to procreate, and before that it was my reluctance to follow traditions. I didn't want to be the priestess, Eve."
         znd @r angryt "I wanted to leave the village with my brothers and live in the outside world! But then they died and I had to become the priestess."
         e @angryt "That doesn't excuse you."
         znd @r angryt "It doesn't. But it doesn't excuse you either."
-        znd @r angryt "I have changed. I've done it for myself but it was thanks to [mc]. If it weren't for him I'd either be dead or still living with everyone else in the village."
+        znd @r angryt "I have changed. I've done it for myself, but it was thanks to [mc]. If it weren't for him I'd either be dead or still living with everyone else in the village."
         znd @r angryt "And you know what? I'd rather live here with a human than go back to the village. Nobody wanted me there to begin with."
         e "Tsk."
         mc @angryt "Eve, please."
@@ -1045,10 +1053,10 @@ e "Great! Just about what I'd expect from her."
 "The direwolves keep coming. For each one you kill, two appear out of nowhere to try and jump you."
 "Then you hear Evelyn yell."
 mc "Eve!"
-"One of the direwolves managed to knock her down but just before it can attack her, Zenelith comes out of the house. She has something in her hand."
+"One of the direwolves managed to knock her down, but just before it can attack her, Zenelith comes out of the house. She has something in her hand."
 zn "Tiksha!"
 scene zenelithpowerf with hpunch
-"The direwolf falls to the ground, then Zenelith blasts another spell and another and another."
+"The direwolf falls to the ground, then Zenelith blasts another spell, and another, and another."
 play sound magic
 scene zenelithpowerf with hpunch
 pause 0.5
@@ -1076,8 +1084,8 @@ e @angryt "But I trust [mc]."
 mc @hopet "Thanks."
 show prot normal
 e @angryt "Don't thank me."
-e @angryt "Zenelith, I'm not sure you're a good person but I will let you prove that you're better than scum."
-e @angryt "I'll let you be for now but try something funny and I won't hesitate to kill you."
+e @angryt "Zenelith, I'm not sure you're a good person, but I will let you prove that you're better than scum."
+e @angryt "I'll let you be for now, but try something funny and I won't hesitate to kill you."
 e @angryt "We'll never be friends and you will never be able to return to the village, so treasure [mc], because he might be the only friend you'll ever have."
 zns @r blusht "...I already treasure him."
 show znstaff r blush
@@ -1135,7 +1143,7 @@ znd @determinedt "I want to prove myself."
 show zndress determined
 show prot question
 mc @questiont "Huh?"
-znd @determinedt "What you said yesterday might be true but by standing in this hut alone all day I won't prove anything."
+znd @determinedt "What you said yesterday might be true, but by standing in this hut alone all day I won't prove anything."
 mc @questiont "How do you want to prove it?"
 znd @determinedt "You are an adventurer, aren't you?"
 mc @questiont "...Yeah?"
@@ -1150,7 +1158,7 @@ zns @angryt "[mc], I wanted to leave the village when I was young. Before my bro
 zns @talk "The village was doing fine on its own. If we left we could help the people outside."
 zns @angryt "My mother was so angry when she found out... She hated humans. I guess it's in character for a priestess."
 zns @angryt "Sure, maybe I'm not fit for adventuring. After all yesterday I got really scared when the direwolves showed up... But I still managed to get my staff and help."
-zns @smilet "If I see it's too much for me, I'll try something else but first let me try being a good person by helping people the same way you do."
+zns @smilet "If I see it's too much for me, I'll try something else, but first let me try being a good person by helping people the same way you do."
 show znstaff smile
 mc @sad "Sigh."
 show prot smile
@@ -1185,7 +1193,7 @@ zns @determinedt "Yes!"
 scene forrest with fade
 pause 1
 scene villageback with dissolve
-"The two of you walk through the forest and then arrive at Randel. People are staring at her and she seems slightly uncomfortable but you reassure her: There's just not that many elves around."
+"The two of you walk through the forest and then arrive at Randel. People are staring at her and she seems slightly uncomfortable, but you reassure her: There's just not that many elves around."
 scene adventurersguild_day with fade
 play music tavern
 mc "Here we are."
@@ -1198,7 +1206,7 @@ mc "Oh no."
 scene adgc2 with fade
 j "[mc], I was just telling Sander and Evelyn about a new quest that might need a few more people to do."
 mc "What is it?"
-j "It seems there have been a few sightings of a troll wandering around the area. It's decades since we saw such a strong monster so close to the town and we need someone to take care of it. Unfortunately all our diamond adventurers are out."
+j "It seems there have been a few sightings of a troll wandering around the area. It's decades we don't see such a strong monster so close to the town and we need someone to take care of it. Unfortunately all our diamond adventurers are out."
 mc "I see, well, then count me and my friend in."
 j "Oh?"
 "You wave your hand at Zenelith and she walks all the way to the counter, she smiles shyly."
@@ -1244,14 +1252,14 @@ sa "The Demon Lord's army has been doing more and more small raids across the bo
 mc "Guess we'll have more work to do then."
 sa "You're damn right! Lots of money is coming our way, kid."
 "You keep walking. Every now and then Eve glances back at Zenelith, as if to check she isn't doing anything bad."
-"Then all of you stop. You can hear heavy footsteps in the distance, most likely from the troll you're looking for."
+"Then all of you stop. You can hear in the distance the heavy footsteps of what is likely the troll you're looking for."
 play music dark
 sa "{size=-3}On the right."
 "And there it is. From the right a giant monster appears and positions itself in the middle of the road."
 scene troll
 e "[mc], cover us."
 stop music fadeout 3
-"Sander and Eve take out their weapons and begin approaching the troll but the monster doesn't react and waits for them."
+"Sander and Eve take out their weapons and begin approaching the troll, but the monster doesn't react and waits for them."
 zn "{size=-3}Why is it not-"
 play music battlemusic1
 "You manage to spot the goblins in the shadows just a second too late."
@@ -1262,16 +1270,16 @@ e "Damn it...!"
 mc "Sander! Eve!"
 sa "It's... alright kiddo, just... do something... Ngh...!"
 "You ready your sword."
-mc "I don't think I can do much but... I'll try! Zen, cover me!"
+mc "I don't think I can do much, but... I'll try! Zen, cover me!"
 scene troll2 with hpunch
-"Your rush towards the troll with your sword up in the air but before you can strike, you hit a wall..."
+"Your rush towards the troll with your sword up in the air, but before you can strike, you hit a wall..."
 scene troll3 with dissolve
 "No, that's not a wall. Between you and the troll is a magic barrier."
 mc "Huh?"
 "When you turn around you see Zenelith holding her staff out, a yellow glow around her."
 zn "Let me take care of this."
 play sound darts
-"The monsters have noticed something is wrong. They try to fire their darts again and the troll tries to do something as well but nothing gets past Zenelith's barrier."
+"The monsters have noticed something is wrong. They try to fire their darts again and the troll tries to do something as well, but nothing gets past Zeneliths' barrier"
 stop music fadeout 3
 zn "Reeme isha ke yon, praani ko reph rena..."
 play music bunispiano fadein 3
@@ -1299,7 +1307,7 @@ sa "If you could please turn me over so my face isn't on the ground I'd be reall
 mc "Yes, yes, I'm coming."
 scene ambush1 with fade
 play music forest
-"After an hour, everybody seems to be able to walk again. Sander staggers a bit but that's just how he usually walks when he pretends to be sober."
+"After an hour, everybody seems to be able to walk again. Sander staggers a bit, but that's just how he usually walks when he pretends to be sober."
 show znstaff r normal
 show eve
 show prot smile
@@ -1317,7 +1325,7 @@ show sander c normal
 show eve
 show prot smile
 show znstaff r smile
-e @sadt "I hate to say it but the only fair way to divide this is giving it all to Zenelith."
+e @sadt "I hate to say it, but the only fair way to divide this is giving it all to Zenelith."
 zns @r smilet "I don't want it."
 sa @c talk "What?"
 zns @r smilet "I don't really need it."
@@ -1343,14 +1351,14 @@ menu:
         sa @c talk "No problem, kid."
         mc @smilet "Well then, see ya."
         scene adventurersguild_day with dissolve
-        "You grab your things and head towards the door with Zenelith but right before you leave, Evelyn stops you."
+        "You grab your things and head towards the door with Zenelith, but right before you leave, Evelyn stops you."
     "Split it":
         $ money += 150
         mc @talk "Sander, Eve, let's split it in two."
         sa @c talk "That's way more than what I worked for. I'm all for that."
         e @sadt "Sigh... alright."
         scene adventurersguild_day with dissolve
-        "You split the money and decide it's time to go. You grab your things and head towards the door with Zenelith but right before you leave, Evelyn stops you."
+        "You split the money and decide it's time to go. You grab your things and head towards the door with Zenelith, but right before you leave, Evelyn stops you."
     "Give it all to Sander and Eve":
         mc @talk "I haven't done anything either. You can have it."
         "You hand over the money to Sander and Eve."
@@ -1359,7 +1367,7 @@ menu:
         sa @c talk "True... I should probably ask a raise."
         mc @smilet "Heh. See ya around."
         scene adventurersguild_day with dissolve
-        "You grab your things and head towards the door with Zenelith but right before you leave, Evelyn stops you."
+        "You grab your things and head towards the door with Zenelith, but right before you leave, Evelyn stops you."
 show prot question
 show znstaff r normal
 show eve with easeinleft
@@ -1436,7 +1444,7 @@ menu:
 scene shackinteriorbasen
 show shacktablen
 pause 1
-"A few minutes pass without a word and as you finally fall asleep you feel something wrapping around your waist."
+"A few minutes pass without a word, and as you finally fall asleep you feel something wrapping around your waist."
 zn "...{size=-5}I   {size=-5}love     {size=-1}you..."
 scene black with dissolve
 pause 2
@@ -1464,9 +1472,9 @@ mc @smilet "Good point."
 "You sit at the table and watch as she takes some fruit from the basket and holds them inside her hand. A faint green glow appears around her and then the top of the pieces of bread is filled with red jam."
 mc @hopet "...You need to teach me that."
 znd @smilet "Pft. Let me make something to drink."
-"She takes two jugs from in front of the fireplace, they seem to have been made by hand with clay. She takes two oranges and once again she uses magic to fill the two jugs with orange juice."
+"She takes two glasses from in front of the fireplace, they seem to have been made by hand with clay. She takes two oranges and once again she uses magic to fill the two glasses with orange juice."
 mc @questiont "Did you make these?"
-znd @smilet "Yeah. I can conjure water with magic but containers are still needed to drink it."
+znd @smilet "Yeah. I can conjure water with magic, but glasses are still needed to drink it."
 show prot sad
 mc @talk "Sorry for forgetting to bring you any."
 znd @smilet "It's fine."
@@ -1474,30 +1482,30 @@ znd @smilet "Let's eat now, shall we?"
 show prot smile
 mc @smilet "Yeah."
 show prot surprised
-"You grab one of the slices of bread and give it a bite. It's way sweeter than you expected and for a second you can't contain a slight grimace."
+"You grab one of the slices of bread and give it a bite. It's way sweeter than you expected, and for a second you can't contain a slight grimace."
 znd @smilet "Is it too sweet?"
 show prot smile
 mc @hopet "No, no, it's fine, I just wasn't expecting it."
 znd @smilet "Sorry, I'm too used to making it like that since I really like sweet things..."
 mc @hopet "It's fine, Zen. It's really good."
-"You keep eating while doing some small talk. When you're done you get up."
+"You keep eating while doing some small talk. When you're done you get up"
 mc @smilet "Well, it's time to go."
 znd normal "..."
 hide prot with easeoutleft
 show zndress r normal
-"You walk towards the door but Zenelith calls you."
+"You walk towards the door, but Zenelith calls you."
 znd @r talk "[mc], will you keep coming back for me?"
 mc "Of course."
 "She grabs your hand."
 stop music fadeout 3
 znd @r determinedt "Then come here, you dummy."
 scene zenkiss with vpunch
-"Zenelith suddenly pulls you into a kiss. At first you're shocked but then you lean onto her."
+"Zenelith suddenly pulls you into a kiss. At first you're shocked, but then you lean onto her."
 zn "Mh..."
 "Her body twitches as you wrap your hands around her."
 zn "[mc]... I want you..."
 mc "I want you too, Zen..."
-"As the kissing continues, she slowly starts taking off your clothes. You do the same as you begin to push her towards the wall."
+"As the kissing continues, she slowly starts taking off your clothes. You do the same as you begin pushing her towards the wall."
 zn "L-Let's get on the bed..."
 "The two of you lay naked on the bed and it doesn't take long before the kissing devolves in something more."
 "Your hands travel along her whole body as the kissing continues. One of her hand slowly slips on your abdomen and goes to touch your member."
@@ -1505,7 +1513,7 @@ zn "[mc]~"
 "You look at her in the eyes and smile. Then you slip your member inside of her."
 scene zenelith movie with fade
 pause 2
-zn "[mc]...!"
+zn "Fuck...!"
 scene zenelith movie with dissolve
 pause 1
 mc "Zenelith..."
@@ -1581,11 +1589,11 @@ menu:
         $ zenPlay = True
         $ evil += 1
         mc "{i}...To play with."
-        mc "{i}I deserve an oscar for my performance, honestly. Sander is right, she's the cowtits elf priest and now I can play wit her all I want~"
+        mc "{i}I deserve an oscar for my performance, honestly. Sander is right, she's the cowtits elf priest, and now I can play wit her all I want~"
     "To fuck.":
         $ zenFuck = True
         mc "{i}...To fuck."
-        mc "{i}Sure, she's fun but I definitely don't love her... But I won't complain if I get to fuck her whenever I want."
+        mc "{i}Sure, she's fun, but I definitely don't love her... But I won't complain if I get to fuck her whenever I want."
     "To be with.":
         $ zenLove = True
         $ zen_love_day = day

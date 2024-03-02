@@ -9,7 +9,7 @@ label Scarlet:
         mc "Scarlet seems like a safe bet. She taught me that invisibility spell without a second thought."
         mc "Ok... Let's do this."
         scene lecturemage2 with fade
-        "You find Scarlet in her classroom reading a book and making notes for a study plan. She notices you walk in and looks up at you with a smile."
+        "You find Scarlet in her classroom reading a book, and making notes for a study plan. She notices you walk in and looks up at you with a smile."
         show smilemc
         scene lecturemage3
         s "[mc]! I was just thinking about you. Are you wanting to learn any extracurricular spells for your \"stealth missions\"?"
@@ -39,11 +39,11 @@ label Scarlet:
                 mc "{i}That was remarkably painless..."
                 mc "Thank you, Scar. I'll be leaving now, I gu-"
                 show anythingm
-                s "Oh but you'll owe me a favor someday."
+                s "Oh, but you'll owe me a favor someday."
                 hide smilemc
                 show talkwanmc
                 mc "What?"
-                s "You'll owe me one. My clothes are really nice and I'm not going to force a girl down on her luck to owe me anything."
+                s "You'll owe me one. My clothes are really nice, and I'm not going to force a girl down on her luck to owe me anything."
                 mc "What do you want?"
                 s "Oh... I haven't decided yet. I'll get back to you on that."
                 "Scarlet winks."
@@ -95,7 +95,6 @@ label Scarlet:
     show smilemc
     show talkwam
     s "Hey there, ki-... I mean, [mc], what's up?"
-    label ScarletTalk:
     menu:
         "Talk":
             mc "Just came for a chat."
@@ -191,7 +190,7 @@ label Scarlet:
                 s "Well, that's enough talking, you little brat. I need to go back to work."
                 mc "Alright, see ya."
                 s "See ya."
-                "She ruffles your hair, you protest and walk away from her grasp but your hair has already been messed up."
+                "She ruffles your hair, you protest and walk away from her grasp, but your hair has already been messed up."
                 jump academy
             if ScarletTalked == 1:
                 if scoldedYouForSkippingClass == True and wentToClassEver > (dayWhenClassScold-day)/4+classesParticipatedInWhenFirstTalked:
@@ -203,7 +202,7 @@ label Scarlet:
                     mc "Really? That many?"
                     s "Yeah, apparently since the Demon King was slain people started taking the whole war less seriously... Which is a problem considering that the Demon Army seems to be building up strength again."
                     mc "Well, I spend my time outside of school doing adventuring stuff. So even if I dropped out, I'd still be prepared to fight the Demon army."
-                    s "Yeah, I guess you're right but not everyone stops coming to be an Adventurer."
+                    s "Yeah, I guess you're right, but not everyone stops coming to be an Adventurer."
                     mc "Mh."
                 elif scoldedYouForSkippingClass == True and wentToClassEver < (dayWhenClassScold-day)/4+classesParticipatedInWhenFirstTalked:
                     s "You know, it's a shame you haven't started coming often to school, I feel like you'd be a really good student."
@@ -219,7 +218,7 @@ label Scarlet:
                     s "W-Well, yes..."
                     mc "..."
                     s "B-But what I mean is that I still ended up fine. As long as you apply yourself in something you're going to end up fine."
-                    s "Also, don't tell your uncle I told you this but going on quests is much more fun than being in a school."
+                    s "Also, don't tell your uncle I told you this, but going on quests is much more fun than being in a school."
                     mc "Hah, I won't tell him, don't worry."
                     s "Good, good."
                 s "So, what has my favorite student been doing recently?"
@@ -230,7 +229,7 @@ label Scarlet:
                     if day < 21 or dayWhenBronze < 20:
                         s "It's not even been three weeks! Guess we got a prodigy here."
                         mc "Oh c'mon, don't make me blush. Anyone could've done it, it was pretty easy."
-                        s "Well, you're not wrong. It {b}is{/b} the easiest rank to achieve but it's still something to be proud of."
+                        s "Well, you're not wrong. It {b}is{/b} the easiest rank to achieve, but it's still something to be proud of."
                         mc "Thanks."
                         s "...Though it {b}did{/b} only take me 5 days when I got it."
                         mc "What?! How?!"
@@ -317,7 +316,7 @@ label Scarlet:
             hide talkwam
             mc @hopet "Well... yeah. There's this elven priestess that's been doing lots of bad things and she uses this seal a lot to protect her stuff."
             show talkm
-            s "I see... Well then, sure. I'll recharge it for you and if it depletes again, just come pay a visit again."
+            s "I see... Well then, sure. I'll recharge it for you, and if it depletes again, just come pay a visit again."
             hide talkm
             mc @smilet "Really? Thanks, Scar!"
             show talkm
@@ -343,7 +342,7 @@ label Scarlet:
             $ chargedRune = 8
             $ scarletCharge = True
             show screen hud
-            jump maplimbo
+            jump home
         "Ask Scarlet to recharge the rune" if zenS >= 1 and chargedRune < 1 and scarletCharge == True:
             hide screen hud
             show prot smile
@@ -421,13 +420,13 @@ label Scarlet:
                 s "Your mana level is too low."
                 s "I can't put the spell on you at once."
                 mc "Huh, why? I thought my mana had nothing to do with the spell."
-                s "It does. Think of it as this way; A scrawny soldier needs to go through an army of orcs. So he's given a very strong armor but it's heavy. Now, what happens when he wears it?"
+                s "It does. Think of it as this way; A scrawny soldier needs to go through an army of orcs. So he's given a very strong armor, but it's heavy. Now, what happens when he wears it?"
                 mc "He gets crushed, because the armor is too heavy for him?"
                 s "It's the same here. You're the scrawny soldier and the heavy armor is the protection spell."
                 mc "Oh, I get it. But why take two days then?"
                 s "I need to make the armor as light as possible so you can wear it. That takes time."
                 mc "Ah, ok."
-                s "I'll start the first phase now but you'll have to come again if you want the spell to work properly."
+                s "I'll start the first phase now, but you'll have to come again if you want the spell to work properly."
                 mc "Got it."
                 show black with fade
                 "Scarlet takes out her staff and chants a spell. She waves her staff and zaps you with a red beam of light. Your body starts to get heavy to the point where you feel like it would sink into the ground."
@@ -531,7 +530,7 @@ label Scarlet:
                 mc "Yeah, something like that. What are they?"
                 s "To put it into simple terms; They're basically magical locks. They can't be broken down by force."
                 mc "Oh... so is there no way to break it?"
-                s "There is. You can break it with magic but that takes a lot of mana. The easiest way is to find the right spell and unlock it."
+                s "There is. You can break it with magic, but that takes a lot of mana. The easiest way is to find the right spell and unlock it."
                 mc "How do I do that?"
                 s "You identify the type of seal by its mark."
                 mc "Like the one that appeared when I tried to open the door?"
@@ -725,7 +724,7 @@ label sealtalk:
     s "Runes are rather useful, you see. They're how us mages can store a spell for later use. In your case that spell is the one to turn on or off that specific seal you showed me."
     show talkwamc
     mc "Woah, really? I thought I would have to learn a spell or something!"
-    s "Normally you do but... these are elven seals, even some royal mages have a hard time with this sort of stuff."
+    s "Normally you do, but... these are elven seals, even some royal mages have a hard time with this sort of stuff."
     mc "So what's special about this rune?"
     s "Well, I already did the hard part so you don't have to. The rune is already enchanted, you just have to hold it in your hand. Easy-peasy."
     mc "Wow. Thanks, Scarlet."

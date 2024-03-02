@@ -5,10 +5,10 @@ stop sound fadeout 0.5
 hide screen interactivehome
 play music maplimbo
 if time < 3:
-    scene mapbaseTEST
+    scene mapbaseday
 if time == 3:
-    scene mapbasee
+    scene mapbaseevening
 if time > 3:
-    scene mapbasenightTEST
+    scene mapbasenight
 call screen screenmap
 pause

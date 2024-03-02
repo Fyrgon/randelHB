@@ -515,3 +515,5 @@ image taliyathighjobfast = Movie(play="images/taliyathighjob2.webm")
 image gabehjSlow = Movie(play="images/gabehjslow.webm")
 image gabehjFast = Movie(play="images/gabehjfast.webm")
 image gabehjCum = Movie(play="images/gabehjcum.webm")
+
+image patronSplashScreen = Movie(play="images/menuianimation.mpeg")

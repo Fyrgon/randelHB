@@ -4,9 +4,6 @@ label arenar:
     show screen hud
     play music trainig
     scene arena with fade
-    if time >= 4:
-        "It's too late and the school closes."
-        jump home
     if TaliyaQ == 3 and time == 0 and penepisellosessoomosessuale == False:
         jump TaliyaQ3
     if TaliyaQ == 6 and Taliya6Talk == False and time < 2 and TimerT6 <= day:
@@ -32,14 +29,6 @@ label arenar:
                 show animationswordnotaliya
                 "You train with your sword. You practice basic strikes. You feel more comfortable with the sword now."
                 hide animationswordnotaliya
-            $ sword += 1
-            if chartrait == 2:
-                $ sword += 1
-            if sword == 2:
-                play sound chime
-                $ renpy.notify ("{color=#00C413}Your Sword stat has increased.")
-                $ swordlvl += 1
-                $ sword = 0
             if swordlvl >= 3 and taliatrain1 == False:
                 t "Hey recruit, come here."
                 mc "Me?"
@@ -91,6 +80,7 @@ label arenar:
                 $ swordlvl += 1
             if TaliyaQ == 1:
                 jump TaliyaQ1
+            call swordLevel
             jump arenar
 
         # "Duel with Talia" if taliatrain1 == 1:
@@ -118,11 +108,9 @@ label arenar:
 
         "Archery Training":
             hide screen hud
-            if time > 2 and magic_lamp < 1:
+            if time > 2:
                 mc "I can't train right now, it's too late."
                 jump arenar
-            elif magic_lamp > 0:
-                mc "{i}Thanks to the lamp I can see the target even this late and train."
             if bowlvl < 2:
                 if TaliyaQ < 7:
                     show animationbow
@@ -140,14 +128,7 @@ label arenar:
                     mc "Yes I hit it! Looks like I am making progress at least."
                 else:
                     "You train with the bow. You've finally started hitting the target consistently."
-            $ bow += 1
-            if chartrait == 3:
-                $ bow += 1
-            if bow == 2:
-                play sound chime
-                $ renpy.notify ("{color=#00C413}Your Bow stat has increased.")
-                $ bowlvl += 1
-                $ bow -= 2
+            call bowLevel
             $ time += 1
             jump arenar
         "Talk to Taliya" if TaliyaQ < 7:

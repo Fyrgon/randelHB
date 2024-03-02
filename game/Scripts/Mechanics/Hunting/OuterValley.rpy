@@ -22,10 +22,10 @@ label OuterValley:
                 hide text with dissolve
                 play sound chime
                 if level > 9:
-                    $ renpy.notify("{color=#fff}You gained 20 silver.")
-                    $ money += 20
+                    $ renpy.notify("{color=#fff}You gained 10 gold.")
+                    $ money += 10
                 else:
-                    $ renpy.notify("{color=#fff}You gained 5 silver.")
+                    $ renpy.notify("{color=#fff}You gained 5 gold.")
                     $ money += 5
                 $ time += 1
                 jump forest
@@ -55,7 +55,7 @@ label OuterValley:
                 else:
                     mc "Bullseye! All that training paid off, I guess."
                 $ time += 1
-                $ exp += 15
+                $ exp += 10
                 call levellingUp from _call_levellingUp_1
                 jump forest
             hide screen hud

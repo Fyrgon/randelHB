@@ -1,9 +1,9 @@
 label fishhut:
-if time >= 4:
-    scene villagen
-else:
-    scene villageback
 if Taliya6Talk == True:
+    if time >= 4:
+        scene villagen
+    else:
+        scene villageback
     menu:
         "Go ask Uncle Pete about The Sword":
             show text "{color=#fff}This is a point of no return. If you keep going you'll arrive at the current ending of the game." at truecenter
@@ -22,7 +22,7 @@ if Taliya6Talk == True:
                 mc "It's too late to visit Uncle Pete."
                 jump maplimbo
 play sound lake
-play music runclepete fadein 4
+play music runclepete fadein 1
 if party == 1 and showpetebadge == 0 and time < 4:
         jump petebadge
 jump talkingpete
