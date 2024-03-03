@@ -34,7 +34,8 @@ label elfVillage:
         "Prison":
             jump elfPrison
         "Head back to Randel":
-            if time == 4:
-                jump home
+            if time > 4 or (time == 4 and magic_lamp < 1):
+                mc "{i}It's too late to wander in the forest. I should stay and sleep in Eve's house isntead"
+                jump eveHouse
             jump forest
     return

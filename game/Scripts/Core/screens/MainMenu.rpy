@@ -22,6 +22,8 @@ screen main_menu():
             yalign 0.05
             text "{color=#fff}Beta [config.version]":
                 style "main_menu_text"
+            text "{color=#fff}Fyrgon fan patch":
+                style "main_menu_text"
 
     ##Links
     imagebutton:

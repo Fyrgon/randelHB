@@ -803,7 +803,7 @@ label TaliyaQ1:
         jump sexxopaxxo
     label sexxopaxxo:
     if time < 3:
-        "It's not evening yet."
+        "It's not evening yet to train with Taliya."
         jump arenar
     elif TaliyaTrain == False:
         t "There you are. Let's get started."
@@ -857,7 +857,7 @@ label TaliyaQ1:
     else:
         t "Alright, let's see what you've got."
         "Taliya gets into position."
-    $ fable_minigame_difficulty = "normal"
+    $ fable_minigame_difficulty = "easy"
     if swordlvl < 10:
         scene taliyaq1a
     else:
@@ -2839,9 +2839,12 @@ label TaliyaQ4:
             mc "I don't know her job, when I met her she was attending her master — a fat bastard — in the same bath house we went to."
             t "...How many coins did you say you have, again?"
             mc "I've got [money] with me."
-            ### For the future. If the MC has 400 or more gold, Twig can be saved.
-            t "I'm sorry, [mc]. She's the kind of slave that can costs many hundreds of coins."
-            mc "Damn it."
+            if money >= 400:
+                jump buyTwig
+            else:
+                t "I'm sorry, [mc]. She's the kind of slave that can costs many hundreds of coins."
+                mc "Damn it."
+        label continueTaliyaQ4:
         t "I get it. When we come back I'll bring enough money to buy her."
         mc "Really...?"
         t "If she really saved you then I owe her as much as I owe you. I'll buy her and we'll free her once in Astylla."
@@ -2864,6 +2867,10 @@ label TaliyaQ4:
     $ persistent.Taliya4 = True
     jump home
 
+
+label buyTwig:
+    pass ### For the future. If the MC has 400 or more gold, Twig can be saved.
+    jump continueTaliyaQ4
 
 
 label TaliyaQ5:

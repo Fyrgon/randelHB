@@ -1402,6 +1402,7 @@ label petedinner:
                 "{i}...Be she won't find out."
                 "{i}Yeah, I'll just... be more careful."
     $ petedinner += 1
+    $ time += 1
     jump home
 
 
@@ -1880,6 +1881,7 @@ label sanderevedinner:
     mc "{i}...Does she feel the same way?"
     mc "{i}Sigh... I'm too drunk to think now."
     $ sanderevedinner += 1
+    $ time += 1
     jump home
 
 

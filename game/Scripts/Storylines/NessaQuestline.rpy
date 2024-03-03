@@ -160,7 +160,8 @@ label nessa3:
         "Nessa continues to violate you for another hour. You pass out in the process... When you wake up, Nessa's gone."
         "With an inch of your life left, you crawl out of the prison..."
         $ nessaquest += 1
-        jump elfvillage
+        $ time += 1
+        jump elfVillage
     show hornn
     n "Almost there... I can't wait to see that dick of yours again."
     jump nessatalk

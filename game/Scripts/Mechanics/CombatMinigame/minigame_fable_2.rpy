@@ -98,6 +98,7 @@ label start_fightMiniGame:
     if fable_target_speed < 1:
         $ fable_target_speed = 1
     $ fable_minigame_fails = 0
+    $ fable_minigame_score = 0
     show screen fable_timer_left
     call screen fable_2_minigame
 

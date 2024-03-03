@@ -274,6 +274,9 @@ label theanight:
     show blancketth
     menu:
         "Pull down the sheets":
+            $ pants = 1
+            $ bra = 1
+            $ panties = 1
             hide blancketth
             show brath
             show pantiesth
@@ -293,9 +296,7 @@ label molest:
                 mc "Shit, she's waking up. I better leave."
                 show blancketth
                 pause
-                $ pants = 1
-                $ bra = 1
-                $ panties = 1
+                $ time += 1
                 jump home
             $ pants -= 1
             hide pantsth with dissolve
@@ -307,9 +308,7 @@ label molest:
                 mc "Shit, she's waking up. I better leave."
                 show blancketth
                 pause 1
-                $ pants = 1
-                $ bra = 1
-                $ panties = 1
+                $ time += 1
                 jump home
             $ panties -= 1
             hide pantiesth with dissolve
@@ -322,9 +321,7 @@ label molest:
                 mc "Shit, she's waking up. I better leave."
                 show blancketth
                 pause
-                $ pants = 1
-                $ bra = 1
-                $ panties = 1
+                $ time += 1
                 jump home
             show animationfinger
             show sleeptheabase2 with dissolve
@@ -346,18 +343,14 @@ label molest:
             mc "Looks like she's waking up. I better leave."
             show blancketth
             pause 1
-            $ pants = 1
-            $ bra = 1
-            $ panties = 1
+            $ time += 1
             jump home
         "Remove her bra" if bra == 1:
             if stealthlvl < 1:
                 mc "Shit, she's waking up. I better leave."
                 show blancketth
                 pause 1
-                $ pants = 1
-                $ bra = 1
-                $ panties = 1
+                $ time += 1
                 jump home
             $ bra -= 1
             hide brath with dissolve
@@ -367,9 +360,7 @@ label molest:
         "Touch her breasts" if bra == 0:
             if stealthlvl < 3:
                 mc "Shit, she's waking up. I better leave."
-                $ pants = 1
-                $ bra = 1
-                $ panties = 1
+                $ time += 1
                 jump home
             show sleeptheabase2 with dissolve
             show animationboobhand
@@ -386,9 +377,7 @@ label molest:
             mc "Looks like she's waking up. I better leave."
             show blancketth
             pause
-            $ pants = 1
-            $ bra = 1
-            $ panties = 1
+            $ time += 1
             jump home
         "Rub one off":
             mc "My dick feels like it's gonna explode... Must... release..."
@@ -404,15 +393,10 @@ label molest:
             hide fap1
             show blancketth
             pause
-            $ pants = 1
-            $ bra = 1
-            $ panties = 1
+            $ time += 1
             jump home
         "Go back":
             show blancketth
             pause
-            $ pants = 1
-            $ bra = 1
-            $ panties = 1
             jump home
     return

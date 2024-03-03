@@ -1,16 +1,19 @@
 label eveHouse:
     stop music
-    if time == 4:
-        mc "It's too late, I better go home."
-        jump elfVillage
     scene evehouse
     hide screen hud
 
     menu:
         "Rest":
-            mc "I guess I'll just take a quick nap."
-            "You take a quick nap."
-            $ time += 1
+            if time >= 4:
+                mc "{i}I guess I'll stay here till morning."
+                "You sleep over night."
+                call sleepvars from _call_sleepvars_evelin_house
+                scene black with fade
+            else:
+                mc "{i}I guess I'll just take a quick nap."
+                "You take a quick nap."
+                $ time += 1
             jump elfVillage
 
         "Talk to Eve" if time == 2 or time == 3:

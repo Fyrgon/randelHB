@@ -842,7 +842,7 @@ label EveQ1pre:
     mc "A mask? Why?"
     e "You'll know why, when you read about the Ledric."
     mc "O-Ok, see you tomorrow."
-    $ time = 4
+    $ time += 1
     jump home
 
 
@@ -1490,7 +1490,8 @@ label EveQ1:
     sa "Hey! When is the party?"
     mc "Don't know, ask Eve."
     sa "Huh?"
-    $ time = 4
+    $ time = 0
+    call sleepvars from sleep_call_ledric_camping
     $ ledricquest += 1
     jump home
 
@@ -1815,12 +1816,12 @@ label EveQ3:
     e "Please, leave, [mc]..."
     mc "......"
     mc "Ok."
-    $ time = 4
+    $ time += 1
     scene everoom with fade
     mc "{i}Damnit! Why is Eve like this?!"
     mc "{i}I need to show Eve that I'm not a little kid. And that I really like her."
     $ eveknow += 1
-    jump home
+    jump guild
 
 
 
@@ -1952,6 +1953,6 @@ label EveQ4:
         show talksadhappymc
         mc "Thanks, I had a great time too."
         $ time = 0
-        call sleepvars from _call_sleepvars_17
+        call sleepvars from sleep_call_evesex
         $ evesex += 1
         jump guild

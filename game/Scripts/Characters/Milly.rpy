@@ -120,7 +120,7 @@ label talkmilly:
             mi "Hahah, I guess!"
             mc "Well, thanks for telling me more about her. I'm gonna go now."
             mi "Alright! See you [mc]-ayya."
-            jump elfVillage
+            jump talkmilly
 
         "Elf history":
             mc "Could you teach me a bit about elf history?"

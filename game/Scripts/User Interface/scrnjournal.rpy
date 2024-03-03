@@ -233,7 +233,7 @@ screen screenjournal:
             text "> I should check on Thea."
         if petedinner == 1 and sanderevedinner < 1:
             text "{b}Thea's Storyline{/b}"
-            text "> I should tell Thea that I'm inviting Sander and Eve for dinner tonight."
+            text "> I should tell Thea in the morning that I'm inviting Sander and Eve for dinner tonight."
         if sanderpetedinner == 0  and sanderevedinner == 2:
             text "{b}Thea's Storyline{/b}"
             text "> Invite Uncle Pete and Sander for dinner."

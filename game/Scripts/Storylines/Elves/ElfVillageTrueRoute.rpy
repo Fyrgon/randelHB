@@ -783,7 +783,7 @@ label ElfGoodEnding:
     mc "Bye."
     scene elfvillagen with fade
     mc "{i}I can't believe she kissed me. Aerin finally got to be happy. My job here is done."
-    $ time = 4
+    $ time += 2
     "You head back home."
     $ savedaerin = 1
     $ elfday = day

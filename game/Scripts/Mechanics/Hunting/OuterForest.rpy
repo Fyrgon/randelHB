@@ -54,7 +54,7 @@ label OuterForest:
                 else:
                     mc "Bullseye! All that training paid off, I guess."
                 $ time += 1
-                $ exp += 50
+                $ exp += 40
                 call levellingUp from _call_levellingUp_12
                 jump forest
             $ renpy.notify ("{color=#fff}Bow skill check: {color=#A50000}Fail. ([bowlvl] < 10)")

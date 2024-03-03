@@ -552,6 +552,9 @@ label romanceaerin:
                 show shytalkha
                 a "I was thinking the same thing!"
                 scene black with fade
+                label aerin_sex_repeat:
+                if aerin_one_hour_stand > 0:
+                    scene aerinhouseblr with fade
                 "The two of you undress and jump on the bed."
                 scene aerinsex1 with fade
                 pause 0.6
@@ -569,10 +572,15 @@ label romanceaerin:
                 a "I love you, [mc]."
                 mc "I love you too."
                 scene black with fade
-                "The two of you cuddle up and fall asleep."
-                call sleepvars from _call_sleepvars_2
-                scene black with fade
-                "When you wake up, Aerin's already gone. You sit on the bed and take a look around. She might have gone off to work, but you think about how satisfied you feel after that eventful night."
+                if aerin_one_hour_stand == 0:
+                    "The two of you cuddle up and fall asleep."
+                    call sleepvars from _call_sleepvars_2
+                    scene black with fade
+                    "When you wake up, Aerin's already gone. You sit on the bed and take a look around. She might have gone off to work but you think about how satisfied you feel after that eventful night."
+                else:
+                    $ aerin_one_hour_stand = 0
+                    mc "{i}What a break... Aerin is possaionate when riding me."
+                    $ time += 1
                 jump elfVillage
             "Go home":
                 mc "Sorry Aerin, I won't be able to stay with you today."
@@ -585,6 +593,7 @@ label romanceaerin:
 
 
     if aerinrel == 20:
+        label aerin_sex_first:
         scene aerinhouseblr
         show shytalka
         show smilemc
@@ -636,19 +645,26 @@ label romanceaerin:
         mc "I will, I promise!"
         a "I'm glad."
         scene black with dissolve
-        "The two of you cuddle up and fall asleep."
-        call sleepvars from _call_sleepvars_3
-        scene aerinhouseblr with fade
-        "When you wake up, Aerin's already gone. You sit on the bed and take a look around. She might have gone off to work, but you think about how satisfied you feel after spending the night with her."
+        if aerin_one_hour_stand == 0:
+            scene black with dissolve
+            "The two of you cuddle up and fall asleep."
+            call sleepvars from _call_sleepvars_3
+            scene aerinhouseblr with fade
+            "When you wake up, Aerin's already gone. You sit on the bed and take a look around. She might have gone of to work but you think about how satisfied you feel after spending the night with her."
+        else:
+            $ aerin_one_hour_stand = 0
+            mc "She is always so wild. I can't get enough of her."
+            $ time += 1
         jump elfVillage
 
-    if aerinrel ==  15:
+    if aerinrel == 15:
         scene aerinhouseblr
         show shytalkha
         show talksadhappymc
         a "Uhm, [mc], do you want to... continue from where we left off last night?"
         mc "Y-Yes!"
         scene black with fade
+        label aerin_sex_licking:
         "You go to Aerin's room. Aerin undresses. She lies on her bed fully naked. You take a moment to admire her shape and curves and beautiful body, down from the supple skin to the details of her buttocks."
         scene aerinasslick1 with fade
         a "What are we going to do today?"
@@ -706,6 +722,7 @@ label romanceaerin:
         a "Yes. So... what do you say?"
         show talksadhappymc
         mc "If that's what you want, I'm fine with it."
+        label aerin_sex_fingering:
         a "Let's go to my room then."
         scene black with fade
         "You go to Aerin's room. Aerin undresses. She lies on her bed fully naked. You take a moment to admire her shape and curves and beautiful body, down from the supple skin to the details of her buttocks."

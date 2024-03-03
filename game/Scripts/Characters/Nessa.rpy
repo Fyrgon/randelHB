@@ -1,9 +1,6 @@
 label nessatalk:
 
     menu:
-        "Leave":
-            jump elfVillage
-
         "Sex?" if sexnessa == 1 :
             scene jail
             show normaln
@@ -31,6 +28,7 @@ label nessatalk:
             n "Hahh... Just what I needed. Thanks, [mc]!"
             mc "Happy to help... and thank you for letting me walk out of the prison."
             n "I could go for another round if you want?"
+            $ time += 1
             menu:
                 "Why not?":
                     show talkwamc
@@ -45,6 +43,7 @@ label nessatalk:
                     "Your body is unable to keep up with Nessa. You pass out."
                     scene black with fade
                     "You wake up and crawl out of the prison as usual."
+                    $ time += 1
                     jump elfVillage
                 "Hell no!":
                     show suprised
@@ -245,3 +244,5 @@ label nessatalk:
             n "She takes care of all the ceremonies and oversees all the events that happen in the village, including the duel. She's also in charge of keeping records of the village history. Pretty much the most important stuff."
             mc "I see."
             jump nessatalk
+        "Leave":
+            jump elfVillage

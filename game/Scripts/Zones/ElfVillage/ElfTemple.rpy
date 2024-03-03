@@ -9,8 +9,6 @@ label elfTemple:
     scene elftemple
     hide screen hud
     menu:
-        "Leave":
-            jump elfVillage
         "Talk to Aerin" if savedaerin == 1:
             if time > 0:
                 mc "Aerin must have already started work, I shouldn't bother her now."
@@ -114,6 +112,38 @@ label elfTemple:
                     $ time += 1
                     jump elfVillage
 
+        "Let's just play with Aerin" if aerinrel > 20:
+                scene highelfroomblr with fade
+                show talkwamc
+                show happya
+                a "You are here, [mc]... I'm always happy to see you."
+                mc "Hello babe, how about a break? We can do all sorts of stuff..."
+                a "Mhhh, what sort of stuff do you mean? I wouldn't mind a small break."
+                show blushtalka
+                menu:
+                        "Lets have a quick one":
+                                show shytalkha
+                                a "Ah... ok... oh god, now I'm getting wet already."
+                                $ aerin_one_hour_stand = 1
+                                jump aerin_sex_repeat
+                        "Lets do it lovingly":
+                                show shytalkha
+                                a "Oh [mc], I would love to experience that again."
+                                $ aerin_one_hour_stand = 1
+                                jump aerin_sex_first
+                        "I would love to eat you out again":
+                                show shytalkha
+                                a "Am... Am I that tasty down... there? Em, ok... if you like it that much... I love it too."
+                                $ aerin_one_hour_stand = 1
+                                jump aerin_sex_licking
+                        "How about I gave you a massage":
+                                a "Mh. Ok, my shoulders are little stiff..."
+                                mc "I will also massage your pussy with my fingers."
+                                show shytalkha
+                                a "Oh-? Oh! ... You naughty... ok."
+                                $ aerin_one_hour_stand = 1
+                                jump aerin_sex_fingering
+
         "Talk to Milly" if millyangry == 0:
             if evelost:
                 show worriedmc
@@ -162,12 +192,11 @@ label elfTemple:
                 mc "Of course you are."
                 mi "Hehehe."
                 jump talkmilly
-
             if metmilly == 0:
-
                 show smilemc
                 show normalmi
                 show talkhmi
+                $ metmilly += 1
                 mi "Hey, [mc]-ayya!"
                 if chartrait == 1:
                     mc "{i}Hmm she called me her ayya, which is brother in Astyllian, I guess that's how they call each other here."
@@ -179,8 +208,6 @@ label elfTemple:
                     mc "I used to read a lot of books when I was little."
                     mi "That's good to hear. Most humans have a very poor understanding of Astyllian. They just learn the spells and that's it. They don't even understand that Astyllian is a whole language."
                     mc "Yeah."
-                    $ metmilly += 1
-
                 else:
                     show talkhappymc
                     mc "Oh, hey... Milly... ayyaa???"
@@ -191,10 +218,11 @@ label elfTemple:
                     mc "Oh, I see."
                     mi "You humans have a very poor understanding of Astyllian, you just learn the spells and that's it. You guys don't even understand that Astyllian is a whole other language."
                     mc "Yeah, I guess you're right..."
-                    $ metmilly += 1
 
             show talkhmi
             show smilemc
             mi "So what brings you here, [mc]-ayya?"
             jump talkmilly
+        "Leave":
+            jump elfVillage
     return

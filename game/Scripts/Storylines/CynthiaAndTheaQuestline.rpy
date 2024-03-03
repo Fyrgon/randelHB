@@ -530,5 +530,6 @@ label thcynth3:
     mc "......"
     mc "{i}I still can't believe last night actually happened."
     mc "{i}If I knew it was going to end up like this, I wouldn't have been so paranoid."
+    call sleepvars from sleep_call_threesome_first
     $ thcynthconfess += 1
     jump guild

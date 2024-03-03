@@ -45,7 +45,13 @@ screen playerstatistics():
     vbox xalign 0.75 yalign 0.56:
         text "{size=+5}{b}{color=#000}[exp]/[expLvl]"
 
-    if level > 10 and level < 20:
+    if level >= 40:
+        add "images/diamondicon.webp" xalign 0.776 yalign 0.2
+    elif level >= 30:
+        add "images/goldicon.webp" xalign 0.776 yalign 0.2
+    elif level >= 20:
+        add "images/silvericon.webp" xalign 0.776 yalign 0.2
+    elif level > 10:
         add "images/bronzeicon.webp" xalign 0.776 yalign 0.2
 
     imagebutton:

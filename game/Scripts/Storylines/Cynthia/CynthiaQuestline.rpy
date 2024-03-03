@@ -316,7 +316,7 @@ label questcynth:
     scene qtebehead3
     if swordlvl >= 8:
         $ renpy.notify ("{color=#fff}Sword skill check: {color=#00C413}Success! ([swordlvl] >= 8)")
-        jump liveqte1
+        jump cynthiaDQTE
     $ renpy.notify ("{color=#fff}Sword skill check: {color=#A50000}Fail. ([swordlvl] < 8)")
     c "DUCK!"
     if easyMode:
@@ -2140,6 +2140,8 @@ label cynthquest4:
             scene villageback with fade
             "After saying your goodbyes to her, you decided to head back to the comfort of your home for some R&R."
             $ persistent.cynthFireplace = True
+            $ time = 0
+            call sleepvars from sleep_call_cynthia_monsterhunt
             $ cynthquest4 += 1
             jump home
 
@@ -3159,7 +3161,6 @@ label cynthquest6:
     mc "{i}I'm glad she felt better after that."
     "You went back home for the night. Though tired, you feel happy that you accomplished something. And you slept soundly after that."
     $ cynthquest6 += 1
-    $ time = 4
     jump home
 
 
@@ -3725,4 +3726,6 @@ label cynthdate:
         mc "{i}Thea. Oh Astylla, what am I going to say to her?"
         mc "{i}This was your choice, [mc]. You'll just have to live with it."
     $ cynthdate += 1
+    $ time = 0
+    call sleepvars from sleep_call_cynthia_datesex
     jump home

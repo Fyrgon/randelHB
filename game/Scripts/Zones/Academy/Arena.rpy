@@ -15,12 +15,13 @@ label arenar:
             if time > 2 and TaliyaQ < 1 and TaliyaQ > 1:
                 mc "I can't train right now, General Taliya is gone..."
                 jump arenar
-            elif TaliyaQ == 1:
+            elif TaliyaQ == 1 and time == 3:
                 mc "Time to train with Taliya."
             elif time > 2:
                 mc "I can't train right now, it's too late."
                 jump arenar
             $ time += 1
+            call swordLevel
             if TaliyaQ < 7:
                 show animationsword
                 "You train with your sword. You practice basic strikes. You feel more comfortable with the sword now."
